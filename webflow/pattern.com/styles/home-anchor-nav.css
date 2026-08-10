@@ -63,7 +63,7 @@
 
 @media (max-width: 767px) {
   .v3_home_anchor_sticky_layer > [data-home-anchor-ready="true"] {
-    width: 100%;
+    width: fit-content;
     max-width: 100%;
     justify-content: flex-start;
     overflow-x: auto;
@@ -80,16 +80,7 @@
 
   [data-home-anchor-ready="true"]::before,
   [data-home-anchor-ready="true"]::after {
-    content: "";
-    flex: 0 0 auto;
-  }
-
-  [data-home-anchor-ready="true"]::before {
-    width: var(--v3-home-anchor-leading-space, 0px);
-  }
-
-  [data-home-anchor-ready="true"]::after {
-    width: var(--v3-home-anchor-trailing-space, 0px);
+    display: none;
   }
 
   [data-home-anchor-ready="true"]
@@ -100,6 +91,45 @@
       [class$="--home_anchor_link"]
     ) {
     flex: 0 0 auto;
+    gap: var(
+      --pattern-library-v3_spacing---space--1,
+      var(--_spacing---space--1)
+    );
+    padding-inline: var(
+      --pattern-library-v3_spacing---space--1,
+      var(--_spacing---space--1)
+    );
     scroll-snap-align: center;
+  }
+
+  [data-home-anchor-ready="true"]
+    :is(
+      [class~="home_anchor_text"],
+      [class*="--home_anchor_text "],
+      [class$="--home_anchor_text"]
+    ) {
+    white-space: nowrap;
+  }
+
+  [data-home-anchor-ready="true"]
+    :is(
+      [class~="home_anchor_text"],
+      [class*="--home_anchor_text "],
+      [class$="--home_anchor_text"]
+    )
+    :is(
+      [class~="u-text"],
+      [class*="--u-text "],
+      [class$="--u-text"]
+    ) {
+    font-size: var(
+      --pattern-library-v3_typography---font-size--text-small,
+      var(--_typography---font-size--text-small)
+    );
+    line-height: var(
+      --pattern-library-v3_typography---line-height--small,
+      var(--_typography---line-height--small)
+    );
+    white-space: nowrap;
   }
 }

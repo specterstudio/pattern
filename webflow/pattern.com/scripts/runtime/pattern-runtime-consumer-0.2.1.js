@@ -695,7 +695,7 @@
       styles: [
         {
           src: '../../styles/home-anchor-nav.css',
-          integrity: 'sha384-jG6Cq9TypUqqWkapLKCuulUChu/MFL5KRj3BSJXJ712AKivnT+L/vgtM0i7vXSlh',
+          integrity: 'sha384-ARO/NRKecnIc+LAa8Lf4ZbOVm/UsvIWOcU3OJyQXoQAze6jQDhrSXQ9cTpkAlupf',
         },
       ],
     });
