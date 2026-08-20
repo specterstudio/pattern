@@ -514,6 +514,26 @@ try {
     ),
   );
 
+  const v3HeroNonH1HeadingObserve = await inspectScenario({
+    html: `
+      <main class="page_main_v3">
+        <section id="page-hero">
+          <div
+            data-heading-reveal="true"
+            data-wf--pattern-library-v3--typography-heading--font-style="h2"
+          >
+            <h2>Page-load H2</h2>
+          </div>
+        </section>
+      </main>
+    `,
+  });
+  assert.ok(
+    v3HeroNonH1HeadingObserve.plan.some(
+      (module) => module.id === 'v3-heading-text-reveal',
+    ),
+  );
+
   const v3WithLegacyMarkup = await inspectScenario({
     html: `
       <main class="page_main_v3">

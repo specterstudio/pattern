@@ -17,6 +17,14 @@
   const EVENT_PREFIX = 'pattern:pvg';
   const ALL_VERSIONS = ['v1', 'v2', 'v2l', 'v3'];
   const LEGACY_VERSIONS = ['v1', 'v2', 'v2l'];
+  const V3_HEADING_REVEAL_SELECTOR = [
+    '[data-heading-reveal="true"][data-wf--typography-heading--font-style="h1"]',
+    '[data-heading-reveal="true"][data-wf--pattern-library-v3--typography-heading--font-style="h1"]',
+    '#page-hero [data-heading-reveal][data-wf--typography-heading--font-style]',
+    '#page-hero [data-heading-reveal][data-wf--pattern-library-v3--typography-heading--font-style]',
+    '#page-hero [data-animate-heading][data-wf--typography-heading--font-style]',
+    '#page-hero [data-animate-heading][data-wf--pattern-library-v3--typography-heading--font-style]',
+  ].join(',');
   const V3_VIDEO_PLAYER_ROOT_SELECTOR = [
     '[class~="video_player_wrap"]',
     '[class*="--video_player_wrap "]',
@@ -709,14 +717,11 @@
     {
       id: 'v3-heading-text-reveal',
       versions: ['v3'],
-      selector: [
-        '[data-heading-reveal="true"][data-wf--typography-heading--font-style="h1"]',
-        '[data-heading-reveal="true"][data-wf--pattern-library-v3--typography-heading--font-style="h1"]',
-      ].join(','),
+      selector: V3_HEADING_REVEAL_SELECTOR,
       global: 'PatternV3HeadingReveal',
       script: {
         src: '../interaction/v3-heading-text-reveal.js',
-        integrity: 'sha384-N/wjF8MMvIuwrvZgJaLCO7Cg9AbFzSS8UaFsBUWzejVzE4qW51fPUKlSaGGW21HF',
+        integrity: 'sha384-5JU5U+5AYlH5Xw/xo393S6W+Rhy+R22voDkoriNhX7MAVVu5CEtdPkBufm5jSrDR',
       },
       dependencies: ['scroll-trigger', 'split-text'],
     },

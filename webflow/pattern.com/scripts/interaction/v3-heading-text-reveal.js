@@ -7,6 +7,7 @@
   const CONTENT_SELECTOR = ':scope > h1, :scope > h2, :scope > h3, :scope > h4, :scope > h5, :scope > h6, :scope > p';
   const FALLBACK_CONTENT_SELECTOR = 'h1, h2, h3, h4, h5, h6, p';
   const READY_ATTRIBUTE = 'data-pattern-heading-reveal-initialized';
+  const PAGE_LOAD_CONTAINER_SELECTOR = '#page-hero';
   const VARIANT_ATTRIBUTE_SUFFIX = 'typography-heading--font-style';
   const ENABLED_VALUES = new Set(['', '1', 'true', 'yes', 'on']);
   const DISABLED_VALUES = new Set(['0', 'false', 'no', 'off']);
@@ -43,15 +44,21 @@
     return ENABLED_VALUES.has(normalized);
   };
 
-  const isH1Variant = (root) =>
-    [...root.attributes].some(
+  const getVariantAttribute = (root) =>
+    [...root.attributes].find(
       (attribute) =>
         attribute.name.startsWith('data-wf--') &&
-        attribute.name.endsWith(VARIANT_ATTRIBUTE_SUFFIX) &&
-        attribute.value.trim().toLowerCase() === 'h1',
+        attribute.name.endsWith(VARIANT_ATTRIBUTE_SUFFIX),
     );
 
-  const isEligibleRoot = (root) => isEnabled(root) && isH1Variant(root);
+  const isH1Variant = (root) =>
+    getVariantAttribute(root)?.value.trim().toLowerCase() === 'h1';
+
+  const isPageLoadRoot = (root) => Boolean(root.closest(PAGE_LOAD_CONTAINER_SELECTOR));
+
+  const isEligibleRoot = (root) =>
+    isEnabled(root) &&
+    (isH1Variant(root) || (isPageLoadRoot(root) && Boolean(getVariantAttribute(root))));
 
   const collectRoots = (scope = document) => {
     const matches = [];
@@ -90,6 +97,7 @@
 
     const target = getContentTarget(root);
     if (!target) return;
+    const playsOnPageLoad = isPageLoadRoot(root);
 
     const state = {
       animation: null,
@@ -109,8 +117,8 @@
 
     if (
       typeof window.gsap === 'undefined' ||
-      typeof window.ScrollTrigger === 'undefined' ||
-      typeof window.SplitText === 'undefined'
+      typeof window.SplitText === 'undefined' ||
+      (!playsOnPageLoad && typeof window.ScrollTrigger === 'undefined')
     ) {
       instances.delete(root);
       roots.delete(root);
@@ -120,7 +128,8 @@
       return;
     }
 
-    window.gsap.registerPlugin(window.ScrollTrigger, window.SplitText);
+    if (playsOnPageLoad) window.gsap.registerPlugin(window.SplitText);
+    else window.gsap.registerPlugin(window.ScrollTrigger, window.SplitText);
 
     try {
       state.split = window.SplitText.create(target, {
@@ -138,14 +147,17 @@
             force3D: true,
           });
 
-          state.animation = window.gsap.to(self.lines, {
+          const animationOptions = {
             yPercent: 0,
             duration: 0.8,
             stagger: 0.1,
             ease: 'expo.out',
             force3D: true,
             overwrite: false,
-            scrollTrigger: {
+          };
+
+          if (!playsOnPageLoad) {
+            animationOptions.scrollTrigger = {
               trigger: root,
               start: () => 'clamp(top 75%)',
               scrub: false,
@@ -153,8 +165,10 @@
               invalidateOnRefresh: true,
               markers: false,
               toggleActions: 'play none none none',
-            },
-          });
+            };
+          }
+
+          state.animation = window.gsap.to(self.lines, animationOptions);
 
           return state.animation;
         },

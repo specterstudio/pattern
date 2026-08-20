@@ -8,6 +8,10 @@
   const V3_HEADING_REVEAL_SELECTOR = [
     '[data-heading-reveal="true"][data-wf--typography-heading--font-style="h1"]',
     '[data-heading-reveal="true"][data-wf--pattern-library-v3--typography-heading--font-style="h1"]',
+    '#page-hero [data-heading-reveal][data-wf--typography-heading--font-style]',
+    '#page-hero [data-heading-reveal][data-wf--pattern-library-v3--typography-heading--font-style]',
+    '#page-hero [data-animate-heading][data-wf--typography-heading--font-style]',
+    '#page-hero [data-animate-heading][data-wf--pattern-library-v3--typography-heading--font-style]',
   ].join(',');
   const VIDEO_PLAYER_ROOT_SELECTOR = [
     '[class~="video_player_wrap"]',
@@ -554,7 +558,7 @@
       global: 'PatternV3HeadingReveal',
       script: {
         src: '../interaction/v3-heading-text-reveal.js',
-        integrity: 'sha384-N/wjF8MMvIuwrvZgJaLCO7Cg9AbFzSS8UaFsBUWzejVzE4qW51fPUKlSaGGW21HF',
+        integrity: 'sha384-5JU5U+5AYlH5Xw/xo393S6W+Rhy+R22voDkoriNhX7MAVVu5CEtdPkBufm5jSrDR',
       },
       dependencies: ['scroll-trigger', 'split-text'],
     });
