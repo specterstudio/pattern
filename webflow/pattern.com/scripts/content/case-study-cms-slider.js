@@ -52,6 +52,11 @@
         overflow: hidden;
       }
 
+      [data-case-study-slider-ready] > .w-dyn-items > .w-dyn-item[hidden],
+      [data-case-study-slider-ready] > .w-dyn-item[hidden] {
+        display: none !important;
+      }
+
       [data-case-study-slider-deferred] [class*="case-study_slider_controls"],
       [data-case-study-slider-ready] [class*="case-study_slider_controls"][hidden],
       [data-case-study-slider-static] [class*="case-study_slider_controls"] {

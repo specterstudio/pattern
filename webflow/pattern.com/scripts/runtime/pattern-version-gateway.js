@@ -732,7 +732,7 @@
       global: 'PatternCaseStudyCMS',
       script: {
         src: '../content/case-study-cms-slider.js',
-        integrity: 'sha384-5+IGR8N62Hohu6K23CDo9/OWbL6m5Pxv1mPVVFQwd+B+u1yOC1x+94XM0esaP13d',
+        integrity: 'sha384-ZGHuIQRc5ihIHrn9jBDKTtIFnT2gMUOQ+ENE7Pybhzq4DflcJmNVFe1e0m8boR6t',
       },
       initScope: 'document',
     },
