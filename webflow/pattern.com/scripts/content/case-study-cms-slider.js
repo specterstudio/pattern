@@ -29,6 +29,7 @@
   if (!(state.instances instanceof WeakMap)) state.instances = new WeakMap();
   if (!(state.initialized instanceof WeakSet)) state.initialized = new WeakSet();
   if (!(state.deferred instanceof WeakMap)) state.deferred = new WeakMap();
+  if (!(state.statTweens instanceof WeakMap)) state.statTweens = new WeakMap();
 
   function injectStyles() {
     if (document.getElementById(STYLE_ID)) return;
@@ -52,6 +53,10 @@
         overflow: hidden;
       }
 
+      [data-case-study-slider-deferred] > .w-dyn-items > .w-dyn-item[hidden],
+      [data-case-study-slider-deferred] > .w-dyn-item[hidden],
+      [data-case-study-slider-static] > .w-dyn-items > .w-dyn-item[hidden],
+      [data-case-study-slider-static] > .w-dyn-item[hidden],
       [data-case-study-slider-ready] > .w-dyn-items > .w-dyn-item[hidden],
       [data-case-study-slider-ready] > .w-dyn-item[hidden] {
         display: none !important;
@@ -255,28 +260,34 @@
   function tweenStat(element, fromRaw, toRaw, reduceMotion) {
     if (!element) return;
 
+    state.statTweens.get(element)?.kill();
+    state.statTweens.delete(element);
+
     const from = parseNumber(fromRaw);
     const to = parseNumber(toRaw);
     if (reduceMotion || !from || !to || !window.gsap) {
-      setText(element, toRaw);
+      element.textContent = toRaw || "";
       return;
     }
 
-    const textNode = element.querySelector("span") || element;
     const proxy = { value: from.value };
-    window.gsap.killTweensOf(proxy);
-    window.gsap.to(proxy, {
+    element.textContent = formatNumber(to, proxy.value);
+
+    const tween = window.gsap.to(proxy, {
       value: to.value,
       duration: 0.6,
       ease: "power3.out",
       overwrite: true,
       onUpdate() {
-        textNode.textContent = formatNumber(to, proxy.value);
+        element.textContent = formatNumber(to, proxy.value);
       },
       onComplete() {
-        textNode.textContent = to.raw;
+        element.textContent = to.raw;
+        state.statTweens.delete(element);
       }
     });
+
+    state.statTweens.set(element, tween);
   }
 
   function applyRecord(target, record) {
@@ -400,7 +411,7 @@
     if (controls) controls.hidden = true;
   }
 
-  function initializeSlider(root) {
+  function initializeSlider(root, cachedRecords) {
     if (state.initialized.has(root)) return;
 
     const items = getItems(root);
@@ -409,7 +420,9 @@
     const component = items[0].querySelector(COMPONENT_SELECTOR);
     if (!component) return;
 
-    const records = collectRecords(root);
+    const records = cachedRecords && cachedRecords.length
+      ? cachedRecords
+      : collectRecords(root);
     if (records.length < 2) {
       initializeStatic(root, component);
       state.initialized.add(root);
@@ -542,16 +555,20 @@
         ]);
 
         if (!deferred.active) return;
-        initializeSlider(root);
+        initializeSlider(root, records);
 
         if (!state.initialized.has(root)) {
+          initializeStatic(root, component);
+          hideSourceItems(items);
           console.warn(
             "[Case Study CMS] Dependencies loaded, but the slider markup could not be initialized."
           );
         }
       } catch (error) {
+        initializeStatic(root, component);
+        hideSourceItems(items);
         console.warn(
-          "[Case Study CMS] Deferred dependencies could not load; the static CMS fallback remains visible.",
+          "[Case Study CMS] Deferred dependencies could not load; the first static CMS item remains visible.",
           error
         );
       } finally {
@@ -566,6 +583,7 @@
     deferred.start = start;
     state.deferred.set(root, deferred);
     root.setAttribute("data-case-study-slider-deferred", "");
+    hideSourceItems(items);
     root.addEventListener("pointerenter", start, { once: true });
     root.addEventListener("focusin", start, { once: true });
 
@@ -604,6 +622,11 @@
       if (instance) {
         instance.timeline?.kill();
         instance.swiper?.destroy(true, true);
+
+        instance.target.stats.forEach((stat) => {
+          state.statTweens.get(stat.value)?.kill();
+          state.statTweens.delete(stat.value);
+        });
 
         if (instance.target.visual && instance.originalVisualChildren) {
           instance.target.visual.replaceChildren(

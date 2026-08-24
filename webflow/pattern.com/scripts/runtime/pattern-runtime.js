@@ -1327,7 +1327,7 @@
       global: 'PatternCaseStudyCMS',
       script: {
         src: '../content/case-study-cms-slider.js',
-        integrity: 'sha384-ZGHuIQRc5ihIHrn9jBDKTtIFnT2gMUOQ+ENE7Pybhzq4DflcJmNVFe1e0m8boR6t',
+        integrity: 'sha384-Nf6NYJqQnnQBY2YEp1iIzrYLTLAMr9gUxGnhscFz5EDQbm/8jz0tE0yoTaaoTBph',
       },
       // The module requests Swiper and GSAP when its V3 root approaches the
       // viewport, keeping both dependencies out of the initial page scan.
