@@ -410,7 +410,7 @@ await run('Consumer Runtime and PVG share V3 modules without duplicate scripts',
   await page.close();
 });
 
-await run('Case-study dependencies wait until the component approaches', async () => {
+await run('Consumer Runtime recognizes the prefixed Case Study component', async () => {
   const dependencyRequests = [];
   const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
   page.on('request', (request) => {
@@ -456,7 +456,7 @@ await run('Case-study dependencies wait until the component approaches', async (
     </div>`;
   await page.setContent(`
     <main class="page_main_v3">
-      <div data-case-study-slider class="w-dyn-list" style="margin-top: 5000px">
+      <div data-case-study-cms-source="true" class="w-dyn-list" style="margin-top: 5000px">
         <div class="w-dyn-items">${item(1)}${item(2)}</div>
       </div>
     </main>
@@ -468,12 +468,12 @@ await run('Case-study dependencies wait until the component approaches', async (
   });
   await page.addScriptTag({ content: consumerSource });
   await page.waitForFunction(
-    () => document.querySelector('[data-case-study-slider-deferred]') !== null,
+    () => document.querySelector('[data-case-study-cms-source][data-case-study-slider-deferred]') !== null,
   );
   assert.deepEqual(dependencyRequests, []);
-  await page.locator('[data-case-study-slider]').hover({ force: true });
+  await page.locator('[data-case-study-cms-source]').hover({ force: true });
   await page.waitForFunction(
-    () => document.querySelector('[data-case-study-slider-ready]') !== null,
+    () => document.querySelector('[data-case-study-cms-source][data-case-study-slider-ready]') !== null,
   );
   assert.equal(dependencyRequests.filter((url) => /gsap/i.test(url)).length, 1);
   assert.equal(dependencyRequests.filter((url) => /swiper-bundle\.min\.js/i.test(url)).length, 1);

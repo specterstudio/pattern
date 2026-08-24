@@ -702,7 +702,12 @@
 
     register({
       id: 'case-study',
-      selector: '[data-case-study-slider], .case-study_slider_wrap',
+      selector: [
+        '[data-case-study-slider]',
+        '[class~="case-study_slider_wrap"]',
+        '[class*="--case-study_slider_wrap "]',
+        '[class$="--case-study_slider_wrap"]',
+      ].join(','),
       global: 'PatternCaseStudyCMS',
       script: {
         src: '../content/case-study-cms-slider.js',
