@@ -30,6 +30,10 @@ const caseStudyPath = path.join(
   projectRoot,
   'webflow/pattern.com/scripts/content/case-study-cms-slider.js',
 );
+const foundationCaseStudyEmbedPath = path.join(
+  projectRoot,
+  'webflow/pattern.com/scripts/runtime/foundation-case-study-slider-runtime-embed.html',
+);
 const marketoComponentTwinPaths = [
   'marketo-global-css-library.html',
   'marketo-global-css-production.html',
@@ -48,6 +52,10 @@ const gatewaySource = await fs.readFile(gatewayPath, 'utf8');
 const videoPopupSource = await fs.readFile(videoPopupPath, 'utf8');
 const videoPreviewSource = await fs.readFile(videoPreviewPath, 'utf8');
 const caseStudySource = await fs.readFile(caseStudyPath, 'utf8');
+const foundationCaseStudyEmbedSource = await fs.readFile(
+  foundationCaseStudyEmbedPath,
+  'utf8',
+);
 const marketoComponentTwinSources = await Promise.all(
   marketoComponentTwinPaths.map((filePath) => fs.readFile(filePath, 'utf8')),
 );
@@ -113,6 +121,40 @@ const markerFixtures = [
     html: '<main class="page_main_v3"></main>',
   },
 ];
+
+await run('Foundation loads pinned Swiper before the Case Study module', async () => {
+  const swiperCssUrl =
+    'https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.css';
+  const swiperJsUrl =
+    'https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.js';
+  const caseStudyUrl =
+    'https://cdn.jsdelivr.net/gh/specterstudio/pattern@ebbfcb41865ce9d6a345bd4fb16ec6f4664f354d/webflow/pattern.com/scripts/content/case-study-cms-slider.js';
+
+  assert.match(
+    foundationCaseStudyEmbedSource,
+    /\.w-dyn-item:nth-child\(n \+ 2\)[\s\S]*display: none !important;/,
+  );
+  assert.match(
+    foundationCaseStudyEmbedSource,
+    /integrity="sha384-OVtDJ2WfU22geHR8xWErSSHJMaH21QOP9w33a\+A2MzyE4uxDS2\/5rhIw9YZkWv5R"/,
+  );
+  assert.match(
+    foundationCaseStudyEmbedSource,
+    /integrity="sha384-kLg4yw7ysk2F34aYhHIrdq\/AXIkHzZ808L3af45jUqWQoMPN8VnJneCjOR8\+THSG"/,
+  );
+  assert.ok(
+    foundationCaseStudyEmbedSource.indexOf(swiperCssUrl) <
+      foundationCaseStudyEmbedSource.indexOf(swiperJsUrl),
+  );
+  assert.ok(
+    foundationCaseStudyEmbedSource.indexOf(swiperJsUrl) <
+      foundationCaseStudyEmbedSource.indexOf(caseStudyUrl),
+  );
+  assert.match(
+    foundationCaseStudyEmbedSource,
+    /data-pattern-foundation-case-study-slider="1\.0\.1"/,
+  );
+});
 
 await run('Library profile treats every page as V3', async () => {
   const page = await createRuntimePage({
