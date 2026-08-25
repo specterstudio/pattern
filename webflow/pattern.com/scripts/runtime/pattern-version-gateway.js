@@ -705,7 +705,7 @@
       global: 'PatternHomeAnchorNav',
       script: {
         src: '../nav/home-anchor-nav.js',
-        integrity: 'sha384-+bulB/ErAq91xjHfWMdjJwNh1rDrDuc6IKjQs2va5JvNFZ38ANZsfqPrJI1F/mqow',
+        integrity: 'sha384-+bulB/ErAq91xjHfWMdjJwNh1rDrDuc6IKjQs2va5JvNFZ38ANZsfqPrJI1F/mqo',
       },
       styles: [
         {
