@@ -91,14 +91,6 @@
       [class$="--home_anchor_link"]
     ) {
     flex: 0 0 auto;
-    gap: var(
-      --pattern-library-v3_spacing---space--1,
-      var(--_spacing---space--1)
-    );
-    padding-inline: var(
-      --pattern-library-v3_spacing---space--1,
-      var(--_spacing---space--1)
-    );
     scroll-snap-align: center;
   }
 
@@ -122,14 +114,6 @@
       [class*="--u-text "],
       [class$="--u-text"]
     ) {
-    font-size: var(
-      --pattern-library-v3_typography---font-size--text-small,
-      var(--_typography---font-size--text-small)
-    );
-    line-height: var(
-      --pattern-library-v3_typography---line-height--small,
-      var(--_typography---line-height--small)
-    );
     white-space: nowrap;
   }
 }

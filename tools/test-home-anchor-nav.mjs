@@ -18,9 +18,18 @@ await page.setContent(`
   <main class="v3_home_track">
     <div class="hero">Hero</div>
     <nav data-home-anchor-nav>
-      <a data-home-anchor-link href="#section-a">Section A</a>
-      <a data-home-anchor-link href="#section-b">Section B</a>
-      <a data-home-anchor-link href="#section-c">Section C</a>
+      <a data-home-anchor-link href="#section-a">
+        <span class="home_anchor_icon" aria-hidden="true"></span>
+        <span class="home_anchor_text"><span class="u-text">Section A</span></span>
+      </a>
+      <a data-home-anchor-link href="#section-b">
+        <span class="home_anchor_icon" aria-hidden="true"></span>
+        <span class="home_anchor_text"><span class="u-text">Section B</span></span>
+      </a>
+      <a data-home-anchor-link href="#section-c">
+        <span class="home_anchor_icon" aria-hidden="true"></span>
+        <span class="home_anchor_text"><span class="u-text">Section C</span></span>
+      </a>
     </nav>
     <section id="section-a">Section A</section>
     <section id="section-b">Section B</section>
@@ -46,8 +55,18 @@ await page.addStyleTag({
     [data-home-anchor-link] {
       flex: 0 0 180px;
       min-width: 180px;
-      display: grid;
-      place-items: center;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+    }
+    .home_anchor_icon {
+      width: 34px;
+      height: 34px;
+    }
+    .home_anchor_text .u-text {
+      font-size: 16px;
+      line-height: 22px;
     }
     section { height: 1000px; }
   `,
@@ -74,9 +93,30 @@ await page.waitForTimeout(50);
 const initial = await page.evaluate(() => ({
   ready: document.querySelector('[data-home-anchor-nav]').dataset.homeAnchorReady,
   version: window.PatternHomeAnchorNav?.version,
+  linkStyle: (() => {
+    const link = document.querySelector('[data-home-anchor-link]');
+    const label = link.querySelector('.u-text');
+    const linkStyle = getComputedStyle(link);
+    const labelStyle = getComputedStyle(label);
+
+    return {
+      gap: linkStyle.gap,
+      paddingInline: [linkStyle.paddingLeft, linkStyle.paddingRight],
+      paddingBlock: [linkStyle.paddingTop, linkStyle.paddingBottom],
+      fontSize: labelStyle.fontSize,
+      lineHeight: labelStyle.lineHeight,
+    };
+  })(),
 }));
 assert.equal(initial.ready, 'true');
 assert.equal(initial.version, '1.0.1');
+assert.deepEqual(initial.linkStyle, {
+  gap: '12px',
+  paddingInline: ['16px', '16px'],
+  paddingBlock: ['12px', '12px'],
+  fontSize: '16px',
+  lineHeight: '22px',
+});
 
 await page.locator('a[href="#section-b"]').click();
 await page.waitForTimeout(50);
