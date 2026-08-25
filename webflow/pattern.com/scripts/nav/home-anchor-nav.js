@@ -2,7 +2,8 @@
   'use strict';
 
   const GLOBAL_NAME = 'PatternHomeAnchorNav';
-  const VERSION = '1.0.0';
+  const VERSION = '1.0.1';
+  const DESTINATION_GAP = 16;
   const TRACK_SELECTOR = '[data-home-anchor-track], .v3_home_track';
   const NAV_SELECTOR = [
     '[data-home-anchor-nav]',
@@ -62,9 +63,45 @@
 
         const id = href.slice(1);
         const section = id ? document.getElementById(id) : null;
-        return section ? { link, section } : null;
+        return section ? { href, link, section } : null;
       })
       .filter(Boolean);
+
+  const getDestinationOffset = (state) => {
+    const computedTop = Number.parseFloat(window.getComputedStyle(state.nav).top);
+    const stickyTop = Number.isFinite(computedTop) ? computedTop : 0;
+
+    return stickyTop + state.nav.getBoundingClientRect().height + DESTINATION_GAP;
+  };
+
+  const scrollToRecord = (state, record, immediate = false) => {
+    const targetTop =
+      record.section.getBoundingClientRect().top +
+      window.scrollY -
+      getDestinationOffset(state);
+
+    window.scrollTo({
+      top: Math.max(0, targetTop),
+      behavior: immediate || state.reducedMotion.matches ? 'auto' : 'smooth',
+    });
+  };
+
+  const findHashRecord = (state) =>
+    state.links.find(({ href }) => href === window.location.hash);
+
+  const navigateToRecord = (
+    state,
+    record,
+    { immediate = false, updateHistory = false } = {},
+  ) => {
+    setActiveLink(state, record.link, immediate);
+
+    if (updateHistory && window.location.hash !== record.href) {
+      window.history.pushState(null, '', record.href);
+    }
+
+    scrollToRecord(state, record, immediate);
+  };
 
   const setActiveLink = (state, link, immediate = false) => {
     if (!link) return;
@@ -225,10 +262,29 @@
     nav.setAttribute('role', 'navigation');
     if (!state.hadAriaLabel) nav.setAttribute('aria-label', 'Page sections');
 
-    links.forEach(({ link }) => {
-      link.addEventListener('click', () => setActiveLink(state, link), {
-        signal: state.controller.signal,
-      });
+    links.forEach((record) => {
+      record.link.addEventListener(
+        'click',
+        (event) => {
+          if (
+            event.defaultPrevented ||
+            event.button !== 0 ||
+            event.metaKey ||
+            event.ctrlKey ||
+            event.shiftKey ||
+            event.altKey
+          ) {
+            return;
+          }
+
+          event.preventDefault();
+          event.stopPropagation();
+          navigateToRecord(state, record, { updateHistory: true });
+        },
+        {
+          signal: state.controller.signal,
+        },
+      );
     });
 
     window.addEventListener('scroll', () => scheduleActiveUpdate(state), {
@@ -238,9 +294,17 @@
     window.addEventListener('resize', () => scheduleLayoutUpdate(state), {
       signal: state.controller.signal,
     });
-    window.addEventListener('hashchange', () => scheduleActiveUpdate(state), {
-      signal: state.controller.signal,
-    });
+    window.addEventListener(
+      'hashchange',
+      () => {
+        const record = findHashRecord(state);
+        if (record) navigateToRecord(state, record);
+        else scheduleActiveUpdate(state);
+      },
+      {
+        signal: state.controller.signal,
+      },
+    );
     state.mobile.addEventListener(
       'change',
       () => scheduleLayoutUpdate(state),
@@ -252,6 +316,14 @@
     if (placeholder.parentElement) state.resizeObserver.observe(placeholder.parentElement);
 
     updateLayout(state, true);
+    const initialHashRecord = findHashRecord(state);
+    if (initialHashRecord) {
+      window.requestAnimationFrame(() => {
+        if (instances.has(nav)) {
+          navigateToRecord(state, initialHashRecord, { immediate: true });
+        }
+      });
+    }
     document.fonts?.ready?.then(() => {
       if (instances.has(nav)) scheduleLayoutUpdate(state);
     });

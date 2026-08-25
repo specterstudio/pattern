@@ -1293,7 +1293,7 @@
       global: 'PatternHomeAnchorNav',
       script: {
         src: '../nav/home-anchor-nav.js',
-        integrity: 'sha384-N+zkGeyVjcSRZYMUGUINy5NRlwu3B/GC/THABPGgj1aLI2YwqEQCMT7edc2K0THk',
+        integrity: 'sha384-+bulB/ErAq91xjHfWMdjJwNh1rDrDuc6IKjQs2va5JvNFZ38ANZsfqPrJI1F/mqow',
       },
       styles: [
         {
