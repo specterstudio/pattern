@@ -722,7 +722,7 @@
       global: 'PatternBoxSliderSlots',
       script: {
         src: '../content/box-slider-slot-controls.js',
-        integrity: 'sha384-frjPpr4AP4xEJkNNNrmWEO7/TzrBq2FMqM8OBdWw3G+1oJup1TA2HTxCR1AFqAWA',
+        integrity: 'sha384-2eEsJQFEJOPf1J+jGzHxOhPgoywZIigDtDeW6okcAMvgwWpVOfABi75ujUMM+16m',
       },
       initScope: 'document',
     });
