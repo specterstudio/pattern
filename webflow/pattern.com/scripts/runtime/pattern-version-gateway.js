@@ -728,12 +728,22 @@
     {
       id: 'case-study',
       versions: ['v3'],
-      selector:
-        '[data-case-study-slider], [class*="case-study_slider_wrap"], [class*="box_slider_wrap"]',
+      selector: '[data-case-study-slider], [class*="case-study_slider_wrap"]',
       global: 'PatternCaseStudyCMS',
       script: {
         src: '../content/case-study-cms-slider.js',
-        integrity: 'sha384-B7vyZyb5aQeLxVHRBF5J7tI3ZLFqCOkPi777O+NJdysWRG0n9ficTM8hrYhBALpx',
+        integrity: 'sha384-Nf6NYJqQnnQBY2YEp1iIzrYLTLAMr9gUxGnhscFz5EDQbm/8jz0tE0yoTaaoTBph',
+      },
+      initScope: 'document',
+    },
+    {
+      id: 'slider-alt-slots',
+      versions: ['v3'],
+      selector: '[class*="slider_wrap"] [class*="box_slider_wrap"]',
+      global: 'PatternBoxSliderSlots',
+      script: {
+        src: '../content/box-slider-slot-controls.js',
+        integrity: 'sha384-frjPpr4AP4xEJkNNNrmWEO7/TzrBq2FMqM8OBdWw3G+1oJup1TA2HTxCR1AFqAWA',
       },
       initScope: 'document',
     },

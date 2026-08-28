@@ -4,6 +4,9 @@ import { chromium } from 'playwright';
 
 const read = (path) => fs.readFile(new URL(path, import.meta.url), 'utf8');
 const moduleSource = await read(
+  '../webflow/pattern.com/scripts/content/box-slider-slot-controls.js',
+);
+const caseStudySource = await read(
   '../webflow/pattern.com/scripts/content/case-study-cms-slider.js',
 );
 const manifestSources = await Promise.all(
@@ -15,140 +18,107 @@ const manifestSources = await Promise.all(
   ].map(read),
 );
 
-manifestSources.forEach((source) => assert.ok(source.includes('box_slider_wrap')));
+assert.ok(!caseStudySource.includes('box_slider'));
+manifestSources.forEach((source) => {
+  assert.ok(source.includes('slider-alt-slots'));
+  assert.ok(source.includes('box-slider-slot-controls.js'));
+});
+
+const controls = (index) => `
+  <nav class="pattern-library-v3--box_slider_controls" data-case-study-controls aria-label="Case study navigation">
+    <a data-case-study-prev aria-label="Previous case study">Previous ${index}</a>
+    <a data-case-study-next aria-label="Next case study">Next ${index}</a>
+  </nav>
+`;
 
 const browser = await chromium.launch({ headless: true });
 const page = await browser.newPage();
 
 await page.setContent(`
   <main class="page_main_v3">
-    <div class="w-dyn-list">
-      <div class="w-dyn-items">
-        <div class="w-dyn-item">
-          <article class="pattern-library-v3--box_slider_wrap">
-            <div class="pattern-library-v3--box_slider_element">
-              <div class="pattern-library-v3--box_slider_main">
-                <div class="pattern-library-v3--box_slider_visual">
-                  <div class="pattern-library-v3--u-image-wrapper">
-                    <img src="https://example.com/one.jpg" alt="First visual">
-                  </div>
-                </div>
-                <div class="pattern-library-v3--box_slider_content">
-                  <div class="pattern-library-v3--box_slider_icon">
-                    <div class="pattern-library-v3--u-image-wrapper">
-                      <img src="https://example.com/icon-one.svg" alt="First icon">
-                    </div>
-                  </div>
-                  <div class="pattern-library-v3--box_slider_heading">
-                    <div class="pattern-library-v3--u-text">First heading</div>
-                  </div>
-                  <div class="pattern-library-v3--box_slider_text">
-                    <div class="pattern-library-v3--u-text">First body</div>
-                  </div>
-                  <nav class="pattern-library-v3--box_slider_controls" data-case-study-controls aria-label="Case study navigation">
-                    <a class="pattern-library-v3--box_slider_arrow" data-case-study-prev aria-label="Previous case study"></a>
-                    <a class="pattern-library-v3--box_slider_arrow" data-case-study-next aria-label="Next case study"></a>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="w-dyn-item">
-          <article class="pattern-library-v3--box_slider_wrap">
-            <div class="pattern-library-v3--box_slider_element">
-              <div class="pattern-library-v3--box_slider_main">
-                <div class="pattern-library-v3--box_slider_visual">
-                  <div class="pattern-library-v3--u-image-wrapper">
-                    <img src="https://example.com/two.jpg" alt="Second visual">
-                  </div>
-                </div>
-                <div class="pattern-library-v3--box_slider_content">
-                  <div class="pattern-library-v3--box_slider_icon">
-                    <div class="pattern-library-v3--u-image-wrapper">
-                      <img src="https://example.com/icon-two.svg" alt="Second icon">
-                    </div>
-                  </div>
-                  <div class="pattern-library-v3--box_slider_heading">
-                    <div class="pattern-library-v3--u-text">Second heading</div>
-                  </div>
-                  <div class="pattern-library-v3--box_slider_text">
-                    <div class="pattern-library-v3--u-text">Second body</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
+    <section class="pattern-library-v3--slider_wrap" id="multiple">
+      <div class="pattern-library-v3--slider_element swiper">
+        <div class="pattern-library-v3--slider_list swiper-wrapper">
+          <article class="pattern-library-v3--box_slider_wrap swiper-slide">${controls(1)}</article>
+          <article class="pattern-library-v3--box_slider_wrap swiper-slide">${controls(2)}</article>
+          <article class="pattern-library-v3--box_slider_wrap swiper-slide">${controls(3)}</article>
         </div>
       </div>
-    </div>
+    </section>
+    <section class="pattern-library-v3--slider_wrap" id="single">
+      <div class="pattern-library-v3--slider_element swiper">
+        <div class="pattern-library-v3--slider_list swiper-wrapper">
+          <article class="pattern-library-v3--box_slider_wrap swiper-slide">${controls(1)}</article>
+        </div>
+      </div>
+    </section>
   </main>
 `);
 
 await page.evaluate(() => {
-  window.matchMedia = () => ({ matches: true, addListener() {}, removeListener() {} });
-  window.Swiper = class Swiper {
-    constructor(element, options) {
-      this.element = element;
-      this.options = options;
-      this.realIndex = 0;
-      this.length = element.querySelectorAll('.swiper-slide').length;
-      options.navigation.nextEl?.addEventListener('click', () => {
-        this.realIndex = (this.realIndex + 1) % this.length;
-        options.on.slideChangeTransitionStart(this);
-        options.on.transitionEnd(this);
-      });
-      options.navigation.prevEl?.addEventListener('click', () => {
-        this.realIndex = (this.realIndex - 1 + this.length) % this.length;
-        options.on.slideChangeTransitionStart(this);
-        options.on.transitionEnd(this);
-      });
-    }
-
-    destroy() {}
+  const element = document.querySelector('#multiple [class*="slider_element"]');
+  element.swiper = {
+    previousCalls: 0,
+    nextCalls: 0,
+    slidePrev() {
+      this.previousCalls += 1;
+    },
+    slideNext() {
+      this.nextCalls += 1;
+    },
   };
 });
 
 await page.addScriptTag({ content: moduleSource });
-await page.waitForFunction(() => document.querySelector('[data-case-study-slider-ready]'));
+await page.waitForFunction(() => document.querySelector('[data-box-slider-slots-ready]'));
 
 const initial = await page.evaluate(() => {
-  const root = document.querySelector('.w-dyn-list');
-  const component = root.querySelector('[class*="box_slider_wrap"]');
+  const multiple = document.querySelector('#multiple');
+  const single = document.querySelector('#single');
   return {
-    rootLabel: root.getAttribute('aria-label'),
-    slides: component.querySelectorAll('.case-study_slider_image_slide').length,
-    controlsLabel: component.querySelector('[data-case-study-controls]').getAttribute('aria-label'),
-    previousLabel: component.querySelector('[data-case-study-prev]').getAttribute('aria-label'),
-    nextLabel: component.querySelector('[data-case-study-next]').getAttribute('aria-label'),
-    secondHidden: root.querySelectorAll('.w-dyn-item')[1].hidden,
+    multipleReady: multiple.hasAttribute('data-box-slider-slots-ready'),
+    multipleControlsHidden: Array.from(
+      multiple.querySelectorAll('[data-case-study-controls]'),
+    ).some((element) => element.hidden),
+    singleControlsHidden: single.querySelector('[data-case-study-controls]').hidden,
+    labels: Array.from(multiple.querySelectorAll('[data-case-study-prev], [data-case-study-next]'))
+      .map((element) => element.getAttribute('aria-label')),
+    roles: Array.from(multiple.querySelectorAll('[data-case-study-prev], [data-case-study-next]'))
+      .map((element) => element.getAttribute('role')),
   };
 });
 
-assert.deepEqual(initial, {
-  rootLabel: 'Featured content',
-  slides: 2,
-  controlsLabel: 'Slider navigation',
-  previousLabel: 'Previous slide',
-  nextLabel: 'Next slide',
-  secondHidden: true,
+assert.equal(initial.multipleReady, true);
+assert.equal(initial.multipleControlsHidden, false);
+assert.equal(initial.singleControlsHidden, true);
+assert.deepEqual(initial.labels, [
+  'Previous slide',
+  'Next slide',
+  'Previous slide',
+  'Next slide',
+  'Previous slide',
+  'Next slide',
+]);
+assert.ok(initial.roles.every((role) => role === 'button'));
+
+await page.evaluate(() => {
+  const multiple = document.querySelector('#multiple');
+  multiple.querySelectorAll('[data-case-study-next]')[1].click();
+  multiple.querySelectorAll('[data-case-study-prev]')[2].click();
+  multiple.querySelector('[data-case-study-next]').dispatchEvent(
+    new KeyboardEvent('keydown', { key: 'Enter', bubbles: true }),
+  );
 });
 
-await page.evaluate(() => document.querySelector('[data-case-study-next]').click());
+const calls = await page.evaluate(() => {
+  const swiper = document.querySelector('#multiple [class*="slider_element"]').swiper;
+  return {
+    previous: swiper.previousCalls,
+    next: swiper.nextCalls,
+  };
+});
 
-const updated = await page.evaluate(() => ({
-  heading: document.querySelector('[class*="box_slider_heading"] [class*="u-text"]').textContent,
-  body: document.querySelector('[class*="box_slider_text"] [class*="u-text"]').textContent,
-  icon: document.querySelector('[class*="box_slider_icon"] img').getAttribute('src'),
-  headingClass: document
-    .querySelector('[class*="box_slider_heading"] [class*="u-text"]')
-    .getAttribute('class'),
-}));
-
-assert.equal(updated.heading, 'Second heading');
-assert.equal(updated.body, 'Second body');
-assert.equal(updated.icon, 'https://example.com/icon-two.svg');
-assert.ok(updated.headingClass.includes('u-text'));
+assert.deepEqual(calls, { previous: 1, next: 2 });
 
 await browser.close();
-console.log('Pattern Box Slider runtime test passed.');
+console.log('Pattern Slider Alt slot-control test passed.');
