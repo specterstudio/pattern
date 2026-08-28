@@ -3,24 +3,30 @@
 
   const ROOT_SELECTOR = "[data-case-study-slider]";
   const ITEM_SELECTOR = ".w-dyn-item";
-  const COMPONENT_SELECTOR = '[class*="case-study_slider_wrap"]';
+  const COMPONENT_SELECTORS = [
+    '[class*="case-study_slider_wrap"]',
+    '[class*="box_slider_wrap"]'
+  ];
+  const COMPONENT_SELECTOR = COMPONENT_SELECTORS.join(", ");
   const STYLE_ID = "pattern-case-study-slider-styles";
   const DEFERRED_ROOT_MARGIN = "1200px 0px";
   const LEGACY_VERSIONS = new Set(["v1", "v2", "v2l"]);
 
   const SELECTORS = {
-    visual: '[class*="case-study_slider_visual"]',
-    logo: '[class*="case-study_slider_logo"]',
-    quote: '[class*="case-study_slider_quote"]',
+    visual: '[class*="case-study_slider_visual"], [class*="box_slider_visual"]',
+    logo: '[class*="case-study_slider_logo"], [class*="box_slider_icon"]',
+    quote:
+      '[class*="case-study_slider_quote"], [class*="box_slider_heading"] [class*="u-text"]',
     avatar: '[class*="case-study_slider_avatar"]',
-    author: '[class*="case-study_slider_name"]',
-    content: '[class*="case-study_slider_content"]',
+    author: '[class*="case-study_slider_name"], [class*="box_slider_text"]',
+    content: '[class*="case-study_slider_content"], [class*="box_slider_content"]',
     cta: '[class*="u-button-wrapper"]',
     link: '[class*="clickable_link"][href]',
     stat: '[class*="case-study_slider_stat"]',
     statValue: '[class*="card_stats_top"] [class*="u-text"]',
     statLabel: '[class*="card_general_bottom"] [class*="u-text"]',
-    controls: '[data-case-study-controls], [class*="case-study_slider_controls"]',
+    controls:
+      '[data-case-study-controls], [class*="case-study_slider_controls"], [class*="box_slider_controls"]',
     previous: "[data-case-study-prev]",
     next: "[data-case-study-next]"
   };
@@ -37,7 +43,10 @@
     const style = document.createElement("style");
     style.id = STYLE_ID;
     style.textContent = `
-      [data-case-study-slider-ready] [class*="case-study_slider_visual"] {
+      [data-case-study-slider-ready] :is(
+        [class*="case-study_slider_visual"],
+        [class*="box_slider_visual"]
+      ) {
         overflow: hidden;
       }
 
@@ -62,9 +71,18 @@
         display: none !important;
       }
 
-      [data-case-study-slider-deferred] [class*="case-study_slider_controls"],
-      [data-case-study-slider-ready] [class*="case-study_slider_controls"][hidden],
-      [data-case-study-slider-static] [class*="case-study_slider_controls"] {
+      [data-case-study-slider-deferred] :is(
+        [class*="case-study_slider_controls"],
+        [class*="box_slider_controls"]
+      ),
+      [data-case-study-slider-ready] :is(
+        [class*="case-study_slider_controls"],
+        [class*="box_slider_controls"]
+      )[hidden],
+      [data-case-study-slider-static] :is(
+        [class*="case-study_slider_controls"],
+        [class*="box_slider_controls"]
+      ) {
         display: none !important;
       }
 
@@ -89,9 +107,15 @@
     if (scope.matches && scope.matches(".w-dyn-list")) dynamicLists.push(scope);
     dynamicLists.push(...Array.from(scope.querySelectorAll(".w-dyn-list")));
 
-    return dynamicLists.filter((list) => {
-      return Boolean(list.querySelector(`${ITEM_SELECTOR} ${COMPONENT_SELECTOR}`));
-    });
+    return dynamicLists.filter((list) =>
+      COMPONENT_SELECTORS.some((selector) =>
+        Boolean(list.querySelector(`${ITEM_SELECTOR} ${selector}`))
+      )
+    );
+  }
+
+  function isBoxSlider(component) {
+    return Boolean(component?.matches('[class*="box_slider_wrap"]'));
   }
 
   function getImageData(root) {
@@ -433,6 +457,7 @@
 
     const target = getTarget(component);
     if (!target.visual || !target.content) return;
+    const boxSlider = isBoxSlider(component);
 
     const originalVisualChildren = Array.from(target.visual.childNodes).map((node) =>
       node.cloneNode(true)
@@ -445,12 +470,22 @@
     root.setAttribute("data-case-study-slider-ready", "");
     root.setAttribute("role", "region");
     root.setAttribute("aria-roledescription", "carousel");
-    root.setAttribute("aria-label", root.getAttribute("aria-label") || "Case studies");
+    root.setAttribute(
+      "aria-label",
+      root.getAttribute("aria-label") || (boxSlider ? "Featured content" : "Case studies")
+    );
     target.content.setAttribute("aria-live", "polite");
     target.content.setAttribute("aria-atomic", "false");
-    if (target.controls) target.controls.hidden = false;
+    if (target.controls) {
+      target.controls.hidden = false;
+      if (boxSlider) target.controls.setAttribute("aria-label", "Slider navigation");
+    }
     prepareControl(target.previous);
     prepareControl(target.next);
+    if (boxSlider) {
+      target.previous?.setAttribute("aria-label", "Previous slide");
+      target.next?.setAttribute("aria-label", "Next slide");
+    }
 
     hideSourceItems(items);
 
@@ -481,8 +516,8 @@
       },
       a11y: {
         enabled: true,
-        prevSlideMessage: "Previous case study",
-        nextSlideMessage: "Next case study",
+        prevSlideMessage: boxSlider ? "Previous slide" : "Previous case study",
+        nextSlideMessage: boxSlider ? "Next slide" : "Next case study",
         slideLabelMessage: "{{index}} / {{slidesLength}}"
       },
       on: {
@@ -524,6 +559,9 @@
 
     const component = items[0].querySelector(COMPONENT_SELECTOR);
     if (!component) return;
+
+    const controls = component.querySelector(SELECTORS.controls);
+    if (controls) controls.hidden = true;
 
     const records = collectRecords(root);
     if (records.length < 2) {

@@ -707,11 +707,14 @@
         '[class~="case-study_slider_wrap"]',
         '[class*="--case-study_slider_wrap "]',
         '[class$="--case-study_slider_wrap"]',
+        '[class~="box_slider_wrap"]',
+        '[class*="--box_slider_wrap "]',
+        '[class$="--box_slider_wrap"]',
       ].join(','),
       global: 'PatternCaseStudyCMS',
       script: {
         src: '../content/case-study-cms-slider.js',
-        integrity: 'sha384-Nf6NYJqQnnQBY2YEp1iIzrYLTLAMr9gUxGnhscFz5EDQbm/8jz0tE0yoTaaoTBph',
+        integrity: 'sha384-B7vyZyb5aQeLxVHRBF5J7tI3ZLFqCOkPi777O+NJdysWRG0n9ficTM8hrYhBALpx',
       },
       initScope: 'document',
     });
