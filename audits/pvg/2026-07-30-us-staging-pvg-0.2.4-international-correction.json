@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-07-30T17:35:23.676Z",
+  "origin": "https://pattern-us.webflow.io",
+  "publishedAt": "Thu Jul 30 2026 17:30:53 GMT+0000 (Coordinated Universal Time)",
+  "homeStatus": 200,
+  "sitemapStatus": 200,
+  "sitemapUrlCount": 1124,
+  "sitemapDiffFromInitialCrawl": {
+    "added": [
+      "/case-study/flannels"
+    ],
+    "removed": [
+      "/resources/international-expansion-videos"
+    ]
+  },
+  "international": {
+    "path": "/resources/international-expansion-videos",
+    "status": 404,
+    "finalUrl": "https://pattern-us.webflow.io/resources/international-expansion-videos?pvg-check=1785432923476",
+    "inSitemap": false
+  },
+  "loader": {
+    "version": "0.2.4",
+    "runtimeCommit": "7bb2b6f2fc7ae258285fbafcd643e717b64009e1",
+    "runtimeIntegrity": "sha384-HBYB8fSqocEljJAPTrEeai0HbLKdhRDfgFfu/4cslT7DnF6MRKxYcbVu/U0Z8sBp",
+    "modeActive": true,
+    "legacyGateway": true
+  },
+  "expected": {
+    "version": "0.2.4",
+    "runtimeCommit": "7bb2b6f2fc7ae258285fbafcd643e717b64009e1",
+    "runtimeIntegrity": "sha384-HBYB8fSqocEljJAPTrEeai0HbLKdhRDfgFfu/4cslT7DnF6MRKxYcbVu/U0Z8sBp"
+  },
+  "failures": []
+}

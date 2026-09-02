@@ -1,0 +1,172 @@
+{
+  "checkedAt": "2026-07-31T15:34:25.077Z",
+  "method": "published HTML transformed in browser memory to mirror saved Webflow state",
+  "published": false,
+  "results": [
+    {
+      "name": "Saved Library centered and working variants",
+      "url": "https://pattern-l3.webflow.io/cc/video",
+      "status": 200,
+      "popupResults": [
+        {
+          "index": 0,
+          "opened": {
+            "dialogOpen": true,
+            "iframeSrc": "https://www.youtube.com/embed/K4TOrB7at0Y?autoplay=1&playsinline=1&rel=0",
+            "dataVideoSrc": "https://www.youtube.com/watch?v=K4TOrB7at0Y",
+            "closeControls": 2
+          },
+          "closed": {
+            "iframeSrc": null,
+            "focusRestored": true
+          }
+        },
+        {
+          "index": 1,
+          "opened": {
+            "dialogOpen": true,
+            "iframeSrc": "https://player.vimeo.com/video/347119375?autoplay=1&dnt=1",
+            "dataVideoSrc": "https://vimeo.com/347119375",
+            "closeControls": 2
+          },
+          "closed": {
+            "iframeSrc": null,
+            "focusRestored": true
+          }
+        },
+        {
+          "index": 2,
+          "opened": {
+            "dialogOpen": true,
+            "iframeSrc": "https://www.youtube.com/embed/K4TOrB7at0Y?autoplay=1&playsinline=1&rel=0",
+            "dataVideoSrc": "https://www.youtube.com/watch?v=K4TOrB7at0Y",
+            "closeControls": 2
+          },
+          "closed": {
+            "iframeSrc": null,
+            "focusRestored": true
+          }
+        }
+      ],
+      "preview": null,
+      "runtime": {
+        "detection": {
+          "version": "v3",
+          "family": "v3",
+          "source": "library-v3-profile",
+          "evidence": "library-v3",
+          "confidence": "high",
+          "conflicts": [],
+          "safe": true
+        },
+        "videoModules": [
+          {
+            "id": "v3-video-popup",
+            "versions": [
+              "v3"
+            ],
+            "selector": null,
+            "status": "ready",
+            "matched": true,
+            "dependencies": [],
+            "error": null
+          },
+          {
+            "id": "v3-video-preview",
+            "versions": [
+              "v3"
+            ],
+            "selector": null,
+            "status": "ready",
+            "matched": true,
+            "dependencies": [],
+            "error": null
+          }
+        ],
+        "moduleScripts": [
+          "https://runtime.test/webflow/pattern.com/scripts/media/video-popup.js",
+          "https://runtime.test/webflow/pattern.com/scripts/media/video-preview.js"
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failures": []
+    },
+    {
+      "name": "Saved Home V3 centered popup and preview hydration",
+      "url": "https://pattern-us.webflow.io/home-v3",
+      "status": 200,
+      "popupResults": [
+        {
+          "index": 0,
+          "opened": {
+            "dialogOpen": true,
+            "iframeSrc": "https://player.vimeo.com/video/1146670446?autoplay=1&dnt=1",
+            "dataVideoSrc": "https://vimeo.com/1146670446",
+            "closeControls": 2
+          },
+          "closed": {
+            "iframeSrc": null,
+            "focusRestored": true
+          }
+        }
+      ],
+      "preview": {
+        "initialRequestCount": 0,
+        "authored": {
+          "src": null,
+          "dataSrc": "https://assets.pattern.com/WQ71necbZXNVhu9OrFcJN",
+          "autoplay": false,
+          "preload": "none",
+          "consent": "personalization"
+        },
+        "requestCountAfterApproach": 1,
+        "hydratedSrc": "https://assets.pattern.com/WQ71necbZXNVhu9OrFcJN"
+      },
+      "runtime": {
+        "detection": {
+          "version": "v3",
+          "family": "v3",
+          "source": "page-marker",
+          "evidence": [
+            ".page_main_v3"
+          ],
+          "confidence": "high",
+          "conflicts": [],
+          "safe": true
+        },
+        "videoModules": [
+          {
+            "id": "v3-video-popup",
+            "versions": [
+              "v3"
+            ],
+            "selector": null,
+            "status": "ready",
+            "matched": true,
+            "dependencies": [],
+            "error": null
+          },
+          {
+            "id": "v3-video-preview",
+            "versions": [
+              "v3"
+            ],
+            "selector": null,
+            "status": "ready",
+            "matched": true,
+            "dependencies": [],
+            "error": null
+          }
+        ],
+        "moduleScripts": [
+          "https://runtime.test/webflow/pattern.com/scripts/media/video-popup.js",
+          "https://runtime.test/webflow/pattern.com/scripts/media/video-preview.js"
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failures": []
+    }
+  ]
+}

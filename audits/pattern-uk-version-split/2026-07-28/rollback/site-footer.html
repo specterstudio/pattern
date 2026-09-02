@@ -1,0 +1,113 @@
+<!-- ======================================================
+  PATTERN UK — DETACHED-READY GLOBAL FOOTER
+======================================================= -->
+
+<!-- Autopilot SDK — gated until Marketing consent -->
+<script
+  type="fs-consent"
+  fs-consent-categories="marketing"
+  src="https://cdn.bc0a.com/autopilot/f00000000324090/autopilot_sdk.js"
+  defer
+></script>
+
+<!-- Splide -->
+<script
+  src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+  defer
+></script>
+
+<!-- Navigation -->
+<script
+  src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+  defer
+></script>
+
+<!-- Logo utilities -->
+<script
+  src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/logos.js"
+  defer
+></script>
+
+<!-- Rich-text heading conversion -->
+<script
+  src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/rich-text-heading-conversion.js"
+  defer
+></script>
+
+<!-- FAQ structured data — detached-component compatible -->
+<script
+  src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/schema/faq-schema-generator.js"
+  defer
+></script>
+
+<!-- Accordions — detached-component compatible -->
+<script
+  src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/accordion.js"
+  defer
+></script>
+
+<!-- Lazy loading -->
+<script
+  src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+  defer
+></script>
+
+<!-- CTA injection -->
+<script
+  src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/cta-inject.js"
+  defer
+></script>
+
+<!-- Storylane — gated until Analytics consent -->
+<script
+  type="fs-consent"
+  fs-consent-categories="analytics"
+  src="https://js.storylane.io/js/v2/storylane.js"
+  async
+></script>
+
+<!--
+  Iframe popup intentionally remains on v1.0.2.
+  Its grouping fix is not part of the v1.0.8 release line.
+-->
+<script
+  src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.2/webflow/pattern.com/scripts/media/iframe-popup.js"
+  defer
+></script>
+
+<!-- Pagination -->
+<script
+  src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/pagination-fix.js"
+  defer
+></script>
+
+<!-- Card load animations -->
+<script
+  src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js"
+  defer
+></script>
+
+<!-- Execute registered page functions once dependencies are ready -->
+<script>
+  (function () {
+    function runPageFunctions() {
+      if (
+        window.pageFunctions &&
+        typeof window.pageFunctions.executeFunctions === "function"
+      ) {
+        window.pageFunctions.executeFunctions();
+      }
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener(
+        "DOMContentLoaded",
+        runPageFunctions,
+        { once: true }
+      );
+    } else {
+      runPageFunctions();
+    }
+  })();
+</script>
+

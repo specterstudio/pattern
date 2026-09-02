@@ -1,0 +1,28 @@
+/*
+ * Pattern UK version split — Lightbox hover
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 03 section 10
+ */
+
+/* ==========================================================================
+  10. LIGHTBOX HOVER
+  ========================================================================== */
+
+  [class*="g_video_lightbox_thumbnail"] {
+    transition: opacity 0.3s ease;
+  }
+
+  [class*="button_play_primary-icon"] {
+    transition: transform 0.3s ease;
+  }
+
+  [class*="g_video_lightbox"]:hover [class*="g_video_lightbox_thumbnail"] {
+    opacity: 100%;
+  }
+
+  [class*="g_video_lightbox"]:hover [class*="button_play_primary-icon"] {
+    transform: scale(0.9);
+  }
+
+  /* ==========================================================================

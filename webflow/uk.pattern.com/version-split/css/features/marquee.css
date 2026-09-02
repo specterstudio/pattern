@@ -1,0 +1,46 @@
+/*
+ * Pattern UK version split — Marquee animation
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 03 section 11
+ */
+
+11. MARQUEE ANIMATION
+  ========================================================================== */
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  [class*="g_marquee_group_30"] {
+    animation: marquee 30s linear infinite;
+  }
+
+  [class*="g_marquee_group_45"] {
+    animation: marquee 45s linear infinite;
+  }
+
+  [class*="g_marquee_wrap"] {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black var(--_default-2---site--margin),
+      black calc(100% - var(--_default-2---site--margin)),
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black var(--_default-2---site--margin),
+      black calc(100% - var(--_default-2---site--margin)),
+      transparent 100%
+    );
+  }
+
+  /* ==========================================================================

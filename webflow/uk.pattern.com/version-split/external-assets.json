@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "active": true,
+  "note": "Phase 5 rollout inventory. JavaScript feature entries are compiled into js/loader.js.",
+  "shared": [
+    {
+      "id": "consentpro",
+      "location": "head",
+      "url": "https://api.consentpro.com/v2/cdn/runtime/684987756493653cc7c5a406.js"
+    },
+    {
+      "id": "marketo-forms2",
+      "location": "head",
+      "url": "https://go.pattern.com/js/forms2/js/forms2.min.js"
+    },
+    {
+      "id": "nav-css",
+      "location": "head",
+      "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+    },
+    {
+      "id": "nav-js",
+      "location": "footer",
+      "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+    }
+  ],
+  "features": [
+    {
+      "id": "splide-css",
+      "selector": ".splide",
+      "location": "head",
+      "url": "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    },
+    {
+      "id": "splide-js",
+      "selector": ".splide",
+      "location": "footer",
+      "url": "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+    },
+    {
+      "id": "pagination-css",
+      "selector": "[class*='pagination']",
+      "location": "head",
+      "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/pagination-fix.css"
+    },
+    {
+      "id": "pagination-js",
+      "selector": "[class*='pagination']",
+      "location": "footer",
+      "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/pagination-fix.js"
+    },
+    {
+      "id": "video-popup",
+      "selector": "[class*='video_popup'], [data-video-popup]",
+      "location": "head",
+      "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/media/video-popup.js"
+    },
+    {
+      "id": "logos",
+      "selector": "[class*='logo']",
+      "location": "footer",
+      "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/logos.js"
+    },
+    {
+      "id": "rich-text-heading-conversion",
+      "selector": ".w-richtext",
+      "location": "footer",
+      "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/rich-text-heading-conversion.js"
+    },
+    {
+      "id": "faq-schema",
+      "selector": "[class*='faq']",
+      "location": "footer",
+      "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/schema/faq-schema-generator.js"
+    },
+    {
+      "id": "accordion",
+      "selector": "[data-accordion-list], [class*=\"accordion_list\"]",
+      "location": "footer",
+      "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/accordion.js"
+    },
+    {
+      "id": "lazy-load",
+      "selector": "[loading='lazy'], [data-src]",
+      "location": "footer",
+      "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+    },
+    {
+      "id": "cta-inject",
+      "requiredSelectors": [
+        "[fs-inject-element=\"target\"]",
+        "[fs-inject-element=\"element\"]"
+      ],
+      "location": "footer",
+      "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/cta-inject.js"
+    },
+    {
+      "id": "iframe-popup",
+      "selector": "[data-iframe-popup], [class*='iframe_popup']",
+      "location": "footer",
+      "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.2/webflow/pattern.com/scripts/media/iframe-popup.js"
+    },
+    {
+      "id": "card-load-animations",
+      "selector": "[class*='card']",
+      "location": "footer",
+      "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js"
+    }
+  ]
+}

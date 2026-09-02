@@ -1,0 +1,345 @@
+<style>/* Pattern V3 component-owned Marketo form
+ * Scope: rendered forms inside the authored [data-marketo-form-id] root.
+ * Legacy V1/V2 forms and Marketo's off-screen measurement form are excluded.
+ */
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] {
+  --mkto-text: var(--_theme---text, #fcf6f3);
+  --mkto-field-border: var(--swatch--neutral-200, #f3e1d9);
+  --mkto-field-background: transparent;
+  --mkto-primary: var(--swatch--primary-500, #006dff);
+  --mkto-primary-hover: var(--swatch--primary-600, #005dde);
+  --mkto-icon-background: var(--swatch--secondary-500, #433def);
+  --mkto-error: var(--swatch--error-500, #ef4444);
+  --mkto-radius: var(--radius--md, 0.75rem);
+  --mkto-space-1: var(--_spacing---space--1, 0.5rem);
+  --mkto-space-2: var(--_spacing---space--2, 1rem);
+  --mkto-space-3: var(--_spacing---space--3, 1.5rem);
+
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: var(--mkto-text) !important;
+  font-family: var(--_typography---font--primary-family, "Geist Variable", Arial, sans-serif) !important;
+  font-size: 1rem !important;
+  line-height: var(--_typography---line-height--main, 1.375) !important;
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"],
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] *,
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] *::before,
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] *::after {
+  box-sizing: border-box;
+}
+
+/* Rows and columns */
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] .mktoFormRow {
+  display: flex !important;
+  flex-flow: row nowrap !important;
+  align-items: flex-start !important;
+  width: 100% !important;
+  margin: 0 0 var(--mkto-space-3) !important;
+  column-gap: var(--mkto-space-2) !important;
+  row-gap: var(--mkto-space-3) !important;
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] .mktoFormCol {
+  float: none !important;
+  flex: 1 1 calc(50% - (var(--mkto-space-2) / 2));
+  width: auto !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] .mktoFieldWrap {
+  float: none !important;
+  display: block !important;
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] :is(.mktoOffset, .mktoGutter, .mktoClear) {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] .mktoFormRow:has(> input[type="hidden"]) {
+  display: none !important;
+  margin: 0 !important;
+}
+
+/* Labels */
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] .mktoLabel {
+  float: none !important;
+  display: flex !important;
+  align-items: baseline !important;
+  width: 100% !important;
+  margin: 0 0 var(--mkto-space-1) !important;
+  padding: 0 !important;
+  color: var(--mkto-text) !important;
+  font-family: inherit !important;
+  font-size: var(--_typography---font-size--text-small, 0.875rem) !important;
+  font-weight: var(--_typography---font-weight--medium, 500) !important;
+  line-height: 1.25rem !important;
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] .mktoAsterix {
+  order: -1 !important;
+  margin: 0 0.125rem 0 0 !important;
+  padding: 0 !important;
+  color: var(--mkto-error) !important;
+  font-weight: var(--_typography---font-weight--semibold, 600) !important;
+}
+
+/* Text fields, selects and textareas */
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] :is(
+  input.mktoField[type="text"],
+  input.mktoField[type="url"],
+  input.mktoField[type="email"],
+  input.mktoField[type="tel"],
+  input.mktoField[type="number"],
+  input.mktoField[type="date"],
+  input.mktoField[type="search"],
+  select.mktoField,
+  textarea.mktoField
+) {
+  float: none !important;
+  display: block !important;
+  width: 100% !important;
+  height: 3.5rem !important;
+  min-height: 3.5rem !important;
+  margin: 0 !important;
+  padding: 0 1.25rem !important;
+  border: 2px solid var(--mkto-field-border) !important;
+  border-radius: var(--mkto-radius) !important;
+  outline: none !important;
+  background-color: var(--mkto-field-background) !important;
+  box-shadow: none !important;
+  color: var(--mkto-text) !important;
+  -webkit-text-fill-color: var(--mkto-text) !important;
+  font-family: "Wix Madefor Display", var(--_typography---font--primary-family, "Geist Variable", Arial, sans-serif) !important;
+  font-size: 1rem !important;
+  font-weight: var(--_typography---font-weight--regular, 400) !important;
+  line-height: 1.375rem !important;
+  transition: border-color 180ms ease, box-shadow 180ms ease, background-color 180ms ease !important;
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] :is(
+  input.mktoField[type="text"],
+  input.mktoField[type="url"],
+  input.mktoField[type="email"],
+  input.mktoField[type="tel"],
+  input.mktoField[type="number"],
+  input.mktoField[type="date"],
+  input.mktoField[type="search"],
+  textarea.mktoField
+) {
+  background-image: none !important;
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] select.mktoField[name] {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  padding-right: 3.5rem !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M7 9.5l5 5 5-5' stroke='%23f3e1d9' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 1.25rem center !important;
+  background-size: 1.5rem 1.5rem !important;
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] textarea.mktoField {
+  height: auto !important;
+  min-height: 8rem !important;
+  padding-block: 1rem !important;
+  resize: vertical !important;
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] :is(input.mktoField, textarea.mktoField)::placeholder {
+  color: rgba(252, 246, 243, 0.68) !important;
+  color: color-mix(in srgb, var(--mkto-text) 68%, transparent) !important;
+  -webkit-text-fill-color: currentColor !important;
+  opacity: 1 !important;
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] select.mktoField:has(option[value=""]:checked) {
+  color: rgba(252, 246, 243, 0.68) !important;
+  color: color-mix(in srgb, var(--mkto-text) 68%, transparent) !important;
+  -webkit-text-fill-color: currentColor !important;
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] select.mktoField option {
+  background: var(--swatch--neutral-0, #fff) !important;
+  color: var(--swatch--neutral-800, #1e1d1e) !important;
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] :is(
+  input.mktoField[type="text"],
+  input.mktoField[type="url"],
+  input.mktoField[type="email"],
+  input.mktoField[type="tel"],
+  input.mktoField[type="number"],
+  input.mktoField[type="date"],
+  input.mktoField[type="search"],
+  select.mktoField,
+  textarea.mktoField
+):focus-visible {
+  border-color: var(--mkto-primary) !important;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--mkto-primary) 30%, transparent) !important;
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] .mktoField.mktoInvalid {
+  border-color: var(--mkto-error) !important;
+}
+
+/* Checkbox and radio fields used by other global Marketo forms */
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] :is(.mktoCheckboxList, .mktoRadioList) {
+  float: none !important;
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] :is(input[type="checkbox"], input[type="radio"]) {
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+  margin: 0 var(--mkto-space-1) 0 0 !important;
+  accent-color: var(--mkto-primary);
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] :is(.mktoCheckboxList, .mktoRadioList) label {
+  display: inline !important;
+  color: var(--mkto-text) !important;
+  font-family: inherit !important;
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+}
+
+/* Privacy / consent copy */
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] .mktoFormRow:has(.mktoHtmlText) {
+  margin-bottom: 0 !important;
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] .mktoHtmlText {
+  float: none !important;
+  width: 100% !important;
+  color: var(--mkto-text) !important;
+  font-family: inherit !important;
+  font-size: var(--_typography---font-size--text-small, 0.875rem) !important;
+  font-weight: var(--_typography---font-weight--regular, 400) !important;
+  line-height: var(--_typography---line-height--small, 1.285) !important;
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] .mktoHtmlText * {
+  color: inherit !important;
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] .mktoHtmlText a {
+  text-decoration: underline !important;
+  text-underline-offset: 0.15em !important;
+}
+
+/* Submit button — Figma: 56px high, 12px radius, full width */
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] .mktoButtonRow {
+  display: flex !important;
+  width: 100% !important;
+  margin: var(--mkto-space-1) 0 0 !important;
+  padding: 0 !important;
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] .mktoButtonWrap {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] .mktoButton {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  min-height: 3.5rem !important;
+  margin: 0 !important;
+  padding: 1rem !important;
+  border: 0 !important;
+  border-radius: var(--mkto-radius) !important;
+  outline: none !important;
+  background-color: var(--mkto-primary) !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  color: #fff !important;
+  font-family: var(--_typography---font--primary-family, "Geist Variable", Arial, sans-serif) !important;
+  font-size: 1.125rem !important;
+  font-weight: var(--_typography---font-weight--medium, 500) !important;
+  line-height: 1.5rem !important;
+  letter-spacing: var(--_typography---letter-spacing--tight-half, -0.03125rem) !important;
+  text-align: left !important;
+  text-transform: none !important;
+  cursor: pointer !important;
+  transition: background-color 180ms ease, transform 180ms ease !important;
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] .mktoButton::after {
+  content: "";
+  flex: 0 0 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 1rem;
+  border-radius: var(--radius--full, 9999px);
+  background-color: var(--mkto-icon-background);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M7.5 12h9M13 8.5l3.5 3.5-3.5 3.5' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] .mktoButton:hover {
+  background-color: var(--mkto-primary-hover) !important;
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] .mktoButton:active {
+  transform: translateY(1px);
+}
+
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] .mktoButton:focus-visible {
+  outline: 2px solid var(--mkto-text) !important;
+  outline-offset: 3px !important;
+}
+
+/* Marketo validation message */
+[data-marketo-form-id] .mktoForm[id^="mktoForm_"] .mktoError .mktoErrorMsg {
+  margin-top: var(--mkto-space-1) !important;
+  padding: 0.75rem 1rem !important;
+  border: 1px solid var(--mkto-error) !important;
+  border-radius: var(--radius--sm, 0.25rem) !important;
+  background: var(--swatch--neutral-800, #1e1d1e) !important;
+  box-shadow: none !important;
+  color: #fff !important;
+  font-family: inherit !important;
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+  text-shadow: none !important;
+}
+
+@media (max-width: 47.99em) {
+  [data-marketo-form-id] .mktoForm[id^="mktoForm_"] .mktoFormRow {
+    flex-flow: column nowrap !important;
+  }
+
+  [data-marketo-form-id] .mktoForm[id^="mktoForm_"] .mktoFormCol {
+    flex-basis: auto;
+    width: 100% !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-marketo-form-id] .mktoForm[id^="mktoForm_"] :is(.mktoField, .mktoButton) {
+    transition: none !important;
+  }
+}
+</style>

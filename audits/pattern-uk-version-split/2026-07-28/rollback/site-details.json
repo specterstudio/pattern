@@ -1,0 +1,36 @@
+{
+  "id": "684987756493653cc7c5a406",
+  "workspaceId": "6595f03047e6b2ca4c67c231",
+  "displayName": "Pattern (UK)",
+  "shortName": "pattern-uk",
+  "previewUrl": "https://screenshots.webflow.com/sites/684987756493653cc7c5a406/20260727073919_dd58350cdcb4ff55c45f10e071714b8b.png",
+  "timeZone": "Europe/London",
+  "createdOn": "2025-06-11T13:41:29.320Z",
+  "lastUpdated": "2026-07-28T19:47:43.215Z",
+  "lastPublished": "2026-07-28T16:42:59.449Z",
+  "fullSiteCompiledAt": "2026-07-28T16:42:59.449Z",
+  "customDomains": [
+    {
+      "id": "6854298762edb3c5a723a7e7",
+      "url": "uk.pattern.com",
+      "lastPublished": "2026-07-28T16:42:59.449Z",
+      "fullSiteCompiledAt": "2026-07-28T16:42:59.449Z"
+    }
+  ],
+  "locales": {
+    "primary": {
+      "id": "684987756493653cc7c5a408",
+      "cmsLocaleId": "684987756493653cc7c5a409",
+      "enabled": false,
+      "displayName": "English (United Kingdom)",
+      "redirect": true,
+      "subdirectory": "",
+      "tag": "en-GB"
+    },
+    "secondary": []
+  },
+  "dataCollectionEnabled": false,
+  "dataCollectionType": "always",
+  "googleTagIds": []
+}
+

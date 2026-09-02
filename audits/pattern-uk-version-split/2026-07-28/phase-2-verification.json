@@ -1,0 +1,1006 @@
+{
+  "phase": 2,
+  "completedAt": "2026-07-28",
+  "site": {
+    "id": "684987756493653cc7c5a406",
+    "name": "Pattern (UK)",
+    "lastUpdated": "2026-07-28T21:21:34.529Z",
+    "lastPublished": "2026-07-28T16:42:59.449Z",
+    "fullSiteCompiledAt": "2026-07-28T16:42:59.449Z"
+  },
+  "scope": "Marker-only Webflow element attribute update",
+  "published": false,
+  "summary": {
+    "pages": 106,
+    "verified": 106,
+    "v1": 105,
+    "v2": 1,
+    "failures": 0,
+    "targetKinds": {
+      "page_main": 92,
+      "page_wrap": 2,
+      "Body": 12
+    }
+  },
+  "patternIntelligenceRoot": {
+    "id": {
+      "component": "6a0e3cc3ba585cc12d1c2f43",
+      "element": "bcbd443c-c5d4-240d-6d21-620380abd388"
+    },
+    "type": "Block",
+    "styleNames": [
+      "page_main",
+      "cc-v2"
+    ],
+    "attributes": {
+      "data-pattern-version": "v2"
+    }
+  },
+  "untouched": [
+    "site freeform custom code",
+    "page freeform custom code",
+    "registered or applied scripts",
+    "Custom Code components",
+    "component variants",
+    "styles and classes",
+    "page content",
+    "publishing"
+  ],
+  "pages": [
+    {
+      "pageId": "6a61f3928ced7ce7346c5bde",
+      "title": "Location | Executive Acceleration Forum | Pattern UK",
+      "path": "/event-eaf-carcassonne-location",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "6a61f392630d04d5b655963c",
+      "title": "Speakers | Executive Acceleration Forum | Pattern UK",
+      "path": "/event-eaf-carcassonne-speakers",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "6a61f39122e3e59bfdf3e315",
+      "title": "Agenda | Executive Acceleration Forum | Pattern UK",
+      "path": "/event-eaf-carcassonne-agenda",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "6a61ed702f07814fc2bd75df",
+      "title": "Executive Acceleration Forum | Pattern UK",
+      "path": "/event-eaf-carcassonne",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "6a58ef496540f1e6390f5ff4",
+      "title": "EU-UK Google Search",
+      "path": "/draft-pages/contact-us2",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "6a567be44cdcb6212dcd2e2f",
+      "title": "Authors Template",
+      "path": "/authors",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "6a170d23eee56f95d9da1cdd",
+      "title": "Report Files Template",
+      "path": "/report-files",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "6a0e3cc3ba585cc12d1c2f43",
+      "title": "Pattern Intelligence",
+      "path": "/pattern-intelligence",
+      "expected": "v2",
+      "actual": "v2",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "69f9fe0ba11dd16bf945121e",
+      "title": "Content Brief (Form)",
+      "path": "/content-brief-form",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "69a1ff35f513a082a40559a4",
+      "title": "Thank You Pages Template",
+      "path": "/thank-you-pages",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "698232aaaf6c546d560e84e6",
+      "title": "Thank You Newsletter",
+      "path": "/thank-you-newsletter",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "69612a8aa88763877a72cda0",
+      "title": "DE Brand Protection",
+      "path": "/demand-gen/ecommerce-brand-protection-de",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "69612a5c0d6b02252c3dc998",
+      "title": "DE Advertising Optimisation",
+      "path": "/demand-gen/marketplace-optimisation-and-growth-de",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "69612a3e6ae472723737f2e4",
+      "title": "DE Ops and Logistics",
+      "path": "/demand-gen/full-service-ops-and-logistics-de",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "69612a186e1a37dc991bffca",
+      "title": "DE 3P Marketplace Accelerator",
+      "path": "/demand-gen/3p-marketplace-accelerator-de",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "695fc91836a85b1aedcd8391",
+      "title": "UK Ops and Logistics",
+      "path": "/demand-gen/full-service-ops-and-logistics",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "695fc74b7e0cf6fe7dd97bc8",
+      "title": "MENA Ops and Logistics",
+      "path": "/demand-gen/full-service-ops-and-logistics-mena",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "695fba1f91d30409d709b656",
+      "title": "MENA Brand Protection",
+      "path": "/demand-gen/ecommerce-brand-protection-mena",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "695fb6ea75dfd9120e206c09",
+      "title": "MENA Advertising Optimisation",
+      "path": "/demand-gen/marketplace-optimisation-and-growth-mena",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "695fb4d95a9b752b845d027e",
+      "title": "MENA 3P Marketplace Accelerator",
+      "path": "/demand-gen/3p-marketplace-accelerator-mena",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "695fa1bde401d55bab3950b8",
+      "title": "UK Advertising Optimisation",
+      "path": "/demand-gen/marketplace-optimisation-and-growth",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "695f9738e70f036321e4e3d7",
+      "title": "UK Brand Protection",
+      "path": "/demand-gen/ecommerce-brand-protection",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "694a73f12909f1d7c74466ef",
+      "title": "UK 3P Marketplace Accelerator",
+      "path": "/demand-gen/3p-marketplace-accelerator",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "6949265dfbcb77cb8e06f629",
+      "title": "Brand Protection",
+      "path": "/solutions/brand-protection",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "6913532cf72837fcf5afca2d",
+      "title": "Marketplace Performance Center Form",
+      "path": "/other-pages/marketplace-performance-center-form",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "690ca5cd04c11dfad3473cd1",
+      "title": "Marketplace Performance Center",
+      "path": "/other-pages/marketplace-performance-center",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "68e4556449f9fb5e9d872200",
+      "title": "Creators",
+      "path": "/draft-pages/creators",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "68e4213c287fcc75fd3eb1c8",
+      "title": "GEO Scorecard",
+      "path": "/solutions/geo-scorecard",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "68e420797f8852b673301ee8",
+      "title": "Recovery",
+      "path": "/solutions/recovery",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "68e41cf84216b6677676ec5c",
+      "title": "Global Expansion",
+      "path": "/solutions/global-expansion",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "68e41bcf29e1593d9fc6de89",
+      "title": "Brand Discoverability",
+      "path": "/solutions/brand-discoverability",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "68e41744fcb7e87213961dea",
+      "title": "Content Management Optimisation",
+      "path": "/solutions/content-management-optimisation",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "68e416d8eaeb34a3716d627d",
+      "title": "Solution Pages",
+      "path": "/static-template-slug-1759778512877",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "68e41531274f3df37d379a87",
+      "title": "Fulfillment And Logistics",
+      "path": "/solutions/fulfillment-and-logistics",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "68e41174eac0fb64bc624802",
+      "title": "Social Commerce",
+      "path": "/solutions/social-commerce",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "689b3b9bbaf850f5dbd231c6",
+      "title": "Amazon Scorecard Offer",
+      "path": "/other-pages/amazon-scorecard-offer",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "689b2af65f7d71c316a90134",
+      "title": "Contact Us China Accelerator",
+      "path": "/other-pages/contact-us-china-accelerator",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a674",
+      "title": "Contact Us TikTok Shop",
+      "path": "/other-pages/contact-us-tiktok-shop",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a673",
+      "title": "Case Studies Template",
+      "path": "/case-study",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a671",
+      "title": "Thank You (TikTok Shop)",
+      "path": "/other-pages/thank-you-tiktok-shop",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a670",
+      "title": "Thank You (PXM)",
+      "path": "/other-pages/thank-you-pxm",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a629",
+      "title": "PXM Content Optimisation Demo (Form)",
+      "path": "/other-pages/pxm-content-optimisation-demo",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a604",
+      "title": "PXM Syndication Demo (Form)",
+      "path": "/other-pages/pxm-syndication-demo",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a603",
+      "title": "PXM PIM Demo (Form)",
+      "path": "/other-pages/pim-demo",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a602",
+      "title": "PXM DAM Demo (Form)",
+      "path": "/other-pages/dam-demo",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a601",
+      "title": "TikTok Shop",
+      "path": "/solutions/tiktok-shop",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a600",
+      "title": "Ads Analysis",
+      "path": "/other-pages/ads-analysis",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a5db",
+      "title": "Consumer Support and Assistance",
+      "path": "/about/consumer-support-and-assistance",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a5b6",
+      "title": "Innovation Hub",
+      "path": "/other-pages/innovation-hub",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a599",
+      "title": "Form",
+      "path": "/static-template-slug-1743258899072",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a585",
+      "title": "Prep Calculator",
+      "path": "/other-pages/prep-calculator",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a584",
+      "title": "PXM Demo (Form)",
+      "path": "/other-pages/pxm-demo",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a570",
+      "title": "Advertising Technology",
+      "path": "/products/advertising-technology",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a56f",
+      "title": "Videos",
+      "path": "/admin/videos",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a56e",
+      "title": "Home Hero Sliders Template",
+      "path": "/home-hero-slider",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a56d",
+      "title": "Legals Template",
+      "path": "/legal",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a56c",
+      "title": "Partner Success Stories",
+      "path": "/resources/partner-success-stories",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a56b",
+      "title": "Reports",
+      "path": "/resources/reports",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a56a",
+      "title": "Newsroom",
+      "path": "/about/newsroom",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a569",
+      "title": "Webinars & Podcasts",
+      "path": "/resources/webinars-and-podcasts",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a568",
+      "title": "eBooks",
+      "path": "/resources/ebooks",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a567",
+      "title": "Blog",
+      "path": "/resources/blog",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a566",
+      "title": "Topics",
+      "path": "/resources/topics",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a565",
+      "title": "Webinars & Podcasts Template",
+      "path": "/webinar",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a564",
+      "title": "Reports Template",
+      "path": "/reports",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a563",
+      "title": "EBooks Template",
+      "path": "/ebook",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a562",
+      "title": "Topic Cards Template",
+      "path": "/topic-cards",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a561",
+      "title": "Topics Template",
+      "path": "/topics",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a55f",
+      "title": "Blogs Template",
+      "path": "/blog",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a55e",
+      "title": "News Template",
+      "path": "/news",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a54a",
+      "title": "New Sliders Template",
+      "path": "/new-slider",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a549",
+      "title": "Logos Template",
+      "path": "/logos",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a548",
+      "title": "Careers",
+      "path": "/about/careers",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a547",
+      "title": "Leaderships Template",
+      "path": "/leadership",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a546",
+      "title": "Our Story",
+      "path": "/about/our-story",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a545",
+      "title": "Leadership",
+      "path": "/about/leadership",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a532",
+      "title": "Services",
+      "path": "/draft-pages/services",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a528",
+      "title": "DAM",
+      "path": "/products/pxm/dam",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a527",
+      "title": "PIM",
+      "path": "/products/pxm/pim",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a526",
+      "title": "Syndication",
+      "path": "/products/pxm/syndication",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a525",
+      "title": "Optimisation",
+      "path": "/products/pxm/optimisation",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a524",
+      "title": "PXM",
+      "path": "/products/pxm",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a521",
+      "title": "Middle Mile",
+      "path": "/draft-pages/middle-mile",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a520",
+      "title": "DTC",
+      "path": "/products/dtc",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a51f",
+      "title": "Marketplace Prep",
+      "path": "/products/marketplace-prep",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a51e",
+      "title": "Marketplace Accelerator China",
+      "path": "/products/marketplace-accelerator-china",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a51d",
+      "title": "Global Marketplace Accelerator",
+      "path": "/products/marketplace-accelerator",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a51b",
+      "title": "1P Accelerator",
+      "path": "/draft-pages/1p-accelerator",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a51a",
+      "title": "Page Template",
+      "path": "/static-template-slug-1738602301210",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a519",
+      "title": "Software",
+      "path": "/software",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a518",
+      "title": "Fulfillment",
+      "path": "/fulfillment",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a517",
+      "title": "Marketplaces",
+      "path": "/marketplaces",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a516",
+      "title": "Elements",
+      "path": "/admin/elements",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a515",
+      "title": "Contact",
+      "path": "/contact-us",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a501",
+      "title": "Login Portal",
+      "path": "/login",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a4e0",
+      "title": "Thank You",
+      "path": "/thank-you",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a4df",
+      "title": "Sections",
+      "path": "/admin/sections",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a4de",
+      "title": "Form",
+      "path": "/admin/form",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a4b9",
+      "title": "Footer",
+      "path": "/admin/footer",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a498",
+      "title": "Navbar",
+      "path": "/admin/navbar",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a47e",
+      "title": "Atoms",
+      "path": "/admin/atoms",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a47d",
+      "title": "[Admin] Design System",
+      "path": "/static-template-slug-1732116839203",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a47b",
+      "title": "404",
+      "path": "/404",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a44f",
+      "title": "Password",
+      "path": "/401",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a42f",
+      "title": "Styleguide",
+      "path": "/admin/styleguide",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    },
+    {
+      "pageId": "684987756493653cc7c5a402",
+      "title": "Home",
+      "path": "/",
+      "expected": "v1",
+      "actual": "v1",
+      "verified": true,
+      "error": null
+    }
+  ]
+}
+

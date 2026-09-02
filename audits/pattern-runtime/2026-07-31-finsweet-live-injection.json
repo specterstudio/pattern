@@ -1,0 +1,367 @@
+{
+  "checkedAt": "2026-07-31T15:34:47.745Z",
+  "runtimePath": "/Users/kenneth/_Projects/pattern/webflow/pattern.com/scripts/runtime/pattern-runtime.js",
+  "blockedPublishedGlobals": [
+    "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+    "https://cdn.jsdelivr.net/npm/@finsweet/attributes-socialshare@1/socialshare.js"
+  ],
+  "results": [
+    {
+      "name": "Home V3 has no Finsweet feature requests",
+      "url": "https://www.pattern.com/home-v3",
+      "expectedModules": [],
+      "expectedSelectors": [],
+      "status": 200,
+      "blockedGlobalRequests": [
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes-socialshare@1/socialshare.js"
+      ],
+      "candidateRequests": [],
+      "consoleEntries": [],
+      "requestFailures": [],
+      "waitErrors": [],
+      "state": {
+        "detection": {
+          "version": "v3",
+          "family": "v3",
+          "source": "page-marker",
+          "evidence": [
+            ".page_main_v3"
+          ],
+          "confidence": "high",
+          "conflicts": [],
+          "safe": true
+        },
+        "activation": {
+          "allowed": true,
+          "reason": "active"
+        },
+        "modules": [
+          {
+            "id": "finsweet-list",
+            "status": "idle",
+            "matched": false,
+            "dependencies": [
+              "finsweet-attributes-v2"
+            ]
+          },
+          {
+            "id": "finsweet-scroll-disable",
+            "status": "idle",
+            "matched": false,
+            "dependencies": [
+              "finsweet-attributes-v2"
+            ]
+          },
+          {
+            "id": "finsweet-social-share",
+            "status": "idle",
+            "matched": false,
+            "dependencies": [
+              "finsweet-social-share-v1"
+            ]
+          }
+        ],
+        "selectorCounts": {},
+        "attributesVersion": null,
+        "listVersion": null,
+        "scrollDisableVersion": null,
+        "socialShareVersion": null,
+        "mainScripts": []
+      },
+      "socialShareExercise": null,
+      "failures": []
+    },
+    {
+      "name": "Resources Blog loads List and Scroll Disable",
+      "url": "https://www.pattern.com/resources/blog",
+      "expectedModules": [
+        "finsweet-list",
+        "finsweet-scroll-disable"
+      ],
+      "expectedSelectors": [
+        "[fs-list-element]",
+        "[fs-scrolldisable-element]"
+      ],
+      "status": 200,
+      "blockedGlobalRequests": [
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes-socialshare@1/socialshare.js"
+      ],
+      "candidateRequests": [
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/attributes.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-J3PPETVR.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-ADKL4AJZ.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-VDEO3AAR.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-WIALCYDY.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-OF4NI3Y7.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-N2ZCN6XY.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-L4B2V5MO.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-CB6LZ537.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-XRTLPMPO.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-ZI7TAH2K.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-GGDEANQW.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-K46K3RI5.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/src-T7SM3ONB.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-WL5KIXHF.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-T2PNG2TC.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-7CAOOJVW.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-WO4GQJHX.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-ZZRTGM4V.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-UAA7M346.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/src-VWGKX7LV.js"
+      ],
+      "consoleEntries": [],
+      "requestFailures": [],
+      "waitErrors": [],
+      "state": {
+        "detection": {
+          "version": "v1",
+          "family": "v1",
+          "source": "page-marker",
+          "evidence": [
+            ".page_main.cc-v1"
+          ],
+          "confidence": "high",
+          "conflicts": [],
+          "safe": true
+        },
+        "activation": {
+          "allowed": true,
+          "reason": "active"
+        },
+        "modules": [
+          {
+            "id": "finsweet-list",
+            "status": "ready",
+            "matched": true,
+            "dependencies": [
+              "finsweet-attributes-v2"
+            ]
+          },
+          {
+            "id": "finsweet-scroll-disable",
+            "status": "ready",
+            "matched": true,
+            "dependencies": [
+              "finsweet-attributes-v2"
+            ]
+          },
+          {
+            "id": "finsweet-social-share",
+            "status": "idle",
+            "matched": false,
+            "dependencies": [
+              "finsweet-social-share-v1"
+            ]
+          }
+        ],
+        "selectorCounts": {
+          "[fs-list-element]": 201,
+          "[fs-scrolldisable-element]": 1
+        },
+        "attributesVersion": "2.7.1",
+        "listVersion": "1.14.6",
+        "scrollDisableVersion": "1.6.16",
+        "socialShareVersion": null,
+        "mainScripts": [
+          "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/attributes.js"
+        ]
+      },
+      "socialShareExercise": null,
+      "failures": []
+    },
+    {
+      "name": "Leadership loads Scroll Disable only",
+      "url": "https://www.pattern.com/about/leadership",
+      "expectedModules": [
+        "finsweet-scroll-disable"
+      ],
+      "expectedSelectors": [
+        "[fs-scrolldisable-element]"
+      ],
+      "status": 200,
+      "blockedGlobalRequests": [
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes-socialshare@1/socialshare.js"
+      ],
+      "candidateRequests": [
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/attributes.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-J3PPETVR.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-ADKL4AJZ.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-VDEO3AAR.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-WIALCYDY.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-OF4NI3Y7.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-N2ZCN6XY.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-L4B2V5MO.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-CB6LZ537.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-XRTLPMPO.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-ZI7TAH2K.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-GGDEANQW.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-K46K3RI5.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/src-VWGKX7LV.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-7CAOOJVW.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-UAA7M346.js"
+      ],
+      "consoleEntries": [],
+      "requestFailures": [],
+      "waitErrors": [],
+      "state": {
+        "detection": {
+          "version": "v1",
+          "family": "v1",
+          "source": "page-marker",
+          "evidence": [
+            ".page_main.cc-v1"
+          ],
+          "confidence": "high",
+          "conflicts": [],
+          "safe": true
+        },
+        "activation": {
+          "allowed": true,
+          "reason": "active"
+        },
+        "modules": [
+          {
+            "id": "finsweet-list",
+            "status": "idle",
+            "matched": false,
+            "dependencies": [
+              "finsweet-attributes-v2"
+            ]
+          },
+          {
+            "id": "finsweet-scroll-disable",
+            "status": "ready",
+            "matched": true,
+            "dependencies": [
+              "finsweet-attributes-v2"
+            ]
+          },
+          {
+            "id": "finsweet-social-share",
+            "status": "idle",
+            "matched": false,
+            "dependencies": [
+              "finsweet-social-share-v1"
+            ]
+          }
+        ],
+        "selectorCounts": {
+          "[fs-scrolldisable-element]": 1
+        },
+        "attributesVersion": "2.7.1",
+        "listVersion": null,
+        "scrollDisableVersion": "1.6.16",
+        "socialShareVersion": null,
+        "mainScripts": [
+          "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/attributes.js"
+        ]
+      },
+      "socialShareExercise": null,
+      "failures": []
+    },
+    {
+      "name": "News template loads Social Share and Scroll Disable",
+      "url": "https://www.pattern.com/news/pattern-reports-record-first-quarter-2026-financial-results",
+      "expectedModules": [
+        "finsweet-social-share",
+        "finsweet-scroll-disable"
+      ],
+      "expectedSelectors": [
+        "[fs-socialshare-element]",
+        "[fs-scrolldisable-element]"
+      ],
+      "exerciseSocialShare": true,
+      "status": 200,
+      "blockedGlobalRequests": [
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes-socialshare@1/socialshare.js"
+      ],
+      "candidateRequests": [
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/attributes.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-J3PPETVR.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-ADKL4AJZ.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-VDEO3AAR.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-WIALCYDY.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-OF4NI3Y7.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-N2ZCN6XY.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-L4B2V5MO.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-CB6LZ537.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-XRTLPMPO.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-ZI7TAH2K.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-GGDEANQW.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-K46K3RI5.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/src-VWGKX7LV.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-7CAOOJVW.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/dist/chunk-UAA7M346.js",
+        "https://cdn.jsdelivr.net/npm/@finsweet/attributes-socialshare@1.3.2/socialshare.js"
+      ],
+      "consoleEntries": [],
+      "requestFailures": [],
+      "waitErrors": [],
+      "state": {
+        "detection": {
+          "version": "v2",
+          "family": "v2",
+          "source": "page-marker",
+          "evidence": [
+            ".page_main.cc-v2"
+          ],
+          "confidence": "high",
+          "conflicts": [],
+          "safe": true
+        },
+        "activation": {
+          "allowed": true,
+          "reason": "active"
+        },
+        "modules": [
+          {
+            "id": "finsweet-list",
+            "status": "idle",
+            "matched": false,
+            "dependencies": [
+              "finsweet-attributes-v2"
+            ]
+          },
+          {
+            "id": "finsweet-scroll-disable",
+            "status": "ready",
+            "matched": true,
+            "dependencies": [
+              "finsweet-attributes-v2"
+            ]
+          },
+          {
+            "id": "finsweet-social-share",
+            "status": "ready",
+            "matched": true,
+            "dependencies": [
+              "finsweet-social-share-v1"
+            ]
+          }
+        ],
+        "selectorCounts": {
+          "[fs-socialshare-element]": 4,
+          "[fs-scrolldisable-element]": 1
+        },
+        "attributesVersion": "2.7.1",
+        "listVersion": null,
+        "scrollDisableVersion": "1.6.16",
+        "socialShareVersion": "1.3.2",
+        "mainScripts": [
+          "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/attributes.js",
+          "https://cdn.jsdelivr.net/npm/@finsweet/attributes-socialshare@1.3.2/socialshare.js"
+        ]
+      },
+      "socialShareExercise": {
+        "trigger": true,
+        "value": "twitter",
+        "openedUrl": "https://twitter.com/intent/tweet/?url=https%3A%2F%2Fwww.pattern.com%2Fnews%2Fpattern-reports-record-first-quarter-2026-financial-results"
+      },
+      "failures": []
+    }
+  ]
+}

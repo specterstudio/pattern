@@ -1,0 +1,2688 @@
+{
+  "checkedAt": "2026-07-30T17:34:59.343Z",
+  "scope": "Read-only real-browser compatibility matrix for PVG 0.2.4 on representative Pattern US V1/V2/V3 routes at https://pattern-us.webflow.io",
+  "origin": "https://pattern-us.webflow.io",
+  "rateLimited": false,
+  "summary": {
+    "routesPlanned": 26,
+    "routesChecked": 26,
+    "statuses": {
+      "200": 26
+    },
+    "explicitVersionRoutes": 26,
+    "explicitVersionActive": 26,
+    "routeFailures": 0,
+    "countupRoutes": 6,
+    "countupCounters": 27,
+    "countupFailures": 0
+  },
+  "routeFailures": [],
+  "countupFailures": [],
+  "results": [
+    {
+      "path": "/software",
+      "expectedVersion": "v1",
+      "role": "V1 core product page and legacy navigation",
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/software",
+      "elapsedMs": 4842,
+      "title": "Pattern: Enterprise Ecommerce Software",
+      "pageMainClasses": "page_main cc-v1",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v1",
+        "family": "v1",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v1"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 0,
+        "inGrid": 0,
+        "orphaned": 0,
+        "grids": 0,
+        "behavior": []
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 0,
+        "videoPopupTriggers": 0,
+        "forms": 2,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 0,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        }
+      ]
+    },
+    {
+      "path": "/products/marketplace-accelerator-china",
+      "expectedVersion": "v1",
+      "role": "V1 accordion and marquee",
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/products/marketplace-accelerator-china",
+      "elapsedMs": 4691,
+      "title": "Marketplace Accelerator China | Pattern",
+      "pageMainClasses": "page_main cc-v1",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v1",
+        "family": "v1",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v1"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/schema/faq-schema-generator.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 0,
+        "inGrid": 0,
+        "orphaned": 0,
+        "grids": 0,
+        "behavior": []
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 0,
+        "videoPopupTriggers": 0,
+        "forms": 2,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 146,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        }
+      ]
+    },
+    {
+      "path": "/resources/blog",
+      "expectedVersion": "v1",
+      "role": "V1 CMS listing",
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/resources/blog",
+      "elapsedMs": 3794,
+      "title": "Ecommerce Blog | Pattern",
+      "pageMainClasses": "page_main cc-v1",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v1",
+        "family": "v1",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v1"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        },
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/pagination-fix.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/pagination-fix.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 0,
+        "inGrid": 0,
+        "orphaned": 0,
+        "grids": 0,
+        "behavior": []
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 0,
+        "videoPopupTriggers": 0,
+        "forms": 2,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 0,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        }
+      ]
+    },
+    {
+      "path": "/about/leadership",
+      "expectedVersion": "v1",
+      "role": "V1 people listing",
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/about/leadership",
+      "elapsedMs": 3744,
+      "title": "Executive Leadership Team | Pattern",
+      "pageMainClasses": "page_main cc-v1",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v1",
+        "family": "v1",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v1"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 0,
+        "inGrid": 0,
+        "orphaned": 0,
+        "grids": 0,
+        "behavior": []
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 0,
+        "videoPopupTriggers": 0,
+        "forms": 2,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 0,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        }
+      ]
+    },
+    {
+      "path": "/category/marketplaces",
+      "expectedVersion": "v1",
+      "role": "V1 category template",
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/category/marketplaces",
+      "elapsedMs": 4059,
+      "title": "Global Marketplace Management for Ecommerce | Pattern",
+      "pageMainClasses": "page_main cc-v1",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v1",
+        "family": "v1",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v1"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 0,
+        "inGrid": 0,
+        "orphaned": 0,
+        "grids": 0,
+        "behavior": []
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 0,
+        "videoPopupTriggers": 0,
+        "forms": 2,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 81,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        }
+      ]
+    },
+    {
+      "path": "/",
+      "expectedVersion": "v2",
+      "role": "V2 homepage, count-up, accordion, video popup, marquee",
+      "exerciseCountup": true,
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/",
+      "elapsedMs": 5620,
+      "title": "Pattern: The #1 Global Ecommerce Accelerator",
+      "pageMainClasses": "page_main cc-v2",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v2",
+        "family": "v2",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v2"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/media/video-popup.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 0,
+        "inGrid": 0,
+        "orphaned": 0,
+        "grids": 0,
+        "behavior": []
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 41,
+        "videoPopupTriggers": 0,
+        "forms": 2,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 34,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        }
+      ]
+    },
+    {
+      "path": "/products/fulfillment/middle-mile",
+      "expectedVersion": "v2",
+      "role": "V2 product, count-up, accordion, video popup",
+      "exerciseCountup": true,
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/products/fulfillment/middle-mile",
+      "elapsedMs": 3856,
+      "title": "Middle Mile Logistics for Amazon Sellers | Pattern",
+      "pageMainClasses": "page_main cc-v2 u-theme-dark-v2",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v2",
+        "family": "v2",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v2"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/media/video-popup.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/logos.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.2/webflow/pattern.com/scripts/media/iframe-popup.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.full.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 0,
+        "inGrid": 0,
+        "orphaned": 0,
+        "grids": 0,
+        "behavior": []
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 82,
+        "videoPopupTriggers": 0,
+        "forms": 2,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 0,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        },
+        {
+          "type": "warning",
+          "text": "Allow attribute will take precedence over 'allowfullscreen'.",
+          "url": "https://app.storylane.io/share/cocpfxk0ldqa"
+        }
+      ]
+    },
+    {
+      "path": "/pi",
+      "expectedVersion": "v2",
+      "role": "V2 product with five count-up cards",
+      "exerciseCountup": true,
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/pi",
+      "elapsedMs": 6448,
+      "title": "Pattern Intelligence (Pi)",
+      "pageMainClasses": "page_main cc-v2",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v2",
+        "family": "v2",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v2"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/media/video-popup.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 5,
+        "inGrid": 5,
+        "orphaned": 0,
+        "grids": 1,
+        "behavior": [
+          {
+            "index": 0,
+            "text": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n0\n+",
+            "inGrid": true,
+            "targetTag": "DIV",
+            "initialized": true,
+            "horizontal": true,
+            "display": "flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 2,
+            "reelCount": 2,
+            "animatedReels": 2
+          },
+          {
+            "index": 1,
+            "text": "0\n1\n2\n0\n+",
+            "inGrid": true,
+            "targetTag": "DIV",
+            "initialized": true,
+            "horizontal": true,
+            "display": "flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 2,
+            "reelCount": 2,
+            "animatedReels": 2
+          },
+          {
+            "index": 2,
+            "text": "0\n1\n0\n1\n2\n3\n4\n5\n6\n0\n+",
+            "inGrid": true,
+            "targetTag": "DIV",
+            "initialized": true,
+            "horizontal": true,
+            "display": "flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 3,
+            "reelCount": 3,
+            "animatedReels": 3
+          },
+          {
+            "index": 3,
+            "text": "0\n1\n2\n3\n4\n5\n6\n7\n0\n1\n2\n3\n4\n5\n6\n7\nT+",
+            "inGrid": true,
+            "targetTag": "DIV",
+            "initialized": true,
+            "horizontal": true,
+            "display": "flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 2,
+            "reelCount": 2,
+            "animatedReels": 2
+          },
+          {
+            "index": 4,
+            "text": "0\n1\n0\n1\n2\n3",
+            "inGrid": true,
+            "targetTag": "DIV",
+            "initialized": true,
+            "horizontal": true,
+            "display": "flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 2,
+            "reelCount": 2,
+            "animatedReels": 2
+          }
+        ]
+      },
+      "splide": null,
+      "screenshot": "/Users/kenneth/_Projects/pattern/output/playwright/pvg-0.2.4-v1-v2-v3/pi-countup-horizontal.png",
+      "elements": {
+        "accordions": 0,
+        "videoPopupTriggers": 0,
+        "forms": 2,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 28,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        },
+        {
+          "type": "warning",
+          "text": "Missing elements in: JSHandle@node",
+          "url": "https://pattern-us.webflow.io/pi"
+        }
+      ]
+    },
+    {
+      "path": "/pattern-intelligence-korea",
+      "expectedVersion": "v2",
+      "role": "V2 localized product with five count-up cards",
+      "exerciseCountup": true,
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/pattern-intelligence-korea",
+      "elapsedMs": 5871,
+      "title": "Pattern Intelligence Korea",
+      "pageMainClasses": "page_main cc-v2",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v2",
+        "family": "v2",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v2"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 5,
+        "inGrid": 5,
+        "orphaned": 0,
+        "grids": 1,
+        "behavior": [
+          {
+            "index": 0,
+            "text": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n0\n+",
+            "inGrid": true,
+            "targetTag": "DIV",
+            "initialized": true,
+            "horizontal": true,
+            "display": "flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 2,
+            "reelCount": 2,
+            "animatedReels": 2
+          },
+          {
+            "index": 1,
+            "text": "0\n1\n2\n0\n+",
+            "inGrid": true,
+            "targetTag": "DIV",
+            "initialized": true,
+            "horizontal": true,
+            "display": "flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 2,
+            "reelCount": 2,
+            "animatedReels": 2
+          },
+          {
+            "index": 2,
+            "text": "0\n1\n0\n1\n2\n3\n4\n5\n6\n0\n+",
+            "inGrid": true,
+            "targetTag": "DIV",
+            "initialized": true,
+            "horizontal": true,
+            "display": "flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 3,
+            "reelCount": 3,
+            "animatedReels": 3
+          },
+          {
+            "index": 3,
+            "text": "0\n1\n2\n3\n4\n5\n6\n7\n0\n1\n2\n3\n4\n5\n6\n7\nT+",
+            "inGrid": true,
+            "targetTag": "DIV",
+            "initialized": true,
+            "horizontal": true,
+            "display": "flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 2,
+            "reelCount": 2,
+            "animatedReels": 2
+          },
+          {
+            "index": 4,
+            "text": "0\n1\n0\n1\n2\n3",
+            "inGrid": true,
+            "targetTag": "DIV",
+            "initialized": true,
+            "horizontal": true,
+            "display": "flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 2,
+            "reelCount": 2,
+            "animatedReels": 2
+          }
+        ]
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 0,
+        "videoPopupTriggers": 0,
+        "forms": 2,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 0,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        },
+        {
+          "type": "warning",
+          "text": "Missing elements in: JSHandle@node",
+          "url": "https://pattern-us.webflow.io/pattern-intelligence-korea"
+        }
+      ]
+    },
+    {
+      "path": "/beauty",
+      "expectedVersion": "v2",
+      "role": "V2 landing page with three count-up cards",
+      "exerciseCountup": true,
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/beauty",
+      "elapsedMs": 7226,
+      "title": "Beauty",
+      "pageMainClasses": "page_main cc-v2 u-theme-dark-v2",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v2",
+        "family": "v2",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v2"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/media/video-popup.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 3,
+        "inGrid": 3,
+        "orphaned": 0,
+        "grids": 1,
+        "behavior": [
+          {
+            "index": 0,
+            "text": "#\n0\n1",
+            "inGrid": true,
+            "targetTag": "DIV",
+            "initialized": true,
+            "horizontal": true,
+            "display": "flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 1,
+            "reelCount": 1,
+            "animatedReels": 1
+          },
+          {
+            "index": 1,
+            "text": "0\n1\n2\n3\nx",
+            "inGrid": true,
+            "targetTag": "DIV",
+            "initialized": true,
+            "horizontal": true,
+            "display": "flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 1,
+            "reelCount": 1,
+            "animatedReels": 1
+          },
+          {
+            "index": 2,
+            "text": "0\n1\n2\n0\n0\n1\n2\n0\n1\n2\n3\n4\n5",
+            "inGrid": true,
+            "targetTag": "DIV",
+            "initialized": true,
+            "horizontal": true,
+            "display": "flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 4,
+            "reelCount": 4,
+            "animatedReels": 4
+          }
+        ]
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 0,
+        "videoPopupTriggers": 0,
+        "forms": 4,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 67,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        }
+      ]
+    },
+    {
+      "path": "/agentic-commerce",
+      "expectedVersion": "v2",
+      "role": "V2 landing page with nine card-load animations",
+      "exerciseCountup": true,
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/agentic-commerce",
+      "elapsedMs": 4009,
+      "title": "Pattern Agentic Commerce | Win Where AI Agents Decide",
+      "pageMainClasses": "page_main cc-v2 u-theme-dark-v2",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v2",
+        "family": "v2",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v2"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/logos.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.full.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 0,
+        "inGrid": 0,
+        "orphaned": 0,
+        "grids": 0,
+        "behavior": []
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 0,
+        "videoPopupTriggers": 0,
+        "forms": 2,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 0,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        }
+      ]
+    },
+    {
+      "path": "/products/the-portal-studio",
+      "expectedVersion": "v2",
+      "role": "V2 product with shared Splide ownership and card-load animations",
+      "exerciseCountup": true,
+      "exerciseSplide": true,
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/products/the-portal-studio",
+      "elapsedMs": 4502,
+      "title": "The Portal Studio | Pattern",
+      "pageMainClasses": "page_main cc-v2 u-theme-dark-v2",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v2",
+        "family": "v2",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v2"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js"
+        },
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 0,
+        "inGrid": 0,
+        "orphaned": 0,
+        "grids": 0,
+        "behavior": []
+      },
+      "splide": {
+        "initialized": true,
+        "trackCount": 1,
+        "listCount": 1,
+        "transform": "translateX(-42px)",
+        "secondTransform": "translateX(-63px)",
+        "moving": true
+      },
+      "screenshot": null,
+      "elements": {
+        "accordions": 54,
+        "videoPopupTriggers": 0,
+        "forms": 2,
+        "navs": 2,
+        "splides": 1,
+        "marquees": 0,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        }
+      ]
+    },
+    {
+      "path": "/blog/converses-revenue-increased-by-50-with-a-pattern-partnership",
+      "expectedVersion": "v2",
+      "role": "V2 CMS article with table of contents",
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/blog/converses-revenue-increased-by-50-with-a-pattern-partnership",
+      "elapsedMs": 3886,
+      "title": "Why Brands Work With Pattern: Converse | Pattern",
+      "pageMainClasses": "page_main cc-v2",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v2",
+        "family": "v2",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v2"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/cta-inject.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/toc.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 0,
+        "inGrid": 0,
+        "orphaned": 0,
+        "grids": 0,
+        "behavior": []
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 0,
+        "videoPopupTriggers": 0,
+        "forms": 2,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 0,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        }
+      ]
+    },
+    {
+      "path": "/blog/analysis-americas-obsession-with-junk-food",
+      "expectedVersion": "v2",
+      "role": "V2 CMS article that returned a transient 500 during the full crawl",
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/blog/analysis-americas-obsession-with-junk-food",
+      "elapsedMs": 5429,
+      "title": "Analysis: America's Obsession With Junk Food | Pattern",
+      "pageMainClasses": "page_main cc-v2",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v2",
+        "family": "v2",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v2"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/cta-inject.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/toc.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 0,
+        "inGrid": 0,
+        "orphaned": 0,
+        "grids": 0,
+        "behavior": []
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 0,
+        "videoPopupTriggers": 0,
+        "forms": 2,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 0,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        }
+      ]
+    },
+    {
+      "path": "/blog/the-halo-effect",
+      "expectedVersion": "v2",
+      "role": "V2 CMS article that returned a transient 500 during the full crawl",
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/blog/the-halo-effect",
+      "elapsedMs": 2523,
+      "title": "The halo effect and its impact on your brand",
+      "pageMainClasses": "page_main cc-v2",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v2",
+        "family": "v2",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v2"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/cta-inject.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/toc.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 0,
+        "inGrid": 0,
+        "orphaned": 0,
+        "grids": 0,
+        "behavior": []
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 0,
+        "videoPopupTriggers": 0,
+        "forms": 2,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 0,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        }
+      ]
+    },
+    {
+      "path": "/case-study/gaia",
+      "expectedVersion": "v2",
+      "role": "V2 case-study template with count-up cards",
+      "exerciseCountup": true,
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/case-study/gaia",
+      "elapsedMs": 4555,
+      "title": "",
+      "pageMainClasses": "page_main cc-v2",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v2",
+        "family": "v2",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v2"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/media/video-popup.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/logos.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.full.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 3,
+        "inGrid": 3,
+        "orphaned": 0,
+        "grids": 1,
+        "behavior": [
+          {
+            "index": 0,
+            "text": "+\n0\n1\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n%",
+            "inGrid": true,
+            "targetTag": "DIV",
+            "initialized": true,
+            "horizontal": true,
+            "display": "flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 2,
+            "reelCount": 2,
+            "animatedReels": 2
+          },
+          {
+            "index": 1,
+            "text": "+\n0\n1\n2\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n%",
+            "inGrid": true,
+            "targetTag": "DIV",
+            "initialized": true,
+            "horizontal": true,
+            "display": "flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 2,
+            "reelCount": 2,
+            "animatedReels": 2
+          },
+          {
+            "index": 2,
+            "text": "0\n1\n0\n1\n2\n3\n0\n%",
+            "inGrid": true,
+            "targetTag": "DIV",
+            "initialized": true,
+            "horizontal": true,
+            "display": "flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 3,
+            "reelCount": 3,
+            "animatedReels": 3
+          }
+        ]
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 0,
+        "videoPopupTriggers": 0,
+        "forms": 4,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 0,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        }
+      ]
+    },
+    {
+      "path": "/case-study/flannels",
+      "expectedVersion": "v2",
+      "role": "New staging V2 case-study item discovered after the corrective publish",
+      "exerciseCountup": true,
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/case-study/flannels",
+      "elapsedMs": 4500,
+      "title": "How Flannels Boosted ROAS 107% | Pattern Case Study",
+      "pageMainClasses": "page_main cc-v2",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v2",
+        "family": "v2",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v2"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/media/video-popup.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/logos.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.full.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 3,
+        "inGrid": 3,
+        "orphaned": 0,
+        "grids": 1,
+        "behavior": [
+          {
+            "index": 0,
+            "text": "+\n0\n1\n0\n0\n1\n2\n3\n4\n5\n6\n7\n%",
+            "inGrid": true,
+            "targetTag": "DIV",
+            "initialized": true,
+            "horizontal": true,
+            "display": "flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 3,
+            "reelCount": 3,
+            "animatedReels": 3
+          },
+          {
+            "index": 1,
+            "text": "+\n0\n1\n2\n3\n4\n5\n6\n7\n0\n1\n2\n3\n4\n5\n6\n%",
+            "inGrid": true,
+            "targetTag": "DIV",
+            "initialized": true,
+            "horizontal": true,
+            "display": "flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 2,
+            "reelCount": 2,
+            "animatedReels": 2
+          },
+          {
+            "index": 2,
+            "text": "+\n0\n1\n2\n0\n1\n%",
+            "inGrid": true,
+            "targetTag": "DIV",
+            "initialized": true,
+            "horizontal": true,
+            "display": "flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 2,
+            "reelCount": 2,
+            "animatedReels": 2
+          }
+        ]
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 0,
+        "videoPopupTriggers": 0,
+        "forms": 4,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 0,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        }
+      ]
+    },
+    {
+      "path": "/contact",
+      "expectedVersion": "v2",
+      "role": "V2 form route outside the sitemap",
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/contact/marketplace-accelerator",
+      "elapsedMs": 4083,
+      "title": "Contact Us | Pattern",
+      "pageMainClasses": "page_main cc-v2",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v2",
+        "family": "v2",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v2"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/media/video-popup.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/logos.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.2/webflow/pattern.com/scripts/media/iframe-popup.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.full.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 0,
+        "inGrid": 0,
+        "orphaned": 0,
+        "grids": 0,
+        "behavior": []
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 0,
+        "videoPopupTriggers": 0,
+        "forms": 4,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 0,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        }
+      ]
+    },
+    {
+      "path": "/performance-review",
+      "expectedVersion": "v2",
+      "role": "Newly explicit V2 route with count-up",
+      "exerciseCountup": true,
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/performance-review",
+      "elapsedMs": 4187,
+      "title": "Performance Review Request | Pattern",
+      "pageMainClasses": "page_main cc-v2",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v2",
+        "family": "v2",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v2"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 0,
+        "inGrid": 0,
+        "orphaned": 0,
+        "grids": 0,
+        "behavior": []
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 0,
+        "videoPopupTriggers": 0,
+        "forms": 4,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 16,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        }
+      ]
+    },
+    {
+      "path": "/login",
+      "expectedVersion": "v2",
+      "role": "Newly explicit V2 login page",
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/login",
+      "elapsedMs": 3521,
+      "title": "Login | Pattern",
+      "pageMainClasses": "page_main cc-v2",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v2",
+        "family": "v2",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v2"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 0,
+        "inGrid": 0,
+        "orphaned": 0,
+        "grids": 0,
+        "behavior": []
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 0,
+        "videoPopupTriggers": 0,
+        "forms": 2,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 0,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        }
+      ]
+    },
+    {
+      "path": "/news/31-of-aussie-online-shoppers-have-access-to-amazon-prime-up-by-63-in-less",
+      "expectedVersion": "v2",
+      "role": "Newly explicit V2 News template",
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/news/31-of-aussie-online-shoppers-have-access-to-amazon-prime-up-by-63-in-less",
+      "elapsedMs": 4164,
+      "title": "31% of Aussie Online Shoppers Have Access to Amazon Prime, up by 63% in Less Than A Year",
+      "pageMainClasses": "page_main cc-v2 is-bkg-white",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v2",
+        "family": "v2",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v2"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/toc.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 0,
+        "inGrid": 0,
+        "orphaned": 0,
+        "grids": 0,
+        "behavior": []
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 0,
+        "videoPopupTriggers": 0,
+        "forms": 2,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 0,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        }
+      ]
+    },
+    {
+      "path": "/topics/3pl-fulfillment",
+      "expectedVersion": "v2",
+      "role": "Newly explicit V2 Topics template",
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/topics/3pl-fulfillment",
+      "elapsedMs": 4380,
+      "title": "Scalable 3PL Fulfillment | E-commerce Logistics & Order Fulfillment",
+      "pageMainClasses": "page_main cc-v2 is-bkg-white",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v2",
+        "family": "v2",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v2"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/media/video-popup.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/toc.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 0,
+        "inGrid": 0,
+        "orphaned": 0,
+        "grids": 0,
+        "behavior": []
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 0,
+        "videoPopupTriggers": 0,
+        "forms": 2,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 0,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        }
+      ]
+    },
+    {
+      "path": "/reports/2026-state-of-fulfillment",
+      "expectedVersion": "v2",
+      "role": "Newly explicit V2 Reports template",
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/reports/2026-state-of-fulfillment",
+      "elapsedMs": 3480,
+      "title": "The 2026 state of fulfillment report",
+      "pageMainClasses": "page_main cc-v2 is-bkg-white",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v2",
+        "family": "v2",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v2"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 0,
+        "inGrid": 0,
+        "orphaned": 0,
+        "grids": 0,
+        "behavior": []
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 0,
+        "videoPopupTriggers": 0,
+        "forms": 4,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 0,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        }
+      ]
+    },
+    {
+      "path": "/whitepaper/fulfillment-pet-brands",
+      "expectedVersion": "v2",
+      "role": "Newly explicit V2 Whitepaper template",
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/whitepaper/fulfillment-pet-brands",
+      "elapsedMs": 3631,
+      "title": "Pattern",
+      "pageMainClasses": "page_main cc-v2 is-bkg-white",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v2",
+        "family": "v2",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v2"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 0,
+        "inGrid": 0,
+        "orphaned": 0,
+        "grids": 0,
+        "behavior": []
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 0,
+        "videoPopupTriggers": 0,
+        "forms": 2,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 0,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        }
+      ]
+    },
+    {
+      "path": "/partnership/asgtg",
+      "expectedVersion": "v1",
+      "role": "V1 partnership card animation",
+      "exerciseCountup": true,
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/partnership/asgtg",
+      "elapsedMs": 3713,
+      "title": "Pattern Fulfillment for ASGTG",
+      "pageMainClasses": "page_main cc-v1",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v1",
+        "family": "v1",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v1"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.full.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 0,
+        "inGrid": 0,
+        "orphaned": 0,
+        "grids": 0,
+        "behavior": []
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 0,
+        "videoPopupTriggers": 0,
+        "forms": 4,
+        "navs": 2,
+        "splides": 0,
+        "marquees": 0,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "pageerror",
+          "text": "Message receive preflight failed, origin: https://pattern-us.webflow.io and https://go.pattern.com cannot exchange messages",
+          "url": null
+        }
+      ]
+    },
+    {
+      "path": "/home-v3",
+      "expectedVersion": "v3",
+      "role": "Staging-only V3 control",
+      "exerciseCountup": true,
+      "status": 200,
+      "finalUrl": "https://pattern-us.webflow.io/home-v3",
+      "elapsedMs": 8421,
+      "title": "Home V3",
+      "pageMainClasses": "page_main_v3",
+      "runtimeVersion": "0.2.4",
+      "detection": {
+        "version": "v3",
+        "family": "v3",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main_v3"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "managedAssets": [
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js"
+        },
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/styles/marquee.css"
+        },
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/styles/home-anchor-nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/interaction/v3-heading-text-reveal.js"
+        },
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/content/case-study-cms-slider.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/media/video-popup.js"
+        }
+      ],
+      "unmanagedLegacyAssets": [],
+      "duplicateOwnedAssets": [],
+      "moduleErrors": [],
+      "runtimeScripts": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+      ],
+      "countup": {
+        "total": 8,
+        "inGrid": 8,
+        "orphaned": 0,
+        "grids": 2,
+        "behavior": [
+          {
+            "index": 0,
+            "text": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n0\n+",
+            "inGrid": true,
+            "targetTag": "P",
+            "initialized": true,
+            "horizontal": true,
+            "display": "inline-flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 2,
+            "reelCount": 2,
+            "animatedReels": 2
+          },
+          {
+            "index": 1,
+            "text": "0\n1\n2\n0\n+",
+            "inGrid": true,
+            "targetTag": "P",
+            "initialized": true,
+            "horizontal": true,
+            "display": "inline-flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 2,
+            "reelCount": 2,
+            "animatedReels": 2
+          },
+          {
+            "index": 2,
+            "text": "0\n1\n0\n1\n2\n3\n4\n5\n6\n0\n+",
+            "inGrid": true,
+            "targetTag": "P",
+            "initialized": true,
+            "horizontal": true,
+            "display": "inline-flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 3,
+            "reelCount": 3,
+            "animatedReels": 3
+          },
+          {
+            "index": 3,
+            "text": "0\n1\n2\n3\n4\n5\n6\n7\n0\n1\n2\n3\n4\n5\n6\n7\nT",
+            "inGrid": true,
+            "targetTag": "P",
+            "initialized": true,
+            "horizontal": true,
+            "display": "inline-flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 2,
+            "reelCount": 2,
+            "animatedReels": 2
+          },
+          {
+            "index": 4,
+            "text": "0\n1\n0\n1\n2\n3",
+            "inGrid": true,
+            "targetTag": "P",
+            "initialized": true,
+            "horizontal": true,
+            "display": "inline-flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 2,
+            "reelCount": 2,
+            "animatedReels": 2
+          },
+          {
+            "index": 5,
+            "text": "+\n0\n1\n0\n1\n2\n0\n%",
+            "inGrid": true,
+            "targetTag": "P",
+            "initialized": true,
+            "horizontal": true,
+            "display": "flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 3,
+            "reelCount": 3,
+            "animatedReels": 3
+          },
+          {
+            "index": 6,
+            "text": "+\n0\n1\n0\n0\n1\n%",
+            "inGrid": true,
+            "targetTag": "P",
+            "initialized": true,
+            "horizontal": true,
+            "display": "flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 3,
+            "reelCount": 3,
+            "animatedReels": 3
+          },
+          {
+            "index": 7,
+            "text": "+\n0\n1\n0\n1\n2\n3\n0\n1\n2\n3\n4\n5\n6\n7\n8\n%",
+            "inGrid": true,
+            "targetTag": "P",
+            "initialized": true,
+            "horizontal": true,
+            "display": "flex",
+            "flexDirection": "row",
+            "whiteSpace": "nowrap",
+            "digitColumns": 3,
+            "reelCount": 3,
+            "animatedReels": 3
+          }
+        ]
+      },
+      "splide": null,
+      "screenshot": null,
+      "elements": {
+        "accordions": 0,
+        "videoPopupTriggers": 4,
+        "forms": 1,
+        "navs": 8,
+        "splides": 0,
+        "marquees": 30,
+        "toc": 0
+      },
+      "pvgConsole": [],
+      "requestFailures": [],
+      "otherConsole": [
+        {
+          "type": "warning",
+          "text": "Allow attribute will take precedence over 'allowfullscreen'.",
+          "url": "https://pattern-us.webflow.io/home-v3"
+        }
+      ]
+    }
+  ]
+}

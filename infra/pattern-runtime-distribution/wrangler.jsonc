@@ -1,0 +1,9 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cloudflare/workers-sdk/main/packages/wrangler/config-schema.json",
+  "name": "pattern-runtime-distribution",
+  "compatibility_date": "2026-07-30",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./public"
+  }
+}

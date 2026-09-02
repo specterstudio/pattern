@@ -1,0 +1,119 @@
+.v3_home_anchor_sticky_layer {
+  position: absolute;
+  inset-block: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.v3_home_anchor_sticky_layer > [data-home-anchor-ready="true"] {
+  width: fit-content;
+  max-width: 100%;
+  margin-top: var(--v3-home-anchor-offset, 0px);
+  margin-inline: auto;
+  pointer-events: auto;
+}
+
+.v3_home_anchor_placeholder {
+  width: 100%;
+  flex: 0 0 auto;
+  pointer-events: none;
+}
+
+[data-home-anchor-ready="true"]
+  :is(
+    [data-home-anchor-link],
+    [class~="home_anchor_link"],
+    [class*="--home_anchor_link "],
+    [class$="--home_anchor_link"]
+  ).w--current {
+  color: var(
+    --pattern-library-v3---swatch--neutral-0,
+    var(--swatch--neutral-0, #ffffff)
+  );
+  background-color: var(
+    --pattern-library-v3---swatch--primary-500,
+    var(--swatch--primary-500, #006dff)
+  );
+  border-color: var(
+    --pattern-library-v3---swatch--primary-500,
+    var(--swatch--primary-500, #006dff)
+  );
+}
+
+[data-home-anchor-ready="true"]
+  :is(
+    [data-home-anchor-link],
+    [class~="home_anchor_link"],
+    [class*="--home_anchor_link "],
+    [class$="--home_anchor_link"]
+  ).w--current
+  :is(
+    [class~="home_anchor_text"],
+    [class*="--home_anchor_text "],
+    [class$="--home_anchor_text"],
+    [class~="home_anchor_icon"],
+    [class*="--home_anchor_icon "],
+    [class$="--home_anchor_icon"]
+  ) {
+  color: var(
+    --pattern-library-v3---swatch--neutral-0,
+    var(--swatch--neutral-0, #ffffff)
+  );
+}
+
+@media (max-width: 767px) {
+  .v3_home_anchor_sticky_layer > [data-home-anchor-ready="true"] {
+    width: fit-content;
+    max-width: 100%;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  [data-home-anchor-ready="true"]::-webkit-scrollbar {
+    display: none;
+  }
+
+  [data-home-anchor-ready="true"]::before,
+  [data-home-anchor-ready="true"]::after {
+    display: none;
+  }
+
+  [data-home-anchor-ready="true"]
+    :is(
+      [data-home-anchor-link],
+      [class~="home_anchor_link"],
+      [class*="--home_anchor_link "],
+      [class$="--home_anchor_link"]
+    ) {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+  }
+
+  [data-home-anchor-ready="true"]
+    :is(
+      [class~="home_anchor_text"],
+      [class*="--home_anchor_text "],
+      [class$="--home_anchor_text"]
+    ) {
+    white-space: nowrap;
+  }
+
+  [data-home-anchor-ready="true"]
+    :is(
+      [class~="home_anchor_text"],
+      [class*="--home_anchor_text "],
+      [class$="--home_anchor_text"]
+    )
+    :is(
+      [class~="u-text"],
+      [class*="--u-text "],
+      [class$="--u-text"]
+    ) {
+    white-space: nowrap;
+  }
+}

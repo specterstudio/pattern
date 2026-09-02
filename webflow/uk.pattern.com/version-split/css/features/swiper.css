@@ -1,0 +1,21 @@
+/*
+ * Pattern UK version split — Swiper
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 03 section 6
+ */
+
+6. SWIPER
+  ========================================================================== */
+
+  [class*="swiper-bullet-wrapper"] [class*="swiper-bullet"]:nth-child(2) {
+    transform: rotate(90deg);
+  }
+
+  [class*="swiper-bullet-wrapper"] [class*="swiper-bullet"]:nth-child(3) {
+    transform: rotate(180deg);
+  }
+
+  [class*="swiper-bullet-wrapper"] [class*="swiper-bullet"]:nth-child(4) {
+    transform: rotate(270deg);
+  }

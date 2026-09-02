@@ -1,0 +1,50 @@
+<!--
+  Pattern Version Gateway background loader.
+
+  This template is intentionally observation-only and pins the verified PVG
+  runtime commit for installation on a safe Webflow staging surface.
+
+  Keep all existing production footer scripts in place while mode="observe".
+-->
+<script>
+  (() => {
+    const selector = 'script[data-pattern-pvg-loader]';
+
+    if (window.PatternVersionGateway?.version) {
+      window.PatternVersionGateway.observe();
+      return;
+    }
+
+    const pending = document.querySelector(selector);
+    if (pending) {
+      pending.dataset.pvgMode = 'observe';
+      pending.addEventListener(
+        'load',
+        () => window.PatternVersionGateway?.observe(),
+        { once: true },
+      );
+      return;
+    }
+
+    const script = document.createElement('script');
+    script.src =
+      'https://cdn.jsdelivr.net/gh/specterstudio/pattern@bd1a6f239367873a032ff7c8ba9d791805c1f96b/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js';
+    script.async = true;
+    script.crossOrigin = 'anonymous';
+    script.integrity =
+      'sha384-Y9tZY3cYgjsRYJKXNyK5S8y7q30Fmwg2P0cT38RDpBGoaJtUvdvkZRszDwtTQHhJ';
+    script.dataset.patternPvgLoader = '0.2.5';
+    script.dataset.pvgMode = 'observe';
+    script.addEventListener(
+      'error',
+      () => {
+        console.warn(
+          '[Pattern PVG] The observation runtime could not load. Existing production scripts remain unchanged.',
+        );
+      },
+      { once: true },
+    );
+
+    document.head.appendChild(script);
+  })();
+</script>

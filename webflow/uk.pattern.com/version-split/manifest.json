@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "phase": 5,
+  "release": "0.5.2",
+  "tag": "uk-version-split-v0.5.2",
+  "active": true,
+  "pilotOnly": false,
+  "rolloutReady": true,
+  "marker": {
+    "attribute": "data-pattern-version",
+    "values": [
+      "v1",
+      "v2"
+    ]
+  },
+  "loadOrder": [
+    "Shared component CSS",
+    "version component CSS",
+    "shared JS",
+    "version JS",
+    "feature JS"
+  ],
+  "css": {
+    "shared": "css/shared.css",
+    "featuresBundle": "css/features.css",
+    "versions": {
+      "v1": "css/v1.css",
+      "v2": "css/v2.css"
+    },
+    "features": [
+      "css/features/icons.css",
+      "css/features/cards-icons.css",
+      "css/features/buttons-animations.css",
+      "css/features/gradients.css",
+      "css/features/accordion-faq.css",
+      "css/features/swiper.css",
+      "css/features/logos-designer.css",
+      "css/features/navigation.css",
+      "css/features/modal.css",
+      "css/features/lightbox.css",
+      "css/features/marquee.css",
+      "css/features/grid-media.css",
+      "css/features/rich-text.css",
+      "css/features/marketo.css"
+    ]
+  },
+  "js": {
+    "loader": "js/loader.js",
+    "shared": "js/shared.js",
+    "versions": {
+      "v1": "js/v1.js",
+      "v2": "js/v2.js"
+    }
+  },
+  "designerComponents": {
+    "order": [
+      "shared",
+      "version"
+    ],
+    "shared": {
+      "name": "Custom Code / Shared",
+      "source": "components/shared.html",
+      "assets": [
+        "css/shared.css",
+        "css/features.css"
+      ]
+    },
+    "v1": {
+      "name": "Custom Code / V1",
+      "source": "components/v1.html",
+      "assets": [
+        "css/v1.css"
+      ]
+    },
+    "v2": {
+      "name": "Custom Code / V2",
+      "source": "components/v2.html",
+      "assets": [
+        "css/v2.css"
+      ]
+    }
+  },
+  "externalAssets": "external-assets.json"
+}

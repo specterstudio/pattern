@@ -1,0 +1,5265 @@
+[
+  {
+    "page": {
+      "id": "6a61f3928ced7ce7346c5bde",
+      "title": "Location | Executive Acceleration Forum | Pattern UK",
+      "path": "/event-eaf-carcassonne-location",
+      "draft": true,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "6a61f3928ced7ce7346c5bde",
+        "element": "6a61f3928ced7ce7346c5be6"
+      },
+      "type": "Body",
+      "styleNames": [],
+      "attributes": {}
+    },
+    "mainCandidates": [],
+    "wrapCandidates": [],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "6a61f392630d04d5b655963c",
+      "title": "Speakers | Executive Acceleration Forum | Pattern UK",
+      "path": "/event-eaf-carcassonne-speakers",
+      "draft": true,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "6a61f392630d04d5b655963c",
+        "element": "6a61f392630d04d5b6559648"
+      },
+      "type": "Body",
+      "styleNames": [],
+      "attributes": {}
+    },
+    "mainCandidates": [],
+    "wrapCandidates": [],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "6a61f39122e3e59bfdf3e315",
+      "title": "Agenda | Executive Acceleration Forum | Pattern UK",
+      "path": "/event-eaf-carcassonne-agenda",
+      "draft": true,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "6a61f39122e3e59bfdf3e315",
+        "element": "6a61f39122e3e59bfdf3e31b"
+      },
+      "type": "Body",
+      "styleNames": [],
+      "attributes": {}
+    },
+    "mainCandidates": [],
+    "wrapCandidates": [],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "6a61ed702f07814fc2bd75df",
+      "title": "Executive Acceleration Forum | Pattern UK",
+      "path": "/event-eaf-carcassonne",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "6a61ed702f07814fc2bd75df",
+        "element": "6a61ed702f07814fc2bd75ee"
+      },
+      "type": "Body",
+      "styleNames": [],
+      "attributes": {}
+    },
+    "mainCandidates": [],
+    "wrapCandidates": [],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "6a58ef496540f1e6390f5ff4",
+      "title": "EU-UK Google Search",
+      "path": "/draft-pages/contact-us2",
+      "draft": true,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "6a58ef496540f1e6390f5ff4",
+        "element": "59542140-e26f-5f07-966d-8caae8b302cf"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "6a58ef496540f1e6390f5ff4",
+          "element": "59542140-e26f-5f07-966d-8caae8b302cf"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "6a58ef496540f1e6390f5ff4",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "6a567be44cdcb6212dcd2e2f",
+      "title": "Authors Template",
+      "path": "/authors",
+      "draft": false,
+      "template": true,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "6a567be44cdcb6212dcd2e2f",
+        "element": "6a567be44cdcb6212dcd2e3d"
+      },
+      "type": "Body",
+      "styleNames": [],
+      "attributes": {}
+    },
+    "mainCandidates": [],
+    "wrapCandidates": [],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "6a170d23eee56f95d9da1cdd",
+      "title": "Report Files Template",
+      "path": "/report-files",
+      "draft": false,
+      "template": true,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "6a170d23eee56f95d9da1cdd",
+        "element": "f73e4527-bda7-7770-9eee-37026ab011fb"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {}
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "6a170d23eee56f95d9da1cdd",
+          "element": "f73e4527-bda7-7770-9eee-37026ab011fb"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {}
+      }
+    ],
+    "wrapCandidates": [],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "6a0e3cc3ba585cc12d1c2f43",
+      "title": "Pattern Intelligence",
+      "path": "/pattern-intelligence",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v2",
+    "chosenRoot": {
+      "id": {
+        "component": "6a0e3cc3ba585cc12d1c2f43",
+        "element": "bcbd443c-c5d4-240d-6d21-620380abd388"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_main",
+        "cc-v2"
+      ],
+      "attributes": {}
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "6a0e3cc3ba585cc12d1c2f43",
+          "element": "bcbd443c-c5d4-240d-6d21-620380abd388"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main",
+          "cc-v2"
+        ],
+        "attributes": {}
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "6a0e3cc3ba585cc12d1c2f43",
+          "element": "4be9a37b-c87f-90d1-0eb1-5bdc213da5fb"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "69f9fe0ba11dd16bf945121e",
+      "title": "Content Brief (Form)",
+      "path": "/content-brief-form",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "69f9fe0ba11dd16bf945121e",
+        "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "69f9fe0ba11dd16bf945121e",
+          "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "69f9fe0ba11dd16bf945121e",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "69a1ff35f513a082a40559a4",
+      "title": "Thank You Pages Template",
+      "path": "/thank-you-pages",
+      "draft": false,
+      "template": true,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "69a1ff35f513a082a40559a4",
+        "element": "69a1ff35f513a082a40559ae"
+      },
+      "type": "Body",
+      "styleNames": [],
+      "attributes": {}
+    },
+    "mainCandidates": [],
+    "wrapCandidates": [],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "698232aaaf6c546d560e84e6",
+      "title": "Thank You Newsletter",
+      "path": "/thank-you-newsletter",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "698232aaaf6c546d560e84e6",
+        "element": "a6c27095-d494-e3a3-70e4-4730a3bf1453"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "698232aaaf6c546d560e84e6",
+          "element": "a6c27095-d494-e3a3-70e4-4730a3bf1453"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "698232aaaf6c546d560e84e6",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "69612a8aa88763877a72cda0",
+      "title": "DE Brand Protection",
+      "path": "/demand-gen/ecommerce-brand-protection-de",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "69612a8aa88763877a72cda0",
+        "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "69612a8aa88763877a72cda0",
+          "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "69612a8aa88763877a72cda0",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "69612a5c0d6b02252c3dc998",
+      "title": "DE Advertising Optimisation",
+      "path": "/demand-gen/marketplace-optimisation-and-growth-de",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "69612a5c0d6b02252c3dc998",
+        "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "69612a5c0d6b02252c3dc998",
+          "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "69612a5c0d6b02252c3dc998",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "69612a3e6ae472723737f2e4",
+      "title": "DE Ops and Logistics",
+      "path": "/demand-gen/full-service-ops-and-logistics-de",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "69612a3e6ae472723737f2e4",
+        "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "69612a3e6ae472723737f2e4",
+          "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "69612a3e6ae472723737f2e4",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "69612a186e1a37dc991bffca",
+      "title": "DE 3P Marketplace Accelerator",
+      "path": "/demand-gen/3p-marketplace-accelerator-de",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "69612a186e1a37dc991bffca",
+        "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "69612a186e1a37dc991bffca",
+          "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "69612a186e1a37dc991bffca",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "695fc91836a85b1aedcd8391",
+      "title": "UK Ops and Logistics",
+      "path": "/demand-gen/full-service-ops-and-logistics",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "695fc91836a85b1aedcd8391",
+        "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "695fc91836a85b1aedcd8391",
+          "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "695fc91836a85b1aedcd8391",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "695fc74b7e0cf6fe7dd97bc8",
+      "title": "MENA Ops and Logistics",
+      "path": "/demand-gen/full-service-ops-and-logistics-mena",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "695fc74b7e0cf6fe7dd97bc8",
+        "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "695fc74b7e0cf6fe7dd97bc8",
+          "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "695fc74b7e0cf6fe7dd97bc8",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "695fba1f91d30409d709b656",
+      "title": "MENA Brand Protection",
+      "path": "/demand-gen/ecommerce-brand-protection-mena",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "695fba1f91d30409d709b656",
+        "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "695fba1f91d30409d709b656",
+          "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "695fba1f91d30409d709b656",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "695fb6ea75dfd9120e206c09",
+      "title": "MENA Advertising Optimisation",
+      "path": "/demand-gen/marketplace-optimisation-and-growth-mena",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "695fb6ea75dfd9120e206c09",
+        "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "695fb6ea75dfd9120e206c09",
+          "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "695fb6ea75dfd9120e206c09",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "695fb4d95a9b752b845d027e",
+      "title": "MENA 3P Marketplace Accelerator",
+      "path": "/demand-gen/3p-marketplace-accelerator-mena",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "695fb4d95a9b752b845d027e",
+        "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "695fb4d95a9b752b845d027e",
+          "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "695fb4d95a9b752b845d027e",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "695fa1bde401d55bab3950b8",
+      "title": "UK Advertising Optimisation",
+      "path": "/demand-gen/marketplace-optimisation-and-growth",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "695fa1bde401d55bab3950b8",
+        "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "695fa1bde401d55bab3950b8",
+          "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "695fa1bde401d55bab3950b8",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "695f9738e70f036321e4e3d7",
+      "title": "UK Brand Protection",
+      "path": "/demand-gen/ecommerce-brand-protection",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "695f9738e70f036321e4e3d7",
+        "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "695f9738e70f036321e4e3d7",
+          "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "695f9738e70f036321e4e3d7",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "694a73f12909f1d7c74466ef",
+      "title": "UK 3P Marketplace Accelerator",
+      "path": "/demand-gen/3p-marketplace-accelerator",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "694a73f12909f1d7c74466ef",
+        "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "694a73f12909f1d7c74466ef",
+          "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "694a73f12909f1d7c74466ef",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "6949265dfbcb77cb8e06f629",
+      "title": "Brand Protection",
+      "path": "/solutions/brand-protection",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "6949265dfbcb77cb8e06f629",
+        "element": "c7da99b4-0a12-13a2-fdcf-65bdf6b05525"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "6949265dfbcb77cb8e06f629",
+          "element": "c7da99b4-0a12-13a2-fdcf-65bdf6b05525"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "6949265dfbcb77cb8e06f629",
+          "element": "c7da99b4-0a12-13a2-fdcf-65bdf6b05523"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "6913532cf72837fcf5afca2d",
+      "title": "Marketplace Performance Center Form",
+      "path": "/other-pages/marketplace-performance-center-form",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "6913532cf72837fcf5afca2d",
+        "element": "116cf7b3-6049-11a3-492c-d097c1eca775"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "main"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "6913532cf72837fcf5afca2d",
+          "element": "116cf7b3-6049-11a3-492c-d097c1eca775"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "main"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "6913532cf72837fcf5afca2d",
+          "element": "efda19a5-1d30-58e3-f424-52da59699383"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "690ca5cd04c11dfad3473cd1",
+      "title": "Marketplace Performance Center",
+      "path": "/other-pages/marketplace-performance-center",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "690ca5cd04c11dfad3473cd1",
+        "element": "efda19a5-1d30-58e3-f424-52da59699383"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_wrap"
+      ],
+      "attributes": {}
+    },
+    "mainCandidates": [],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "690ca5cd04c11dfad3473cd1",
+          "element": "efda19a5-1d30-58e3-f424-52da59699383"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "68e4556449f9fb5e9d872200",
+      "title": "Creators",
+      "path": "/draft-pages/creators",
+      "draft": true,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "68e4556449f9fb5e9d872200",
+        "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "68e4556449f9fb5e9d872200",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "68e4556449f9fb5e9d872200",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e26"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "68e4213c287fcc75fd3eb1c8",
+      "title": "GEO Scorecard",
+      "path": "/solutions/geo-scorecard",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "68e4213c287fcc75fd3eb1c8",
+        "element": "c7da99b4-0a12-13a2-fdcf-65bdf6b05525"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "68e4213c287fcc75fd3eb1c8",
+          "element": "c7da99b4-0a12-13a2-fdcf-65bdf6b05525"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "68e4213c287fcc75fd3eb1c8",
+          "element": "c7da99b4-0a12-13a2-fdcf-65bdf6b05523"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "68e420797f8852b673301ee8",
+      "title": "Recovery",
+      "path": "/solutions/recovery",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "68e420797f8852b673301ee8",
+        "element": "c7da99b4-0a12-13a2-fdcf-65bdf6b05525"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "68e420797f8852b673301ee8",
+          "element": "c7da99b4-0a12-13a2-fdcf-65bdf6b05525"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "68e420797f8852b673301ee8",
+          "element": "c7da99b4-0a12-13a2-fdcf-65bdf6b05523"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "68e41cf84216b6677676ec5c",
+      "title": "Global Expansion",
+      "path": "/solutions/global-expansion",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "68e41cf84216b6677676ec5c",
+        "element": "c7da99b4-0a12-13a2-fdcf-65bdf6b05525"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "68e41cf84216b6677676ec5c",
+          "element": "c7da99b4-0a12-13a2-fdcf-65bdf6b05525"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "68e41cf84216b6677676ec5c",
+          "element": "c7da99b4-0a12-13a2-fdcf-65bdf6b05523"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "68e41bcf29e1593d9fc6de89",
+      "title": "Brand Discoverability",
+      "path": "/solutions/brand-discoverability",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "68e41bcf29e1593d9fc6de89",
+        "element": "c7da99b4-0a12-13a2-fdcf-65bdf6b05525"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "68e41bcf29e1593d9fc6de89",
+          "element": "c7da99b4-0a12-13a2-fdcf-65bdf6b05525"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "68e41bcf29e1593d9fc6de89",
+          "element": "c7da99b4-0a12-13a2-fdcf-65bdf6b05523"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "68e41744fcb7e87213961dea",
+      "title": "Content Management Optimisation",
+      "path": "/solutions/content-management-optimisation",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "68e41744fcb7e87213961dea",
+        "element": "c7da99b4-0a12-13a2-fdcf-65bdf6b05525"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "68e41744fcb7e87213961dea",
+          "element": "c7da99b4-0a12-13a2-fdcf-65bdf6b05525"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "68e41744fcb7e87213961dea",
+          "element": "c7da99b4-0a12-13a2-fdcf-65bdf6b05523"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "68e416d8eaeb34a3716d627d",
+      "title": "Solution Pages",
+      "path": "/static-template-slug-1759778512877",
+      "draft": true,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "68e416d8eaeb34a3716d627d",
+        "element": "c7da99b4-0a12-13a2-fdcf-65bdf6b05525"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "68e416d8eaeb34a3716d627d",
+          "element": "c7da99b4-0a12-13a2-fdcf-65bdf6b05525"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "68e416d8eaeb34a3716d627d",
+          "element": "c7da99b4-0a12-13a2-fdcf-65bdf6b05523"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "68e41531274f3df37d379a87",
+      "title": "Fulfillment And Logistics",
+      "path": "/solutions/fulfillment-and-logistics",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "68e41531274f3df37d379a87",
+        "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "68e41531274f3df37d379a87",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "68e41531274f3df37d379a87",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e26"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "68e41174eac0fb64bc624802",
+      "title": "Social Commerce",
+      "path": "/solutions/social-commerce",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "68e41174eac0fb64bc624802",
+        "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "68e41174eac0fb64bc624802",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "68e41174eac0fb64bc624802",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e26"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "689b3b9bbaf850f5dbd231c6",
+      "title": "Amazon Scorecard Offer",
+      "path": "/other-pages/amazon-scorecard-offer",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "689b3b9bbaf850f5dbd231c6",
+        "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "689b3b9bbaf850f5dbd231c6",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "689b3b9bbaf850f5dbd231c6",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e26"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "689b2af65f7d71c316a90134",
+      "title": "Contact Us China Accelerator",
+      "path": "/other-pages/contact-us-china-accelerator",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "689b2af65f7d71c316a90134",
+        "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "689b2af65f7d71c316a90134",
+          "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "689b2af65f7d71c316a90134",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a674",
+      "title": "Contact Us TikTok Shop",
+      "path": "/other-pages/contact-us-tiktok-shop",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a674",
+        "element": "02a5e64b-249f-d1b5-7f2f-084696f73ab2"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a674",
+          "element": "02a5e64b-249f-d1b5-7f2f-084696f73ab2"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a674",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a673",
+      "title": "Case Studies Template",
+      "path": "/case-study",
+      "draft": false,
+      "template": true,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a673",
+        "element": "d8bdf74e-9ede-a2a8-df35-28fc8b9e5412"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {}
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a673",
+          "element": "d8bdf74e-9ede-a2a8-df35-28fc8b9e5412"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {}
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a673",
+          "element": "d8bdf74e-9ede-a2a8-df35-28fc8b9e540f"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a671",
+      "title": "Thank You (TikTok Shop)",
+      "path": "/other-pages/thank-you-tiktok-shop",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a671",
+        "element": "39b4aa0b-9ba4-51f9-b720-1e99b363691b"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a671",
+          "element": "39b4aa0b-9ba4-51f9-b720-1e99b363691b"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a671",
+          "element": "87b73fb6-767e-ecb6-ef2b-5acdd083321b"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a670",
+      "title": "Thank You (PXM)",
+      "path": "/other-pages/thank-you-pxm",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a670",
+        "element": "577e260a-ac54-75c2-e14a-8dd44e664a3e"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a670",
+          "element": "577e260a-ac54-75c2-e14a-8dd44e664a3e"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a670",
+          "element": "e8878dca-c0f2-31ae-54da-def62665297e"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a629",
+      "title": "PXM Content Optimisation Demo (Form)",
+      "path": "/other-pages/pxm-content-optimisation-demo",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a629",
+        "element": "aa88d036-7f48-98b4-13b2-841716bda911"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a629",
+          "element": "aa88d036-7f48-98b4-13b2-841716bda911"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a629",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a604",
+      "title": "PXM Syndication Demo (Form)",
+      "path": "/other-pages/pxm-syndication-demo",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a604",
+        "element": "b3e3dd51-3b8c-d131-e483-fafd73c5b3d9"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a604",
+          "element": "b3e3dd51-3b8c-d131-e483-fafd73c5b3d9"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a604",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a603",
+      "title": "PXM PIM Demo (Form)",
+      "path": "/other-pages/pim-demo",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a603",
+        "element": "9fa9c8c4-32ac-6b5c-6486-33d8a95c03db"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a603",
+          "element": "9fa9c8c4-32ac-6b5c-6486-33d8a95c03db"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a603",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a602",
+      "title": "PXM DAM Demo (Form)",
+      "path": "/other-pages/dam-demo",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a602",
+        "element": "20a9c51a-75ae-f896-3160-f7ecba36899b"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a602",
+          "element": "20a9c51a-75ae-f896-3160-f7ecba36899b"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a602",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a601",
+      "title": "TikTok Shop",
+      "path": "/solutions/tiktok-shop",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a601",
+        "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a601",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a601",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e26"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a600",
+      "title": "Ads Analysis",
+      "path": "/other-pages/ads-analysis",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a600",
+        "element": "7793fe89-c2f8-0569-82ea-a69747944deb"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a600",
+          "element": "7793fe89-c2f8-0569-82ea-a69747944deb"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a600",
+          "element": "06f00ae4-7cba-5ee2-9d48-0f4534b63922"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a5db",
+      "title": "Consumer Support and Assistance",
+      "path": "/about/consumer-support-and-assistance",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a5db",
+        "element": "ae221e1d-fd17-6946-ec72-4e70832f893b"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a5db",
+          "element": "ae221e1d-fd17-6946-ec72-4e70832f893b"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a5db",
+          "element": "60d1738e-12b3-13f6-316e-8eb9b98510cf"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a5b6",
+      "title": "Innovation Hub",
+      "path": "/other-pages/innovation-hub",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a5b6",
+        "element": "cc70c464-25a8-a5c1-4d69-7cfbbe27a4b6"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a5b6",
+          "element": "cc70c464-25a8-a5c1-4d69-7cfbbe27a4b6"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a5b6",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a599",
+      "title": "Form",
+      "path": "/static-template-slug-1743258899072",
+      "draft": true,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a599",
+        "element": "1e7df74d-d46e-5da3-b2d1-e36ce0aad701"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a599",
+          "element": "1e7df74d-d46e-5da3-b2d1-e36ce0aad701"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a599",
+          "element": "f769b748-3f19-f267-89f2-e6a1fca88055"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a585",
+      "title": "Prep Calculator",
+      "path": "/other-pages/prep-calculator",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a585",
+        "element": "67dbeee5cfd00c8d348c3789"
+      },
+      "type": "Body",
+      "styleNames": [],
+      "attributes": {}
+    },
+    "mainCandidates": [],
+    "wrapCandidates": [],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a584",
+      "title": "PXM Demo (Form)",
+      "path": "/other-pages/pxm-demo",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a584",
+        "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a584",
+          "element": "9bdc7ca6-a98f-4813-c39d-a59bc0f07591"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a584",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a570",
+      "title": "Advertising Technology",
+      "path": "/products/advertising-technology",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a570",
+        "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a570",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a570",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e26"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a56f",
+      "title": "Videos",
+      "path": "/admin/videos",
+      "draft": true,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a56f",
+        "element": "bb36f3b0-7a9c-3a2a-e647-0ef4f291db61"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "data-theme": "dark"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a56f",
+          "element": "bb36f3b0-7a9c-3a2a-e647-0ef4f291db61"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "data-theme": "dark"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a56f",
+          "element": "0440f7a2-35a0-f4b0-2366-2b96ab0b39c6"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a56e",
+      "title": "Home Hero Sliders Template",
+      "path": "/home-hero-slider",
+      "draft": false,
+      "template": true,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a56e",
+        "element": "67c89c369f978cf5ed027948"
+      },
+      "type": "Body",
+      "styleNames": [],
+      "attributes": {}
+    },
+    "mainCandidates": [],
+    "wrapCandidates": [],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a56d",
+      "title": "Legals Template",
+      "path": "/legal",
+      "draft": false,
+      "template": true,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a56d",
+        "element": "669d504c-6b80-bc2d-c218-0bcea17bb979"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {}
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a56d",
+          "element": "669d504c-6b80-bc2d-c218-0bcea17bb979"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {}
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a56d",
+          "element": "669d504c-6b80-bc2d-c218-0bcea17bb976"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a56c",
+      "title": "Partner Success Stories",
+      "path": "/resources/partner-success-stories",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a56c",
+        "element": "721dde55-ebd3-72c6-58e9-809a5147f5ed"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a56c",
+          "element": "721dde55-ebd3-72c6-58e9-809a5147f5ed"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a56c",
+          "element": "721dde55-ebd3-72c6-58e9-809a5147f5ea"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a56b",
+      "title": "Reports",
+      "path": "/resources/reports",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a56b",
+        "element": "044ef177-bcf8-b092-9cde-721ef7e6ad84"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a56b",
+          "element": "044ef177-bcf8-b092-9cde-721ef7e6ad84"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a56b",
+          "element": "044ef177-bcf8-b092-9cde-721ef7e6ad81"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a56a",
+      "title": "Newsroom",
+      "path": "/about/newsroom",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a56a",
+        "element": "f8c6059b-2c2c-1a00-2281-93433f062aed"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a56a",
+          "element": "f8c6059b-2c2c-1a00-2281-93433f062aed"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a56a",
+          "element": "60d1738e-12b3-13f6-316e-8eb9b98510cf"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a569",
+      "title": "Webinars & Podcasts",
+      "path": "/resources/webinars-and-podcasts",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a569",
+        "element": "426f30c2-bff2-d860-98fd-88877979529c"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a569",
+          "element": "426f30c2-bff2-d860-98fd-88877979529c"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a569",
+          "element": "426f30c2-bff2-d860-98fd-888779795299"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a568",
+      "title": "eBooks",
+      "path": "/resources/ebooks",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a568",
+        "element": "9ff21988-9eb6-3c4e-5152-e34fb5245df3"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a568",
+          "element": "9ff21988-9eb6-3c4e-5152-e34fb5245df3"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a568",
+          "element": "9ff21988-9eb6-3c4e-5152-e34fb5245df0"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a567",
+      "title": "Blog",
+      "path": "/resources/blog",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a567",
+        "element": "e076f862-af51-2fe5-63fc-aaaa8f133400"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a567",
+          "element": "e076f862-af51-2fe5-63fc-aaaa8f133400"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a567",
+          "element": "e076f862-af51-2fe5-63fc-aaaa8f1333fd"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a566",
+      "title": "Topics",
+      "path": "/resources/topics",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a566",
+        "element": "24294125-462e-9b24-a1fd-ae9ac8cd7b90"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a566",
+          "element": "24294125-462e-9b24-a1fd-ae9ac8cd7b90"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a566",
+          "element": "60d1738e-12b3-13f6-316e-8eb9b98510cf"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a565",
+      "title": "Webinars & Podcasts Template",
+      "path": "/webinar",
+      "draft": false,
+      "template": true,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a565",
+        "element": "fdb703cc-30c3-5519-7941-b74fd89c947b"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {}
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a565",
+          "element": "fdb703cc-30c3-5519-7941-b74fd89c947b"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {}
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a565",
+          "element": "fdb703cc-30c3-5519-7941-b74fd89c9477"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a564",
+      "title": "Reports Template",
+      "path": "/reports",
+      "draft": false,
+      "template": true,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a564",
+        "element": "40bb8536-7712-6783-b051-e4028c6ed073"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {}
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a564",
+          "element": "40bb8536-7712-6783-b051-e4028c6ed073"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {}
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a564",
+          "element": "40bb8536-7712-6783-b051-e4028c6ed06f"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a563",
+      "title": "EBooks Template",
+      "path": "/ebook",
+      "draft": false,
+      "template": true,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a563",
+        "element": "75570a4d-6221-1210-0fe8-c0d8f4aa21db"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {}
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a563",
+          "element": "75570a4d-6221-1210-0fe8-c0d8f4aa21db"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {}
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a563",
+          "element": "75570a4d-6221-1210-0fe8-c0d8f4aa21d7"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a562",
+      "title": "Topic Cards Template",
+      "path": "/topic-cards",
+      "draft": false,
+      "template": true,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a562",
+        "element": "67bf7ddf3673d4c1f628e398"
+      },
+      "type": "Body",
+      "styleNames": [],
+      "attributes": {}
+    },
+    "mainCandidates": [],
+    "wrapCandidates": [],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a561",
+      "title": "Topics Template",
+      "path": "/topics",
+      "draft": false,
+      "template": true,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a561",
+        "element": "0f9b81b5-2151-c249-6f49-c476a388aecd"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {}
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a561",
+          "element": "0f9b81b5-2151-c249-6f49-c476a388aecd"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {}
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a561",
+          "element": "0f9b81b5-2151-c249-6f49-c476a388aeca"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a55f",
+      "title": "Blogs Template",
+      "path": "/blog",
+      "draft": false,
+      "template": true,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a55f",
+        "element": "236fe562-6623-dd81-be73-f5efe9d95c0e"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {}
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a55f",
+          "element": "236fe562-6623-dd81-be73-f5efe9d95c0e"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {}
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a55f",
+          "element": "236fe562-6623-dd81-be73-f5efe9d95c0b"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a55e",
+      "title": "News Template",
+      "path": "/news",
+      "draft": false,
+      "template": true,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a55e",
+        "element": "30f81b7c-11f0-9e79-1cc1-7d674b49e1d3"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {}
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a55e",
+          "element": "30f81b7c-11f0-9e79-1cc1-7d674b49e1d3"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {}
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a55e",
+          "element": "30f81b7c-11f0-9e79-1cc1-7d674b49e1d1"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a54a",
+      "title": "New Sliders Template",
+      "path": "/new-slider",
+      "draft": false,
+      "template": true,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a54a",
+        "element": "67b4e625f4c294f306e88442"
+      },
+      "type": "Body",
+      "styleNames": [],
+      "attributes": {}
+    },
+    "mainCandidates": [],
+    "wrapCandidates": [],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a549",
+      "title": "Logos Template",
+      "path": "/logos",
+      "draft": false,
+      "template": true,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a549",
+        "element": "67b4e58a0df5658f7f644988"
+      },
+      "type": "Body",
+      "styleNames": [],
+      "attributes": {}
+    },
+    "mainCandidates": [],
+    "wrapCandidates": [],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a548",
+      "title": "Careers",
+      "path": "/about/careers",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a548",
+        "element": "2c615bb0-e460-819e-a112-5108a31a27fe"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a548",
+          "element": "2c615bb0-e460-819e-a112-5108a31a27fe"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      },
+      {
+        "id": {
+          "component": "684987756493653cc7c5a548",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e27"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {}
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a548",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e26"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a547",
+      "title": "Leaderships Template",
+      "path": "/leadership",
+      "draft": false,
+      "template": true,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a547",
+        "element": "67a3cd47970c8b294b0b0a8d"
+      },
+      "type": "Body",
+      "styleNames": [],
+      "attributes": {}
+    },
+    "mainCandidates": [],
+    "wrapCandidates": [],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a546",
+      "title": "Our Story",
+      "path": "/about/our-story",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a546",
+        "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e27"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {}
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a546",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e27"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {}
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a546",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e26"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a545",
+      "title": "Leadership",
+      "path": "/about/leadership",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a545",
+        "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e27"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {}
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a545",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e27"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {}
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a545",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e26"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a532",
+      "title": "Services",
+      "path": "/draft-pages/services",
+      "draft": true,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a532",
+        "element": "4e7928d4-964e-6892-7358-24d9c83c10bc"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a532",
+          "element": "4e7928d4-964e-6892-7358-24d9c83c10bc"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a532",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e26"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a528",
+      "title": "DAM",
+      "path": "/products/pxm/dam",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a528",
+        "element": "eafd3aa7-6f0e-6625-f4e9-c680bac7393c"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a528",
+          "element": "eafd3aa7-6f0e-6625-f4e9-c680bac7393c"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a528",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e26"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a527",
+      "title": "PIM",
+      "path": "/products/pxm/pim",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a527",
+        "element": "27f5f67e-57b6-a3e7-ffa6-52743a533474"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a527",
+          "element": "27f5f67e-57b6-a3e7-ffa6-52743a533474"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a527",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e26"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a526",
+      "title": "Syndication",
+      "path": "/products/pxm/syndication",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a526",
+        "element": "f15a5293-4ea7-b369-e6ff-fe4a2945a145"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a526",
+          "element": "f15a5293-4ea7-b369-e6ff-fe4a2945a145"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a526",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e26"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a525",
+      "title": "Optimisation",
+      "path": "/products/pxm/optimisation",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a525",
+        "element": "31064b5b-5b78-7bb7-3853-0a1428b95763"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a525",
+          "element": "31064b5b-5b78-7bb7-3853-0a1428b95763"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a525",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e26"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a524",
+      "title": "PXM",
+      "path": "/products/pxm",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a524",
+        "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a524",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a524",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e26"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a521",
+      "title": "Middle Mile",
+      "path": "/draft-pages/middle-mile",
+      "draft": true,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a521",
+        "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a521",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a521",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e26"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a520",
+      "title": "DTC",
+      "path": "/products/dtc",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a520",
+        "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a520",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a520",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e26"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a51f",
+      "title": "Marketplace Prep",
+      "path": "/products/marketplace-prep",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a51f",
+        "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a51f",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a51f",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e26"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a51e",
+      "title": "Marketplace Accelerator China",
+      "path": "/products/marketplace-accelerator-china",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a51e",
+        "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a51e",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a51e",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e26"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a51d",
+      "title": "Global Marketplace Accelerator",
+      "path": "/products/marketplace-accelerator",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a51d",
+        "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a51d",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a51d",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e26"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a51b",
+      "title": "1P Accelerator",
+      "path": "/draft-pages/1p-accelerator",
+      "draft": true,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a51b",
+        "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a51b",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a51b",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e26"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a51a",
+      "title": "Page Template",
+      "path": "/static-template-slug-1738602301210",
+      "draft": true,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a51a",
+        "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a51a",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810eeb"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a51a",
+          "element": "54004d1b-fc17-6b19-c3c5-9d7a26810e26"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a519",
+      "title": "Software",
+      "path": "/software",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a519",
+        "element": "948d29e7-5490-bf47-02fe-98f0bd4f061c"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a519",
+          "element": "948d29e7-5490-bf47-02fe-98f0bd4f061c"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a519",
+          "element": "ff9b175a-68e0-6987-4aa6-25e68e3d9cf6"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a518",
+      "title": "Fulfillment",
+      "path": "/fulfillment",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a518",
+        "element": "d2a419f8-a905-7062-2da0-6ab077caded9"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a518",
+          "element": "d2a419f8-a905-7062-2da0-6ab077caded9"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a518",
+          "element": "ff9b175a-68e0-6987-4aa6-25e68e3d9cf6"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a517",
+      "title": "Marketplaces",
+      "path": "/marketplaces",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a517",
+        "element": "1830a787-037d-ca02-5be4-35b3395ff755"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a517",
+          "element": "1830a787-037d-ca02-5be4-35b3395ff755"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a517",
+          "element": "ff9b175a-68e0-6987-4aa6-25e68e3d9cf6"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a516",
+      "title": "Elements",
+      "path": "/admin/elements",
+      "draft": true,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a516",
+        "element": "bb36f3b0-7a9c-3a2a-e647-0ef4f291db61"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "data-theme": "dark"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a516",
+          "element": "bb36f3b0-7a9c-3a2a-e647-0ef4f291db61"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "data-theme": "dark"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a516",
+          "element": "0440f7a2-35a0-f4b0-2366-2b96ab0b39c6"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a515",
+      "title": "Contact",
+      "path": "/contact-us",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a515",
+        "element": "59542140-e26f-5f07-966d-8caae8b302cf"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a515",
+          "element": "59542140-e26f-5f07-966d-8caae8b302cf"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a515",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a501",
+      "title": "Login Portal",
+      "path": "/login",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a501",
+        "element": "f8dc4dba-bc1d-5be0-4c92-9e869e343052"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a501",
+          "element": "f8dc4dba-bc1d-5be0-4c92-9e869e343052"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a501",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a4e0",
+      "title": "Thank You",
+      "path": "/thank-you",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a4e0",
+        "element": "a6c27095-d494-e3a3-70e4-4730a3bf1453"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a4e0",
+          "element": "a6c27095-d494-e3a3-70e4-4730a3bf1453"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a4e0",
+          "element": "2f076ca5-8379-fc62-eb1f-3bf0d58b20ae"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a4df",
+      "title": "Sections",
+      "path": "/admin/sections",
+      "draft": true,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a4df",
+        "element": "bb36f3b0-7a9c-3a2a-e647-0ef4f291db61"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "data-theme": "dark"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a4df",
+          "element": "bb36f3b0-7a9c-3a2a-e647-0ef4f291db61"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "data-theme": "dark"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a4df",
+          "element": "0440f7a2-35a0-f4b0-2366-2b96ab0b39c6"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a4de",
+      "title": "Form",
+      "path": "/admin/form",
+      "draft": true,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a4de",
+        "element": "bb36f3b0-7a9c-3a2a-e647-0ef4f291db61"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "data-theme": "dark"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a4de",
+          "element": "bb36f3b0-7a9c-3a2a-e647-0ef4f291db61"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "data-theme": "dark"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a4de",
+          "element": "0440f7a2-35a0-f4b0-2366-2b96ab0b39c6"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a4b9",
+      "title": "Footer",
+      "path": "/admin/footer",
+      "draft": true,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a4b9",
+        "element": "bb36f3b0-7a9c-3a2a-e647-0ef4f291db61"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "data-theme": "dark"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a4b9",
+          "element": "bb36f3b0-7a9c-3a2a-e647-0ef4f291db61"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "data-theme": "dark"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a4b9",
+          "element": "0440f7a2-35a0-f4b0-2366-2b96ab0b39c6"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a498",
+      "title": "Navbar",
+      "path": "/admin/navbar",
+      "draft": true,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a498",
+        "element": "bb36f3b0-7a9c-3a2a-e647-0ef4f291db61"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "data-theme": "dark"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a498",
+          "element": "bb36f3b0-7a9c-3a2a-e647-0ef4f291db61"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "data-theme": "dark"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a498",
+          "element": "0440f7a2-35a0-f4b0-2366-2b96ab0b39c6"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a47e",
+      "title": "Atoms",
+      "path": "/admin/atoms",
+      "draft": true,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a47e",
+        "element": "bb36f3b0-7a9c-3a2a-e647-0ef4f291db61"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "data-theme": "dark"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a47e",
+          "element": "bb36f3b0-7a9c-3a2a-e647-0ef4f291db61"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "data-theme": "dark"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a47e",
+          "element": "0440f7a2-35a0-f4b0-2366-2b96ab0b39c6"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a47d",
+      "title": "[Admin] Design System",
+      "path": "/static-template-slug-1732116839203",
+      "draft": true,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a47d",
+        "element": "bb36f3b0-7a9c-3a2a-e647-0ef4f291db61"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "data-theme": "dark"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a47d",
+          "element": "bb36f3b0-7a9c-3a2a-e647-0ef4f291db61"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "data-theme": "dark"
+        }
+      }
+    ],
+    "wrapCandidates": [],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a47b",
+      "title": "404",
+      "path": "/404",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a47b",
+        "element": "2dec5894-4b8c-293f-caa5-ca0f24880d5c"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "main"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a47b",
+          "element": "2dec5894-4b8c-293f-caa5-ca0f24880d5c"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "main"
+        }
+      }
+    ],
+    "wrapCandidates": [],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a44f",
+      "title": "Password",
+      "path": "/401",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a44f",
+        "element": "288a739a-1a04-a03a-f722-a31710cf668c"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_wrap"
+      ],
+      "attributes": {}
+    },
+    "mainCandidates": [],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a44f",
+          "element": "288a739a-1a04-a03a-f722-a31710cf668c"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a42f",
+      "title": "Styleguide",
+      "path": "/admin/styleguide",
+      "draft": true,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a42f",
+        "element": "08307316-41c0-4beb-5747-3895255ffe12"
+      },
+      "type": "Block",
+      "styleNames": [
+        "page_main"
+      ],
+      "attributes": {
+        "id": "main"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a42f",
+          "element": "08307316-41c0-4beb-5747-3895255ffe12"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_main"
+        ],
+        "attributes": {
+          "id": "main"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a42f",
+          "element": "4be9a37b-c87f-90d1-0eb1-5bdc213da5fb"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a402",
+      "title": "Home",
+      "path": "/",
+      "draft": false,
+      "template": false,
+      "archived": false
+    },
+    "intendedVersion": "v1",
+    "chosenRoot": {
+      "id": {
+        "component": "684987756493653cc7c5a402",
+        "element": "e8d34242-3b7e-c527-7e31-64e21a13b267"
+      },
+      "type": "DropTarget",
+      "styleNames": [
+        "page_main",
+        "cc-home"
+      ],
+      "attributes": {
+        "id": "top"
+      }
+    },
+    "mainCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a402",
+          "element": "e8d34242-3b7e-c527-7e31-64e21a13b267"
+        },
+        "type": "DropTarget",
+        "styleNames": [
+          "page_main",
+          "cc-home"
+        ],
+        "attributes": {
+          "id": "top"
+        }
+      }
+    ],
+    "wrapCandidates": [
+      {
+        "id": {
+          "component": "684987756493653cc7c5a402",
+          "element": "4be9a37b-c87f-90d1-0eb1-5bdc213da5fb"
+        },
+        "type": "Block",
+        "styleNames": [
+          "page_wrap"
+        ],
+        "attributes": {}
+      }
+    ],
+    "existingVersionMarkers": [],
+    "error": null
+  }
+]

@@ -1,0 +1,94 @@
+<style>
+    #splideSlider { display: block !important; }
+    #splideSlider .splide__track { width: 100% !important; overflow: hidden; }
+    #splideSlider .splide__slide { height: 480px; }
+    #splideSlider .splide__slide .pattern-library-v2--u-image-wrapper { width: 100% !important; height: 100% !important; }
+    #splideSlider .splide__slide .pattern-library-v2--u-image { width: 100% !important; height: 100% !important; object-fit: cover; }
+  </style>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      var splideEl = document.querySelector('#splideSlider');
+      if (!splideEl) return;
+
+      var slides = Array.from(splideEl.children);
+
+      var track = document.createElement('div');
+      track.className = 'splide__track';
+      var list = document.createElement('ul');
+      list.className = 'splide__list';
+
+      slides.forEach(function (slide) {
+            var li = document.createElement('li');
+            li.className = 'splide__slide';
+            li.appendChild(slide);
+            list.appendChild(li);
+          });
+
+      track.appendChild(list);
+      splideEl.appendChild(track);
+
+      var splide = new Splide('#splideSlider', {
+            type       : 'loop',
+            perPage    : 4,
+            gap        : '0px',
+            pagination : false,
+            arrows     : false,
+            drag       : false,
+            clones     : 8,
+            breakpoints: {
+                    1024: { perPage: 3 },
+                    768 : { perPage: 2 },
+                    480 : { perPage: 1 }
+                  }
+          });
+
+      splide.mount();
+
+      // Continuous scroll via requestAnimationFrame
+      var speed = 0.5; // px per frame — tweak for faster/slower
+      var position = 0;
+      var slideWidth = 0;
+      var totalWidth = 0;
+
+      function getMetrics() {
+            var firstSlide = splideEl.querySelector('.splide__slide');
+            if (firstSlide) {
+                    slideWidth = firstSlide.offsetWidth;
+                    totalWidth = slideWidth * slides.length;
+                  }
+          }
+
+      getMetrics();
+      window.addEventListener('resize', getMetrics);
+
+      function tick() {
+            position += speed;
+            if (totalWidth > 0 && position >= totalWidth) {
+                    position -= totalWidth;
+                  }
+            var list = splideEl.querySelector('.splide__list');
+            if (list) {
+                    list.style.transform = 'translateX(-' + position + 'px)';
+                  }
+            requestAnimationFrame(tick);
+          }
+
+      // Small delay to let Splide finish laying out
+      setTimeout(function() {
+            getMetrics();
+            tick();
+          }, 300);
+    });
+  </script>
+      })
+            }
+            }
+      }
+            }
+      }
+            }
+      })
+      })
+  })
+</script>
+</style>

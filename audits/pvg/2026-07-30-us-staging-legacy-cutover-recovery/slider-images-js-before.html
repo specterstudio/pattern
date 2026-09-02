@@ -1,0 +1,44 @@
+<script>
+  pageFunctions.addFunction('splideSlider', function() {
+      var track = document.getElementById('splideSlider');
+      if (!track) return;
+
+      var paused = false;
+      var speed = 0.5; // pixels per frame
+
+      // Clone children for seamless loop
+      var originals = Array.from(track.children);
+      originals.forEach(function(child) {
+            var clone = child.cloneNode(true);
+            clone.setAttribute('aria-hidden', 'true');
+            track.appendChild(clone);
+          });
+
+      var halfWidth = track.scrollWidth / 2;
+
+      function step() {
+            if (!paused) {
+                    track.scrollLeft += speed;
+                    // Loop back seamlessly
+                    if (track.scrollLeft >= halfWidth) {
+                              track.scrollLeft -= halfWidth;
+                            }
+                  }
+            requestAnimationFrame(step);
+          }
+
+      requestAnimationFrame(step);
+
+      // Click any image to pause / resume
+      track.addEventListener('click', function() {
+            paused = !paused;
+          });
+    });
+  </script>
+      })
+                    }
+            }
+      }
+      })
+  })
+</script>

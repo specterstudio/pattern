@@ -1,0 +1,179 @@
+<!-- =========================================================
+     PATTERN — DETACHED-READY GLOBAL FOOTER
+     ========================================================= -->
+
+<!-- Autopilot SDK — Marketing consent -->
+<script
+  type="fs-consent"
+  fs-consent-categories="marketing"
+  src="https://cdn.bc0a.com/autopilot/f00000000324090/autopilot_sdk.js"
+  defer
+></script>
+
+<!-- Splide -->
+<script
+  src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+  defer
+></script>
+
+<!-- =========================================================
+     PATTERN SITE RUNTIME — v1.0.8
+     ========================================================= -->
+
+<!-- Navigation -->
+<script
+  src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js"
+></script>
+
+<!-- Logo rotation -->
+<script
+  src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/logos.js"
+  defer
+></script>
+
+<!-- Rich-text heading correction -->
+<script
+  src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/rich-text-heading-conversion.js"
+  defer
+></script>
+
+<!-- FAQ schema: legacy, connected V2 and detached accordions -->
+<script
+  src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/schema/faq-schema-generator.js"
+  defer
+></script>
+
+<!-- Accordion: connected V2 and detached components -->
+<script
+  src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/accordion.js"
+  defer
+></script>
+
+<!-- Image lazy loading -->
+<script
+  src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+  defer
+></script>
+
+<!-- Rich-text CTA injection -->
+<script
+  src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/cta-inject.js"
+  defer
+></script>
+
+<!-- Article/legal TOC -->
+<script
+  src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/toc.js"
+  defer
+></script>
+
+<!-- Storylane — Analytics consent -->
+<script
+  type="fs-consent"
+  fs-consent-categories="analytics"
+  src="https://js.storylane.io/js/v2/storylane.js"
+  async
+></script>
+
+<!--
+  Iframe popup intentionally remains v1.0.2.
+  Its newer popup-grouping fix is not present in the v1.0.8 release lineage.
+-->
+<script
+  src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.2/webflow/pattern.com/scripts/media/iframe-popup.js"
+  defer
+></script>
+
+<!-- Webflow pagination behavior -->
+<script
+  src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/pagination-fix.js"
+  defer
+></script>
+
+<!-- Attribute-driven card animations -->
+<script src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js" defer></script>
+
+<!-- Execute registered page functions -->
+<script>
+  (function () {
+    function runPageFunctions() {
+      if (
+        window.pageFunctions &&
+        typeof window.pageFunctions.executeFunctions === "function"
+      ) {
+        window.pageFunctions.executeFunctions();
+      }
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener(
+        "DOMContentLoaded",
+        runPageFunctions,
+        { once: true }
+      );
+    } else {
+      runPageFunctions();
+    }
+  })();
+</script>
+
+<!-- Pattern Component Runtime — consumer-site modules -->
+<script
+  src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+  integrity="sha384-CiwMnsAZuxy0py4P6p1i4fc1DRXU9M88PvQCdjbBUQazExKSxxpC/0zj36JIeWHN"
+  crossorigin="anonymous"
+  defer
+></script>
+
+<!--
+  Pattern Version Gateway V3 activation loader.
+
+  This release activates PVG only on explicitly marked V3 pages. V1, V2, and
+  V2L keep their existing production scripts because legacyPolicy="preserve".
+
+  Keep the current legacy footer scripts installed during this release.
+-->
+<script>
+  (() => {
+    const selector = 'script[data-pattern-pvg-loader]';
+    const activate = () =>
+      window.PatternVersionGateway?.activate({
+        legacyPolicy: 'preserve',
+      });
+
+    if (window.PatternVersionGateway?.version) {
+      void activate();
+      return;
+    }
+
+    const pending = document.querySelector(selector);
+    if (pending) {
+      pending.dataset.pvgMode = 'active';
+      pending.dataset.pvgLegacyPolicy = 'preserve';
+      pending.addEventListener('load', activate, { once: true });
+      return;
+    }
+
+    const script = document.createElement('script');
+    script.src =
+      'https://cdn.jsdelivr.net/gh/specterstudio/pattern@e1f9e1dcb471968fe118041ce64e8d213784e469/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js';
+    script.async = true;
+    script.crossOrigin = 'anonymous';
+    script.integrity =
+      'sha384-bIT8KR6EUl79Zw5ISdiCvSvoVf7dj1PfzmbOu6mbA9BnuCsWhSGmJc3cioOVeCAQ';
+    script.dataset.patternPvgLoader = '0.2.3';
+    script.dataset.pvgMode = 'active';
+    script.dataset.pvgLegacyPolicy = 'preserve';
+    script.addEventListener(
+      'error',
+      () => {
+        console.warn(
+          '[Pattern PVG] The V3 runtime could not load. Existing production scripts remain unchanged.',
+        );
+      },
+      { once: true },
+    );
+
+    document.head.appendChild(script);
+  })();
+</script>

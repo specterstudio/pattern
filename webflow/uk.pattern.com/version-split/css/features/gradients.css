@@ -1,0 +1,191 @@
+/*
+ * Pattern UK version split — Gradients
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 03 section 4
+ */
+
+/* ==========================================================================
+  4. GRADIENTS
+  ========================================================================== */
+
+  /* -- Gradients Outline -- */
+  [class*="u-g-stroke"] {
+    background:
+      linear-gradient(var(--_gradient-style---gradient--g-stroke-fill), var(--_gradient-style---gradient--g-stroke-fill)) padding-box,
+      linear-gradient(
+        135deg,
+        var(--_gradient-style---gradient--g-c1) var(--_gradient-style---gradient--g-c1-pos),
+        var(--_gradient-style---gradient--g-c2) var(--_gradient-style---gradient--g-c2-pos),
+        var(--_gradient-style---gradient--g-c3) var(--_gradient-style---gradient--g-c3-pos),
+        var(--_gradient-style---gradient--g-c4) var(--_gradient-style---gradient--g-c4-pos)
+      ) border-box;
+    -webkit-background-clip: padding-box, border-box;
+    background-clip: padding-box, border-box;
+  }
+
+  [class*="u-g-stroke"] > * {
+    margin: calc(0px - var(--_default-2---gradient--gs-border));
+  }
+
+  /* -- Theme Gradients -- */
+  :root {
+    --gradient-card-radial-blue: radial-gradient(
+      141.03% 159.48% at 103.19% -3.11%,
+      var(--_default-2---swatch--primary-200, #B8C5FF) 0%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 50%,
+      var(--_default-2---swatch--neutral-900, #070708) 100%
+    );
+  }
+
+  [class*="u-bg-gradient-hero-home"] {
+    background: radial-gradient(
+      ellipse 96.27% 82.88% at 50% 11.72%,
+      var(--_default-2---swatch--neutral-900, #070708) 0%,
+      var(--_default-2---swatch--primary-900, #0C1133) 20.19%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 53.59%,
+      var(--_default-2---swatch--secondary-500, #0096FA) 65.48%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 97.36%
+    );
+    filter: blur(40px);
+    pointer-events: none;
+  }
+
+  [class*="u-bg-gradient-product-dark"] {
+    background: radial-gradient(
+      ellipse 70.42% 82.88% at 50% 11.72%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 0%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 56.47%,
+      var(--_default-2---swatch--secondary-500, #0096FA) 72.48%,
+      var(--_default-2---swatch--info-300, #C173FF) 73.73%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 75.58%,
+      var(--_default-2---swatch--primary-800, #172266) 89.62%,
+      var(--_default-2---swatch--neutral-900, #070708) 97.36%
+    );
+    filter: blur(40px);
+  }
+
+  [class*="u-bg-gradient-product-light"] {
+    background: radial-gradient(
+      ellipse 70.42% 82.88% at 50% 11.72%,
+      var(--_default-2---swatch--neutral-900, #070708) 2.64%,
+      var(--_default-2---swatch--primary-900, #0C1133) 36.55%,
+      var(--_default-2---swatch--primary-800, #172266) 50.44%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 70.08%,
+      var(--_default-2---swatch--info-300, #C173FF) 73.39%,
+      var(--_default-2---swatch--secondary-500, #0096FA) 75.88%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 96.4%
+    );
+    filter: blur(40px);
+  }
+
+  [class*="u-bg-gradient-section"] {
+    background: radial-gradient(
+      ellipse 73.24% 91.52% at 50.03% 8.48%,
+      var(--_default-2---swatch--neutral-900, #070708) 0%,
+      var(--_default-2---swatch--neutral-800, #171717) 57.21%,
+      var(--_default-2---swatch--info-800, #2F0466) 71.15%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 77.79%,
+      var(--_default-2---swatch--secondary-500, #0096FA) 82.44%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 90%
+    );
+    filter: blur(40px);
+  }
+
+  /* -- Gradient Ring -- */
+  [class*="u-gradient-ring"] {
+    --border: 3px;
+    padding: var(--border);
+    border-radius: inherit !important;
+    box-sizing: border-box;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    mask:
+      linear-gradient(#000, #000) content-box,
+      linear-gradient(#000, #000);
+    mask-composite: exclude;
+    -webkit-mask:
+      linear-gradient(#000, #000) content-box,
+      linear-gradient(#000, #000);
+    -webkit-mask-composite: xor;
+  }
+
+  /* -- Gradient Banner Backgrounds -- */
+  [class*="g_banner_bkg_1"] {
+    background-image: radial-gradient(
+      70% 88.19% at 50% 10%,
+      var(--_default-2---swatch--neutral-900, #070708) 0%,
+      var(--_default-2---swatch--neutral-800, #171717) 22.4%,
+      var(--_default-2---swatch--info-500, #770BFF) 39.56%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 45.06%,
+      var(--_default-2---swatch--secondary-500, #0096FA) 57.69%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 92.79%
+    );
+    filter: blur(40px);
+  }
+
+  [class*="g_banner_bkg_2"] {
+    background-image: radial-gradient(
+      35% 82.88% at 50% 25%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 0%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 49.47%,
+      var(--_default-2---swatch--secondary-500, #0096FA) 65.48%,
+      var(--_default-2---swatch--info-300, #C173FF) 66.73%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 68.58%,
+      var(--_default-2---swatch--primary-800, #172266) 82.62%,
+      var(--_default-2---swatch--neutral-900, #070708) 97.36%
+    );
+    filter: blur(40px);
+  }
+
+  [class*="g_banner_bkg_3"] {
+    background-image: radial-gradient(
+      40% 90% at 70% 20%,
+      var(--_default-2---swatch--info-50-copy, #F5E6FF) 0%,
+      var(--_default-2---swatch--info-500, #770BFF) 18.04%,
+      var(--_default-2---swatch--primary-800, #172266) 52.68%,
+      var(--_default-2---swatch--primary-900, #0C1133) 100%
+    );
+    filter: blur(40px);
+  }
+
+  /* -- Gradient > Large Card -- */
+  [class*="large_card_bkg"] {
+    background-image: radial-gradient(
+      110.4% 134.88% at 50% -16.38%,
+      var(--_default-2---swatch--secondary-100, #B3E3FF) 10.1%,
+      var(--_default-2---swatch--secondary-500, #0096FA) 24.26%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 38.72%,
+      var(--_default-2---swatch--info-800, #2F0466) 74.65%,
+      var(--_default-2---swatch--primary-900, #0C1133) 92.77%
+    );
+  }
+
+  [class*="stat_card_gradient"] {
+    background-image: radial-gradient(
+      125% 125% at 100% 0%,
+      var(--_default-2---swatch--primary-200) 0%,
+      var(--_default-2---swatch--primary-500) 50%,
+      var(--_default-2---swatch--neutral-900) 120%
+    );
+  }
+
+  [class*="stat_card_purple"] {
+    background-image: conic-gradient(
+      from 79deg at 46.7% 50%,
+      var(--_default-2---swatch--info-900, #180233) 0deg,
+      var(--_default-2---swatch--info-700, #470799) 180deg,
+      var(--_default-2---swatch--info-500, #770BFF) 360deg
+    );
+  }
+
+  [class*="stat_card_gold"] {
+    background-image: conic-gradient(
+      from 163deg at 14.86% 61.32%,
+      var(--_default-2---swatch--warning-700, #B45309) 5deg,
+      var(--_default-2---swatch--warning-500, #F59E0B) 45deg,
+      var(--_default-2---swatch--white, #FFF) 257.36deg,
+      var(--_default-2---swatch--warning-500, #F59E0B) 323.65deg,
+      var(--_default-2---swatch--warning-700, #B45309) 360deg
+    );
+  }

@@ -1,0 +1,2472 @@
+[
+  {
+    "id": "6a61f3928ced7ce7346c5bde",
+    "siteId": "684987756493653cc7c5a406",
+    "title": "Location | Executive Acceleration Forum | Pattern UK",
+    "slug": "event-eaf-carcassonne-location",
+    "createdOn": "2026-07-23T10:57:22.580Z",
+    "lastUpdated": "2026-07-23T15:53:15.368Z",
+    "archived": false,
+    "draft": true,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Location | Executive Acceleration Forum",
+      "description": "Hotel de la Cite, Carcassonne — venue details for Pattern's Executive Acceleration Forum."
+    },
+    "openGraph": {
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/event-eaf-carcassonne-location"
+  },
+  {
+    "id": "6a61f392630d04d5b655963c",
+    "siteId": "684987756493653cc7c5a406",
+    "title": "Speakers | Executive Acceleration Forum | Pattern UK",
+    "slug": "event-eaf-carcassonne-speakers",
+    "createdOn": "2026-07-23T10:57:22.163Z",
+    "lastUpdated": "2026-07-23T15:53:15.250Z",
+    "archived": false,
+    "draft": true,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Speakers | Executive Acceleration Forum",
+      "description": "Meet the ecommerce acceleration experts speaking at Pattern's Executive Acceleration Forum."
+    },
+    "openGraph": {
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/event-eaf-carcassonne-speakers"
+  },
+  {
+    "id": "6a61f39122e3e59bfdf3e315",
+    "siteId": "684987756493653cc7c5a406",
+    "title": "Agenda | Executive Acceleration Forum | Pattern UK",
+    "slug": "event-eaf-carcassonne-agenda",
+    "createdOn": "2026-07-23T10:57:21.748Z",
+    "lastUpdated": "2026-07-23T15:53:14.836Z",
+    "archived": false,
+    "draft": true,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Agenda | Executive Acceleration Forum",
+      "description": "Full 3-day itinerary for Pattern's Executive Acceleration Forum, 21-23 October 2026 in Carcassonne, France."
+    },
+    "openGraph": {
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/event-eaf-carcassonne-agenda"
+  },
+  {
+    "id": "6a61ed702f07814fc2bd75df",
+    "siteId": "684987756493653cc7c5a406",
+    "title": "Executive Acceleration Forum | Pattern UK",
+    "slug": "event-eaf-carcassonne",
+    "createdOn": "2026-07-23T10:31:12.862Z",
+    "lastUpdated": "2026-07-24T12:54:20.313Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Executive Acceleration Forum | Pattern UK",
+      "description": "Join Pattern for an exclusive two day, two night Executive Acceleration Forum in Carcassonne, France — 21-23 October 2026."
+    },
+    "openGraph": {
+      "titleCopied": false,
+      "descriptionCopied": false,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/event-eaf-carcassonne"
+  },
+  {
+    "id": "6a58ef496540f1e6390f5ff4",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb2a9d89a2423d22a11b0",
+    "title": "EU-UK Google Search",
+    "slug": "contact-us2",
+    "createdOn": "2026-07-16T14:48:41.243Z",
+    "lastUpdated": "2026-07-16T15:20:31.737Z",
+    "archived": false,
+    "draft": true,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Contact Us | Pattern UK",
+      "description": "Our brands trust and highly-recommend Pattern because we deliver cutting-edge business ecommerce solutions from start to finish. Let's talk today!"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/draft-pages/contact-us2"
+  },
+  {
+    "id": "6a567be44cdcb6212dcd2e2f",
+    "siteId": "684987756493653cc7c5a406",
+    "collectionId": "6a567be44cdcb6212dcd2df0",
+    "title": "Authors Template",
+    "slug": "detail_authors",
+    "createdOn": "2026-07-14T18:11:48.740Z",
+    "lastUpdated": "2026-07-21T09:25:36.318Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {},
+    "openGraph": {
+      "titleCopied": false,
+      "descriptionCopied": false,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/authors"
+  },
+  {
+    "id": "6a170d23eee56f95d9da1cdd",
+    "siteId": "684987756493653cc7c5a406",
+    "collectionId": "6a170d23eee56f95d9da1cd6",
+    "title": "Report Files Template",
+    "slug": "detail_report-files",
+    "createdOn": "2026-05-27T15:26:27.569Z",
+    "lastUpdated": "2026-07-07T09:45:29.318Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {},
+    "openGraph": {
+      "titleCopied": false,
+      "descriptionCopied": false,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/report-files"
+  },
+  {
+    "id": "6a0e3cc3ba585cc12d1c2f43",
+    "siteId": "684987756493653cc7c5a406",
+    "title": "Pattern Intelligence",
+    "slug": "pattern-intelligence",
+    "createdOn": "2026-05-20T22:59:15.585Z",
+    "lastUpdated": "2026-07-28T18:25:43.377Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Pattern Intelligence",
+      "description": "Pattern is Europe and the Middle East's leading ecommerce accelerator — helping global brands grow faster on Amazon, Zalando, TikTok Shop, and 60+ marketplaces. Powered by 44 trillion data points and patented AI."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": "https://cdn.prod.website-files.com/67d327c7ca817d803c46c86b/67d362cc04f07556e4371188_Pattern_Hero.jpg",
+      "imageAssetId": null
+    },
+    "publishedPath": "/pattern-intelligence"
+  },
+  {
+    "id": "69f9fe0ba11dd16bf945121e",
+    "siteId": "684987756493653cc7c5a406",
+    "title": "Content Brief (Form)",
+    "slug": "content-brief-form",
+    "createdOn": "2026-05-05T14:26:19.970Z",
+    "lastUpdated": "2026-07-28T09:18:34.388Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Content Brief (Form)",
+      "description": "Elevate your brand with Pattern's leading Product Experience Management System (PXM). Centralise, optimise, and deliver compelling product experiences everywhere. "
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/content-brief-form"
+  },
+  {
+    "id": "69a1ff35f513a082a40559a4",
+    "siteId": "684987756493653cc7c5a406",
+    "collectionId": "69a1ff35f513a082a405599d",
+    "title": "Thank You Pages Template",
+    "slug": "detail_thank-you-pages",
+    "createdOn": "2026-02-27T20:31:49.827Z",
+    "lastUpdated": "2026-07-07T09:45:29.267Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {},
+    "openGraph": {
+      "titleCopied": false,
+      "descriptionCopied": false,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/thank-you-pages"
+  },
+  {
+    "id": "698232aaaf6c546d560e84e6",
+    "siteId": "684987756493653cc7c5a406",
+    "title": "Thank You Newsletter",
+    "slug": "thank-you-newsletter",
+    "createdOn": "2026-02-03T17:38:50.608Z",
+    "lastUpdated": "2026-07-07T09:45:29.262Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Thank You Newsletter"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/thank-you-newsletter"
+  },
+  {
+    "id": "69612a8aa88763877a72cda0",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb1693f1ac785c0b22ca5",
+    "title": "DE Brand Protection",
+    "slug": "ecommerce-brand-protection-de",
+    "createdOn": "2026-01-09T16:19:22.002Z",
+    "lastUpdated": "2026-07-07T09:45:29.257Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "ecommerce-brand-protection"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/demand-gen/ecommerce-brand-protection-de"
+  },
+  {
+    "id": "69612a5c0d6b02252c3dc998",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb1693f1ac785c0b22ca5",
+    "title": "DE Advertising Optimisation",
+    "slug": "marketplace-optimisation-and-growth-de",
+    "createdOn": "2026-01-09T16:18:36.190Z",
+    "lastUpdated": "2026-07-07T09:45:29.252Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "marketplace-optimisation-and-growth"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/demand-gen/marketplace-optimisation-and-growth-de"
+  },
+  {
+    "id": "69612a3e6ae472723737f2e4",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb1693f1ac785c0b22ca5",
+    "title": "DE Ops and Logistics",
+    "slug": "full-service-ops-and-logistics-de",
+    "createdOn": "2026-01-09T16:18:06.719Z",
+    "lastUpdated": "2026-07-07T09:45:29.247Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "full-service-ops-and-logistics"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/demand-gen/full-service-ops-and-logistics-de"
+  },
+  {
+    "id": "69612a186e1a37dc991bffca",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb1693f1ac785c0b22ca5",
+    "title": "DE 3P Marketplace Accelerator",
+    "slug": "3p-marketplace-accelerator-de",
+    "createdOn": "2026-01-09T16:17:28.503Z",
+    "lastUpdated": "2026-07-07T09:45:29.242Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "3p-marketplace-accelerator"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/demand-gen/3p-marketplace-accelerator-de"
+  },
+  {
+    "id": "695fc91836a85b1aedcd8391",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb1693f1ac785c0b22ca5",
+    "title": "UK Ops and Logistics",
+    "slug": "full-service-ops-and-logistics",
+    "createdOn": "2026-01-08T15:11:20.160Z",
+    "lastUpdated": "2026-07-07T09:45:29.237Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Full-Service Ecommerce Logistics & Fulfilment | Pattern UK",
+      "description": "Simplify your supply chain with Pattern’s end-to-end ecommerce operations and logistics services, built to improve efficiency, scalability, and performance."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/demand-gen/full-service-ops-and-logistics"
+  },
+  {
+    "id": "695fc74b7e0cf6fe7dd97bc8",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb1693f1ac785c0b22ca5",
+    "title": "MENA Ops and Logistics",
+    "slug": "full-service-ops-and-logistics-mena",
+    "createdOn": "2026-01-08T15:03:39.889Z",
+    "lastUpdated": "2026-07-07T09:45:29.232Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "MENA Ecommerce Operations & Logistics Services | Pattern UK",
+      "description": "Simplify your supply chain across MENA with Pattern’s end-to-end ecommerce operations and logistics services, built for efficiency and scalable growth."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/demand-gen/full-service-ops-and-logistics-mena"
+  },
+  {
+    "id": "695fba1f91d30409d709b656",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb1693f1ac785c0b22ca5",
+    "title": "MENA Brand Protection",
+    "slug": "ecommerce-brand-protection-mena",
+    "createdOn": "2026-01-08T14:07:27.686Z",
+    "lastUpdated": "2026-07-07T09:45:29.227Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Protect Your Brand Across MENA Marketplaces | Pattern UK",
+      "description": "Safeguard your brand across MENA with Pattern’s protection solutions, helping you control distribution, prevent fraud, and maintain brand integrity."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/demand-gen/ecommerce-brand-protection-mena"
+  },
+  {
+    "id": "695fb6ea75dfd9120e206c09",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb1693f1ac785c0b22ca5",
+    "title": "MENA Advertising Optimisation",
+    "slug": "marketplace-optimisation-and-growth-mena",
+    "createdOn": "2026-01-08T13:53:46.732Z",
+    "lastUpdated": "2026-07-07T09:45:29.215Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Drive Ecommerce Growth in the UAE with Marketplace Optimisation | Pattern UK",
+      "description": "Drive more traffic, conversions, and revenue in the UAE and wider GCC with Pattern’s marketplace optimisation strategies built for sustainable ecommerce growth."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/demand-gen/marketplace-optimisation-and-growth-mena"
+  },
+  {
+    "id": "695fb4d95a9b752b845d027e",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb1693f1ac785c0b22ca5",
+    "title": "MENA 3P Marketplace Accelerator",
+    "slug": "3p-marketplace-accelerator-mena",
+    "createdOn": "2026-01-08T13:44:57.295Z",
+    "lastUpdated": "2026-07-07T09:45:29.210Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "MENA Marketplace & Amazon Growth Accelerator | Pattern UK",
+      "description": "Scale your brand across MENA with Pattern’s 3P Marketplace Accelerator—expert strategy, optimisation, and execution for Amazon, Noon, and more."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/demand-gen/3p-marketplace-accelerator-mena"
+  },
+  {
+    "id": "695fa1bde401d55bab3950b8",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb1693f1ac785c0b22ca5",
+    "title": "UK Advertising Optimisation",
+    "slug": "marketplace-optimisation-and-growth",
+    "createdOn": "2026-01-08T12:23:25.965Z",
+    "lastUpdated": "2026-07-07T09:45:29.203Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Drive Ecommerce Growth with Marketplace Optimisation | Pattern UK",
+      "description": "Drive more traffic, conversions, and revenue with Pattern’s marketplace optimisation strategies designed to unlock sustainable ecommerce growth."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/demand-gen/marketplace-optimisation-and-growth"
+  },
+  {
+    "id": "695f9738e70f036321e4e3d7",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb1693f1ac785c0b22ca5",
+    "title": "UK Brand Protection",
+    "slug": "ecommerce-brand-protection",
+    "createdOn": "2026-01-08T11:38:32.543Z",
+    "lastUpdated": "2026-07-16T11:01:00.106Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Protect Your Brand Across Ecommerce Marketplaces | Pattern UK",
+      "description": "Take control of your brand on marketplaces with Pattern’s protection solutions—identify unauthorised sellers, and protect revenue."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/demand-gen/ecommerce-brand-protection"
+  },
+  {
+    "id": "694a73f12909f1d7c74466ef",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb1693f1ac785c0b22ca5",
+    "title": "UK 3P Marketplace Accelerator",
+    "slug": "3p-marketplace-accelerator",
+    "createdOn": "2025-12-23T10:50:25.608Z",
+    "lastUpdated": "2026-07-16T14:43:24.681Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "3P Marketplace & Amazon Growth Accelerator | Pattern UK",
+      "description": "Scale faster with Pattern’s 3P Marketplace Accelerator—expert strategy, optimisation, and execution to grow your brand across Amazon and global marketplaces."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/demand-gen/3p-marketplace-accelerator"
+  },
+  {
+    "id": "6949265dfbcb77cb8e06f629",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a64c",
+    "title": "Brand Protection",
+    "slug": "brand-protection",
+    "createdOn": "2025-12-22T11:07:09.641Z",
+    "lastUpdated": "2026-07-07T09:45:29.185Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Brand Protection | Pattern UK",
+      "description": "Protect your brand everywhere. Reduce unauthorised seller risk, grow buybox ownership, and drive trust and profit with data-powered insight."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/solutions/brand-protection"
+  },
+  {
+    "id": "6913532cf72837fcf5afca2d",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb212137dcd257a68b552",
+    "title": "Marketplace Performance Center Form",
+    "slug": "marketplace-performance-center-form",
+    "createdOn": "2025-11-11T15:15:56.068Z",
+    "lastUpdated": "2026-07-28T19:34:45.916Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Marketplace Performance Center Form | Pattern UK",
+      "description": "Unlock ecommerce growth with the Marketplace Performance Center. Get free analysis tools, expert insights, and personalized recommendations to grow your brand."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/other-pages/marketplace-performance-center-form"
+  },
+  {
+    "id": "690ca5cd04c11dfad3473cd1",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb212137dcd257a68b552",
+    "title": "Marketplace Performance Center",
+    "slug": "marketplace-performance-center",
+    "createdOn": "2025-11-06T13:42:37.886Z",
+    "lastUpdated": "2026-07-07T09:45:29.174Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Marketplace Performance Center | Free Ecommerce Growth Insights | Pattern UK",
+      "description": "Unlock ecommerce growth with the Marketplace Performance Center. Get free analysis tools, expert insights, and personalized recommendations to grow your brand."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/other-pages/marketplace-performance-center"
+  },
+  {
+    "id": "68e4556449f9fb5e9d872200",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb2a9d89a2423d22a11b0",
+    "title": "Creators",
+    "slug": "creators",
+    "createdOn": "2025-10-06T23:48:52.047Z",
+    "lastUpdated": "2026-07-07T09:45:29.169Z",
+    "archived": false,
+    "draft": true,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Best Influencer Marketing Platform For Brands | Pattern Creators",
+      "description": "Pattern Creators is an all-in-one influencer marketing platform to find, manage, and pay top creators. Track results and grow your brand. Start your free trial."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": "https://cdn.prod.website-files.com/67d327c7ca817d803c46c86b/68e43b2457d1d89e5b5c63ee_Creators%20-%20Shopify%20(2).jpg",
+      "imageAssetId": null
+    },
+    "publishedPath": "/draft-pages/creators"
+  },
+  {
+    "id": "68e4213c287fcc75fd3eb1c8",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a64c",
+    "title": "GEO Scorecard",
+    "slug": "geo-scorecard",
+    "createdOn": "2025-10-06T20:06:20.939Z",
+    "lastUpdated": "2026-07-28T09:16:21.953Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "GEO Scorecard | Pattern UK",
+      "description": "See how AI tools like ChatGPT and Perplexity rank and recommend your brand. Pattern's free GEO Scorecard benchmarks your AI search visibility, identifies gaps, and delivers step-by-step recommendations."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/solutions/geo-scorecard"
+  },
+  {
+    "id": "68e420797f8852b673301ee8",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a64c",
+    "title": "Recovery",
+    "slug": "recovery",
+    "createdOn": "2025-10-06T20:03:05.634Z",
+    "lastUpdated": "2026-07-07T09:45:29.148Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Recovery | Pattern UK",
+      "description": "Recover losses from missing inventory or overcharges. Secure compensation and improve your bottom line with expert auditing and support."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/solutions/recovery"
+  },
+  {
+    "id": "68e41cf84216b6677676ec5c",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a64c",
+    "title": "Global Expansion",
+    "slug": "global-expansion",
+    "createdOn": "2025-10-06T19:48:08.235Z",
+    "lastUpdated": "2026-07-07T09:45:29.143Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Global Expansion | Pattern UK",
+      "description": "Grow your brand worldwide with tailored strategies, local expertise, and end-to-end support for seamless entry into new markets."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/solutions/global-expansion"
+  },
+  {
+    "id": "68e41bcf29e1593d9fc6de89",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a64c",
+    "title": "Brand Discoverability",
+    "slug": "brand-discoverability",
+    "createdOn": "2025-10-06T19:43:11.232Z",
+    "lastUpdated": "2026-07-07T09:45:29.080Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Brand Discoverability | Pattern UK",
+      "description": "Get your brand found first by shoppers and AI. Unlock insights to boost your visibility and stand out across every digital shelf."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/solutions/brand-discoverability"
+  },
+  {
+    "id": "68e41744fcb7e87213961dea",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a64c",
+    "title": "Content Management Optimisation",
+    "slug": "content-management-optimisation",
+    "createdOn": "2025-10-06T19:23:48.869Z",
+    "lastUpdated": "2026-07-07T09:45:29.045Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Content Management Optimisation | Pattern UK",
+      "description": "Optimise your product content with AI-powered tools. Ensure listings are accurate, engaging, and conversion-ready across every channel."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/solutions/content-management-optimisation"
+  },
+  {
+    "id": "68e416d8eaeb34a3716d627d",
+    "siteId": "684987756493653cc7c5a406",
+    "title": "Solution Pages",
+    "slug": "static-template-slug-1759778512877",
+    "createdOn": "2025-10-06T19:22:00.390Z",
+    "lastUpdated": "2026-07-07T09:45:29.006Z",
+    "archived": false,
+    "draft": true,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Solution Pages"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/static-template-slug-1759778512877"
+  },
+  {
+    "id": "68e41531274f3df37d379a87",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a64c",
+    "title": "Fulfillment And Logistics",
+    "slug": "fulfillment-and-logistics",
+    "createdOn": "2025-10-06T19:14:57.167Z",
+    "lastUpdated": "2026-07-28T12:52:23.656Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Fulfillment & Logistics | Pattern UK",
+      "description": "Ship faster and smarter worldwide. One partner for 99.9% accurate DTC and marketplace fulfillment—see how easy global growth can be!\n"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/solutions/fulfillment-and-logistics"
+  },
+  {
+    "id": "68e41174eac0fb64bc624802",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a64c",
+    "title": "Social Commerce",
+    "slug": "social-commerce",
+    "createdOn": "2025-10-06T18:59:00.238Z",
+    "lastUpdated": "2026-07-07T09:45:28.997Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Social Commerce | Pattern UK",
+      "description": "Pattern helps brands launch and grow on TikTok Shop and social commerce channels — from content strategy and creator partnerships to fulfillment and performance optimisation across the UK and Europe."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/solutions/social-commerce"
+  },
+  {
+    "id": "689b3b9bbaf850f5dbd231c6",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb212137dcd257a68b552",
+    "title": "Amazon Scorecard Offer",
+    "slug": "amazon-scorecard-offer",
+    "createdOn": "2025-08-12T13:03:23.379Z",
+    "lastUpdated": "2026-07-07T09:45:28.992Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Amazon Scorecard Offer | Pattern UK",
+      "description": "Discover how your brand stacks up on Amazon. Get your free Amazon Scorecard and uncover insights to drive more sales and performance."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/other-pages/amazon-scorecard-offer"
+  },
+  {
+    "id": "689b2af65f7d71c316a90134",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb212137dcd257a68b552",
+    "title": "Contact Us China Accelerator",
+    "slug": "contact-us-china-accelerator",
+    "createdOn": "2025-08-12T11:52:22.632Z",
+    "lastUpdated": "2026-07-27T07:35:22.863Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Contact Us China Accelerator | Pattern UK",
+      "description": "Grow your brand in China with Pattern's China Accelerator. Scale on Tmall Global, JD.com, Douyin, and Xiaohongshu with in-country expertise."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/other-pages/contact-us-china-accelerator"
+  },
+  {
+    "id": "684987756493653cc7c5a674",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb212137dcd257a68b552",
+    "title": "Contact Us TikTok Shop",
+    "slug": "contact-us-tiktok-shop",
+    "createdOn": "2025-05-28T16:02:15.226Z",
+    "lastUpdated": "2026-07-27T08:02:45.158Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Contact Us TikTok Shop | Pattern UK",
+      "description": "Drive TikTok Shop traffic & sales! Partner with Pattern for seamless setup, content, ads, fulfillment & more. Experts who truly get TikTok. Book  a call with a TikTok Shop expert."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/other-pages/contact-us-tiktok-shop"
+  },
+  {
+    "id": "684987756493653cc7c5a673",
+    "siteId": "684987756493653cc7c5a406",
+    "collectionId": "684987756493653cc7c5a52e",
+    "title": "Case Studies Template",
+    "slug": "detail_case-study",
+    "createdOn": "2025-05-12T19:38:22.989Z",
+    "lastUpdated": "2026-07-21T14:55:27.540Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "{{wf {\"path\":\"main-heading\",\"type\":\"PlainText\"} }} | Pattern UK",
+      "description": "{{wf {\"path\":\"seo-description\",\"type\":\"PlainText\"} }}"
+    },
+    "openGraph": {
+      "titleCopied": false,
+      "descriptionCopied": true,
+      "imageUrl": "{{wf {&quot;path&quot;:&quot;cover-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+      "imageAssetId": null
+    },
+    "publishedPath": "/case-study"
+  },
+  {
+    "id": "684987756493653cc7c5a671",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb212137dcd257a68b552",
+    "title": "Thank You (TikTok Shop)",
+    "slug": "thank-you-tiktok-shop",
+    "createdOn": "2025-05-06T19:15:26.019Z",
+    "lastUpdated": "2026-07-07T09:45:28.973Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Thank You | Pattern UK"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/other-pages/thank-you-tiktok-shop"
+  },
+  {
+    "id": "684987756493653cc7c5a670",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb212137dcd257a68b552",
+    "title": "Thank You (PXM)",
+    "slug": "thank-you-pxm",
+    "createdOn": "2025-05-06T19:14:34.097Z",
+    "lastUpdated": "2026-07-07T09:45:28.899Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Thank You | Pattern UK"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/other-pages/thank-you-pxm"
+  },
+  {
+    "id": "684987756493653cc7c5a629",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb212137dcd257a68b552",
+    "title": "PXM Content Optimisation Demo (Form)",
+    "slug": "pxm-content-optimisation-demo",
+    "createdOn": "2025-04-25T04:57:12.382Z",
+    "lastUpdated": "2026-07-07T09:45:28.772Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Request a PXM Content Optimisation Demo | Pattern UK",
+      "description": "Drive discoverability and sales with Pattern PXM's Product Content Optimisation tools. Enhance titles, descriptions, attributes, and assets for peak performance. See how - get a demo."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/other-pages/pxm-content-optimisation-demo"
+  },
+  {
+    "id": "684987756493653cc7c5a604",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb212137dcd257a68b552",
+    "title": "PXM Syndication Demo (Form)",
+    "slug": "pxm-syndication-demo",
+    "createdOn": "2025-04-25T04:46:32.474Z",
+    "lastUpdated": "2026-07-07T09:45:28.707Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Request a PXM Syndication Demo | Pattern UK",
+      "description": "Expand your reach without the hassle. Pattern PXM automates product content syndication, ensuring your listings are accurate, complete, and optimized for every channel. Request a demo today.\n"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/other-pages/pxm-syndication-demo"
+  },
+  {
+    "id": "684987756493653cc7c5a603",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb212137dcd257a68b552",
+    "title": "PXM PIM Demo (Form)",
+    "slug": "pim-demo",
+    "createdOn": "2025-04-25T04:37:46.490Z",
+    "lastUpdated": "2026-07-07T09:45:28.664Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Request a PXM PIM Demo | Pattern UK",
+      "description": "Achieve data accuracy and consistency with Pattern PXM's core Product Information Management (PIM) capabilities. Centralize, enrich, and syndicate product data effortlessly. Demo Pattern PXM today."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/other-pages/pim-demo"
+  },
+  {
+    "id": "684987756493653cc7c5a602",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb212137dcd257a68b552",
+    "title": "PXM DAM Demo (Form)",
+    "slug": "dam-demo",
+    "createdOn": "2025-04-25T04:08:26.398Z",
+    "lastUpdated": "2026-07-07T09:45:28.642Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Request a PXM DAM Demo | Pattern UK",
+      "description": "Stop wasting time searching for assets. Pattern PXM includes a robust Digital Asset Management (DAM) system built for commerce. Organize, optimize, and deploy assets faster. Get a demo.\n"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/other-pages/dam-demo"
+  },
+  {
+    "id": "684987756493653cc7c5a601",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a64c",
+    "title": "TikTok Shop",
+    "slug": "tiktok-shop",
+    "createdOn": "2025-04-21T22:27:33.630Z",
+    "lastUpdated": "2026-07-07T09:45:28.611Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "TikTok Shop Management & Growth Services | Pattern UK",
+      "description": "Maximise your brand's TikTok Shop success with Pattern. Expert content strategy, creator partnerships, fulfilment, and performance optimisation."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/solutions/tiktok-shop"
+  },
+  {
+    "id": "684987756493653cc7c5a600",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb212137dcd257a68b552",
+    "title": "Ads Analysis",
+    "slug": "ads-analysis",
+    "createdOn": "2025-04-16T21:24:13.191Z",
+    "lastUpdated": "2026-07-07T09:45:28.603Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Ads Analysis | Pattern UK",
+      "description": "Uncover what’s working (and what’s not) in your ad strategy. Our ads analysis tool delivers clear, actionable insights to optimize performance, boost ROI, and outsmart the competition."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/other-pages/ads-analysis"
+  },
+  {
+    "id": "684987756493653cc7c5a5db",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a544",
+    "title": "Consumer Support and Assistance",
+    "slug": "consumer-support-and-assistance",
+    "createdOn": "2025-04-14T17:41:03.362Z",
+    "lastUpdated": "2026-07-21T20:22:29.730Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Consumer Support and Assistance | Pattern UK"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/about/consumer-support-and-assistance"
+  },
+  {
+    "id": "684987756493653cc7c5a5b6",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb212137dcd257a68b552",
+    "title": "Innovation Hub",
+    "slug": "innovation-hub",
+    "createdOn": "2025-04-07T18:53:03.466Z",
+    "lastUpdated": "2026-07-07T09:45:28.590Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Innovation Hub | Pattern UK",
+      "description": "Discover Pattern's latest product innovations — new features, technology updates, and tools designed to accelerate your ecommerce growth."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/other-pages/innovation-hub"
+  },
+  {
+    "id": "684987756493653cc7c5a599",
+    "siteId": "684987756493653cc7c5a406",
+    "title": "Form",
+    "slug": "static-template-slug-1743258899072",
+    "createdOn": "2025-03-29T14:35:09.240Z",
+    "lastUpdated": "2026-07-07T09:45:28.585Z",
+    "archived": false,
+    "draft": true,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Form"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/static-template-slug-1743258899072"
+  },
+  {
+    "id": "684987756493653cc7c5a585",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb212137dcd257a68b552",
+    "title": "Prep Calculator",
+    "slug": "prep-calculator",
+    "createdOn": "2025-03-20T10:33:09.304Z",
+    "lastUpdated": "2026-07-22T13:48:44.465Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Prep Calculator | Pattern UK",
+      "description": "Estimate marketplace prep costs quickly with Pattern's Prep Calculator — labelling, packaging, and inbound logistics for Amazon and beyond."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/other-pages/prep-calculator"
+  },
+  {
+    "id": "684987756493653cc7c5a584",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb212137dcd257a68b552",
+    "title": "PXM Demo (Form)",
+    "slug": "pxm-demo",
+    "createdOn": "2025-03-19T20:22:35.727Z",
+    "lastUpdated": "2026-07-27T07:38:03.753Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Request a PXM Demo | Pattern UK",
+      "description": "See Pattern PXM in action. Centralise, optimise, and distribute compelling product experiences everywhere. Request your demo today."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/other-pages/pxm-demo"
+  },
+  {
+    "id": "684987756493653cc7c5a570",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a51c",
+    "title": "Advertising Technology",
+    "slug": "advertising-technology",
+    "createdOn": "2025-03-18T23:04:48.135Z",
+    "lastUpdated": "2026-07-07T09:45:28.564Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Advertising Technology | Pattern UK",
+      "description": "Discover how Pattern's adtech drives profitable growth across marketplaces and D2C. Optimise spend, maximise ROI, and accelerate ecommerce success."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/products/advertising-technology"
+  },
+  {
+    "id": "684987756493653cc7c5a56f",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a47c",
+    "title": "Videos",
+    "slug": "videos",
+    "createdOn": "2025-03-12T17:50:31.831Z",
+    "lastUpdated": "2026-07-07T09:45:28.559Z",
+    "archived": false,
+    "draft": true,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Lightbox"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/admin/videos"
+  },
+  {
+    "id": "684987756493653cc7c5a56e",
+    "siteId": "684987756493653cc7c5a406",
+    "collectionId": "684987756493653cc7c5a52d",
+    "title": "Home Hero Sliders Template",
+    "slug": "detail_home-hero-slider",
+    "createdOn": "2025-03-05T18:47:18.046Z",
+    "lastUpdated": "2026-07-21T14:52:22.246Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {},
+    "openGraph": {
+      "titleCopied": false,
+      "descriptionCopied": false,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/home-hero-slider"
+  },
+  {
+    "id": "684987756493653cc7c5a56d",
+    "siteId": "684987756493653cc7c5a406",
+    "collectionId": "684987756493653cc7c5a52c",
+    "title": "Legals Template",
+    "slug": "detail_legal",
+    "createdOn": "2025-03-04T19:08:55.803Z",
+    "lastUpdated": "2026-07-07T09:45:28.547Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "{{wf {\"path\":\"name\",\"type\":\"PlainText\"} }} | Pattern UK",
+      "description": "{{wf {\"path\":\"seo-description\",\"type\":\"PlainText\"} }}"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/legal"
+  },
+  {
+    "id": "684987756493653cc7c5a56c",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a560",
+    "title": "Partner Success Stories",
+    "slug": "partner-success-stories",
+    "createdOn": "2025-03-03T21:49:44.631Z",
+    "lastUpdated": "2026-07-21T20:22:19.138Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Case Studies | Pattern UK",
+      "description": "Discover how brands achieve measurable ecommerce growth with Pattern. Read partner success stories and learn proven strategies."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/resources/partner-success-stories"
+  },
+  {
+    "id": "684987756493653cc7c5a56b",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a560",
+    "title": "Reports",
+    "slug": "reports",
+    "createdOn": "2025-03-03T18:01:18.443Z",
+    "lastUpdated": "2026-07-21T20:21:58.031Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Reports | Pattern UK",
+      "description": "Download Pattern's latest ecommerce reports — data-driven research on marketplace trends, brand growth strategies, and AI-powered commerce for global brands."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/resources/reports"
+  },
+  {
+    "id": "684987756493653cc7c5a56a",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a544",
+    "title": "Newsroom",
+    "slug": "newsroom",
+    "createdOn": "2025-03-03T18:00:54.118Z",
+    "lastUpdated": "2026-07-27T07:33:01.712Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Newsroom | Pattern UK",
+      "description": "Explore Pattern’s newsroom for press releases, company updates, and ecommerce insights powered by AI, data, and global marketplace expertise."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/about/newsroom"
+  },
+  {
+    "id": "684987756493653cc7c5a569",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a560",
+    "title": "Webinars & Podcasts",
+    "slug": "webinars-and-podcasts",
+    "createdOn": "2025-03-03T17:18:15.348Z",
+    "lastUpdated": "2026-07-21T20:22:14.373Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Webinars and Podcasts | Pattern UK",
+      "description": "Tune into on-demand webinars and podcasts featuring expert insights, real-world strategies, and conversations on what’s shaping the ecommerce industry."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/resources/webinars-and-podcasts"
+  },
+  {
+    "id": "684987756493653cc7c5a568",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a560",
+    "title": "eBooks",
+    "slug": "ebooks",
+    "createdOn": "2025-03-03T16:40:17.122Z",
+    "lastUpdated": "2026-07-21T20:22:23.328Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "eBooks | Pattern UK",
+      "description": "Unlock expert ecommerce insights with Pattern’s eBooks—learn strategies, trends, and tactics that help brands accelerate growth across global marketplaces."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/resources/ebooks"
+  },
+  {
+    "id": "684987756493653cc7c5a567",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a560",
+    "title": "Blog",
+    "slug": "blog",
+    "createdOn": "2025-03-03T16:28:50.196Z",
+    "lastUpdated": "2026-07-21T20:22:00.932Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Ecommerce Blog | Pattern UK",
+      "description": "Expert ecommerce insights from Pattern — the world's leading ecommerce accelerator. Marketplace strategy, AI search, European expansion, and data-driven growth guides for global brands."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/resources/blog"
+  },
+  {
+    "id": "684987756493653cc7c5a566",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a560",
+    "title": "Topics",
+    "slug": "topics",
+    "createdOn": "2025-03-03T15:20:14.037Z",
+    "lastUpdated": "2026-07-21T20:21:51.097Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Topics | Pattern UK",
+      "description": "Explore essential ecommerce concepts — from Product Experience Management and brand discoverability to marketplace compliance and AI search optimisation. In-depth guides from Pattern's ecommerce experts."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/resources/topics"
+  },
+  {
+    "id": "684987756493653cc7c5a565",
+    "siteId": "684987756493653cc7c5a406",
+    "collectionId": "684987756493653cc7c5a52b",
+    "title": "Webinars & Podcasts Template",
+    "slug": "detail_webinar",
+    "createdOn": "2025-02-26T21:33:37.876Z",
+    "lastUpdated": "2026-07-21T09:49:15.926Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "{{wf {\"path\":\"name\",\"type\":\"PlainText\"} }} | Pattern UK",
+      "description": "{{wf {\"path\":\"subheading\",\"type\":\"PlainText\"} }}"
+    },
+    "openGraph": {
+      "titleCopied": false,
+      "descriptionCopied": false,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/webinar"
+  },
+  {
+    "id": "684987756493653cc7c5a564",
+    "siteId": "684987756493653cc7c5a406",
+    "collectionId": "684987756493653cc7c5a52a",
+    "title": "Reports Template",
+    "slug": "detail_reports",
+    "createdOn": "2025-02-26T21:31:21.802Z",
+    "lastUpdated": "2026-07-22T15:01:31.922Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "{{wf {\"path\":\"name\",\"type\":\"PlainText\"} }} | Pattern UK",
+      "description": "{{wf {\"path\":\"subheading\",\"type\":\"PlainText\"} }}"
+    },
+    "openGraph": {
+      "titleCopied": false,
+      "descriptionCopied": false,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/reports"
+  },
+  {
+    "id": "684987756493653cc7c5a563",
+    "siteId": "684987756493653cc7c5a406",
+    "collectionId": "684987756493653cc7c5a529",
+    "title": "EBooks Template",
+    "slug": "detail_ebook",
+    "createdOn": "2025-02-26T21:28:47.305Z",
+    "lastUpdated": "2026-07-07T09:45:28.490Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }} | Pattern UK",
+      "description": "{{wf {&quot;path&quot;:&quot;subheading&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+    },
+    "openGraph": {
+      "titleCopied": false,
+      "descriptionCopied": false,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/ebook"
+  },
+  {
+    "id": "684987756493653cc7c5a562",
+    "siteId": "684987756493653cc7c5a406",
+    "collectionId": "684987756493653cc7c5a502",
+    "title": "Topic Cards Template",
+    "slug": "detail_topic-cards",
+    "createdOn": "2025-02-26T20:47:27.137Z",
+    "lastUpdated": "2026-07-21T14:52:23.890Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {},
+    "openGraph": {
+      "titleCopied": false,
+      "descriptionCopied": false,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/topic-cards"
+  },
+  {
+    "id": "684987756493653cc7c5a561",
+    "siteId": "684987756493653cc7c5a406",
+    "collectionId": "684987756493653cc7c5a4e1",
+    "title": "Topics Template",
+    "slug": "detail_topics",
+    "createdOn": "2025-02-26T20:46:39.636Z",
+    "lastUpdated": "2026-07-15T09:07:26.273Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "{{wf {&quot;path&quot;:&quot;seo---page-title&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }} UK",
+      "description": "{{wf {&quot;path&quot;:&quot;seo---page-description&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": "{{wf {&quot;path&quot;:&quot;seo---opengraph-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+      "imageAssetId": null
+    },
+    "publishedPath": "/topics"
+  },
+  {
+    "id": "684987756493653cc7c5a55f",
+    "siteId": "684987756493653cc7c5a406",
+    "collectionId": "684987756493653cc7c5a4ba",
+    "title": "Blogs Template",
+    "slug": "detail_blog",
+    "createdOn": "2025-02-18T20:04:35.974Z",
+    "lastUpdated": "2026-07-21T09:00:46.023Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "{{wf {&quot;path&quot;:&quot;seo-title&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }} | Pattern UK",
+      "description": "{{wf {&quot;path&quot;:&quot;seo-description&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": "{{wf {&quot;path&quot;:&quot;seo-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+      "imageAssetId": null
+    },
+    "publishedPath": "/blog"
+  },
+  {
+    "id": "684987756493653cc7c5a55e",
+    "siteId": "684987756493653cc7c5a406",
+    "collectionId": "684987756493653cc7c5a499",
+    "title": "News Template",
+    "slug": "detail_news",
+    "createdOn": "2025-02-18T20:02:52.525Z",
+    "lastUpdated": "2026-07-21T20:34:55.296Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "{{wf {&quot;path&quot;:&quot;seo-title&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }} | Pattern UK",
+      "description": "{{wf {&quot;path&quot;:&quot;seo-description&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": "{{wf {&quot;path&quot;:&quot;seo-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+      "imageAssetId": null
+    },
+    "publishedPath": "/news"
+  },
+  {
+    "id": "684987756493653cc7c5a54a",
+    "siteId": "684987756493653cc7c5a406",
+    "collectionId": "684987756493653cc7c5a47f",
+    "title": "New Sliders Template",
+    "slug": "detail_new-slider",
+    "createdOn": "2025-02-18T19:57:25.148Z",
+    "lastUpdated": "2026-07-21T14:52:35.232Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {},
+    "openGraph": {
+      "titleCopied": false,
+      "descriptionCopied": false,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/new-slider"
+  },
+  {
+    "id": "684987756493653cc7c5a549",
+    "siteId": "684987756493653cc7c5a406",
+    "collectionId": "684987756493653cc7c5a450",
+    "title": "Logos Template",
+    "slug": "detail_logos",
+    "createdOn": "2025-02-18T19:54:50.123Z",
+    "lastUpdated": "2026-07-21T14:52:35.282Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {},
+    "openGraph": {
+      "titleCopied": false,
+      "descriptionCopied": false,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/logos"
+  },
+  {
+    "id": "684987756493653cc7c5a548",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a544",
+    "title": "Careers",
+    "slug": "careers",
+    "createdOn": "2025-02-05T20:57:37.677Z",
+    "lastUpdated": "2026-07-07T09:45:28.273Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Careers at Pattern | Pattern UK",
+      "description": "Looking to accelerate your career? Want to join a fun team at a great place to work? Check out careers at Pattern in the exciting world of ecommerce."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/about/careers"
+  },
+  {
+    "id": "684987756493653cc7c5a547",
+    "siteId": "684987756493653cc7c5a406",
+    "collectionId": "684987756493653cc7c5a42c",
+    "title": "Leaderships Template",
+    "slug": "detail_leadership",
+    "createdOn": "2025-02-05T20:42:47.603Z",
+    "lastUpdated": "2026-07-21T14:52:35.227Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {},
+    "openGraph": {
+      "titleCopied": false,
+      "descriptionCopied": false,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/leadership"
+  },
+  {
+    "id": "684987756493653cc7c5a546",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a544",
+    "title": "Our Story",
+    "slug": "our-story",
+    "createdOn": "2025-02-05T20:35:47.862Z",
+    "lastUpdated": "2026-07-14T18:21:56.081Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Our Story | Pattern UK",
+      "description": "Pattern was launched in Lehi, Utah, in 2013. Since then, Pattern has become the world's leading ecommerce growth and control intelligence organisation."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/about/our-story"
+  },
+  {
+    "id": "684987756493653cc7c5a545",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a544",
+    "title": "Leadership",
+    "slug": "leadership",
+    "createdOn": "2025-02-05T18:37:24.725Z",
+    "lastUpdated": "2026-07-14T19:05:32.492Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Executive Leadership Team | Pattern UK",
+      "description": "Pattern's executive leadership team brings years of global ecommerce expertise to the table. Let's accelerate your ecommerce business worldwide."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/about/leadership"
+  },
+  {
+    "id": "684987756493653cc7c5a532",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb2a9d89a2423d22a11b0",
+    "title": "Services",
+    "slug": "services",
+    "createdOn": "2025-02-05T18:09:16.796Z",
+    "lastUpdated": "2026-07-07T09:45:28.124Z",
+    "archived": false,
+    "draft": true,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Services | Pattern"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/draft-pages/services"
+  },
+  {
+    "id": "684987756493653cc7c5a528",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a522",
+    "title": "DAM",
+    "slug": "dam",
+    "createdOn": "2025-02-05T17:40:51.359Z",
+    "lastUpdated": "2026-07-07T09:45:28.119Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Smart Digital Asset Management (DAM) | Pattern PXM | Pattern UK",
+      "description": "Manage, organise, and share your brand's digital assets with Pattern PXM's DAM. Ensure consistency and get the right assets to every channel faster."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/products/pxm/dam"
+  },
+  {
+    "id": "684987756493653cc7c5a527",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a522",
+    "title": "PIM",
+    "slug": "pim",
+    "createdOn": "2025-02-05T17:31:10.776Z",
+    "lastUpdated": "2026-07-07T09:45:28.115Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Efficient Product Information Management (PIM) | Pattern PXM | Pattern UK",
+      "description": "Centralise your product data with Pattern PXM's PIM. Organise, enrich, and distribute accurate product information effortlessly across every channel."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/products/pxm/pim"
+  },
+  {
+    "id": "684987756493653cc7c5a526",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a522",
+    "title": "Syndication",
+    "slug": "syndication",
+    "createdOn": "2025-02-05T16:48:14.728Z",
+    "lastUpdated": "2026-07-07T09:45:28.048Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Seamless Product Data Syndication | Pattern PXM | Pattern UK",
+      "description": "Automate product content syndication with Pattern PXM. Distribute accurate, complete listings to every channel and global marketplace faster."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/products/pxm/syndication"
+  },
+  {
+    "id": "684987756493653cc7c5a525",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a522",
+    "title": "Optimisation",
+    "slug": "optimisation",
+    "createdOn": "2025-02-04T21:03:38.397Z",
+    "lastUpdated": "2026-07-07T09:45:27.996Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Optimisation | Pattern UK",
+      "description": "Boost product visibility with AI-powered content optimisation. Transform your listings with data-driven insights for maximum impact across all platforms."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/products/pxm/optimisation"
+  },
+  {
+    "id": "684987756493653cc7c5a524",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a51c",
+    "title": "PXM",
+    "slug": "pxm",
+    "createdOn": "2025-02-04T19:41:04.465Z",
+    "lastUpdated": "2026-07-07T09:45:27.933Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Product Experience Management for Global Ecommerce | Pattern UK",
+      "description": "Pattern PXM unifies product content across every marketplace and channel — combining DAM, PIM, syndication, and AI-powered optimisation for ecommerce brands that sell at scale."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/products/pxm"
+  },
+  {
+    "id": "684987756493653cc7c5a521",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb2a9d89a2423d22a11b0",
+    "title": "Middle Mile",
+    "slug": "middle-mile",
+    "createdOn": "2025-02-03T20:35:08.155Z",
+    "lastUpdated": "2026-07-07T09:45:27.819Z",
+    "archived": false,
+    "draft": true,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Pattern Middle Mile",
+      "description": "Pattern's Middle Mile 3PL solution allows you to get your products into Amazon faster and avoid inbound placement fees, saving you up to 50%. Create a free account and get started today."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/draft-pages/middle-mile"
+  },
+  {
+    "id": "684987756493653cc7c5a520",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a51c",
+    "title": "DTC",
+    "slug": "dtc",
+    "createdOn": "2025-02-03T20:34:57.420Z",
+    "lastUpdated": "2026-07-07T09:45:27.815Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "DTC | Pattern UK",
+      "description": "Use Pattern to fulfil, ship, and manage your direct-to-consumer orders. Seven-days-a-week shipping, carrier-agnostic, comprehensive DTC capabilities."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/products/dtc"
+  },
+  {
+    "id": "684987756493653cc7c5a51f",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a51c",
+    "title": "Marketplace Prep",
+    "slug": "marketplace-prep",
+    "createdOn": "2025-02-03T20:34:42.696Z",
+    "lastUpdated": "2026-07-07T09:45:27.810Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Marketplace Prep | Pattern UK",
+      "description": "Pattern handles all marketplace prep, compliance, and inbound shipping — so your products reach Amazon and other marketplaces correctly labelled and ready to sell. 99% accuracy, at scale."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/products/marketplace-prep"
+  },
+  {
+    "id": "684987756493653cc7c5a51e",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a51c",
+    "title": "Marketplace Accelerator China",
+    "slug": "marketplace-accelerator-china",
+    "createdOn": "2025-02-03T19:55:34.602Z",
+    "lastUpdated": "2026-07-07T09:45:27.719Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Marketplace Accelerator China | Pattern UK",
+      "description": "Pattern's China Accelerator helps global brands grow on Tmall Global, JD.com, Douyin, and Xiaohongshu — with in-country teams, fully localised strategy, and Pattern's ecommerce data advantage."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/products/marketplace-accelerator-china"
+  },
+  {
+    "id": "684987756493653cc7c5a51d",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a51c",
+    "title": "Global Marketplace Accelerator",
+    "slug": "marketplace-accelerator",
+    "createdOn": "2025-02-03T19:54:59.471Z",
+    "lastUpdated": "2026-07-07T09:45:27.696Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Marketplace Accelerators: How Brands Achieve Success | Pattern UK",
+      "description": "Pattern's 3P Marketplace Accelerator helps brands grow faster on Amazon UK, Europe, the Middle East and other global marketplaces — with expert strategy, patented AI, and a win-win partnership model. The #1 3P Amazon seller globally."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/products/marketplace-accelerator"
+  },
+  {
+    "id": "684987756493653cc7c5a51b",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "69cbb2a9d89a2423d22a11b0",
+    "title": "1P Accelerator",
+    "slug": "1p-accelerator",
+    "createdOn": "2025-02-03T17:09:40.260Z",
+    "lastUpdated": "2026-07-07T09:45:27.653Z",
+    "archived": false,
+    "draft": true,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "1P Accelerator",
+      "description": "Partnering with an ecommerce accelerator can help brands gain control of their ecommerce strategy. Learn more about marketplace accelerators."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/draft-pages/1p-accelerator"
+  },
+  {
+    "id": "684987756493653cc7c5a51a",
+    "siteId": "684987756493653cc7c5a406",
+    "title": "Page Template",
+    "slug": "static-template-slug-1738602301210",
+    "createdOn": "2025-02-03T17:05:13.052Z",
+    "lastUpdated": "2026-07-07T09:45:27.539Z",
+    "archived": false,
+    "draft": true,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Product Page Template"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/static-template-slug-1738602301210"
+  },
+  {
+    "id": "684987756493653cc7c5a519",
+    "siteId": "684987756493653cc7c5a406",
+    "title": "Software",
+    "slug": "software",
+    "createdOn": "2025-02-02T00:19:15.174Z",
+    "lastUpdated": "2026-07-07T09:45:27.476Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Software | Pattern UK",
+      "description": "Pattern's ecommerce software suite — including PXM, AI-powered advertising technology, and brand discoverability tools — helps brands manage content, optimise performance, and win in AI search."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/software"
+  },
+  {
+    "id": "684987756493653cc7c5a518",
+    "siteId": "684987756493653cc7c5a406",
+    "title": "Fulfillment",
+    "slug": "fulfillment",
+    "createdOn": "2025-02-02T00:19:01.958Z",
+    "lastUpdated": "2026-07-07T09:45:27.429Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Fulfillment and Logistics for Global Ecommerce | Pattern UK",
+      "description": "Pattern handles ecommerce fulfillment and logistics for UK and global brands — marketplace prep, DTC shipping, and cross-border distribution with 99% accuracy across 60+ marketplaces."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/fulfillment"
+  },
+  {
+    "id": "684987756493653cc7c5a517",
+    "siteId": "684987756493653cc7c5a406",
+    "title": "Marketplaces",
+    "slug": "marketplaces",
+    "createdOn": "2025-02-02T00:18:50.504Z",
+    "lastUpdated": "2026-07-07T09:45:27.310Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Global Marketplace Management for Ecommerce | Pattern UK",
+      "description": "Pattern manages your brand across Amazon UK, Amazon EU, TikTok Shop, Zalando, Tmall, and 60+ marketplaces. Data-driven strategy, expert execution."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/marketplaces"
+  },
+  {
+    "id": "684987756493653cc7c5a516",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a47c",
+    "title": "Elements",
+    "slug": "elements",
+    "createdOn": "2025-01-30T16:34:48.439Z",
+    "lastUpdated": "2026-07-07T09:45:27.186Z",
+    "archived": false,
+    "draft": true,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Elements"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/admin/elements"
+  },
+  {
+    "id": "684987756493653cc7c5a515",
+    "siteId": "684987756493653cc7c5a406",
+    "title": "Contact",
+    "slug": "contact-us",
+    "createdOn": "2025-01-20T19:39:20.767Z",
+    "lastUpdated": "2026-07-28T18:48:19.804Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Contact Us | Pattern UK",
+      "description": "Our brands trust and highly-recommend Pattern because we deliver cutting-edge business ecommerce solutions from start to finish. Let's talk today!"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/contact-us"
+  },
+  {
+    "id": "684987756493653cc7c5a501",
+    "siteId": "684987756493653cc7c5a406",
+    "title": "Login Portal",
+    "slug": "login",
+    "createdOn": "2025-01-15T19:59:56.015Z",
+    "lastUpdated": "2026-07-07T09:45:26.936Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Login | Pattern UK",
+      "description": "Log in to Pattern services."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/login"
+  },
+  {
+    "id": "684987756493653cc7c5a4e0",
+    "siteId": "684987756493653cc7c5a406",
+    "title": "Thank You",
+    "slug": "thank-you",
+    "createdOn": "2025-01-15T19:52:15.847Z",
+    "lastUpdated": "2026-07-07T09:45:26.841Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Success | Pattern UK"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/thank-you"
+  },
+  {
+    "id": "684987756493653cc7c5a4df",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a47c",
+    "title": "Sections",
+    "slug": "sections",
+    "createdOn": "2024-11-26T22:08:39.656Z",
+    "lastUpdated": "2026-07-07T09:45:26.836Z",
+    "archived": false,
+    "draft": true,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Sections Components"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/admin/sections"
+  },
+  {
+    "id": "684987756493653cc7c5a4de",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a47c",
+    "title": "Form",
+    "slug": "form",
+    "createdOn": "2024-11-25T22:07:53.011Z",
+    "lastUpdated": "2026-07-07T09:45:26.832Z",
+    "archived": false,
+    "draft": true,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Form"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/admin/form"
+  },
+  {
+    "id": "684987756493653cc7c5a4b9",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a47c",
+    "title": "Footer",
+    "slug": "footer",
+    "createdOn": "2024-11-25T22:03:49.399Z",
+    "lastUpdated": "2026-07-07T09:45:26.824Z",
+    "archived": false,
+    "draft": true,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Footer"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/admin/footer"
+  },
+  {
+    "id": "684987756493653cc7c5a498",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a47c",
+    "title": "Navbar",
+    "slug": "navbar",
+    "createdOn": "2024-11-23T21:37:16.410Z",
+    "lastUpdated": "2026-07-28T12:46:28.032Z",
+    "archived": false,
+    "draft": true,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Navbar"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/admin/navbar"
+  },
+  {
+    "id": "684987756493653cc7c5a47e",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a47c",
+    "title": "Atoms",
+    "slug": "atoms",
+    "createdOn": "2024-11-20T16:34:27.248Z",
+    "lastUpdated": "2026-07-07T09:45:26.815Z",
+    "archived": false,
+    "draft": true,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Atoms"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/admin/atoms"
+  },
+  {
+    "id": "684987756493653cc7c5a47d",
+    "siteId": "684987756493653cc7c5a406",
+    "title": "[Admin] Design System",
+    "slug": "static-template-slug-1732116839203",
+    "createdOn": "2024-11-20T15:34:13.806Z",
+    "lastUpdated": "2026-07-07T09:45:26.810Z",
+    "archived": false,
+    "draft": true,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "[Admin] Design System"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/static-template-slug-1732116839203"
+  },
+  {
+    "id": "684987756493653cc7c5a47b",
+    "siteId": "684987756493653cc7c5a406",
+    "title": "404",
+    "slug": "404",
+    "createdOn": "2024-02-09T20:54:55.391Z",
+    "lastUpdated": "2026-07-28T19:22:01.020Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Not Found"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/404"
+  },
+  {
+    "id": "684987756493653cc7c5a44f",
+    "siteId": "684987756493653cc7c5a406",
+    "title": "Password",
+    "slug": "401",
+    "createdOn": "2024-02-09T20:54:47.591Z",
+    "lastUpdated": "2026-07-07T09:45:26.602Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Protected page"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/401"
+  },
+  {
+    "id": "684987756493653cc7c5a42f",
+    "siteId": "684987756493653cc7c5a406",
+    "parentId": "684987756493653cc7c5a47c",
+    "title": "Styleguide",
+    "slug": "styleguide",
+    "createdOn": "2023-04-25T19:28:11.544Z",
+    "lastUpdated": "2026-07-21T14:55:27.542Z",
+    "archived": false,
+    "draft": true,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Style Guide"
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": null,
+      "imageAssetId": null
+    },
+    "publishedPath": "/admin/styleguide"
+  },
+  {
+    "id": "684987756493653cc7c5a402",
+    "siteId": "684987756493653cc7c5a406",
+    "title": "Home",
+    "createdOn": "2023-04-25T19:13:35.091Z",
+    "lastUpdated": "2026-07-28T12:49:50.937Z",
+    "archived": false,
+    "draft": false,
+    "canBranch": true,
+    "isBranch": false,
+    "seo": {
+      "title": "Acceleration Solutions for Global Ecommerce | Pattern UK",
+      "description": "Pattern is Europe and the Middle East's leading ecommerce accelerator — helping global brands grow faster on Amazon, Zalando, TikTok Shop, and 60+ marketplaces. Powered by 44 trillion data points and patented AI."
+    },
+    "openGraph": {
+      "titleCopied": true,
+      "descriptionCopied": true,
+      "imageUrl": "https://cdn.prod.website-files.com/67d327c7ca817d803c46c86b/67d362cc04f07556e4371188_Pattern_Hero.jpg",
+      "imageAssetId": null
+    },
+    "publishedPath": "/"
+  }
+]
+

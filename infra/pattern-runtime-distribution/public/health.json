@@ -1,0 +1,8 @@
+{
+  "service": "Pattern Runtime distribution",
+  "status": "configured",
+  "channels": {
+    "canary": "disabled",
+    "stable": "disabled"
+  }
+}

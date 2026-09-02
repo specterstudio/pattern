@@ -1,0 +1,38 @@
+{
+  "label": "Capture registered scripts",
+  "action": "get_registered_scripts",
+  "result": {
+    "registeredScripts": [
+      {
+        "id": "geo_scorecard_faq_schema",
+        "canCopy": true,
+        "displayName": "GEO Scorecard FAQ Schema",
+        "hostedLocation": "https://cdn.prod.website-files.com/684987756493653cc7c5a406%2F689e5ba67671442434f3ca35%2F6a22a4180b2f4d921280c712%2Fgeo_scorecard_faq_schema-2.0.0.js",
+        "createdOn": "2026-06-05T10:25:28.277Z",
+        "version": "2.0.0"
+      },
+      {
+        "id": "geo_scorecard_faq_schema_v2",
+        "canCopy": true,
+        "displayName": "GEO Scorecard FAQ Schema v2",
+        "hostedLocation": "https://cdn.prod.website-files.com/684987756493653cc7c5a406%2F689e5ba67671442434f3ca35%2F6a22a3df3cedf9e2b1b07f52%2Fgeo_scorecard_faq_schema_v2-1.0.0.js",
+        "createdOn": "2026-06-05T10:24:31.939Z",
+        "version": "1.0.0"
+      },
+      {
+        "id": "geo_scorecard_faq_schema",
+        "canCopy": true,
+        "displayName": "GEO Scorecard FAQ Schema",
+        "hostedLocation": "https://cdn.prod.website-files.com/684987756493653cc7c5a406%2F689e5ba67671442434f3ca35%2F69fdf07a9ce2987b8f93836d%2Fgeo_scorecard_faq_schema-1.0.0.js",
+        "createdOn": "2026-05-08T14:17:30.054Z",
+        "version": "1.0.0"
+      }
+    ],
+    "pagination": {
+      "limit": 100,
+      "offset": 0,
+      "total": 3
+    }
+  }
+}
+

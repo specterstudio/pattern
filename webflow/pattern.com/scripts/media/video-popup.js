@@ -1,538 +1,415 @@
 /**
- * Video Popup JS - Consent-safe external video popup
+ * Video Player popup
  *
- * Important:
- * - Never assigns Vimeo/YouTube iframe src during initialization.
- * - Reads video URLs from data-consent-src, data-src, src, or fallback links.
- * - Stores video URLs in data-consent-src.
- * - Loads Vimeo SDK only after personalization consent and first open click.
- * - Loads YouTube API only after marketing consent and first open click.
+ * Required structure per component instance:
+ * - [class*="video_player_wrap"]
+ * - [data-video-player-open]
+ * - dialog[data-video-player-dialog]
+ * - iframe[data-video-src] (data-consent-src is supported during migration)
+ * - [data-video-player-close]
  */
 (function () {
   'use strict';
 
-  var videoPopupOpenSteps = [{ opacity: '0' }, { opacity: '1' }];
-  var videoPopupCloseSteps = [{ opacity: '1' }, { opacity: '0' }];
+  var GLOBAL_NAME = 'PatternVideoPopup';
+  var VERSION = '1.1.3';
+  var ROOT_SELECTOR = [
+    '[class~="video_player_wrap"]',
+    '[class*="--video_player_wrap "]',
+    '[class$="--video_player_wrap"]'
+  ].join(',');
+  var OPEN_SELECTOR = '[data-video-player-open]';
+  var DIALOG_SELECTOR = 'dialog[data-video-player-dialog]';
+  var CLOSE_SELECTOR = '[data-video-player-close]';
+  var INIT_ATTRIBUTE = 'data-video-player-popup-initialized';
 
-  var consentCallbacks = {};
-  var consentState = {};
-  var consentBridgeStarted = false;
+  if (window[GLOBAL_NAME] && window[GLOBAL_NAME].version) {
+    window[GLOBAL_NAME].init(document);
+    return;
+  }
 
-  function startConsentBridge() {
-    if (consentBridgeStarted) return;
-    consentBridgeStarted = true;
+  var activeController = null;
+  var scrollLock = null;
+  var instances = new WeakMap();
 
-    window.FinsweetConsentPro = window.FinsweetConsentPro || [];
-    window.FinsweetConsentPro.push(function (consent) {
-      function refreshConsentState() {
-        consentState = consent.consents.get() || {};
+  function getDuration(dialog) {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return 0;
 
-        Object.keys(consentCallbacks).forEach(function (category) {
-          if (!consentState[category]) return;
+    var value = parseFloat(dialog.getAttribute('data-duration'));
+    return Number.isFinite(value) ? Math.max(0, value) : 300;
+  }
 
-          var callbacks = consentCallbacks[category].slice();
-          consentCallbacks[category] = [];
+  function normalizeVideoUrl(value) {
+    if (!value) return '';
 
-          callbacks.forEach(function (callback) {
-            callback();
-          });
-        });
+    var url;
+
+    try {
+      url = new URL(value, window.location.href);
+    } catch (error) {
+      return '';
+    }
+
+    if (url.protocol !== 'https:' && url.protocol !== 'http:') return '';
+
+    var host = url.hostname.replace(/^www\./, '');
+    var youtubeId = '';
+    var vimeoMatch;
+
+    if (host === 'youtu.be') {
+      youtubeId = url.pathname.split('/').filter(Boolean)[0] || '';
+    } else if (host === 'youtube.com' || host === 'm.youtube.com') {
+      if (url.pathname === '/watch') youtubeId = url.searchParams.get('v') || '';
+      if (url.pathname.indexOf('/embed/') === 0) youtubeId = url.pathname.split('/')[2] || '';
+      if (url.pathname.indexOf('/shorts/') === 0) youtubeId = url.pathname.split('/')[2] || '';
+    }
+
+    if (youtubeId) {
+      url = new URL('https://www.youtube.com/embed/' + encodeURIComponent(youtubeId));
+      url.searchParams.set('autoplay', '1');
+      url.searchParams.set('playsinline', '1');
+      url.searchParams.set('rel', '0');
+      return url.toString();
+    }
+
+    if (host === 'vimeo.com' || host === 'player.vimeo.com') {
+      vimeoMatch = url.pathname.match(/(?:\/video)?\/(\d+)/);
+
+      if (vimeoMatch) {
+        var vimeoUrl = new URL('https://player.vimeo.com/video/' + vimeoMatch[1]);
+        var privateHash = url.searchParams.get('h');
+
+        if (privateHash) vimeoUrl.searchParams.set('h', privateHash);
+        vimeoUrl.searchParams.set('autoplay', '1');
+        vimeoUrl.searchParams.set('dnt', '1');
+        return vimeoUrl.toString();
       }
-
-      refreshConsentState();
-      consent.on('consent-updated', refreshConsentState);
-    });
-  }
-
-  function whenConsented(category, callback) {
-    startConsentBridge();
-
-    if (consentState[category]) {
-      callback();
-      return;
     }
 
-    consentCallbacks[category] = consentCallbacks[category] || [];
-    consentCallbacks[category].push(callback);
+    url.searchParams.set('autoplay', '1');
+    return url.toString();
   }
 
-  var scrollLockState = { active: false, scrollY: 0 };
-
-  function lockScroll() {
-    if (scrollLockState.active) return;
-    scrollLockState.active = true;
-    scrollLockState.scrollY = window.scrollY;
-
-    document.body.style.overflow = 'hidden';
-    document.body.style.position = 'fixed';
-    document.body.style.top = '-' + scrollLockState.scrollY + 'px';
-    document.body.style.left = '0';
-    document.body.style.right = '0';
-    document.documentElement.style.overflow = 'hidden';
-  }
-
-  function unlockScroll() {
-    if (!scrollLockState.active) return;
-    scrollLockState.active = false;
-
-    document.body.style.overflow = '';
-    document.body.style.position = '';
-    document.body.style.top = '';
-    document.body.style.left = '';
-    document.body.style.right = '';
-    document.documentElement.style.overflow = '';
-
-    window.scrollTo(0, scrollLockState.scrollY);
-  }
-
-  function playButtonFadeOut(playButton) {
-    if (!playButton || !playButton.parentNode) return;
-    var fadeOutSteps = [{ opacity: '1' }, { opacity: '0' }];
-    var timing = { duration: 300, fill: 'forwards' };
-    playButton.parentNode.animate(fadeOutSteps, timing);
-    setTimeout(function () {
-      playButton.parentNode.style.display = 'none';
-    }, 300);
-  }
-
-  function playButtonFadeIn(playButton) {
-    if (!playButton || !playButton.parentNode) return;
-    var fadeInSteps = [{ opacity: '0' }, { opacity: '1' }];
-    var timing = { duration: 300, fill: 'forwards' };
-    playButton.parentNode.style.display = 'flex';
-    playButton.parentNode.animate(fadeInSteps, timing);
-  }
-
-  function normalizeEmbedUrl(src) {
-    if (!src) return src;
-
-    var vimeoPage = src.match(/vimeo\.com\/(?:video\/)?(\d+)/);
-    if (vimeoPage) {
-      return 'https://player.vimeo.com/video/' + vimeoPage[1] + '?dnt=1&preload=none';
-    }
-
-    var ytWatch = src.match(
-      /(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]+)/
-    );
-    if (ytWatch) {
-      return 'https://www.youtube.com/embed/' + ytWatch[1];
-    }
-
-    return src;
-  }
-
-  function getStoredVideoSrc(iframe) {
+  function getStoredSource(iframe) {
     if (!iframe) return '';
 
     return (
+      iframe.getAttribute('data-video-src') ||
       iframe.getAttribute('data-consent-src') ||
+      iframe.getAttribute('fs-consent-src') ||
       iframe.getAttribute('data-src') ||
       iframe.getAttribute('src') ||
       ''
     );
   }
 
-  function storeConsentSrc(iframe, src) {
-    if (!iframe || !src) return '';
+  function makeSourceInert(iframe) {
+    var source = getStoredSource(iframe);
 
-    var normalizedSrc = normalizeEmbedUrl(src);
-    iframe.setAttribute('data-consent-src', normalizedSrc);
+    if (!iframe || !source) return '';
+
+    iframe.setAttribute('data-video-src', source);
+    iframe.removeAttribute('data-consent-src');
+    iframe.removeAttribute('fs-consent-src');
     iframe.removeAttribute('data-src');
     iframe.removeAttribute('src');
 
-    return normalizedSrc;
+    return source;
   }
 
-  function getProviderFromSrc(src) {
-    if (!src) return null;
-    if (src.indexOf('player.vimeo.com') !== -1 || src.indexOf('vimeo.com') !== -1) {
-      return 'vimeo';
-    }
-    if (src.indexOf('youtube.com') !== -1 || src.indexOf('youtu.be') !== -1) {
-      return 'youtube';
-    }
-    return null;
+  function getConsentState(api) {
+    if (!api || !api.consents) return {};
+    if (typeof api.consents.get === 'function') return api.consents.get() || {};
+    return api.consents;
   }
 
-  function getEmbedInfo(component) {
-    var iframe = component.querySelector('iframe');
-    var src = getStoredVideoSrc(iframe);
-
-    if (!src) {
-      var link = component.querySelector(
-        'a[href*="vimeo.com"], a[href*="youtube.com"], a[href*="youtu.be"]'
-      );
-      if (link) src = link.getAttribute('href') || '';
-    }
-
-    src = storeConsentSrc(iframe, src);
-
-    var provider = getProviderFromSrc(src);
-    if (!iframe || !src || !provider) return null;
-
-    return {
-      iframe: iframe,
-      src: src,
-      provider: provider
-    };
-  }
-
-  function getConsentCategory(component, iframe, provider) {
-    var explicitCategory =
+  function getConsentCategory(dialog, iframe) {
+    return (
+      dialog.getAttribute('data-consent-category') ||
       (iframe && iframe.getAttribute('fs-consent-categories')) ||
-      (component && component.getAttribute('fs-consent-categories'));
-
-    if (explicitCategory) return explicitCategory;
-
-    if (provider === 'vimeo') return 'personalization';
-    if (provider === 'youtube') return 'marketing';
-
-    return 'personalization';
+      ''
+    ).trim();
   }
 
-  function findPlayButton(component) {
-    return (
-      component.querySelector('[fc-video-popup="play"]') ||
-      component.querySelector('[fc-video-popup*="play"]')
-    );
-  }
-
-  function findOpenButtons(component, group) {
-    var g = group || '';
-    var sel = '[fc-video-popup="open' + g + '"]';
-    var list = document.querySelectorAll(sel);
-    if (list.length) return list;
-    return document.querySelectorAll('[fc-video-popup^="open"]');
-  }
-
-  function findCloseButtons(component) {
-    return (
-      component.querySelectorAll('[fc-video-popup="close"]') ||
-      component.querySelectorAll('[fc-video-popup*="close"]')
-    );
-  }
-
-  function getTiming(component) {
-    var duration = parseFloat(component.getAttribute('duration'));
-    var easing = component.getAttribute('easing');
-
-    if (isNaN(duration)) duration = 300;
-    if (!easing) easing = 'ease';
-
-    return {
-      duration: duration,
-      timing: { duration: duration, fill: 'forwards', easing: easing }
-    };
-  }
-
-  function openPopup(component, timing) {
-    component.style.display = 'flex';
-    component.animate(videoPopupOpenSteps, timing);
-    lockScroll();
-  }
-
-  function closePopup(component, closeSteps, timing, duration, callback) {
-    component.animate(closeSteps, timing);
-    setTimeout(function () {
-      component.style.display = 'none';
-      unlockScroll();
-      if (typeof callback === 'function') callback();
-    }, duration);
-  }
-
-  function loadScriptOnce(id, src, callback, errorCallback) {
-    var existing = document.getElementById(id);
-
-    if (existing && existing.getAttribute('data-loaded') === 'true') {
+  function runAfterConsent(category, callback) {
+    if (!category) {
       callback();
       return;
     }
 
-    if (existing) {
-      existing.addEventListener('load', callback, { once: true });
-      existing.addEventListener('error', errorCallback, { once: true });
+    var consentPro = window.FinsweetConsentPro;
+
+    if (!consentPro) {
+      consentPro = [];
+      window.FinsweetConsentPro = consentPro;
+    }
+
+    var completed = false;
+
+    function connect(api) {
+      function proceedIfAllowed(detail) {
+        var state = getConsentState(api);
+        var detailState =
+          detail &&
+          (detail.consents ||
+            (detail.detail && (detail.detail.consents || detail.detail)));
+
+        if (
+          (!state || !state[category]) &&
+          detailState &&
+          typeof detailState === 'object' &&
+          Object.prototype.hasOwnProperty.call(detailState, category)
+        ) {
+          state = detailState;
+        }
+
+        if (completed || !state || !state[category]) return;
+        completed = true;
+        callback();
+      }
+
+      proceedIfAllowed();
+
+      if (!completed && api && typeof api.on === 'function') {
+        api.on('consent-updated', proceedIfAllowed);
+      }
+    }
+
+    if (Array.isArray(consentPro)) {
+      consentPro.push(connect);
       return;
     }
 
-    var script = document.createElement('script');
-    script.id = id;
-    script.src = src;
-    script.async = true;
+    connect(consentPro);
+  }
 
-    script.onload = function () {
-      script.setAttribute('data-loaded', 'true');
-      callback();
+  function lockPageScroll() {
+    if (scrollLock) return;
+
+    var body = document.body;
+    var html = document.documentElement;
+    var scrollbarWidth = Math.max(0, window.innerWidth - html.clientWidth);
+
+    scrollLock = {
+      scrollY: window.scrollY,
+      body: {
+        overflow: body.style.overflow,
+        position: body.style.position,
+        top: body.style.top,
+        left: body.style.left,
+        right: body.style.right,
+        width: body.style.width,
+        paddingRight: body.style.paddingRight
+      },
+      htmlOverflow: html.style.overflow
     };
 
-    script.onerror = errorCallback;
+    html.style.overflow = 'hidden';
+    body.style.overflow = 'hidden';
+    body.style.position = 'fixed';
+    body.style.top = '-' + scrollLock.scrollY + 'px';
+    body.style.left = '0';
+    body.style.right = '0';
+    body.style.width = '100%';
 
-    document.head.appendChild(script);
+    if (scrollbarWidth) body.style.paddingRight = scrollbarWidth + 'px';
   }
 
-  function setupVimeoPopupLazy(component, info) {
-    var iframe = info.iframe;
-    var storedSrc = info.src;
-    var category = getConsentCategory(component, iframe, 'vimeo');
+  function unlockPageScroll() {
+    if (!scrollLock) return;
 
-    var group = (component.getAttribute('fc-video-popup') || '').split('component')[1] || '';
-    var openButtons = findOpenButtons(component, group);
-    var closeButtons = findCloseButtons(component);
-    var timingInfo = getTiming(component);
+    var body = document.body;
+    var html = document.documentElement;
+    var saved = scrollLock;
 
-    var player = null;
-    var wired = false;
-    var opening = false;
+    scrollLock = null;
+    html.style.overflow = saved.htmlOverflow;
+    body.style.overflow = saved.body.overflow;
+    body.style.position = saved.body.position;
+    body.style.top = saved.body.top;
+    body.style.left = saved.body.left;
+    body.style.right = saved.body.right;
+    body.style.width = saved.body.width;
+    body.style.paddingRight = saved.body.paddingRight;
+    window.scrollTo(0, saved.scrollY);
+  }
 
-    function wirePlayerAndOpen() {
-      if (!iframe.getAttribute('src')) {
-        iframe.setAttribute('src', storedSrc);
+  function createController(root) {
+    if (instances.has(root)) return instances.get(root);
+
+    var trigger = root.querySelector(OPEN_SELECTOR);
+    var dialog = root.querySelector(DIALOG_SELECTOR);
+
+    // Video Only intentionally has neither a trigger nor a dialog.
+    if (!trigger || !dialog || typeof dialog.showModal !== 'function') return null;
+
+    var iframe = dialog.querySelector('iframe');
+    var storedSource = makeSourceInert(iframe);
+
+    if (!storedSource) {
+      var sourceElement = root.querySelector('[data-video-player-source]');
+      storedSource = makeSourceInert(sourceElement);
+    }
+    var opener = null;
+    var closeTimer = null;
+    var waitingForConsent = false;
+    var consentCategory = getConsentCategory(dialog, iframe);
+
+    function finishClose(options) {
+      var settings = options || {};
+
+      window.clearTimeout(closeTimer);
+      closeTimer = null;
+
+      if (iframe) iframe.removeAttribute('src');
+      dialog.classList.remove('is-active');
+      dialog.removeAttribute('data-state');
+      dialog.style.display = '';
+      dialog.style.opacity = '';
+
+      if (dialog.open) dialog.close();
+      if (activeController === controller) activeController = null;
+      if (!settings.keepScrollLocked) unlockPageScroll();
+
+      if (settings.restoreFocus !== false && opener && opener.isConnected) {
+        opener.focus({ preventScroll: true });
       }
 
-      if (typeof Vimeo === 'undefined') {
-        opening = false;
+      opener = null;
+    }
+
+    function close(options) {
+      var settings = options || {};
+
+      if (!dialog.open) return;
+
+      dialog.classList.remove('is-active');
+      dialog.setAttribute('data-state', 'inactive');
+      dialog.style.opacity = '0';
+
+      if (settings.immediate || getDuration(dialog) === 0) {
+        finishClose(settings);
         return;
       }
 
-      if (!wired) {
-        wired = true;
-        setupVimeoPopup(
-          component,
-          iframe,
-          playButtonFadeIn,
-          playButtonFadeOut,
-          videoPopupOpenSteps,
-          videoPopupCloseSteps,
-          timingInfo
-        );
+      closeTimer = window.setTimeout(function () {
+        finishClose(settings);
+      }, getDuration(dialog));
+    }
+
+    function reveal() {
+      if (dialog.open) return;
+
+      if (activeController && activeController !== controller) {
+        activeController.close({
+          immediate: true,
+          keepScrollLocked: true,
+          restoreFocus: false
+        });
       }
 
-      player = player || new Vimeo.Player(iframe);
+      var source = normalizeVideoUrl(storedSource);
 
-      openPopup(component, timingInfo.timing);
-
-      requestAnimationFrame(function () {
-        player.play().catch(function (err) {
-          console.warn('[video-popup] Autoplay blocked by browser:', err);
-        });
-      });
-
-      opening = false;
-    }
-
-    openButtons.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        if (opening) return;
-        opening = true;
-
-        whenConsented(category, function () {
-          loadScriptOnce(
-            'vimeo-player-api',
-            'https://player.vimeo.com/api/player.js',
-            wirePlayerAndOpen,
-            function () {
-              opening = false;
-              console.error('[video-popup] Failed to load Vimeo SDK.');
-            }
-          );
-        });
-      });
-    });
-
-    closeButtons.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        if (player) {
-          player.pause();
-          player.setCurrentTime(0);
-        }
-
-        closePopup(
-          component,
-          videoPopupCloseSteps,
-          timingInfo.timing,
-          timingInfo.duration
-        );
-      });
-    });
-  }
-
-  function setupVimeoPopup(
-    component,
-    iframe,
-    playButtonFadeInFn,
-    playButtonFadeOutFn,
-    openSteps,
-    closeSteps,
-    timingInfo
-  ) {
-    var playButton = findPlayButton(component);
-    if (!playButton || !iframe || typeof Vimeo === 'undefined') return;
-
-    var player = new Vimeo.Player(iframe);
-
-    player.on('pause', function () {
-      playButtonFadeInFn(playButton);
-    });
-
-    player.on('play', function () {
-      playButtonFadeOutFn(playButton);
-    });
-
-    playButton.addEventListener('click', function () {
-      player.play();
-    });
-  }
-
-  function setupYoutubePopupLazy(component, info) {
-    var iframe = info.iframe;
-    var storedSrc = info.src;
-    var category = getConsentCategory(component, iframe, 'youtube');
-
-    var group = (component.getAttribute('fc-video-popup') || '').split('component')[1] || '';
-    var openButtons = findOpenButtons(component, group);
-    var closeButtons = findCloseButtons(component);
-    var timingInfo = getTiming(component);
-
-    var player = null;
-    var wired = false;
-    var opening = false;
-
-    function getYoutubeId(src) {
-      var match = src.match(/\/embed\/([a-zA-Z0-9_-]+)/);
-      return match && match[1];
-    }
-
-    function wirePlayerAndOpen() {
-      if (typeof YT === 'undefined' || !YT.Player) {
-        opening = false;
+      if (!source) {
+        console.warn('[video-player] A valid Video URL is required.');
         return;
       }
 
-      if (!wired) {
-        wired = true;
+      activeController = controller;
+      opener = trigger;
+      lockPageScroll();
 
-        var videoId = getYoutubeId(storedSrc);
-        if (!videoId) {
-          opening = false;
-          return;
-        }
-
-        var container = document.createElement('div');
-        iframe.parentNode.replaceChild(container, iframe);
-
-        player = new YT.Player(container, {
-          videoId: videoId,
-          events: {
-            onReady: function (e) {
-              var iframeEl = e.target.getIframe();
-              if (iframeEl) iframeEl.classList.add('iframe');
-
-              openPopup(component, timingInfo.timing);
-
-              requestAnimationFrame(function () {
-                player.playVideo();
-              });
-
-              opening = false;
-            },
-            onStateChange: function (e) {
-              var playButton = findPlayButton(component);
-              if (e.data === 1) playButtonFadeOut(playButton);
-              if (e.data === 2) playButtonFadeIn(playButton);
-            }
-          }
-        });
-
-        var playButton = findPlayButton(component);
-        if (playButton) {
-          playButton.addEventListener('click', function () {
-            if (player) player.playVideo();
-          });
-        }
-
+      try {
+        dialog.showModal();
+      } catch (error) {
+        activeController = null;
+        unlockPageScroll();
+        console.warn('[video-player] The popup could not be opened.', error);
         return;
       }
 
-      openPopup(component, timingInfo.timing);
+      dialog.style.display = 'flex';
+      dialog.style.opacity = '0';
+      dialog.setAttribute('data-state', 'active');
+      if (iframe) iframe.setAttribute('src', source);
 
-      requestAnimationFrame(function () {
-        if (player) player.playVideo();
+      window.requestAnimationFrame(function () {
+        dialog.classList.add('is-active');
+        dialog.style.opacity = '1';
+
+        var closeButton = dialog.querySelector(CLOSE_SELECTOR);
+        if (closeButton) closeButton.focus({ preventScroll: true });
       });
-
-      opening = false;
     }
 
-    openButtons.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        if (opening) return;
-        opening = true;
+    function open() {
+      if (dialog.open || waitingForConsent) return;
+      waitingForConsent = true;
 
-        whenConsented(category, function () {
-          window.onYouTubeIframeAPIReady = wirePlayerAndOpen;
-
-          loadScriptOnce(
-            'youtube-iframe-api',
-            'https://www.youtube.com/iframe_api',
-            function () {
-              if (typeof YT !== 'undefined' && YT.Player) {
-                wirePlayerAndOpen();
-              }
-            },
-            function () {
-              opening = false;
-              console.error('[video-popup] Failed to load YouTube API.');
-            }
-          );
-        });
+      runAfterConsent(consentCategory, function () {
+        waitingForConsent = false;
+        reveal();
       });
-    });
-
-    closeButtons.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        if (player) {
-          player.pauseVideo();
-          player.seekTo(0);
-        }
-
-        closePopup(
-          component,
-          videoPopupCloseSteps,
-          timingInfo.timing,
-          timingInfo.duration
-        );
-      });
-    });
-  }
-
-  function initVideoPopups() {
-    startConsentBridge();
-
-    var videoPopupComponents = document.querySelectorAll(
-      '[fc-video-popup^="component"]'
-    );
-
-    if (!videoPopupComponents.length) return;
-
-    for (var i = 0; i < videoPopupComponents.length; i++) {
-      var component = videoPopupComponents[i];
-
-      document.body.appendChild(component);
-
-      var info = getEmbedInfo(component);
-      if (!info) continue;
-
-      if (info.provider === 'vimeo') {
-        setupVimeoPopupLazy(component, info);
-      }
-
-      if (info.provider === 'youtube') {
-        setupYoutubePopupLazy(component, info);
-      }
     }
+
+    var controller = { close: close, open: open };
+
+    trigger.addEventListener('click', open);
+
+    trigger.addEventListener('keydown', function (event) {
+      if (event.key !== 'Enter' && event.key !== ' ') return;
+      event.preventDefault();
+      open();
+    });
+
+    dialog.addEventListener('click', function (event) {
+      if (!event.target.closest(CLOSE_SELECTOR)) return;
+      event.preventDefault();
+      close();
+    });
+
+    dialog.addEventListener('keydown', function (event) {
+      if (event.key !== ' ' || !event.target.closest(CLOSE_SELECTOR)) return;
+      event.preventDefault();
+      close();
+    });
+
+    dialog.addEventListener('cancel', function (event) {
+      event.preventDefault();
+      close();
+    });
+
+    dialog.addEventListener('close', function () {
+      if (activeController === controller) finishClose();
+    });
+
+    root.setAttribute(INIT_ATTRIBUTE, '');
+    instances.set(root, controller);
+    return controller;
   }
+
+  function initVideoPlayers(scope) {
+    var target = scope || document;
+    var roots = [];
+
+    if (target.matches && target.matches(ROOT_SELECTOR)) roots.push(target);
+    if (target.querySelectorAll) {
+      target.querySelectorAll(ROOT_SELECTOR).forEach(function (root) {
+        roots.push(root);
+      });
+    }
+
+    roots.forEach(createController);
+  }
+
+  window[GLOBAL_NAME] = {
+    init: initVideoPlayers,
+    version: VERSION
+  };
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initVideoPopups);
+    document.addEventListener('DOMContentLoaded', initVideoPlayers, { once: true });
   } else {
-    initVideoPopups();
+    initVideoPlayers();
   }
 })();

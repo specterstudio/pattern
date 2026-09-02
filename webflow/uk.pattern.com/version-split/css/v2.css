@@ -1,0 +1,45 @@
+/*
+ * Pattern UK version split — V2 core
+ * Classification: v2
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: Content Wrapper alignment repair from active Custom Code 03
+ */
+
+body:is([data-pattern-version="v2"], :has([data-pattern-version="v2"])) {
+
+/* -- Content Wrapper: Explicit Alignment Variants -- */
+[data-wf--content-wrapper--variant="left-alignment"] {
+  --_alignment-2---direction: start;
+}
+
+[data-wf--content-wrapper--variant="center-alignment"] {
+  --_alignment-2---direction: center;
+  margin-inline: auto !important;
+  text-align: center;
+  justify-self: center;
+  justify-items: center;
+  align-items: center;
+}
+
+[data-wf--content-wrapper--variant="right-alignment"] {
+  --_alignment-2---direction: end;
+}
+
+[data-wf--content-wrapper--variant="center-alignment"] > :not([data-wf--content-wrapper--variant]),
+[data-wf--content-wrapper--variant="center-alignment"] > :is(.u-display-contents, .u-display-contents-2) > :not([data-wf--content-wrapper--variant]) {
+  margin-inline: auto !important;
+  text-align: center;
+}
+
+[data-wf--content-wrapper--variant="center-alignment"] > :is(.u-text, .u-text-2) > *,
+[data-wf--content-wrapper--variant="center-alignment"] > :is(.u-display-contents, .u-display-contents-2) > :is(.u-text, .u-text-2) > * {
+  margin-inline: auto !important;
+  text-align: center;
+}
+
+[class*="home_hero_contain"] :is(.u-text, .u-text-2).w-richtext:is(.u-rich-text, .u-rich-text-2) > * {
+  margin-inline: auto !important;
+  text-align: center;
+}
+
+}

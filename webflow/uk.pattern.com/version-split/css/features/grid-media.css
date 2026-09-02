@@ -1,0 +1,17 @@
+/*
+ * Pattern UK version split — Grid media
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 03 section 12
+ */
+
+/* ==========================================================================
+  12. GRID
+  ========================================================================== */
+
+  [class*="u-grid-wrapper"] [class*="u-image-wrapper"]
+    :not([class*="g_avatar_wrap"] [class*="u-image-wrapper"])
+    :not([class*="cs_main_card_visual"] [class*="u-image-wrapper"])
+    :not([class*="g_card_bkg"] [class*="u-image-wrapper"]) {
+    min-height: 23.125rem;
+  }

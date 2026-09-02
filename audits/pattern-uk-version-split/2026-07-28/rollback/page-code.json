@@ -1,0 +1,2241 @@
+[
+  {
+    "page": {
+      "id": "6a61f3928ced7ce7346c5bde",
+      "title": "Location | Executive Acceleration Forum | Pattern UK",
+      "path": "/event-eaf-carcassonne-location",
+      "draft": true,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "6a61f392630d04d5b655963c",
+      "title": "Speakers | Executive Acceleration Forum | Pattern UK",
+      "path": "/event-eaf-carcassonne-speakers",
+      "draft": true,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "6a61f39122e3e59bfdf3e315",
+      "title": "Agenda | Executive Acceleration Forum | Pattern UK",
+      "path": "/event-eaf-carcassonne-agenda",
+      "draft": true,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "6a61ed702f07814fc2bd75df",
+      "title": "Executive Acceleration Forum | Pattern UK",
+      "path": "/event-eaf-carcassonne",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "6a58ef496540f1e6390f5ff4",
+      "title": "EU-UK Google Search",
+      "path": "/draft-pages/contact-us2",
+      "draft": true,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "6a567be44cdcb6212dcd2e2f",
+      "title": "Authors Template",
+      "path": "/authors",
+      "draft": false,
+      "template": true
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "6a170d23eee56f95d9da1cdd",
+      "title": "Report Files Template",
+      "path": "/report-files",
+      "draft": false,
+      "template": true
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "6a0e3cc3ba585cc12d1c2f43",
+      "title": "Pattern Intelligence",
+      "path": "/pattern-intelligence",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": "<!-- Reslider Slick JS Head/Slider CSS Code -->\n<style>\n.slider-item {display: inline-block;}\n.slider-list {display: block !important;}\n.slick-prev:hover,\n.slick-prev:focus,\n.slick-next:hover,\n.slick-next:focus\n{ outline: none;\n}\n.slick-slide, .slick-slide *{ outline: none !important; }\n.slick-list { padding: 0px !important;  }\n</style>"
+      },
+      {
+        "location": "footer",
+        "content": "<!-- Reslider Slick JS Body Code -->\n<script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js\">\n</script>\n\n<script>\n$(document).ready( function(){\n\n$('.slider-list').slick({\n\n//Slide JS Options\nautoplay: true, //Autoplay (true/false) - default false\nautoplaySpeed: 2000, //Autoplay speed (milliseconds) - default 3000 (autoplay must be true)\nspeed: 600, //Slide transition speed (milliseconds) - default 300\ninfinite: true, //Infinite loop (true/false) - default true\nslidesToShow: 1, //Number of slides to show (number) - default 1\nslidesToScroll: 1, //Number of slides to scroll (number) - default 1\narrows: false, //Show default arrows (true/false) - default true\ndots: false, //Show navigation dots (true/false) - default false\ntouchThreshold: 5, //Touch threshold (number) - default 5\n\n//Slide Responsiveness (Webflow Base Breakpoints)\nresponsive: [\n   {\n     // Tablet\n     breakpoint: 991,\n     settings: {\n       slidesToShow: 1\n     }\n   },\n   {\n    // Mobile - Landscape\n    breakpoint: 767,\n    settings: {\n      slidesToShow: 1\n    }\n  },\n   {\n     // Mobile - Portrait\n     breakpoint: 478,\n     settings: {\n       slidesToShow: 1\n     }\n   }\n ]\n});\n\n\n//Slide JS Button Overrides\n$('.slider-prev').click(function(){\n   $(this).closest('.slider-component').find(\".slider-list\").slick('slickPrev');\n});\n\n$('.slider-next').click(function(){\n   $(this).closest('.slider-component').find(\".slider-list\").slick('slickNext');\n});\n});\n\n</script>"
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "69f9fe0ba11dd16bf945121e",
+      "title": "Content Brief (Form)",
+      "path": "/content-brief-form",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "69a1ff35f513a082a40559a4",
+      "title": "Thank You Pages Template",
+      "path": "/thank-you-pages",
+      "draft": false,
+      "template": true
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "698232aaaf6c546d560e84e6",
+      "title": "Thank You Newsletter",
+      "path": "/thank-you-newsletter",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": "<!-- [Attributes by Finsweet] Table of Contents -->\n<script defer src=\"https://cdn.jsdelivr.net/npm/@finsweet/attributes-toc@1/toc.js\"></script>"
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "69612a8aa88763877a72cda0",
+      "title": "DE Brand Protection",
+      "path": "/demand-gen/ecommerce-brand-protection-de",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "69612a5c0d6b02252c3dc998",
+      "title": "DE Advertising Optimisation",
+      "path": "/demand-gen/marketplace-optimisation-and-growth-de",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "69612a3e6ae472723737f2e4",
+      "title": "DE Ops and Logistics",
+      "path": "/demand-gen/full-service-ops-and-logistics-de",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "69612a186e1a37dc991bffca",
+      "title": "DE 3P Marketplace Accelerator",
+      "path": "/demand-gen/3p-marketplace-accelerator-de",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "695fc91836a85b1aedcd8391",
+      "title": "UK Ops and Logistics",
+      "path": "/demand-gen/full-service-ops-and-logistics",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "695fc74b7e0cf6fe7dd97bc8",
+      "title": "MENA Ops and Logistics",
+      "path": "/demand-gen/full-service-ops-and-logistics-mena",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "695fba1f91d30409d709b656",
+      "title": "MENA Brand Protection",
+      "path": "/demand-gen/ecommerce-brand-protection-mena",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "695fb6ea75dfd9120e206c09",
+      "title": "MENA Advertising Optimisation",
+      "path": "/demand-gen/marketplace-optimisation-and-growth-mena",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "695fb4d95a9b752b845d027e",
+      "title": "MENA 3P Marketplace Accelerator",
+      "path": "/demand-gen/3p-marketplace-accelerator-mena",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "695fa1bde401d55bab3950b8",
+      "title": "UK Advertising Optimisation",
+      "path": "/demand-gen/marketplace-optimisation-and-growth",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "695f9738e70f036321e4e3d7",
+      "title": "UK Brand Protection",
+      "path": "/demand-gen/ecommerce-brand-protection",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "694a73f12909f1d7c74466ef",
+      "title": "UK 3P Marketplace Accelerator",
+      "path": "/demand-gen/3p-marketplace-accelerator",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "6949265dfbcb77cb8e06f629",
+      "title": "Brand Protection",
+      "path": "/solutions/brand-protection",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "6913532cf72837fcf5afca2d",
+      "title": "Marketplace Performance Center Form",
+      "path": "/other-pages/marketplace-performance-center-form",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": "<script src=\"https://PDoO9f59J0.flowdrivecdn.com/VNoUelYE9WEFWbqPv9Orv\" type=\"text/javascript\"></script>"
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "690ca5cd04c11dfad3473cd1",
+      "title": "Marketplace Performance Center",
+      "path": "/other-pages/marketplace-performance-center",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": "<script src=\"https://PDoO9f59J0.flowdrivecdn.com/ND8hoimDpzOLq5Tqxhu2I\" type=\"text/javascript\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/hls.js@1.6.11\"></script>\n<script src=\"https://PDoO9f59J0.flowdrivecdn.com/LqLS9kHvwGdV5LABSGvJV\"></script>"
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "68e4556449f9fb5e9d872200",
+      "title": "Creators",
+      "path": "/draft-pages/creators",
+      "draft": true,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "68e4213c287fcc75fd3eb1c8",
+      "title": "GEO Scorecard",
+      "path": "/solutions/geo-scorecard",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": {
+      "scripts": [
+        {
+          "id": "geo_scorecard_faq_schema",
+          "displayName": "GEO Scorecard FAQ Schema",
+          "version": "2.0.0",
+          "location": "header",
+          "attributes": {}
+        }
+      ],
+      "lastUpdated": "2026-07-07T09:45:26.536Z",
+      "createdOn": "2026-07-07T09:45:26.536Z"
+    },
+    "appliedScriptsReadStatus": "captured"
+  },
+  {
+    "page": {
+      "id": "68e420797f8852b673301ee8",
+      "title": "Recovery",
+      "path": "/solutions/recovery",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "68e41cf84216b6677676ec5c",
+      "title": "Global Expansion",
+      "path": "/solutions/global-expansion",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "68e41bcf29e1593d9fc6de89",
+      "title": "Brand Discoverability",
+      "path": "/solutions/brand-discoverability",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "68e41744fcb7e87213961dea",
+      "title": "Content Management Optimisation",
+      "path": "/solutions/content-management-optimisation",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "68e416d8eaeb34a3716d627d",
+      "title": "Solution Pages",
+      "path": "/static-template-slug-1759778512877",
+      "draft": true,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "68e41531274f3df37d379a87",
+      "title": "Fulfillment And Logistics",
+      "path": "/solutions/fulfillment-and-logistics",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "68e41174eac0fb64bc624802",
+      "title": "Social Commerce",
+      "path": "/solutions/social-commerce",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "689b3b9bbaf850f5dbd231c6",
+      "title": "Amazon Scorecard Offer",
+      "path": "/other-pages/amazon-scorecard-offer",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "689b2af65f7d71c316a90134",
+      "title": "Contact Us China Accelerator",
+      "path": "/other-pages/contact-us-china-accelerator",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a674",
+      "title": "Contact Us TikTok Shop",
+      "path": "/other-pages/contact-us-tiktok-shop",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a673",
+      "title": "Case Studies Template",
+      "path": "/case-study",
+      "draft": false,
+      "template": true
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a671",
+      "title": "Thank You (TikTok Shop)",
+      "path": "/other-pages/thank-you-tiktok-shop",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": "<!-- [Attributes by Finsweet] Table of Contents -->\n<script defer src=\"https://cdn.jsdelivr.net/npm/@finsweet/attributes-toc@1/toc.js\"></script>"
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a670",
+      "title": "Thank You (PXM)",
+      "path": "/other-pages/thank-you-pxm",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": "<!-- [Attributes by Finsweet] Table of Contents -->\n<script defer src=\"https://cdn.jsdelivr.net/npm/@finsweet/attributes-toc@1/toc.js\"></script>"
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a629",
+      "title": "PXM Content Optimisation Demo (Form)",
+      "path": "/other-pages/pxm-content-optimisation-demo",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a604",
+      "title": "PXM Syndication Demo (Form)",
+      "path": "/other-pages/pxm-syndication-demo",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a603",
+      "title": "PXM PIM Demo (Form)",
+      "path": "/other-pages/pim-demo",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a602",
+      "title": "PXM DAM Demo (Form)",
+      "path": "/other-pages/dam-demo",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a601",
+      "title": "TikTok Shop",
+      "path": "/solutions/tiktok-shop",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a600",
+      "title": "Ads Analysis",
+      "path": "/other-pages/ads-analysis",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a5db",
+      "title": "Consumer Support and Assistance",
+      "path": "/about/consumer-support-and-assistance",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a5b6",
+      "title": "Innovation Hub",
+      "path": "/other-pages/innovation-hub",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a599",
+      "title": "Form",
+      "path": "/static-template-slug-1743258899072",
+      "draft": true,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a585",
+      "title": "Prep Calculator",
+      "path": "/other-pages/prep-calculator",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a584",
+      "title": "PXM Demo (Form)",
+      "path": "/other-pages/pxm-demo",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a570",
+      "title": "Advertising Technology",
+      "path": "/products/advertising-technology",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a56f",
+      "title": "Videos",
+      "path": "/admin/videos",
+      "draft": true,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a56e",
+      "title": "Home Hero Sliders Template",
+      "path": "/home-hero-slider",
+      "draft": false,
+      "template": true
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a56d",
+      "title": "Legals Template",
+      "path": "/legal",
+      "draft": false,
+      "template": true
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a56c",
+      "title": "Partner Success Stories",
+      "path": "/resources/partner-success-stories",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a56b",
+      "title": "Reports",
+      "path": "/resources/reports",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a56a",
+      "title": "Newsroom",
+      "path": "/about/newsroom",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a569",
+      "title": "Webinars & Podcasts",
+      "path": "/resources/webinars-and-podcasts",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a568",
+      "title": "eBooks",
+      "path": "/resources/ebooks",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a567",
+      "title": "Blog",
+      "path": "/resources/blog",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a566",
+      "title": "Topics",
+      "path": "/resources/topics",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a565",
+      "title": "Webinars & Podcasts Template",
+      "path": "/webinar",
+      "draft": false,
+      "template": true
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a564",
+      "title": "Reports Template",
+      "path": "/reports",
+      "draft": false,
+      "template": true
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a563",
+      "title": "EBooks Template",
+      "path": "/ebook",
+      "draft": false,
+      "template": true
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a562",
+      "title": "Topic Cards Template",
+      "path": "/topic-cards",
+      "draft": false,
+      "template": true
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a561",
+      "title": "Topics Template",
+      "path": "/topics",
+      "draft": false,
+      "template": true
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": "<!-- Replace Webflow's JS Smooth Scroll with CSS -->\n<script>\n  var Webflow = Webflow || [];\n  Webflow.push(function() {\n    $(document).off('click.wf-scroll');\n  });\n</script>\n<style>\n  html {\n    scroll-behavior: smooth;\n  }\n</style>\n\n<script>\npageFunctions.addFunction('articleTOC', function() {\n  const article =\n    document.getElementById('single-article') ||\n    document.querySelector('.entry_main_rt') ||\n    document.querySelector('.pattern-library-v2--u-rich-text');\n\n  const tocContainer = document.getElementById('toc');\n\n  if (!article || !tocContainer) return;\n\n  const headings = article.querySelectorAll('h2');\n  if (!headings.length) return;\n\n  tocContainer.innerHTML = '';\n\n  const ul = document.createElement('ul');\n\n  headings.forEach((heading) => {\n    const title = heading.textContent.trim();\n    const anchorId = `toc-${title.toLowerCase().replace(/\\s+/g, '-')}`;\n\n    heading.id = anchorId;\n\n    const li = document.createElement('li');\n    const anchor = document.createElement('a');\n\n    anchor.textContent = title;\n    anchor.href = `#${anchorId}`;\n\n    li.appendChild(anchor);\n    ul.appendChild(li);\n  });\n\n  tocContainer.appendChild(ul);\n\n  const tocItems = tocContainer.querySelectorAll('a');\n\n  function setActiveItem(targetId) {\n    tocItems.forEach(function(item) {\n      item.classList.toggle('active', item.getAttribute('href') === '#' + targetId);\n    });\n  }\n\n  tocItems.forEach(function(item) {\n    item.addEventListener('click', function(event) {\n      event.preventDefault();\n\n      const targetId = this.getAttribute('href').substring(1);\n      const targetElement = document.getElementById(targetId);\n\n      if (!targetElement) return;\n\n      setActiveItem(targetId);\n\n      const offset = targetElement.getBoundingClientRect().top + window.scrollY - 100;\n      window.scrollTo({ top: offset, behavior: 'smooth' });\n    });\n  });\n\n  const observer = new IntersectionObserver(entries => {\n    entries.forEach(entry => {\n      if (!entry.isIntersecting) return;\n\n      const id = entry.target.getAttribute('id');\n      setActiveItem(id);\n    });\n  }, { rootMargin: '0px 0px -50% 0px' });\n\n  headings.forEach(function(heading) {\n    observer.observe(heading);\n  });\n});\n</script>"
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a55f",
+      "title": "Blogs Template",
+      "path": "/blog",
+      "draft": false,
+      "template": true
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": "<script>\npageFunctions.addFunction('articleTOC', function() {\n  const article =\n    document.getElementById('single-article') ||\n    document.querySelector('.entry_main_rt') ||\n    document.querySelector('.pattern-library-v2--u-rich-text');\n\n  const tocContainer = document.getElementById('toc');\n\n  if (!article || !tocContainer) return;\n\n  const headings = article.querySelectorAll('h2');\n  if (!headings.length) return;\n\n  tocContainer.innerHTML = '';\n\n  const ul = document.createElement('ul');\n\n  headings.forEach((heading) => {\n    const title = heading.textContent.trim();\n    const anchorId = `toc-${title.toLowerCase().replace(/\\s+/g, '-')}`;\n\n    heading.id = anchorId;\n\n    const li = document.createElement('li');\n    const anchor = document.createElement('a');\n\n    anchor.textContent = title;\n    anchor.href = `#${anchorId}`;\n\n    li.appendChild(anchor);\n    ul.appendChild(li);\n  });\n\n  tocContainer.appendChild(ul);\n\n  const tocItems = tocContainer.querySelectorAll('a');\n\n  function setActiveItem(targetId) {\n    tocItems.forEach(function(item) {\n      item.classList.toggle('active', item.getAttribute('href') === '#' + targetId);\n    });\n  }\n\n  tocItems.forEach(function(item) {\n    item.addEventListener('click', function(event) {\n      event.preventDefault();\n\n      const targetId = this.getAttribute('href').substring(1);\n      const targetElement = document.getElementById(targetId);\n\n      if (!targetElement) return;\n\n      setActiveItem(targetId);\n\n      const offset = targetElement.getBoundingClientRect().top + window.scrollY - 100;\n      window.scrollTo({ top: offset, behavior: 'smooth' });\n    });\n  });\n\n  const observer = new IntersectionObserver(entries => {\n    entries.forEach(entry => {\n      if (!entry.isIntersecting) return;\n\n      const id = entry.target.getAttribute('id');\n      setActiveItem(id);\n    });\n  }, { rootMargin: '0px 0px -50% 0px' });\n\n  headings.forEach(function(heading) {\n    observer.observe(heading);\n  });\n});\n</script>"
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a55e",
+      "title": "News Template",
+      "path": "/news",
+      "draft": false,
+      "template": true
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": "<script>\npageFunctions.addFunction('articleTOC', function() {\n  const article =\n    document.getElementById('single-article') ||\n    document.querySelector('.entry_main_rt') ||\n    document.querySelector('.pattern-library-v2--u-rich-text');\n\n  const tocContainer = document.getElementById('toc');\n\n  if (!article || !tocContainer) return;\n\n  const headings = article.querySelectorAll('h2');\n  if (!headings.length) return;\n\n  tocContainer.innerHTML = '';\n\n  const ul = document.createElement('ul');\n\n  headings.forEach((heading) => {\n    const title = heading.textContent.trim();\n    const anchorId = `toc-${title.toLowerCase().replace(/\\s+/g, '-')}`;\n\n    heading.id = anchorId;\n\n    const li = document.createElement('li');\n    const anchor = document.createElement('a');\n\n    anchor.textContent = title;\n    anchor.href = `#${anchorId}`;\n\n    li.appendChild(anchor);\n    ul.appendChild(li);\n  });\n\n  tocContainer.appendChild(ul);\n\n  const tocItems = tocContainer.querySelectorAll('a');\n\n  function setActiveItem(targetId) {\n    tocItems.forEach(function(item) {\n      item.classList.toggle('active', item.getAttribute('href') === '#' + targetId);\n    });\n  }\n\n  tocItems.forEach(function(item) {\n    item.addEventListener('click', function(event) {\n      event.preventDefault();\n\n      const targetId = this.getAttribute('href').substring(1);\n      const targetElement = document.getElementById(targetId);\n\n      if (!targetElement) return;\n\n      setActiveItem(targetId);\n\n      const offset = targetElement.getBoundingClientRect().top + window.scrollY - 100;\n      window.scrollTo({ top: offset, behavior: 'smooth' });\n    });\n  });\n\n  const observer = new IntersectionObserver(entries => {\n    entries.forEach(entry => {\n      if (!entry.isIntersecting) return;\n\n      const id = entry.target.getAttribute('id');\n      setActiveItem(id);\n    });\n  }, { rootMargin: '0px 0px -50% 0px' });\n\n  headings.forEach(function(heading) {\n    observer.observe(heading);\n  });\n});\n</script>"
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a54a",
+      "title": "New Sliders Template",
+      "path": "/new-slider",
+      "draft": false,
+      "template": true
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a549",
+      "title": "Logos Template",
+      "path": "/logos",
+      "draft": false,
+      "template": true
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a548",
+      "title": "Careers",
+      "path": "/about/careers",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a547",
+      "title": "Leaderships Template",
+      "path": "/leadership",
+      "draft": false,
+      "template": true
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a546",
+      "title": "Our Story",
+      "path": "/about/our-story",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a545",
+      "title": "Leadership",
+      "path": "/about/leadership",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a532",
+      "title": "Services",
+      "path": "/draft-pages/services",
+      "draft": true,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a528",
+      "title": "DAM",
+      "path": "/products/pxm/dam",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a527",
+      "title": "PIM",
+      "path": "/products/pxm/pim",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a526",
+      "title": "Syndication",
+      "path": "/products/pxm/syndication",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a525",
+      "title": "Optimisation",
+      "path": "/products/pxm/optimisation",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a524",
+      "title": "PXM",
+      "path": "/products/pxm",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a521",
+      "title": "Middle Mile",
+      "path": "/draft-pages/middle-mile",
+      "draft": true,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a520",
+      "title": "DTC",
+      "path": "/products/dtc",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a51f",
+      "title": "Marketplace Prep",
+      "path": "/products/marketplace-prep",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a51e",
+      "title": "Marketplace Accelerator China",
+      "path": "/products/marketplace-accelerator-china",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a51d",
+      "title": "Global Marketplace Accelerator",
+      "path": "/products/marketplace-accelerator",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a51b",
+      "title": "1P Accelerator",
+      "path": "/draft-pages/1p-accelerator",
+      "draft": true,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a51a",
+      "title": "Page Template",
+      "path": "/static-template-slug-1738602301210",
+      "draft": true,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a519",
+      "title": "Software",
+      "path": "/software",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a518",
+      "title": "Fulfillment",
+      "path": "/fulfillment",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a517",
+      "title": "Marketplaces",
+      "path": "/marketplaces",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a516",
+      "title": "Elements",
+      "path": "/admin/elements",
+      "draft": true,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a515",
+      "title": "Contact",
+      "path": "/contact-us",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a501",
+      "title": "Login Portal",
+      "path": "/login",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a4e0",
+      "title": "Thank You",
+      "path": "/thank-you",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": "<!-- [Attributes by Finsweet] Table of Contents -->\n<script defer src=\"https://cdn.jsdelivr.net/npm/@finsweet/attributes-toc@1/toc.js\"></script>"
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a4df",
+      "title": "Sections",
+      "path": "/admin/sections",
+      "draft": true,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a4de",
+      "title": "Form",
+      "path": "/admin/form",
+      "draft": true,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a4b9",
+      "title": "Footer",
+      "path": "/admin/footer",
+      "draft": true,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a498",
+      "title": "Navbar",
+      "path": "/admin/navbar",
+      "draft": true,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a47e",
+      "title": "Atoms",
+      "path": "/admin/atoms",
+      "draft": true,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a47d",
+      "title": "[Admin] Design System",
+      "path": "/static-template-slug-1732116839203",
+      "draft": true,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a47b",
+      "title": "404",
+      "path": "/404",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a44f",
+      "title": "Password",
+      "path": "/401",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a42f",
+      "title": "Styleguide",
+      "path": "/admin/styleguide",
+      "draft": true,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": ""
+      },
+      {
+        "location": "footer",
+        "content": ""
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  },
+  {
+    "page": {
+      "id": "684987756493653cc7c5a402",
+      "title": "Home",
+      "path": "/",
+      "draft": false,
+      "template": false
+    },
+    "freeform": [
+      {
+        "location": "head",
+        "content": "<!-- Reslider Slick JS Head/Slider CSS Code -->\n<style>\n.slider-item {display: inline-block;}\n.slider-list {display: block !important;}\n.slick-prev:hover,\n.slick-prev:focus,\n.slick-next:hover,\n.slick-next:focus\n{ outline: none;\n}\n.slick-slide, .slick-slide *{ outline: none !important; }\n.slick-list { padding: 0px !important;  }\n</style>"
+      },
+      {
+        "location": "footer",
+        "content": "<!-- Reslider Slick JS Body Code -->\n<script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js\">\n</script>\n\n<script>\n$(document).ready( function(){\n\n$('.slider-list').slick({\n\n//Slide JS Options\nautoplay: true, //Autoplay (true/false) - default false\nautoplaySpeed: 2000, //Autoplay speed (milliseconds) - default 3000 (autoplay must be true)\nspeed: 600, //Slide transition speed (milliseconds) - default 300\ninfinite: true, //Infinite loop (true/false) - default true\nslidesToShow: 1, //Number of slides to show (number) - default 1\nslidesToScroll: 1, //Number of slides to scroll (number) - default 1\narrows: false, //Show default arrows (true/false) - default true\ndots: false, //Show navigation dots (true/false) - default false\ntouchThreshold: 5, //Touch threshold (number) - default 5\n\n//Slide Responsiveness (Webflow Base Breakpoints)\nresponsive: [\n   {\n     // Tablet\n     breakpoint: 991,\n     settings: {\n       slidesToShow: 1\n     }\n   },\n   {\n    // Mobile - Landscape\n    breakpoint: 767,\n    settings: {\n      slidesToShow: 1\n    }\n  },\n   {\n     // Mobile - Portrait\n     breakpoint: 478,\n     settings: {\n       slidesToShow: 1\n     }\n   }\n ]\n});\n\n\n//Slide JS Button Overrides\n$('.slider-prev').click(function(){\n   $(this).closest('.slider-component').find(\".slider-list\").slick('slickPrev');\n});\n\n$('.slider-next').click(function(){\n   $(this).closest('.slider-component').find(\".slider-list\").slick('slickNext');\n});\n});\n\n</script>"
+      }
+    ],
+    "appliedScripts": null,
+    "appliedScriptsReadStatus": "no-custom-code-block-or-endpoint-404"
+  }
+]
+

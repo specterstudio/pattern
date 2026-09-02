@@ -1,0 +1,333 @@
+{
+  "metadata": [
+    {
+      "label": "Capture active Custom Code metadata",
+      "action": "get_component",
+      "result": [
+        {
+          "id": "89894b6d-cf3f-dfb6-51d8-63b0d19309e1",
+          "name": "Custom Code",
+          "group": "Global",
+          "description": "Site-wide UK custom code. Preserves the V1 foundation and loads Global Styles (Site) afterward so V2 remains current and higher priority.",
+          "instanceCount": 101,
+          "props": [],
+          "variants": [
+            {
+              "id": "base",
+              "name": "Base",
+              "isSelected": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Capture backup Custom Code metadata",
+      "action": "get_component",
+      "result": [
+        {
+          "id": "dec760c9-f91a-c2da-f6c0-9161961e017e",
+          "name": "Custom Code (Back Up)",
+          "group": "Miscellaneous",
+          "description": "Include on every page of the site. Contains global styles that should run in designer view & on the published site.",
+          "instanceCount": 1,
+          "props": [],
+          "variants": [
+            {
+              "id": "base",
+              "name": "Base",
+              "isSelected": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "trees": [
+    {
+      "label": "Capture active Custom Code structure",
+      "action": "get_all_elements",
+      "result": [
+        {
+          "status": "success",
+          "message": "Component \"89894b6d-cf3f-dfb6-51d8-63b0d19309e1\" tree loaded",
+          "data": {
+            "id": {
+              "component": "89894b6d-cf3f-dfb6-51d8-63b0d19309e1",
+              "element": "89894b6d-cf3f-dfb6-51d8-63b0d19309e1"
+            },
+            "type": "Block",
+            "styleNames": [
+              "page_code_wrap"
+            ],
+            "settings": {
+              "tag": "div",
+              "visibility": true,
+              "block": {
+                "tag": "div"
+              }
+            },
+            "children": [
+              {
+                "id": {
+                  "component": "89894b6d-cf3f-dfb6-51d8-63b0d19309e1",
+                  "element": "100e82f9-9701-42d7-f451-d0d45af6df16"
+                },
+                "type": "HtmlEmbed",
+                "styleNames": [
+                  "page_code_text-style"
+                ],
+                "settings": {
+                  "visibility": true
+                }
+              },
+              {
+                "id": {
+                  "component": "89894b6d-cf3f-dfb6-51d8-63b0d19309e1",
+                  "element": "a684af32-015c-29d3-8cdc-29866fef3e55"
+                },
+                "type": "HtmlEmbed",
+                "styleNames": [
+                  "page_code_base"
+                ],
+                "settings": {
+                  "visibility": true
+                }
+              },
+              {
+                "id": {
+                  "component": "89894b6d-cf3f-dfb6-51d8-63b0d19309e1",
+                  "element": "908558e4-6929-c8ce-013f-3c54f301c07e"
+                },
+                "type": "HtmlEmbed",
+                "styleNames": [
+                  "page_code_color"
+                ],
+                "settings": {
+                  "visibility": true
+                }
+              },
+              {
+                "id": {
+                  "component": "89894b6d-cf3f-dfb6-51d8-63b0d19309e1",
+                  "element": "88cea4c5-be2e-8336-b136-9436780f3c46"
+                },
+                "type": "HtmlEmbed",
+                "styleNames": [
+                  "page_code_responsive"
+                ],
+                "settings": {
+                  "visibility": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Capture backup Custom Code structure",
+      "action": "get_all_elements",
+      "result": [
+        {
+          "status": "success",
+          "message": "Component \"dec760c9-f91a-c2da-f6c0-9161961e017e\" tree loaded",
+          "data": {
+            "id": {
+              "component": "dec760c9-f91a-c2da-f6c0-9161961e017e",
+              "element": "dec760c9-f91a-c2da-f6c0-9161961e017e"
+            },
+            "type": "Block",
+            "styleNames": [
+              "page_code_wrap"
+            ],
+            "settings": {
+              "tag": "div",
+              "visibility": true,
+              "block": {
+                "tag": "div"
+              }
+            },
+            "children": [
+              {
+                "id": {
+                  "component": "dec760c9-f91a-c2da-f6c0-9161961e017e",
+                  "element": "dec760c9-f91a-c2da-f6c0-9161961e017f"
+                },
+                "type": "HtmlEmbed",
+                "styleNames": [
+                  "page_code_base"
+                ],
+                "settings": {
+                  "visibility": true
+                }
+              },
+              {
+                "id": {
+                  "component": "dec760c9-f91a-c2da-f6c0-9161961e017e",
+                  "element": "dec760c9-f91a-c2da-f6c0-9161961e0180"
+                },
+                "type": "HtmlEmbed",
+                "styleNames": [
+                  "page_code_color"
+                ],
+                "settings": {
+                  "visibility": true
+                }
+              },
+              {
+                "id": {
+                  "component": "dec760c9-f91a-c2da-f6c0-9161961e017e",
+                  "element": "dec760c9-f91a-c2da-f6c0-9161961e0181"
+                },
+                "type": "HtmlEmbed",
+                "styleNames": [
+                  "page_code_text-style"
+                ],
+                "settings": {
+                  "visibility": true
+                }
+              },
+              {
+                "id": {
+                  "component": "dec760c9-f91a-c2da-f6c0-9161961e017e",
+                  "element": "dec760c9-f91a-c2da-f6c0-9161961e0182"
+                },
+                "type": "HtmlEmbed",
+                "styleNames": [
+                  "page_code_responsive"
+                ],
+                "settings": {
+                  "visibility": true
+                }
+              },
+              {
+                "id": {
+                  "component": "dec760c9-f91a-c2da-f6c0-9161961e017e",
+                  "element": "dec760c9-f91a-c2da-f6c0-9161961e0183"
+                },
+                "type": "HtmlEmbed",
+                "styleNames": [
+                  "page_code_form"
+                ],
+                "settings": {
+                  "visibility": true
+                }
+              },
+              {
+                "id": {
+                  "component": "dec760c9-f91a-c2da-f6c0-9161961e017e",
+                  "element": "dec760c9-f91a-c2da-f6c0-9161961e0184"
+                },
+                "type": "HtmlEmbed",
+                "styleNames": [
+                  "page_code_icon"
+                ],
+                "settings": {
+                  "visibility": true
+                }
+              },
+              {
+                "id": {
+                  "component": "dec760c9-f91a-c2da-f6c0-9161961e017e",
+                  "element": "dec760c9-f91a-c2da-f6c0-9161961e0185"
+                },
+                "type": "HtmlEmbed",
+                "styleNames": [
+                  "page_code_nav2"
+                ],
+                "settings": {
+                  "visibility": true
+                }
+              },
+              {
+                "id": {
+                  "component": "dec760c9-f91a-c2da-f6c0-9161961e017e",
+                  "element": "dec760c9-f91a-c2da-f6c0-9161961e0186"
+                },
+                "type": "HtmlEmbed",
+                "styleNames": [
+                  "page_code_custom"
+                ],
+                "settings": {
+                  "visibility": true
+                }
+              },
+              {
+                "id": {
+                  "component": "dec760c9-f91a-c2da-f6c0-9161961e017e",
+                  "element": "dec760c9-f91a-c2da-f6c0-9161961e0187"
+                },
+                "type": "ComponentInstance",
+                "instanceDetails": {
+                  "type": "ComponentInstance",
+                  "id": "f4b3e51e-dbca-cc5b-dcba-be821567c25f",
+                  "name": "Fluid Sizes",
+                  "props": [],
+                  "slots": []
+                }
+              },
+              {
+                "id": {
+                  "component": "dec760c9-f91a-c2da-f6c0-9161961e017e",
+                  "element": "dec760c9-f91a-c2da-f6c0-9161961e0188"
+                },
+                "type": "Block",
+                "settings": {
+                  "tag": "div",
+                  "visibility": true,
+                  "block": {
+                    "tag": "div"
+                  }
+                },
+                "children": [
+                  {
+                    "id": {
+                      "component": "dec760c9-f91a-c2da-f6c0-9161961e017e",
+                      "element": "dec760c9-f91a-c2da-f6c0-9161961e0189"
+                    },
+                    "type": "HtmlEmbed",
+                    "settings": {
+                      "visibility": true
+                    }
+                  },
+                  {
+                    "id": {
+                      "component": "dec760c9-f91a-c2da-f6c0-9161961e017e",
+                      "element": "dec760c9-f91a-c2da-f6c0-9161961e018a"
+                    },
+                    "type": "HtmlEmbed",
+                    "settings": {
+                      "visibility": true
+                    }
+                  },
+                  {
+                    "id": {
+                      "component": "dec760c9-f91a-c2da-f6c0-9161961e017e",
+                      "element": "dec760c9-f91a-c2da-f6c0-9161961e018b"
+                    },
+                    "type": "HtmlEmbed",
+                    "settings": {
+                      "visibility": true
+                    }
+                  },
+                  {
+                    "id": {
+                      "component": "dec760c9-f91a-c2da-f6c0-9161961e017e",
+                      "element": "dec760c9-f91a-c2da-f6c0-9161961e018c"
+                    },
+                    "type": "HtmlEmbed",
+                    "settings": {
+                      "visibility": true
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+
