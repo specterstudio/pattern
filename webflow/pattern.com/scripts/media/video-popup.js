@@ -12,7 +12,7 @@
   'use strict';
 
   var GLOBAL_NAME = 'PatternVideoPopup';
-  var VERSION = '1.1.3';
+  var VERSION = '1.1.4';
   var ROOT_SELECTOR = [
     '[class~="video_player_wrap"]',
     '[class*="--video_player_wrap "]',
@@ -21,6 +21,12 @@
   var OPEN_SELECTOR = '[data-video-player-open]';
   var DIALOG_SELECTOR = 'dialog[data-video-player-dialog]';
   var CLOSE_SELECTOR = '[data-video-player-close]';
+  var FOCUSABLE_CLOSE_SELECTOR = [
+    'button[data-video-player-close]',
+    'a[href][data-video-player-close]',
+    '[role="button"][data-video-player-close]',
+    '[tabindex]:not([tabindex="-1"])[data-video-player-close]'
+  ].join(',');
   var INIT_ATTRIBUTE = 'data-video-player-popup-initialized';
 
   if (window[GLOBAL_NAME] && window[GLOBAL_NAME].version) {
@@ -337,7 +343,7 @@
         dialog.classList.add('is-active');
         dialog.style.opacity = '1';
 
-        var closeButton = dialog.querySelector(CLOSE_SELECTOR);
+        var closeButton = dialog.querySelector(FOCUSABLE_CLOSE_SELECTOR);
         if (closeButton) closeButton.focus({ preventScroll: true });
       });
     }
