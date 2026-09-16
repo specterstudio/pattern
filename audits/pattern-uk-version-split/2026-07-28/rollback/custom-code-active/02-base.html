@@ -1,0 +1,717 @@
+<style>
+@import url("https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css");
+
+/* Pattern site-wide custom CSS — V3 transition build
+   Load after Lumos CSS v2.2.0 and before NEW Custom CSS — V2 Overrides.
+   UK post-detach build: legacy V1 layout and type aliases stay on the original
+   collections; localized V2 color, theme, and text-style tokens use -2. */
+/* ==========================================================================
+   Pattern legacy V1 compatibility layer
+   Only V1 declarations not owned by Lumos, Marketo, the V1 Grid System,
+   or Specter/V2 are retained here.
+   Legacy aliases stay global because detached UK pages still use unprefixed V1
+   utility classes. Page-specific production-fidelity overrides remain scoped
+   to .page_main.cc-v1.
+   ========================================================================== */
+/* ========================================================================== */
+/* V1 Custom Code / Base */
+/* ========================================================================== */
+:root:has(body :is(.page_code_wrap, .page_main.cc-v1)) {
+  --site--column-count: 12;
+  --site--width-inner: calc(var(--site--width) - (var(--site--margin) * 2));
+  --site--gutter-total: calc(var(--site--gutter) * (var(--site--column-count) - 1));
+  --site--grid-width: min(var(--site--width-inner), var(--container--full));
+  --container--full: calc(100vw - (var(--site--margin) * 2));
+  --container--small: calc(var(--column-width) * (var(--site--column-count) - 2) - var(--site--gutter));
+  --container--main: calc(var(--column-width) * var(--site--column-count) - var(--site--gutter));
+  --container--main-old: var(--container--main);
+  --column-width: calc((var(--site--grid-width) - var(--site--gutter-total)) / var(--site--column-count) + var(--site--gutter));
+  --column-width--1: calc(var(--column-width) * 1 - var(--site--gutter));
+  --column-width--2: calc(var(--column-width) * 2 - var(--site--gutter));
+  --column-width--3: calc(var(--column-width) * 3 - var(--site--gutter));
+  --column-width--4: calc(var(--column-width) * 4 - var(--site--gutter));
+  --column-width--5: calc(var(--column-width) * 5 - var(--site--gutter));
+  --column-width--6: calc(var(--column-width) * 6 - var(--site--gutter));
+  --column-width--7: calc(var(--column-width) * 7 - var(--site--gutter));
+  --column-width--8: calc(var(--column-width) * 8 - var(--site--gutter));
+  --column-width--9: calc(var(--column-width) * 9 - var(--site--gutter));
+  --column-width--10: calc(var(--column-width) * 10 - var(--site--gutter));
+  --column-width--11: calc(var(--column-width) * 11 - var(--site--gutter));
+  --column-width--12: calc(var(--column-width) * 12 - var(--site--gutter));
+  --column-margin--1: calc(var(--column-width) * 1);
+  --column-margin--2: calc(var(--column-width) * 2);
+  --column-margin--3: calc(var(--column-width) * 3);
+  --column-margin--4: calc(var(--column-width) * 4);
+  --column-margin--5: calc(var(--column-width) * 5);
+  --column-margin--6: calc(var(--column-width) * 6);
+  --column-margin--7: calc(var(--column-width) * 7);
+  --column-margin--8: calc(var(--column-width) * 8);
+  --column-margin--9: calc(var(--column-width) * 9);
+  --column-margin--10: calc(var(--column-width) * 10);
+  --column-margin--11: calc(var(--column-width) * 11);
+  --column-margin--12: calc(var(--column-width) * 12);
+  --breakout-start: [full-start] minmax(0, 1fr) [content-start];
+  --breakout-end: [content-end] minmax(0, 1fr) [full-end];
+  --grid-breakout-single: var(--breakout-start) minmax(0, var(--site--grid-width)) var(--breakout-end);
+  --grid-breakout: var(--breakout-start) repeat(var(--site--column-count), minmax(0, calc((var(--site--grid-width) - var(--site--gutter-total)) / var(--site--column-count)))) var(--breakout-end);
+  --grid-main: repeat(var(--site--column-count), minmax(0, 1fr));
+  --font-weight--inherit: inherit;
+  --font-weight--100: 100;
+  --font-weight--200: 200;
+  --font-weight--300: 300;
+  --font-weight--400: 400;
+  --font-weight--500: 500;
+  --font-weight--600: 600;
+  --font-weight--700: 700;
+  --font-weight--800: 800;
+  --font-weight--900: 900;
+  --text-transform--none: none;
+  --text-transform--uppercase: uppercase;
+  --text-transform--capitalize: capitalize;
+  --text-transform--lowercase: lowercase;
+  --text-transform--inherit: inherit;
+
+}
+
+
+body:has(:is(.page_code_wrap, .page_main.cc-v1)) {
+	font-weight: var(--_typography---font--primary-regular);
+}
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) video.wf-empty {
+	padding: 0;
+}
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) section,
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) header,
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) footer {
+	position: relative;
+}
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) [class*="u-text-style-"] > :where(h1,h2,h3,h4,h5,h6,p,blockquote) {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	letter-spacing: inherit;
+	text-transform: inherit;
+	text-wrap: inherit;
+	margin-top: inherit;
+	margin-bottom: inherit;
+}
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) :not(
+	.u-margin-trim-off, 
+	.u-block-gap, 
+	.w-background-video, 
+	.article-rich-text > *
+) > :not(:not(.w-condition-invisible) ~ :not(.w-condition-invisible)) {
+	margin-top: 0;
+}
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) :not(.u-margin-trim-off, .u-block-gap, .w-background-video, .article-rich-text > *) > :not(:has(~ :not(.w-condition-invisible))) {
+	margin-bottom: 0;
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-hide-if-empty:empty,
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-hide-if-empty:not(:has(> :not(.w-condition-invisible))),
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-hide-if-empty-cms:not(:has(.w-dyn-item)),
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .w-richtext[class*="u-text-style-"] > :not(h1,h2,h3,h4,h5,h6,p,blockquote,ul,ol,span),
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-embed-js,
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-embed-css {
+	display: none !important;
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-line-clamp-1,
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-line-clamp-2,
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-line-clamp-3,
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-line-clamp-4 {
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-line-clamp-2 { -webkit-line-clamp: 2; }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-line-clamp-3 { -webkit-line-clamp: 3; }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-line-clamp-4 { -webkit-line-clamp: 4; }
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) [tabindex] {
+	outline-offset: var(--_default-2---focus--offset-outer);
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .w-checkbox-input--inputType-custom {
+	outline-offset: var(--_default-2---focus--offset-outer);
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .w-form-formradioinput--inputType-custom {
+	outline-offset: var(--_default-2---focus--offset-outer);
+}
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .w-checkbox:has(:focus-visible) .w-checkbox-input--inputType-custom {
+	outline-color: var(--theme--text);
+	outline-width: var(--_default-2---focus--width);
+	outline-style: solid;
+}
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .w-radio:has(:focus-visible) .w-form-formradioinput--inputType-custom {
+	outline-color: var(--theme--text);
+	outline-width: var(--_default-2---focus--width);
+	outline-style: solid;
+}
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .w-checkbox-input--inputType-custom.w--redirected-focus,
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .w-form-formradioinput--inputType-custom.w--redirected-focus {
+	box-shadow: none;
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-block-gap {
+	--gap: var(--space--1);
+	--gap-x: var(--gap);
+	--gap-y: var(--gap);
+}
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-block-gap > * {
+	margin-inline: calc(var(--gap-x) / 2);
+	margin-top: var(--gap-y);
+	vertical-align: inherit;
+}
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) :where(.u-block-gap > *) {
+	display: inline-block;
+}
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-block-gap::before {
+	content: "";
+	display: block;
+	margin-bottom: calc(var(--gap-y) * -1);
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-block-gap-vertical {
+	--gap: 0;
+	--margin: var(--gap);
+}
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-block-gap-vertical > * {
+	margin-top: var(--margin);
+	margin-bottom: 0;
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-gap-0 { --gap: 0; }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-gap-1 { --gap: var(--space--1); }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-gap-2 { --gap: var(--space--2); }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-gap-3 { --gap: var(--space--3); }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-gap-4 { --gap: var(--space--4); }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-gap-5 { --gap: var(--space--5); }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-gap-6 { --gap: var(--space--6); }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-gap-7 { --gap: var(--space--7); }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-gap-8 { --gap: var(--space--8); }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-gap-gutter { --gap: var(--site--gutter); }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-gap-row-0 { --gap-y: 0; }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-gap-row-1 { --gap-y: var(--space--1); }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-gap-row-2 { --gap-y: var(--space--2); }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-gap-row-3 { --gap-y: var(--space--3); }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-gap-row-4 { --gap-y: var(--space--4); }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-gap-row-5 { --gap-y: var(--space--5); }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-gap-row-6 { --gap-y: var(--space--6); }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-gap-row-7 { --gap-y: var(--space--7); }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-gap-row-8 { --gap-y: var(--space--8); }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-gap-row-gutter { --gap-y: var(--site--gutter); }
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-child-contain > * {
+	display: inline-block;
+	width: 100%;
+	max-width: inherit;
+	margin-top: 0;
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .u-text-margin-none :is([class*="u-text-style-"],h1,h2,h3,h4,h5,h6,p) {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) [data-padding-top="none"] { padding-top: var(--section-space--none); }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) [data-padding-bottom="none"] { padding-bottom: var(--section-space--none); }
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) [data-padding-top="small"] { padding-top: var(--section-space--small); }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) [data-padding-bottom="small"] { padding-bottom: var(--section-space--small); }
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) [data-padding-top="main"] { padding-top: var(--section-space--main); }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) [data-padding-bottom="main"] { padding-bottom: var(--section-space--main); }
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) [data-padding-top="large"] { padding-top: var(--section-space--large); }
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) [data-padding-bottom="large"] { padding-bottom: var(--section-space--large); }
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .wf-design-mode .g_clickable_wrap {
+	z-index: 0;
+}
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .g_clickable_wrap a[href="#"] {
+	display: none;
+}
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .g_clickable_wrap a[href="#"] ~ button {
+	display: block;
+}
+
+/* ========================================================================== */
+/* V1 Custom Code / Color */
+/* ========================================================================== */
+/* Legacy theme aliases backed by the detached V2 swatches. */
+:root:has(body :is(.page_code_wrap, .page_main.cc-v1)),
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) [data-theme="light"],
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) [data-theme="dark"] [data-theme="invert"] {
+  --theme--background: var(--_default-2---swatch--neutral-50-2);
+  --theme--text: var(--_default-2---swatch--neutral-900);
+  --theme--border: var(--_default-2---swatch--neutral-900);
+  --theme--n1: var(--_default-2---swatch--neutral-900);
+  --theme--n2: var(--_default-2---swatch--neutral-500);
+  --theme--n3: var(--_default-2---swatch--neutral-50-2);
+  --theme--t1: var(--_default-2---swatch--gray-1-o05);
+  --theme--t2: color-mix(in srgb, var(--_default-2---swatch--neutral-900) 12%, var(--_default-2---swatch--transparent));
+  --theme--t3: color-mix(in srgb, var(--_default-2---swatch--neutral-900) 40%, var(--_default-2---swatch--transparent));
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) [data-theme="dark"],
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) [data-theme="invert"],
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) [data-theme="light"] [data-theme="invert"] {
+  --theme--background: var(--_default-2---swatch--neutral-900);
+  --theme--text: var(--_default-2---swatch--neutral-50-2);
+  --theme--border: var(--_default-2---swatch--neutral-50-2);
+  --theme--n1: var(--_default-2---swatch--neutral-50-2);
+  --theme--n2: var(--_default-2---swatch--neutral-300);
+  --theme--n3: var(--_default-2---swatch--neutral-900);
+  --theme--t1: color-mix(in srgb, var(--_default-2---swatch--white) 5%, var(--_default-2---swatch--transparent));
+  --theme--t2: color-mix(in srgb, var(--_default-2---swatch--white) 12%, var(--_default-2---swatch--transparent));
+  --theme--t3: color-mix(in srgb, var(--_default-2---swatch--white) 40%, var(--_default-2---swatch--transparent));
+}
+
+/* apply colors */
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) :is(c, :where([data-theme]:not([data-theme="inherit"]))) {
+	background-color: var(--theme--background);
+	color: var(--theme--text);
+}
+
+/* ========================================================================== */
+/* V1 Custom Code / Text Style */
+/* ========================================================================== */
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .section_hero_h1 em { 
+	color: var(--_default-2---swatch--white);
+	background-clip: none;
+  -webkit-text-fill-color: var(--_default-2---swatch--white);
+  -webkit-background-clip: none;
+  vertical-align: baseline;
+  line-height: 0.875em;
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) h1 em,
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) h2 em,
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) h3 em,
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) h4 em,
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) h5 em,
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) h6 em,
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .s_video_heading_rt em {
+  background-image: linear-gradient(94deg, var(--_default-2---swatch--secondary-500) 46%, var(--_default-2---swatch--primary-500) 72%);
+  color: var(--_default-2---swatch--transparent);
+  background-clip: text;
+  -webkit-text-fill-color: var(--_default-2---swatch--transparent);
+  -webkit-background-clip: text;
+  font-family: StixTwoTextItalic;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  vertical-align: baseline;
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) em::after {
+  content: '';
+  padding: 0.05ch;
+  overflow: visible;
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .s_video_heading sup {
+ font-size: 2vw !important;
+ top: -2.5vw;
+}
+
+/* ========================================================================== */
+/* V1 Custom Code / Responsive */
+/* ========================================================================== */
+html:has(body :is(.page_code_wrap, .page_main.cc-v1)) { font-size: 1rem; }
+
+:root:has(body :is(.page_code_wrap, .page_main.cc-v1)) {
+  /* Original V1 aliases retained for existing unprefixed utility classes. */
+  --d1--font-size: clamp(3.25rem, 3.25rem + ((1vw - 0.48rem) * 3.7109), 7.25rem);
+  --d2--font-size: clamp(2.9375rem, 2.9375rem + ((1vw - 0.48rem) * 3.7109), 6.125rem);
+  --d3--font-size: clamp(2.6875rem, 2.6875rem + ((1vw - 0.48rem) * 3.7109), 5.25rem);
+  --h1--font-size: clamp(2.4375rem, 2.4375rem + ((1vw - 0.48rem) * 3.2812), 4.46875rem);
+  --h2--font-size: clamp(2.1875rem, 2.1875rem + ((1vw - 0.48rem) * 2.4805), 3.8125rem);
+  --h3--font-size: clamp(2rem, 2rem + ((1vw - 0.48rem) * 0.9912), 3.25rem);
+  --h4--font-size: clamp(1.8125rem, 1.8125rem + ((1vw - 0.48rem) * 0.4956), 2.75rem);
+  --h5--font-size: clamp(1.65rem, 1.65rem + ((1vw - 0.48rem) * 0.2478), 2.375rem);
+  --h6--font-size: clamp(1.5rem, 1.5rem + ((1vw - 0.48rem) * 0.2478), 2rem);
+  --text-xxlarge--font-size: clamp(1.5rem, 1.5rem + ((1vw - 0.48rem) * 0.4956), 1.6875rem);
+  --text-xlarge--font-size: clamp(1.25rem, 1.25rem + ((1vw - 0.48rem) * 0.4956), 1.375rem);
+  --text-large--font-size: clamp(1.1rem, 1.1rem + ((1vw - 0.48rem) * 0.2478), 1.125rem);
+  --text-main--font-size: 1rem;
+  --text-small--font-size: 0.875rem;
+}
+
+/* ========================================================================== */
+/* V1 Custom Code / Forms */
+/* ========================================================================== */
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) form#mktoForm_510 .mktoForm {
+  padding: 0 !important;
+  background-color: var(--_default-2---swatch--transparent) !important;
+  box-shadow: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) form#mktoForm_510 .mktoFormRow {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: stretch;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .mktoForm input[type=text] {
+  display: flex;
+  width: 100% !important;
+  min-height: 2.75rem;
+  align-items: center;
+  border-radius: var(--_default-2---radius--md);
+  background-color: var(--_default-2---swatch--gray-1-o05);
+  color: var(--theme--text);
+  padding: 0rem 1rem !important;
+  border: none !important;
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .mktoForm input[type=url] {
+  display: flex;
+  width: 100% !important;
+  min-height: 2.75rem;
+  align-items: center;
+  border-radius: var(--_default-2---radius--md);
+  background-color: var(--_default-2---swatch--gray-1-o05);
+  color: var(--theme--text);
+  padding: 0rem 1rem !important;
+  border: none !important;
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .mktoForm input[type=email] {
+  display: flex;
+  width: 100% !important;
+  min-height: 2.75rem;
+  align-items: center;
+  border-radius: var(--_default-2---radius--md);
+  background-color: var(--_default-2---swatch--gray-1-o05);
+  color: var(--theme--text);
+  padding: 0rem 1rem !important;
+  border: none !important;
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .mktoForm input[type=tel] {
+  display: flex;
+  width: 100% !important;
+  min-height: 2.75rem;
+  align-items: center;
+  border-radius: var(--_default-2---radius--md);
+  background-color: var(--_default-2---swatch--gray-1-o05);
+  color: var(--theme--text);
+  padding: 0rem 1rem !important;
+  border: none !important;
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .mktoForm input[type=number] {
+  display: flex;
+  width: 100% !important;
+  min-height: 2.75rem;
+  align-items: center;
+  border-radius: var(--_default-2---radius--md);
+  background-color: var(--_default-2---swatch--gray-1-o05);
+  color: var(--theme--text);
+  padding: 0rem 1rem !important;
+  border: none !important;
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .mktoForm input[type=date] {
+  display: flex;
+  width: 100% !important;
+  min-height: 2.75rem;
+  align-items: center;
+  border-radius: var(--_default-2---radius--md);
+  background-color: var(--_default-2---swatch--gray-1-o05);
+  color: var(--theme--text);
+  padding: 0rem 1rem !important;
+  border: none !important;
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .mktoField {
+  display: flex;
+  width: 100% !important;
+  min-height: 2.75rem;
+  align-items: center;
+  border-radius: var(--_default-2---radius--md);
+  background-color: var(--_default-2---swatch--gray-1-o05);
+  color: var(--theme--text);
+  padding: 0rem 1rem !important;
+  border: none !important;
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .mktoForm textarea.mktoField {
+  align-items: center;
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .mktoForm input[type=text]::placeholder {
+  color: var(--_default-2---swatch--neutral-400);
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .mktoForm input[type=url]::placeholder {
+  color: var(--_default-2---swatch--neutral-400);
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .mktoForm input[type=email]::placeholder {
+  color: var(--_default-2---swatch--neutral-400);
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .mktoForm input[type=tel]::placeholder {
+  color: var(--_default-2---swatch--neutral-400);
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .mktoForm input[type=number]::placeholder {
+  color: var(--_default-2---swatch--neutral-400);
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .mktoForm input[type=date::placeholder] {
+  color: var(--_default-2---swatch--neutral-400);
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .mktoForm select.mktoField::placeholder {
+  color: var(--_default-2---swatch--neutral-400);
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .mktoField::placeholder {
+  color: var(--_default-2---swatch--neutral-400);
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .mktoFormRow input:not(.footer_wrap *),
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .mktoFormRow select:not(.footer_wrap *) {
+  margin-bottom: 1rem !important;
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) form#mktoForm_232 .mktoButton {
+  position: relative !important;
+  display: flex !important;
+  padding: 0.6875rem 1.25rem !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  border: none !important;
+  border-radius: var(--_default-2---radius--round) !important;
+  background-image: linear-gradient(95deg, var(--_default-2---swatch--secondary-500), var(--_default-2---swatch--primary-500)) !important;
+  color: var(--_default-2---swatch--white) !important;
+  font-weight: var(--_typography---font--primary-medium) !important;
+  text-transform: uppercase !important;
+  transition: border-color 200ms ease,
+    color 200ms ease,
+    background-color 200ms ease !important;
+}
+
+/* ========================================================================== */
+/* V1 Custom Code / Custom */
+/* ========================================================================== */
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .jetboost-hidden {
+display: inline-block;
+opacity: 0.25;
+visibility: visible !important;
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) #toc li {
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;
+}
+
+/* ========================================================================== */
+/* V1 Custom Code / Navigation */
+/* ========================================================================== */
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .navbar_sub_item {
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+:where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .navbar_sub_item:hover {
+  opacity: 1;
+}
+
+@media screen and (min-width: 992px) {
+  :where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .navbar_sub_name::after {
+    content: '';
+    display: inline-block;
+    width: 12.357px;
+    height: 15.717px;
+    margin-left: 8px;
+    background-image: url("https://assets.pattern.com/KUXxoJrlY8Qc6WvLikoOB");
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    transition: background-image 0.3s ease;
+  }
+  
+  :where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .navbar_sub_item:hover .navbar_sub_name::after {
+    background-image: url("https://assets.pattern.com/ZLBslvLJTu4S5aZhEB43L");
+  }
+}
+
+@media screen and (max-width: 991px) {
+  :where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .navbar_sub_name::after {
+    content: '';
+    display: inline-block;
+    width: 12.357px;
+    height: 15.717px;
+    margin-left: 8px;
+    margin-bottom: 4px;
+    background-image: url("https://assets.pattern.com/KUXxoJrlY8Qc6WvLikoOB");
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    transition: background-image 0.3s ease;
+  }
+  
+  :where(body:has(:is(.page_code_wrap, .page_main.cc-v1))) .navbar_sub_item:hover .navbar_sub_name::after {
+    background-image: url("https://assets.pattern.com/ZLBslvLJTu4S5aZhEB43L");
+  }
+}
+
+/* ========================================================================== */
+/* V1 Custom Code / Fluid Sizes */
+/* ========================================================================== */
+:root:has(body :is(.page_code_wrap, .page_main.cc-v1)) {
+  --type-size--d1: clamp(3.25rem, 1.7642857142857142rem + 6.095238095238095vw, 7.25rem);
+  --type-size--d2: clamp(2.9375rem, 1.7535714285714286rem + 4.857142857142857vw, 6.125rem);
+  --type-size--d3: clamp(2.6875rem, 1.7357142857142858rem + 3.9047619047619047vw, 5.25rem);
+  --type-size--h1: clamp(2.4375rem, 1.6830357142857142rem + 3.0952380952380953vw, 4.46875rem);
+  --type-size--h2: clamp(2.1875rem, 1.5839285714285714rem + 2.4761904761904763vw, 3.8125rem);
+  --type-size--h3: clamp(2rem, 1.5357142857142858rem + 1.9047619047619049vw, 3.25rem);
+  --type-size--h4: clamp(1.8125rem, 1.4642857142857142rem + 1.4285714285714286vw, 2.75rem);
+  --type-size--h5: clamp(1.65rem, 1.3807142857142858rem + 1.1047619047619048vw, 2.375rem);
+  --type-size--h6: clamp(1.5rem, 1.3142857142857143rem + 0.7619047619047619vw, 2rem);
+  --type-size--text-xxlarge: clamp(1.5rem, 1.4303571428571429rem + 0.2857142857142857vw, 1.6875rem);
+  --type-size--text-xlarge: clamp(1.25rem, 1.2035714285714285rem + 0.19047619047619047vw, 1.375rem);
+  --type-size--text-large: clamp(1.1rem, 1.090714285714286rem + 0.03809523809523796vw, 1.125rem);
+  --type-size--text-main: clamp(1rem, 1rem + 0vw, 1rem);
+  --type-size--text-small: clamp(0.875rem, 0.875rem + 0vw, 0.875rem);
+  --type-size--overline-large: clamp(1rem, 1rem + 0vw, 1rem);
+  --type-size--oevrline-main: clamp(0.875rem, 0.875rem + 0vw, 0.875rem);
+  --type-size--overline-small: clamp(0.75rem, 0.75rem + 0vw, 0.75rem);
+  --site--margin: clamp(1.5rem, 0.38571428571428573rem + 4.571428571428571vw, 4.5rem);
+  --_buttons---button--font-size: clamp(0.8125rem, 0.7892857142857143rem + 0.09523809523809523vw, 0.875rem);
+}
+
+/* ==========================================================================
+   V1 production-fidelity boundary
+   Keeps V1 page geometry and tokens stable while V2/V3 use the -2 defaults.
+   Apply the cc-v1 combo class to the V1 page's .page_main element.
+   ========================================================================== */
+.page_main.cc-v1 {
+  --site--column-count: 12;
+  --site--width: 111rem;
+  --site--margin: clamp(1.5rem, 0.3857142857rem + 4.5714285714vw, 4.5rem);
+  --site--gutter: 1.5rem;
+  --site--width-inner: calc(var(--site--width) - (var(--site--margin) * 2));
+  --site--gutter-total: calc(var(--site--gutter) * (var(--site--column-count) - 1));
+  --site--grid-width: min(var(--site--width-inner), calc(100vw - (var(--site--margin) * 2)));
+  --column-width: calc((var(--site--grid-width) - var(--site--gutter-total)) / var(--site--column-count) + var(--site--gutter));
+  --container--full: calc(100vw - (var(--site--margin) * 2));
+  --container--small: calc(var(--column-width) * (var(--site--column-count) - 2) - var(--site--gutter));
+  --container--main: calc(var(--column-width) * var(--site--column-count) - var(--site--gutter));
+  --container--main-old: var(--container--main);
+
+  --column-width--1: calc(var(--column-width) * 1 - var(--site--gutter));
+  --column-width--2: calc(var(--column-width) * 2 - var(--site--gutter));
+  --column-width--3: calc(var(--column-width) * 3 - var(--site--gutter));
+  --column-width--4: calc(var(--column-width) * 4 - var(--site--gutter));
+  --column-width--5: calc(var(--column-width) * 5 - var(--site--gutter));
+  --column-width--6: calc(var(--column-width) * 6 - var(--site--gutter));
+  --column-width--7: calc(var(--column-width) * 7 - var(--site--gutter));
+  --column-width--8: calc(var(--column-width) * 8 - var(--site--gutter));
+  --column-width--9: calc(var(--column-width) * 9 - var(--site--gutter));
+  --column-width--10: calc(var(--column-width) * 10 - var(--site--gutter));
+  --column-width--11: calc(var(--column-width) * 11 - var(--site--gutter));
+  --column-width--12: calc(var(--column-width) * 12 - var(--site--gutter));
+  --column-margin--1: calc(var(--column-width) * 1);
+  --column-margin--2: calc(var(--column-width) * 2);
+  --column-margin--3: calc(var(--column-width) * 3);
+  --column-margin--4: calc(var(--column-width) * 4);
+  --column-margin--5: calc(var(--column-width) * 5);
+  --column-margin--6: calc(var(--column-width) * 6);
+  --column-margin--7: calc(var(--column-width) * 7);
+  --column-margin--8: calc(var(--column-width) * 8);
+  --column-margin--9: calc(var(--column-width) * 9);
+  --column-margin--10: calc(var(--column-width) * 10);
+  --column-margin--11: calc(var(--column-width) * 11);
+  --column-margin--12: calc(var(--column-width) * 12);
+
+  --breakout-start: [full-start] minmax(0, 1fr) [content-start];
+  --breakout-end: [content-end] minmax(0, 1fr) [full-end];
+  --grid-breakout: var(--breakout-start) repeat(var(--site--column-count), minmax(0, calc((var(--site--grid-width) - var(--site--gutter-total)) / var(--site--column-count)))) var(--breakout-end);
+  --grid-main: repeat(var(--site--column-count), minmax(0, 1fr));
+
+  --d1--font-size: clamp(3.25rem, 1.7642857143rem + 6.0952380952vw, 7.25rem);
+  --d2--font-size: clamp(2.9375rem, 1.7535714286rem + 4.8571428571vw, 6.125rem);
+  --d3--font-size: clamp(2.6875rem, 1.7357142857rem + 3.9047619048vw, 5.25rem);
+  --h1--font-size: clamp(2.4375rem, 1.6830357143rem + 3.0952380952vw, 4.46875rem);
+  --h2--font-size: clamp(2.1875rem, 1.5839285714rem + 2.4761904762vw, 3.8125rem);
+  --h3--font-size: clamp(2rem, 1.5357142857rem + 1.9047619048vw, 3.25rem);
+  --h4--font-size: clamp(1.8125rem, 1.4642857143rem + 1.4285714286vw, 2.75rem);
+  --h5--font-size: clamp(1.65rem, 1.3807142857rem + 1.1047619048vw, 2.375rem);
+  --h6--font-size: clamp(1.5rem, 1.3142857143rem + 0.7619047619vw, 2rem);
+  --text-xxlarge--font-size: clamp(1.5rem, 1.4303571429rem + 0.2857142857vw, 1.6875rem);
+  --text-xlarge--font-size: clamp(1.25rem, 1.2035714286rem + 0.1904761905vw, 1.375rem);
+  --text-large--font-size: clamp(1.1rem, 1.0907142857rem + 0.0380952381vw, 1.125rem);
+  --text-main--font-size: 1rem;
+  --text-small--font-size: 0.875rem;
+
+  --type-size--d1: var(--d1--font-size);
+  --type-size--d2: var(--d2--font-size);
+  --type-size--d3: var(--d3--font-size);
+  --type-size--h1: var(--h1--font-size);
+  --type-size--h2: var(--h2--font-size);
+  --type-size--h3: var(--h3--font-size);
+  --type-size--h4: var(--h4--font-size);
+  --type-size--h5: var(--h5--font-size);
+  --type-size--h6: var(--h6--font-size);
+  --type-size--text-xxlarge: var(--text-xxlarge--font-size);
+  --type-size--text-xlarge: var(--text-xlarge--font-size);
+  --type-size--text-large: var(--text-large--font-size);
+  --type-size--text-main: var(--text-main--font-size);
+  --type-size--text-small: var(--text-small--font-size);
+  --type-size--overline-large: 1rem;
+  --type-size--oevrline-main: 0.875rem;
+  --type-size--overline-small: 0.75rem;
+  --_buttons---button--font-size: clamp(0.8125rem, 0.7892857143rem + 0.0952380952vw, 0.875rem);
+
+}
+
+.page_main.cc-v1 :is(h1, h2, h3, h4, h5, h6, p, [class*="u-text-style-"])::before,
+.page_main.cc-v1 :is(h1, h2, h3, h4, h5, h6, p, [class*="u-text-style-"])::after {
+  content: none !important;
+  display: none !important;
+  margin: 0 !important;
+}
+
+.page_main.cc-v1,
+.page_main.cc-v1 [data-theme="light"],
+.page_main.cc-v1 [data-theme="dark"] [data-theme="invert"] {
+  --theme--background: color-mix(in srgb, var(--_default-2---swatch--white) 96%, var(--_default-2---swatch--neutral-900));
+  --theme--text: var(--_default-2---swatch--neutral-900);
+  --theme--border: var(--_default-2---swatch--neutral-900);
+  --theme--n1: var(--_default-2---swatch--neutral-900);
+  --theme--n2: var(--_default-2---swatch--neutral-500);
+  --theme--n3: color-mix(in srgb, var(--_default-2---swatch--white) 96%, var(--_default-2---swatch--neutral-900));
+  --theme--t1: var(--_default-2---swatch--gray-1-o05);
+  --theme--t2: color-mix(in srgb, var(--_default-2---swatch--neutral-900) 12%, var(--_default-2---swatch--transparent));
+  --theme--t3: color-mix(in srgb, var(--_default-2---swatch--neutral-900) 40%, var(--_default-2---swatch--transparent));
+}
+
+.page_main.cc-v1 [data-theme="dark"],
+.page_main.cc-v1 [data-theme="invert"],
+.page_main.cc-v1 [data-theme="light"] [data-theme="invert"] {
+  --theme--background: var(--_default-2---swatch--neutral-900);
+  --theme--text: color-mix(in srgb, var(--_default-2---swatch--white) 96%, var(--_default-2---swatch--neutral-900));
+  --theme--border: color-mix(in srgb, var(--_default-2---swatch--white) 96%, var(--_default-2---swatch--neutral-900));
+  --theme--n1: color-mix(in srgb, var(--_default-2---swatch--white) 96%, var(--_default-2---swatch--neutral-900));
+  --theme--n2: color-mix(in srgb, var(--_default-2---swatch--neutral-700) 35%, var(--_default-2---swatch--white));
+  --theme--n3: var(--_default-2---swatch--neutral-900);
+  --theme--t1: color-mix(in srgb, var(--_default-2---swatch--white) 5%, var(--_default-2---swatch--transparent));
+  --theme--t2: color-mix(in srgb, var(--_default-2---swatch--white) 12%, var(--_default-2---swatch--transparent));
+  --theme--t3: color-mix(in srgb, var(--_default-2---swatch--white) 40%, var(--_default-2---swatch--transparent));
+}
+
+</style>
+

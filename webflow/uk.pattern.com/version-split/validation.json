@@ -1,0 +1,364 @@
+{
+  "generatedAt": "2026-07-29T15:19:57.384Z",
+  "phase": 5,
+  "release": "0.5.2",
+  "tag": "uk-version-split-v0.5.2",
+  "active": true,
+  "pilotOnly": false,
+  "rolloutReady": true,
+  "checks": [
+    {
+      "check": "css/shared.css: no style tags",
+      "passed": true
+    },
+    {
+      "check": "css/shared.css: balanced braces",
+      "passed": true
+    },
+    {
+      "check": "css/v1.css: no style tags",
+      "passed": true
+    },
+    {
+      "check": "css/v1.css: balanced braces",
+      "passed": true
+    },
+    {
+      "check": "css/v2.css: no style tags",
+      "passed": true
+    },
+    {
+      "check": "css/v2.css: balanced braces",
+      "passed": true
+    },
+    {
+      "check": "css/features.css: no style tags",
+      "passed": true
+    },
+    {
+      "check": "css/features.css: balanced braces",
+      "passed": true
+    },
+    {
+      "check": "css/features/icons.css: no style tags",
+      "passed": true
+    },
+    {
+      "check": "css/features/icons.css: balanced braces",
+      "passed": true
+    },
+    {
+      "check": "css/features/cards-icons.css: no style tags",
+      "passed": true
+    },
+    {
+      "check": "css/features/cards-icons.css: balanced braces",
+      "passed": true
+    },
+    {
+      "check": "css/features/buttons-animations.css: no style tags",
+      "passed": true
+    },
+    {
+      "check": "css/features/buttons-animations.css: balanced braces",
+      "passed": true
+    },
+    {
+      "check": "css/features/gradients.css: no style tags",
+      "passed": true
+    },
+    {
+      "check": "css/features/gradients.css: balanced braces",
+      "passed": true
+    },
+    {
+      "check": "css/features/accordion-faq.css: no style tags",
+      "passed": true
+    },
+    {
+      "check": "css/features/accordion-faq.css: balanced braces",
+      "passed": true
+    },
+    {
+      "check": "css/features/swiper.css: no style tags",
+      "passed": true
+    },
+    {
+      "check": "css/features/swiper.css: balanced braces",
+      "passed": true
+    },
+    {
+      "check": "css/features/logos-designer.css: no style tags",
+      "passed": true
+    },
+    {
+      "check": "css/features/logos-designer.css: balanced braces",
+      "passed": true
+    },
+    {
+      "check": "css/features/navigation.css: no style tags",
+      "passed": true
+    },
+    {
+      "check": "css/features/navigation.css: balanced braces",
+      "passed": true
+    },
+    {
+      "check": "css/features/modal.css: no style tags",
+      "passed": true
+    },
+    {
+      "check": "css/features/modal.css: balanced braces",
+      "passed": true
+    },
+    {
+      "check": "css/features/lightbox.css: no style tags",
+      "passed": true
+    },
+    {
+      "check": "css/features/lightbox.css: balanced braces",
+      "passed": true
+    },
+    {
+      "check": "css/features/marquee.css: no style tags",
+      "passed": true
+    },
+    {
+      "check": "css/features/marquee.css: balanced braces",
+      "passed": true
+    },
+    {
+      "check": "css/features/grid-media.css: no style tags",
+      "passed": true
+    },
+    {
+      "check": "css/features/grid-media.css: balanced braces",
+      "passed": true
+    },
+    {
+      "check": "css/features/rich-text.css: no style tags",
+      "passed": true
+    },
+    {
+      "check": "css/features/rich-text.css: balanced braces",
+      "passed": true
+    },
+    {
+      "check": "css/features/marketo.css: no style tags",
+      "passed": true
+    },
+    {
+      "check": "css/features/marketo.css: balanced braces",
+      "passed": true
+    },
+    {
+      "check": "V1 CSS contains no page_code_wrap signal",
+      "passed": true
+    },
+    {
+      "check": "V1 CSS contains explicit v1 marker",
+      "passed": true
+    },
+    {
+      "check": "V2 CSS contains explicit v2 marker",
+      "passed": true
+    },
+    {
+      "check": "V2 CSS excludes the duplicated V1 grid root",
+      "passed": true
+    },
+    {
+      "check": "Shared CSS owns unsuffixed container tokens required by shared Header and Footer",
+      "passed": true
+    },
+    {
+      "check": "Shared CSS owns unsuffixed grid aliases required by shared Header and Footer",
+      "passed": true
+    },
+    {
+      "check": "Shared CSS owns fluid aliases required by shared Header and Footer",
+      "passed": true
+    },
+    {
+      "check": "Optional V1 production-fidelity boundary still requires cc-v1",
+      "passed": true
+    },
+    {
+      "check": "Shared CSS owns semantic positioning required by shared Header and Footer",
+      "passed": true
+    },
+    {
+      "check": "V1 CSS excludes the extracted generic compatibility foundation",
+      "passed": true
+    },
+    {
+      "check": "Shared Marketo feature keeps rendered-form scope",
+      "passed": true
+    },
+    {
+      "check": "Feature bundle includes every feature module",
+      "passed": true
+    },
+    {
+      "check": "Permanent loader activates from the explicit version marker",
+      "passed": true
+    },
+    {
+      "check": "Permanent loader contains no Phase 4 pilot gate",
+      "passed": true
+    },
+    {
+      "check": "Shared Designer component owns Shared and Features links",
+      "passed": true
+    },
+    {
+      "check": "Version Designer components own only their matching CSS",
+      "passed": true
+    },
+    {
+      "check": "Manifest is Phase 5 rollout-ready and not pilot-only",
+      "passed": true
+    },
+    {
+      "check": "All generated structural checks passed",
+      "passed": true
+    }
+  ],
+  "files": [
+    {
+      "path": "css/shared.css",
+      "bytes": 31933,
+      "sha256": "9c639d0d96d9e44807efdd9785f04564468e7d87975006266d6a6c26f72d013b"
+    },
+    {
+      "path": "css/v1.css",
+      "bytes": 22819,
+      "sha256": "b04367e0479940a2266e7b307478b6fcd330ac979945e75c15cc997c95e2ea48"
+    },
+    {
+      "path": "css/v2.css",
+      "bytes": 1529,
+      "sha256": "684f079253060f05000c83df861381e2ae62c31f1bb761f58b90d83ea6270ad9"
+    },
+    {
+      "path": "css/features.css",
+      "bytes": 34823,
+      "sha256": "641820927098327b8f3688d8e80266331d79de33592afaceb7cb276b229f1bd2"
+    },
+    {
+      "path": "css/features/icons.css",
+      "bytes": 305,
+      "sha256": "1a03a2a427f882292f0534de9170db3ad631ec4dc9e789e81acf736f3da4cd50"
+    },
+    {
+      "path": "css/features/cards-icons.css",
+      "bytes": 2350,
+      "sha256": "a32528372085e65d02023844a187514acd9f1a42770e0fd9e548b2af47a4f76a"
+    },
+    {
+      "path": "css/features/buttons-animations.css",
+      "bytes": 1670,
+      "sha256": "9143b3e46e961bf282f7825106f580a4fed77bec276ebe921ee87c5b9e93e4a1"
+    },
+    {
+      "path": "css/features/gradients.css",
+      "bytes": 7174,
+      "sha256": "dcc95bc5fefd068f63aeea355625e4581ad9e53f0c3af187d0bb337144ee9e64"
+    },
+    {
+      "path": "css/features/accordion-faq.css",
+      "bytes": 1056,
+      "sha256": "a58b98bf60dffa3d8760d2dc0c90b869f1cc3a4bcdaa7c22d2bf08d7a978ee6a"
+    },
+    {
+      "path": "css/features/swiper.css",
+      "bytes": 624,
+      "sha256": "094588b26c51fb9e471435698661021c0be8cbb0f36c42a954c32b6a7fc7ef68"
+    },
+    {
+      "path": "css/features/logos-designer.css",
+      "bytes": 659,
+      "sha256": "16feaf6b328193f05d946efcefdcf6f4c7ca454aeb37c0f70b6bbc734542eff7"
+    },
+    {
+      "path": "css/features/navigation.css",
+      "bytes": 580,
+      "sha256": "20d6386a3d8cb8f3f22c37d437b08c2a9a78e2973aa5a2021cebc9ff6d23c3d6"
+    },
+    {
+      "path": "css/features/modal.css",
+      "bytes": 825,
+      "sha256": "e31ecf32b222eda75f4e9738e8562919194b82c35003b0974880abd151cd0055"
+    },
+    {
+      "path": "css/features/lightbox.css",
+      "bytes": 841,
+      "sha256": "4dc9935536834a562b29f2ca21b2758740c48da2a7f81552cf6af2643df4d6fa"
+    },
+    {
+      "path": "css/features/marquee.css",
+      "bytes": 1147,
+      "sha256": "7651199a5aeb60506e41c8536e7134009116566b026c7e0388ea35ca0696a728"
+    },
+    {
+      "path": "css/features/grid-media.css",
+      "bytes": 654,
+      "sha256": "4c6f1aeddc577f96bc02c5bbea600c001e2112d3e2a263862acba5552de4a269"
+    },
+    {
+      "path": "css/features/rich-text.css",
+      "bytes": 783,
+      "sha256": "3134fe21ea101beb557d43334d58cc8034707f55bdc456d86e8b40c857b624cd"
+    },
+    {
+      "path": "css/features/marketo.css",
+      "bytes": 15901,
+      "sha256": "de99143bcce3f9c8adb7d07cfe34c1350fa40c39c01f0b4c8d51fae8c9c2582c"
+    },
+    {
+      "path": "js/loader.js",
+      "bytes": 6760,
+      "sha256": "c13fee5a468583d3831e824fc237bb23f3b90dd22351a5d3bdbe0d76566e053a"
+    },
+    {
+      "path": "js/shared.js",
+      "bytes": 1407,
+      "sha256": "7176413c781ff588043d2693f20f1b6033effb9f6f19ab4a9957dc823281d093"
+    },
+    {
+      "path": "js/v1.js",
+      "bytes": 198,
+      "sha256": "924aa8f66727393f492556500848b11969dd896269b69556476214c176e3fbc8"
+    },
+    {
+      "path": "js/v2.js",
+      "bytes": 198,
+      "sha256": "401af058e7e7a49d9dd236c069efc4f693beb041363af8a0c2b688ec95cd22b7"
+    },
+    {
+      "path": "components/shared.html",
+      "bytes": 516,
+      "sha256": "5df74cc0ab18f9ac5afcf3484f2ce4aeba89ec30770f83070d54d89007a79af0"
+    },
+    {
+      "path": "components/v1.html",
+      "bytes": 274,
+      "sha256": "6a497ab8a5d9c5be61522ba34d7690f725289ac4648abefa120a34abb94613c8"
+    },
+    {
+      "path": "components/v2.html",
+      "bytes": 274,
+      "sha256": "a5e3e88590195c10515eb10f746ad2812183b5e96de07773ef783be3a6253eee"
+    },
+    {
+      "path": "external-assets.json",
+      "bytes": 3934,
+      "sha256": "56e69a492f285f3f7ee8fee95b121f7f232af5b3080422db853b18139e4a92da"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 1828,
+      "sha256": "7256eecace0daa60fab68005802650598d82b336cff4004806ceaa3e97ae324d"
+    }
+  ]
+}

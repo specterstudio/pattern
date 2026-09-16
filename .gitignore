@@ -2,3 +2,7 @@
 .claude/settings.local.json
 exports/
 reference/
+
+# Security-sensitive local rollout inventories; never publish these snapshots.
+audits/pattern-uk-version-split/2026-07-28/phase-5a-*
+webflow/uk.pattern.com/version-split/build-rollout-manifest.mjs

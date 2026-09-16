@@ -1,0 +1,34 @@
+/*
+ * Pattern UK version split — Accordion and FAQ
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 03 section 5
+ */
+
+/* ==========================================================================
+  5. ACCORDION & FAQ
+  ========================================================================== */
+
+  [class*="accordion_toggle_btn_wrap"],
+  [class*="accordion_toggle_btn_contain"] {
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  [class*="accordion_toggle_btn_wrap"]:hover {
+    transform: scale(1.1);
+  }
+
+  [class*="accordion_toggle_btn_wrap"]:hover [class*="accordion_toggle_btn_contain"] {
+    transform: rotate(90deg);
+  }
+
+  [class*="faq_component"].is-active [class*="faq_toggle_icon"] {
+    transform: rotate(180deg);
+  }
+
+  .wf-design-mode [class*="accordion_content_wrap"],
+  .wf-design-mode [class*="faq_content_wrap"] {
+    display: block;
+  }
+
+  /* ==========================================================================

@@ -1,0 +1,17 @@
+/*
+ * Pattern UK version split — Brand logos Designer state
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 03 section 7
+ */
+
+/* ==========================================================================
+  7. BRAND LOGOS (WF Design Mode)
+  ========================================================================== */
+
+  .wf-design-mode [class*="brand_logos_group"] > :nth-child(2),
+  .wf-design-mode [class*="brand_logos_group"] > :nth-child(3) {
+    display: none !important;
+  }
+
+  /* ==========================================================================

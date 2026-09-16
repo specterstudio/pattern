@@ -1,0 +1,600 @@
+<style>
+/* Pattern site-wide custom CSS — V2 overrides
+   Load after NEW Custom CSS — V1 Compatibility.
+   UK post-detach build: local selectors plus localized -2 color, theme, and
+   text-style collections. Original V1 layout aliases remain unsuffixed. */
+/* ==========================================================================
+   V1 Grid System
+   ========================================================================== */
+:root {
+  --site--column-count: 12;
+  --site--width-inner: calc(var(--site--width) - (var(--site--margin) * 2));
+  --site--gutter-total: calc(var(--site--gutter) * (var(--site--column-count) - 1));
+  --site--grid-width: min(var(--site--width-inner), var(--container--full));
+  --container--full: calc(100vw - (var(--site--margin) * 2));
+  --container--small: calc(var(--column-width) * (var(--site--column-count) - 2) - var(--site--gutter));
+  --container--main: calc(var(--column-width) * var(--site--column-count) - var(--site--gutter));
+  --container--main-old: var(--container--main);
+  --column-width: calc((var(--site--grid-width) - var(--site--gutter-total)) / var(--site--column-count) + var(--site--gutter));
+  --column-width--1: calc(var(--column-width) * 1 - var(--site--gutter));
+  --column-width--2: calc(var(--column-width) * 2 - var(--site--gutter));
+  --column-width--3: calc(var(--column-width) * 3 - var(--site--gutter));
+  --column-width--4: calc(var(--column-width) * 4 - var(--site--gutter));
+  --column-width--5: calc(var(--column-width) * 5 - var(--site--gutter));
+  --column-width--6: calc(var(--column-width) * 6 - var(--site--gutter));
+  --column-width--7: calc(var(--column-width) * 7 - var(--site--gutter));
+  --column-width--8: calc(var(--column-width) * 8 - var(--site--gutter));
+  --column-width--9: calc(var(--column-width) * 9 - var(--site--gutter));
+  --column-width--10: calc(var(--column-width) * 10 - var(--site--gutter));
+  --column-width--11: calc(var(--column-width) * 11 - var(--site--gutter));
+  --column-width--12: calc(var(--column-width) * 12 - var(--site--gutter));
+  --column-margin--1: calc(var(--column-width) * 1);
+  --column-margin--2: calc(var(--column-width) * 2);
+  --column-margin--3: calc(var(--column-width) * 3);
+  --column-margin--4: calc(var(--column-width) * 4);
+  --column-margin--5: calc(var(--column-width) * 5);
+  --column-margin--6: calc(var(--column-width) * 6);
+  --column-margin--7: calc(var(--column-width) * 7);
+  --column-margin--8: calc(var(--column-width) * 8);
+  --column-margin--9: calc(var(--column-width) * 9);
+  --column-margin--10: calc(var(--column-width) * 10);
+  --column-margin--11: calc(var(--column-width) * 11);
+  --column-margin--12: calc(var(--column-width) * 12);
+  --breakout-start: [full-start] minmax(0, 1fr) [content-start];
+  --breakout-end: [content-end] minmax(0, 1fr) [full-end];
+  --grid-breakout-single: var(--breakout-start) minmax(0, var(--site--grid-width)) var(--breakout-end);
+  --grid-breakout: var(--breakout-start) repeat(var(--site--column-count), minmax(0, calc((var(--site--grid-width) - var(--site--gutter-total)) / var(--site--column-count)))) var(--breakout-end);
+  --grid-main: repeat(var(--site--column-count), minmax(0, 1fr));
+  --grid-1: repeat(1, minmax(0, 1fr));
+  --grid-2: repeat(2, minmax(0, 1fr));
+  --grid-3: repeat(3, minmax(0, 1fr));
+  --grid-4: repeat(4, minmax(0, 1fr));
+  --grid-5: repeat(5, minmax(0, 1fr));
+  --grid-6: repeat(6, minmax(0, 1fr));
+  --grid-7: repeat(7, minmax(0, 1fr));
+  --grid-8: repeat(8, minmax(0, 1fr));
+  --grid-9: repeat(9, minmax(0, 1fr));
+  --grid-10: repeat(10, minmax(0, 1fr));
+  --grid-11: repeat(11, minmax(0, 1fr));
+  --grid-12: repeat(12, minmax(0, 1fr));
+}
+
+/* ==========================================================================
+   Specter CSS (Site) — V2 priority
+   Keep this section last inside this file.
+   ========================================================================== */
+/* ==========================================================================
+1. GLOBAL STYLES
+========================================================================== */
+
+div {
+  color: inherit;
+}
+
+html {
+  overflow-y: scroll !important;
+}
+
+body.modal-open {
+  padding-right: var(--scrollbar-width, 0px) !important;
+  position: fixed !important;
+  width: 100% !important;
+  top: var(--scroll-top, 0) !important;
+  left: 0 !important;
+  overflow: clip !important;
+}
+
+html.modal-open {
+  padding-right: var(--scrollbar-width, 0px) !important;
+  overflow: hidden !important;
+  overflow-y: scroll !important;
+}
+
+/* -- Text Max Width -- */
+:is(.u-text, .u-text-2) > * {
+  width: 100%;
+  max-width: inherit !important;
+  margin-inline: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* -- Content Wrapper: Explicit Alignment Variants -- */
+[data-wf--content-wrapper--variant="left-alignment"] {
+  --_alignment-2---direction: start;
+}
+
+[data-wf--content-wrapper--variant="center-alignment"] {
+  --_alignment-2---direction: center;
+  margin-inline: auto !important;
+  text-align: center;
+  justify-self: center;
+  justify-items: center;
+  align-items: center;
+}
+
+[data-wf--content-wrapper--variant="right-alignment"] {
+  --_alignment-2---direction: end;
+}
+
+[data-wf--content-wrapper--variant="center-alignment"] > :not([data-wf--content-wrapper--variant]),
+[data-wf--content-wrapper--variant="center-alignment"] > :is(.u-display-contents, .u-display-contents-2) > :not([data-wf--content-wrapper--variant]) {
+  margin-inline: auto !important;
+  text-align: center;
+}
+
+[data-wf--content-wrapper--variant="center-alignment"] > :is(.u-text, .u-text-2) > *,
+[data-wf--content-wrapper--variant="center-alignment"] > :is(.u-display-contents, .u-display-contents-2) > :is(.u-text, .u-text-2) > * {
+  margin-inline: auto !important;
+  text-align: center;
+}
+
+[class*="home_hero_contain"] :is(.u-text, .u-text-2).w-richtext:is(.u-rich-text, .u-rich-text-2) > * {
+  margin-inline: auto !important;
+  text-align: center;
+}
+  
+  /* ==========================================================================
+  2. CARDS & ICONS
+  ========================================================================== */
+
+  /* -- Insight Cards -- */
+  [class*="insight_card_wrap"] [class*="u-text"] {
+    justify-content: inherit !important;
+    align-items: inherit !important;
+    text-align: inherit !important;
+    color: inherit !important;
+  }
+
+  /* -- Case Study Card Icon Mask -- */
+  [class*="cs_card_icon"] {
+    -webkit-mask-image: linear-gradient(to bottom left, black 10%, transparent 100%);
+    mask-image: linear-gradient(to bottom left, black 10%, transparent 100%);
+  }
+
+  /* -- Performance Center Cards -- */
+  [class*="button_pc_select_wrap"].is-selected > [class*="button_pc_select_check"],
+  [class*="perfcen_card_wrap"].is-selected [class*="perfcen_card_check"] {
+    border-color: rgb(76, 195, 174);
+    background-color: rgb(76, 195, 174);
+    color: white;
+  }
+
+  [class*="perfcen_card_wrap"].is-selected > [class*="perfcen_card_stroke"],
+  [class*="perfcen_card_wrap"]:hover > [class*="perfcen_card_stroke"] {
+    position: absolute;
+    inset: -3px;
+    box-shadow: rgba(0, 14, 100, 0.1) 0px 40px 60px 0px, rgba(0, 14, 100, 0.1) 0px 14px 20px 0px, rgba(0, 14, 100, 0.1) 0px 2px 3px 0px;
+  }
+
+  /* -- Success Stories Cards -- */
+  [class*="ss_card_contain"] [class*="button_main_bkgs"],
+  [class*="ss_card_contain"] [ss-image],
+  [class*="ss_card_contain"] [class*="ss_card_btn"] {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  [class*="ss_card_contain"]:hover [class*="button_main_bkgs"] {
+    border: 1px solid var(--_default-2---swatch--neutral-300);
+    background-color: var(--_default-2---swatch--neutral-100);
+  }
+
+  [class*="ss_card_contain"]:hover [ss-image] {
+    transform: scale(1.15);
+  }
+
+  /* -- Large Visual Cards -- */
+  @media (min-width: 992px) {
+    [class*="u-grid"] [class*="large_visual_wrap"]:nth-child(even) {
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+  }
+
+  @media (max-width: 991px) {
+    [class*="u-grid"] [class*="large_visual_wrap"]:nth-child(2) {
+      order: -1;
+    }
+  }
+
+  /* ==========================================================================
+  3. BUTTONS & ANIMATIONS
+  ========================================================================== */
+
+  /* -- Main Button Animations -- */
+  [class*="button_arrow_icon"] {
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  [class*="button_arrow_icon"][class*="cc-static"] {
+    transform: translate(0, 0);
+  }
+
+  [class*="button_arrow_icon"][class*="cc-hover"] {
+    transform: translate(-1.5rem, 0);
+  }
+
+  [class*="button_arrow_element"] {
+    transition:
+      width 0.3s cubic-bezier(0.25, 0.1, 0.25, 1),
+      border-radius 0.3s cubic-bezier(0.25, 0.1, 0.25, 1),
+      border 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  [btn-arrow]:hover [class*="button_arrow_icon"][class*="cc-static"] {
+    transform: translate(2.5rem, 0);
+  }
+
+  [btn-arrow]:hover [class*="button_arrow_icon"][class*="cc-hover"] {
+    transform: translate(0, 0);
+  }
+
+  [btn-arrow]:hover [class*="button_arrow_element"] {
+    width: 2.5rem;
+    border-radius: 0.375rem;
+  }
+
+  /* -- Button Popup -- */
+  [class*="button_popup_wrap"],
+  [class*="button_popup_element"] {
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  [data-modal-trigger]:hover {
+    transform: scale(1.1);
+  }
+
+  [data-modal-trigger]:hover [class*="button_popup_element"] {
+    transform: rotate(90deg);
+  }
+
+  [class*="button"] [class*="u-text"] {
+    margin: 0 !important;
+  }
+
+  /* ==========================================================================
+  4. GRADIENTS
+  ========================================================================== */
+
+  /* -- Gradients Outline -- */
+  [class*="u-g-stroke"] {
+    background:
+      linear-gradient(var(--_gradient-style---gradient--g-stroke-fill), var(--_gradient-style---gradient--g-stroke-fill)) padding-box,
+      linear-gradient(
+        135deg,
+        var(--_gradient-style---gradient--g-c1) var(--_gradient-style---gradient--g-c1-pos),
+        var(--_gradient-style---gradient--g-c2) var(--_gradient-style---gradient--g-c2-pos),
+        var(--_gradient-style---gradient--g-c3) var(--_gradient-style---gradient--g-c3-pos),
+        var(--_gradient-style---gradient--g-c4) var(--_gradient-style---gradient--g-c4-pos)
+      ) border-box;
+    -webkit-background-clip: padding-box, border-box;
+    background-clip: padding-box, border-box;
+  }
+
+  [class*="u-g-stroke"] > * {
+    margin: calc(0px - var(--_default-2---gradient--gs-border));
+  }
+
+  /* -- Theme Gradients -- */
+  :root {
+    --gradient-card-radial-blue: radial-gradient(
+      141.03% 159.48% at 103.19% -3.11%,
+      var(--_default-2---swatch--primary-200, #B8C5FF) 0%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 50%,
+      var(--_default-2---swatch--neutral-900, #070708) 100%
+    );
+  }
+
+  [class*="u-bg-gradient-hero-home"] {
+    background: radial-gradient(
+      ellipse 96.27% 82.88% at 50% 11.72%,
+      var(--_default-2---swatch--neutral-900, #070708) 0%,
+      var(--_default-2---swatch--primary-900, #0C1133) 20.19%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 53.59%,
+      var(--_default-2---swatch--secondary-500, #0096FA) 65.48%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 97.36%
+    );
+    filter: blur(40px);
+    pointer-events: none;
+  }
+
+  [class*="u-bg-gradient-product-dark"] {
+    background: radial-gradient(
+      ellipse 70.42% 82.88% at 50% 11.72%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 0%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 56.47%,
+      var(--_default-2---swatch--secondary-500, #0096FA) 72.48%,
+      var(--_default-2---swatch--info-300, #C173FF) 73.73%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 75.58%,
+      var(--_default-2---swatch--primary-800, #172266) 89.62%,
+      var(--_default-2---swatch--neutral-900, #070708) 97.36%
+    );
+    filter: blur(40px);
+  }
+
+  [class*="u-bg-gradient-product-light"] {
+    background: radial-gradient(
+      ellipse 70.42% 82.88% at 50% 11.72%,
+      var(--_default-2---swatch--neutral-900, #070708) 2.64%,
+      var(--_default-2---swatch--primary-900, #0C1133) 36.55%,
+      var(--_default-2---swatch--primary-800, #172266) 50.44%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 70.08%,
+      var(--_default-2---swatch--info-300, #C173FF) 73.39%,
+      var(--_default-2---swatch--secondary-500, #0096FA) 75.88%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 96.4%
+    );
+    filter: blur(40px);
+  }
+
+  [class*="u-bg-gradient-section"] {
+    background: radial-gradient(
+      ellipse 73.24% 91.52% at 50.03% 8.48%,
+      var(--_default-2---swatch--neutral-900, #070708) 0%,
+      var(--_default-2---swatch--neutral-800, #171717) 57.21%,
+      var(--_default-2---swatch--info-800, #2F0466) 71.15%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 77.79%,
+      var(--_default-2---swatch--secondary-500, #0096FA) 82.44%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 90%
+    );
+    filter: blur(40px);
+  }
+
+  /* -- Gradient Ring -- */
+  [class*="u-gradient-ring"] {
+    --border: 3px;
+    padding: var(--border);
+    border-radius: inherit !important;
+    box-sizing: border-box;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    mask:
+      linear-gradient(#000, #000) content-box,
+      linear-gradient(#000, #000);
+    mask-composite: exclude;
+    -webkit-mask:
+      linear-gradient(#000, #000) content-box,
+      linear-gradient(#000, #000);
+    -webkit-mask-composite: xor;
+  }
+
+  /* -- Gradient Banner Backgrounds -- */
+  [class*="g_banner_bkg_1"] {
+    background-image: radial-gradient(
+      70% 88.19% at 50% 10%,
+      var(--_default-2---swatch--neutral-900, #070708) 0%,
+      var(--_default-2---swatch--neutral-800, #171717) 22.4%,
+      var(--_default-2---swatch--info-500, #770BFF) 39.56%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 45.06%,
+      var(--_default-2---swatch--secondary-500, #0096FA) 57.69%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 92.79%
+    );
+    filter: blur(40px);
+  }
+
+  [class*="g_banner_bkg_2"] {
+    background-image: radial-gradient(
+      35% 82.88% at 50% 25%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 0%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 49.47%,
+      var(--_default-2---swatch--secondary-500, #0096FA) 65.48%,
+      var(--_default-2---swatch--info-300, #C173FF) 66.73%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 68.58%,
+      var(--_default-2---swatch--primary-800, #172266) 82.62%,
+      var(--_default-2---swatch--neutral-900, #070708) 97.36%
+    );
+    filter: blur(40px);
+  }
+
+  [class*="g_banner_bkg_3"] {
+    background-image: radial-gradient(
+      40% 90% at 70% 20%,
+      var(--_default-2---swatch--info-50-copy, #F5E6FF) 0%,
+      var(--_default-2---swatch--info-500, #770BFF) 18.04%,
+      var(--_default-2---swatch--primary-800, #172266) 52.68%,
+      var(--_default-2---swatch--primary-900, #0C1133) 100%
+    );
+    filter: blur(40px);
+  }
+
+  /* -- Gradient > Large Card -- */
+  [class*="large_card_bkg"] {
+    background-image: radial-gradient(
+      110.4% 134.88% at 50% -16.38%,
+      var(--_default-2---swatch--secondary-100, #B3E3FF) 10.1%,
+      var(--_default-2---swatch--secondary-500, #0096FA) 24.26%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 38.72%,
+      var(--_default-2---swatch--info-800, #2F0466) 74.65%,
+      var(--_default-2---swatch--primary-900, #0C1133) 92.77%
+    );
+  }
+
+  [class*="stat_card_gradient"] {
+    background-image: radial-gradient(
+      125% 125% at 100% 0%,
+      var(--_default-2---swatch--primary-200) 0%,
+      var(--_default-2---swatch--primary-500) 50%,
+      var(--_default-2---swatch--neutral-900) 120%
+    );
+  }
+
+  [class*="stat_card_purple"] {
+    background-image: conic-gradient(
+      from 79deg at 46.7% 50%,
+      var(--_default-2---swatch--info-900, #180233) 0deg,
+      var(--_default-2---swatch--info-700, #470799) 180deg,
+      var(--_default-2---swatch--info-500, #770BFF) 360deg
+    );
+  }
+
+  [class*="stat_card_gold"] {
+    background-image: conic-gradient(
+      from 163deg at 14.86% 61.32%,
+      var(--_default-2---swatch--warning-700, #B45309) 5deg,
+      var(--_default-2---swatch--warning-500, #F59E0B) 45deg,
+      var(--_default-2---swatch--white, #FFF) 257.36deg,
+      var(--_default-2---swatch--warning-500, #F59E0B) 323.65deg,
+      var(--_default-2---swatch--warning-700, #B45309) 360deg
+    );
+  }
+
+  /* ==========================================================================
+  5. ACCORDION & FAQ
+  ========================================================================== */
+
+  [class*="accordion_toggle_btn_wrap"],
+  [class*="accordion_toggle_btn_contain"] {
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  [class*="accordion_toggle_btn_wrap"]:hover {
+    transform: scale(1.1);
+  }
+
+  [class*="accordion_toggle_btn_wrap"]:hover [class*="accordion_toggle_btn_contain"] {
+    transform: rotate(90deg);
+  }
+
+  [class*="faq_component"].is-active [class*="faq_toggle_icon"] {
+    transform: rotate(180deg);
+  }
+
+  .wf-design-mode [class*="accordion_content_wrap"],
+  .wf-design-mode [class*="faq_content_wrap"] {
+    display: block;
+  }
+
+  /* ==========================================================================
+  6. SWIPER
+  ========================================================================== */
+
+  [class*="swiper-bullet-wrapper"] [class*="swiper-bullet"]:nth-child(2) {
+    transform: rotate(90deg);
+  }
+
+  [class*="swiper-bullet-wrapper"] [class*="swiper-bullet"]:nth-child(3) {
+    transform: rotate(180deg);
+  }
+
+  [class*="swiper-bullet-wrapper"] [class*="swiper-bullet"]:nth-child(4) {
+    transform: rotate(270deg);
+  }
+
+  /* ==========================================================================
+  7. BRAND LOGOS (WF Design Mode)
+  ========================================================================== */
+
+  .wf-design-mode [class*="brand_logos_group"] > :nth-child(2),
+  .wf-design-mode [class*="brand_logos_group"] > :nth-child(3) {
+    display: none !important;
+  }
+
+  /* ==========================================================================
+  8. NAVIGATION
+  ========================================================================== */
+
+  [class*="nav_resource_link"] [class*="nav_resource_icon"] {
+    color: var(--_default-2---swatch--neutral-200);
+    transition: color 0.2s;
+  }
+
+  [class*="nav_resource_link"]:hover [class*="nav_resource_icon"] {
+    color: var(--_default-2---swatch--primary-500);
+  }
+
+  /* ==========================================================================
+  9. MODAL
+  ========================================================================== */
+
+  [class*="modal_dialog"]::backdrop {
+    opacity: 0;
+  }
+
+  /* ==========================================================================
+  10. LIGHTBOX HOVER
+  ========================================================================== */
+
+  [class*="g_video_lightbox_thumbnail"] {
+    transition: opacity 0.3s ease;
+  }
+
+  [class*="button_play_primary-icon"] {
+    transition: transform 0.3s ease;
+  }
+
+  [class*="g_video_lightbox"]:hover [class*="g_video_lightbox_thumbnail"] {
+    opacity: 100%;
+  }
+
+  [class*="g_video_lightbox"]:hover [class*="button_play_primary-icon"] {
+    transform: scale(0.9);
+  }
+
+  /* ==========================================================================
+  11. MARQUEE ANIMATION
+  ========================================================================== */
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  [class*="g_marquee_group_30"] {
+    animation: marquee 30s linear infinite;
+  }
+
+  [class*="g_marquee_group_45"] {
+    animation: marquee 45s linear infinite;
+  }
+
+  [class*="g_marquee_wrap"] {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black var(--_default-2---site--margin),
+      black calc(100% - var(--_default-2---site--margin)),
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black var(--_default-2---site--margin),
+      black calc(100% - var(--_default-2---site--margin)),
+      transparent 100%
+    );
+  }
+
+  /* ==========================================================================
+  12. GRID
+  ========================================================================== */
+
+  [class*="u-grid-wrapper"] [class*="u-image-wrapper"]
+    :not([class*="g_avatar_wrap"] [class*="u-image-wrapper"])
+    :not([class*="cs_main_card_visual"] [class*="u-image-wrapper"])
+    :not([class*="g_card_bkg"] [class*="u-image-wrapper"]) {
+    min-height: 23.125rem;
+  }
+
+  /* ==========================================================================
+  13. RICH TEXT
+  ========================================================================== */
+
+  /* -- Rich Text List Marker Fix -- */
+  :is(.u-rich-text, .u-rich-text-2).w-richtext ul {
+    overflow: visible !important;
+    padding-left: 1.25em !important;
+  }
+
+  /* -- CMS Entry Reformat -- */
+  [class*="entry_main_rt"] :is(h1, h2, h3) {
+    font-size: var(--_typography---font-size--h4);
+  }
+
+  [class*="entry_main_rt"] :is(h4, h5, h6) {
+    font-size: var(--_typography---font-size--h5);
+  }
+</style>
+

@@ -1,0 +1,9 @@
+{
+  "label": "Capture applied site scripts",
+  "action": "get_site_scripts",
+  "error": {
+    "name": "Error",
+    "message": "NotFoundError\nStatus code: 404\nBody: {\n  \"message\": \"Requested resource not found: Custom code block not found\",\n  \"code\": \"resource_not_found\",\n  \"details\": []\n}"
+  }
+}
+

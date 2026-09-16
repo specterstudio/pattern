@@ -1,0 +1,69 @@
+/*
+ * Pattern UK version split — Cards and icons
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 03 section 2
+ */
+
+/* ==========================================================================
+  2. CARDS & ICONS
+  ========================================================================== */
+
+  /* -- Insight Cards -- */
+  [class*="insight_card_wrap"] [class*="u-text"] {
+    justify-content: inherit !important;
+    align-items: inherit !important;
+    text-align: inherit !important;
+    color: inherit !important;
+  }
+
+  /* -- Case Study Card Icon Mask -- */
+  [class*="cs_card_icon"] {
+    -webkit-mask-image: linear-gradient(to bottom left, black 10%, transparent 100%);
+    mask-image: linear-gradient(to bottom left, black 10%, transparent 100%);
+  }
+
+  /* -- Performance Center Cards -- */
+  [class*="button_pc_select_wrap"].is-selected > [class*="button_pc_select_check"],
+  [class*="perfcen_card_wrap"].is-selected [class*="perfcen_card_check"] {
+    border-color: rgb(76, 195, 174);
+    background-color: rgb(76, 195, 174);
+    color: white;
+  }
+
+  [class*="perfcen_card_wrap"].is-selected > [class*="perfcen_card_stroke"],
+  [class*="perfcen_card_wrap"]:hover > [class*="perfcen_card_stroke"] {
+    position: absolute;
+    inset: -3px;
+    box-shadow: rgba(0, 14, 100, 0.1) 0px 40px 60px 0px, rgba(0, 14, 100, 0.1) 0px 14px 20px 0px, rgba(0, 14, 100, 0.1) 0px 2px 3px 0px;
+  }
+
+  /* -- Success Stories Cards -- */
+  [class*="ss_card_contain"] [class*="button_main_bkgs"],
+  [class*="ss_card_contain"] [ss-image],
+  [class*="ss_card_contain"] [class*="ss_card_btn"] {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  [class*="ss_card_contain"]:hover [class*="button_main_bkgs"] {
+    border: 1px solid var(--_default-2---swatch--neutral-300);
+    background-color: var(--_default-2---swatch--neutral-100);
+  }
+
+  [class*="ss_card_contain"]:hover [ss-image] {
+    transform: scale(1.15);
+  }
+
+  /* -- Large Visual Cards -- */
+  @media (min-width: 992px) {
+    [class*="u-grid"] [class*="large_visual_wrap"]:nth-child(even) {
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+  }
+
+  @media (max-width: 991px) {
+    [class*="u-grid"] [class*="large_visual_wrap"]:nth-child(2) {
+      order: -1;
+    }
+  }

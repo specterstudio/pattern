@@ -1,0 +1,52 @@
+<!--
+  Pattern Version Gateway V3 activation loader.
+
+  This release activates PVG only on explicitly marked V3 pages. V1, V2, and
+  V2L keep their existing production scripts because legacyPolicy="preserve".
+
+  Keep the current legacy footer scripts installed during this release.
+-->
+<script>
+  (() => {
+    const selector = 'script[data-pattern-pvg-loader]';
+    const activate = () =>
+      window.PatternVersionGateway?.activate({
+        legacyPolicy: 'preserve',
+      });
+
+    if (window.PatternVersionGateway?.version) {
+      void activate();
+      return;
+    }
+
+    const pending = document.querySelector(selector);
+    if (pending) {
+      pending.dataset.pvgMode = 'active';
+      pending.dataset.pvgLegacyPolicy = 'preserve';
+      pending.addEventListener('load', activate, { once: true });
+      return;
+    }
+
+    const script = document.createElement('script');
+    script.src =
+      'https://cdn.jsdelivr.net/gh/specterstudio/pattern@bd1a6f239367873a032ff7c8ba9d791805c1f96b/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js';
+    script.async = true;
+    script.crossOrigin = 'anonymous';
+    script.integrity =
+      'sha384-Y9tZY3cYgjsRYJKXNyK5S8y7q30Fmwg2P0cT38RDpBGoaJtUvdvkZRszDwtTQHhJ';
+    script.dataset.patternPvgLoader = '0.2.5';
+    script.dataset.pvgMode = 'active';
+    script.dataset.pvgLegacyPolicy = 'preserve';
+    script.addEventListener(
+      'error',
+      () => {
+        console.warn(
+          '[Pattern PVG] The V3 runtime could not load. Existing production scripts remain unchanged.',
+        );
+      },
+      { once: true },
+    );
+
+    document.head.appendChild(script);
+  })();
+</script>

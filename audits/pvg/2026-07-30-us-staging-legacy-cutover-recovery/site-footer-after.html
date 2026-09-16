@@ -1,0 +1,134 @@
+<!-- =========================================================
+     PATTERN — DETACHED-READY GLOBAL FOOTER
+     ========================================================= -->
+
+<!-- Autopilot SDK — Marketing consent -->
+<script
+  type="fs-consent"
+  fs-consent-categories="marketing"
+  src="https://cdn.bc0a.com/autopilot/f00000000324090/autopilot_sdk.js"
+  defer
+></script>
+
+<!-- Storylane — Analytics consent -->
+<script
+  type="fs-consent"
+  fs-consent-categories="analytics"
+  src="https://js.storylane.io/js/v2/storylane.js"
+  async
+></script>
+
+<!-- Execute registered page functions -->
+<script>
+  (function () {
+    function runPageFunctions() {
+      if (
+        window.pageFunctions &&
+        typeof window.pageFunctions.executeFunctions === "function"
+      ) {
+        window.pageFunctions.executeFunctions();
+      }
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener(
+        "DOMContentLoaded",
+        runPageFunctions,
+        { once: true }
+      );
+    } else {
+      runPageFunctions();
+    }
+  })();
+</script>
+
+<!-- Pattern Component Runtime — consumer-site modules -->
+<script
+  src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js"
+  integrity="sha384-CiwMnsAZuxy0py4P6p1i4fc1DRXU9M88PvQCdjbBUQazExKSxxpC/0zj36JIeWHN"
+  crossorigin="anonymous"
+  defer
+></script>
+
+<!--
+  Pattern Version Gateway legacy cutover loader.
+
+  This release activates PVG on explicitly marked V1, V2, V2L, and V3 pages.
+  Unknown, inferred, and conflicting pages continue to fail closed.
+
+  The pageFunctions bridge prevents the retained site executor from running
+  PVG-owned callbacks before their dependencies are available.
+-->
+<script>
+  (() => {
+    const selector = 'script[data-pattern-pvg-loader]';
+    const gatewayFunctionIds = ['nav', 'splideSlider'];
+    const registry = window.pageFunctions;
+
+    if (
+      registry &&
+      typeof registry.executeFunctions === 'function' &&
+      !registry.__patternPvgOriginalExecuteFunctions
+    ) {
+      const originalExecuteFunctions = registry.executeFunctions;
+      registry.__patternPvgOriginalExecuteFunctions = originalExecuteFunctions;
+      registry.executeFunctions = function executeNonGatewayFunctions() {
+        const parkedFunctions = new Map();
+
+        gatewayFunctionIds.forEach((id) => {
+          if (typeof this.functions?.[id] !== 'function') return;
+          parkedFunctions.set(id, this.functions[id]);
+          delete this.functions[id];
+        });
+
+        try {
+          return originalExecuteFunctions.call(this);
+        } finally {
+          parkedFunctions.forEach((fn, id) => {
+            this.functions[id] = fn;
+          });
+        }
+      };
+    }
+
+    const activate = () =>
+      window.PatternVersionGateway?.activate({
+        legacyPolicy: 'gateway',
+      });
+
+    if (window.PatternVersionGateway?.version) {
+      void activate();
+      return;
+    }
+
+    const pending = document.querySelector(selector);
+    if (pending) {
+      pending.dataset.pvgMode = 'active';
+      pending.dataset.pvgLegacyPolicy = 'gateway';
+      pending.addEventListener('load', activate, { once: true });
+      return;
+    }
+
+    const script = document.createElement('script');
+    script.src =
+      'https://cdn.jsdelivr.net/gh/specterstudio/pattern@7bb2b6f2fc7ae258285fbafcd643e717b64009e1/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js';
+    script.async = true;
+    script.crossOrigin = 'anonymous';
+    script.integrity =
+      'sha384-HBYB8fSqocEljJAPTrEeai0HbLKdhRDfgFfu/4cslT7DnF6MRKxYcbVu/U0Z8sBp';
+    script.dataset.patternPvgLoader = '0.2.4';
+    script.dataset.pvgMode = 'active';
+    script.dataset.pvgLegacyPolicy = 'gateway';
+    script.addEventListener(
+      'error',
+      () => {
+        console.warn(
+          '[Pattern PVG] The legacy cutover runtime could not load. Authored Webflow content remains available.',
+        );
+      },
+      { once: true },
+    );
+
+    document.head.appendChild(script);
+  })();
+</script>

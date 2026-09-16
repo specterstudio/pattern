@@ -1,0 +1,264 @@
+{
+  "checkedAt": "2026-07-31T01:46:56.703Z",
+  "runtimePath": "/Users/kenneth/_Projects/pattern/webflow/pattern.com/scripts/runtime/pattern-runtime.js",
+  "assetCommit": "a29ef9687fdf7983bb2c4fde0b2d72bf6320ec75",
+  "results": [
+    {
+      "name": "V3 Library video popup",
+      "url": "https://pattern-l3.webflow.io/cc/video",
+      "profile": "library-v3",
+      "expectedVersion": "v3",
+      "expectedModules": [
+        "v3-video-popup"
+      ],
+      "forbiddenModules": [
+        "legacy-video-popup"
+      ],
+      "exerciseVideo": true,
+      "status": 200,
+      "runtimeVersion": "1.0.0",
+      "detection": {
+        "version": "v3",
+        "family": "v3",
+        "source": "library-v3-profile",
+        "evidence": "library-v3",
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "readyModules": [
+        "v3-heading-text-reveal",
+        "v3-video-popup"
+      ],
+      "moduleErrors": [],
+      "ownedAssets": [
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@a29ef9687fdf7983bb2c4fde0b2d72bf6320ec75/webflow/pattern.com/scripts/interaction/v3-heading-text-reveal.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@a29ef9687fdf7983bb2c4fde0b2d72bf6320ec75/webflow/pattern.com/scripts/media/video-popup.js"
+        }
+      ],
+      "duplicates": [],
+      "video": {
+        "trigger": true,
+        "opened": true,
+        "dialogAriaHidden": null,
+        "iframeSrc": "https://www.youtube.com/embed/K4TOrB7at0Y?autoplay=1&playsinline=1&rel=0"
+      },
+      "consoleEntries": [],
+      "requestFailures": [],
+      "failures": []
+    },
+    {
+      "name": "Pattern US V1",
+      "url": "https://pattern-us.webflow.io/software",
+      "profile": "consumer",
+      "expectedVersion": "v1",
+      "status": 200,
+      "runtimeVersion": "1.0.0",
+      "detection": {
+        "version": "v1",
+        "family": "v1",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v1"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "readyModules": [
+        "dynamic-year",
+        "legacy-heading-normalizer",
+        "legacy-nav",
+        "legacy-lazy-load"
+      ],
+      "moduleErrors": [],
+      "ownedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        }
+      ],
+      "duplicates": [],
+      "video": null,
+      "consoleEntries": [],
+      "requestFailures": [],
+      "failures": []
+    },
+    {
+      "name": "Pattern US V2",
+      "url": "https://pattern-us.webflow.io/",
+      "profile": "consumer",
+      "expectedVersion": "v2",
+      "status": 200,
+      "runtimeVersion": "1.0.0",
+      "detection": {
+        "version": "v2",
+        "family": "v2",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main.cc-v2"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "readyModules": [
+        "dynamic-year",
+        "legacy-nav",
+        "legacy-video-popup",
+        "legacy-lazy-load",
+        "card-load-animations"
+      ],
+      "moduleErrors": [],
+      "ownedAssets": [
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/media/video-popup.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js"
+        }
+      ],
+      "duplicates": [],
+      "video": null,
+      "consoleEntries": [],
+      "requestFailures": [],
+      "failures": []
+    },
+    {
+      "name": "Pattern US V3",
+      "url": "https://pattern-us.webflow.io/home-v3",
+      "profile": "consumer",
+      "expectedVersion": "v3",
+      "expectedModules": [
+        "marquee",
+        "home-anchor-nav",
+        "v3-heading-text-reveal",
+        "case-study",
+        "v3-video-popup"
+      ],
+      "status": 200,
+      "runtimeVersion": "1.0.0",
+      "detection": {
+        "version": "v3",
+        "family": "v3",
+        "source": "page-marker",
+        "evidence": [
+          ".page_main_v3"
+        ],
+        "confidence": "high",
+        "conflicts": [],
+        "safe": true
+      },
+      "activation": {
+        "allowed": true,
+        "reason": "active"
+      },
+      "readyModules": [
+        "dynamic-year",
+        "card-load-animations",
+        "marquee",
+        "home-anchor-nav",
+        "v3-heading-text-reveal",
+        "case-study",
+        "v3-video-popup"
+      ],
+      "moduleErrors": [],
+      "ownedAssets": [
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js"
+        },
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@a29ef9687fdf7983bb2c4fde0b2d72bf6320ec75/webflow/pattern.com/styles/marquee.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@a29ef9687fdf7983bb2c4fde0b2d72bf6320ec75/webflow/pattern.com/scripts/interaction/marquee.js"
+        },
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@a29ef9687fdf7983bb2c4fde0b2d72bf6320ec75/webflow/pattern.com/styles/home-anchor-nav.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@a29ef9687fdf7983bb2c4fde0b2d72bf6320ec75/webflow/pattern.com/scripts/nav/home-anchor-nav.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@a29ef9687fdf7983bb2c4fde0b2d72bf6320ec75/webflow/pattern.com/scripts/interaction/v3-heading-text-reveal.js"
+        },
+        {
+          "tag": "LINK",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.css"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@a29ef9687fdf7983bb2c4fde0b2d72bf6320ec75/webflow/pattern.com/scripts/content/case-study-cms-slider.js"
+        },
+        {
+          "tag": "SCRIPT",
+          "module": null,
+          "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@a29ef9687fdf7983bb2c4fde0b2d72bf6320ec75/webflow/pattern.com/scripts/media/video-popup.js"
+        }
+      ],
+      "duplicates": [],
+      "video": null,
+      "consoleEntries": [],
+      "requestFailures": [],
+      "failures": []
+    }
+  ]
+}

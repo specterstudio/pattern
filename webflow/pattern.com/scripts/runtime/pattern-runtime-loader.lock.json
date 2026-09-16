@@ -1,0 +1,6 @@
+{
+  "version": "1.0.0",
+  "commit": "5598392ffdf2463fda12b19f473a111f5b54f286",
+  "path": "webflow/pattern.com/scripts/runtime/pattern-runtime-loader.js",
+  "purpose": "Permanent site bootstrap. Do not change for routine Runtime releases."
+}

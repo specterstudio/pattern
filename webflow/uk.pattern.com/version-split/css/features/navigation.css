@@ -1,0 +1,18 @@
+/*
+ * Pattern UK version split — Navigation details
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 03 section 8
+ */
+
+8. NAVIGATION
+  ========================================================================== */
+
+  [class*="nav_resource_link"] [class*="nav_resource_icon"] {
+    color: var(--_default-2---swatch--neutral-200);
+    transition: color 0.2s;
+  }
+
+  [class*="nav_resource_link"]:hover [class*="nav_resource_icon"] {
+    color: var(--_default-2---swatch--primary-500);
+  }

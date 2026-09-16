@@ -1,0 +1,1083 @@
+/*
+ * Pattern UK version split — Feature bundle
+ * Classification: shared features
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: concatenated Phase 3 feature modules in manifest order
+ */
+
+/*
+ * Pattern UK version split — Tabler icons
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 02 import
+ */
+
+@import url("https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css");
+
+/*
+ * Pattern UK version split — Cards and icons
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 03 section 2
+ */
+
+/* ==========================================================================
+  2. CARDS & ICONS
+  ========================================================================== */
+
+  /* -- Insight Cards -- */
+  [class*="insight_card_wrap"] [class*="u-text"] {
+    justify-content: inherit !important;
+    align-items: inherit !important;
+    text-align: inherit !important;
+    color: inherit !important;
+  }
+
+  /* -- Case Study Card Icon Mask -- */
+  [class*="cs_card_icon"] {
+    -webkit-mask-image: linear-gradient(to bottom left, black 10%, transparent 100%);
+    mask-image: linear-gradient(to bottom left, black 10%, transparent 100%);
+  }
+
+  /* -- Performance Center Cards -- */
+  [class*="button_pc_select_wrap"].is-selected > [class*="button_pc_select_check"],
+  [class*="perfcen_card_wrap"].is-selected [class*="perfcen_card_check"] {
+    border-color: rgb(76, 195, 174);
+    background-color: rgb(76, 195, 174);
+    color: white;
+  }
+
+  [class*="perfcen_card_wrap"].is-selected > [class*="perfcen_card_stroke"],
+  [class*="perfcen_card_wrap"]:hover > [class*="perfcen_card_stroke"] {
+    position: absolute;
+    inset: -3px;
+    box-shadow: rgba(0, 14, 100, 0.1) 0px 40px 60px 0px, rgba(0, 14, 100, 0.1) 0px 14px 20px 0px, rgba(0, 14, 100, 0.1) 0px 2px 3px 0px;
+  }
+
+  /* -- Success Stories Cards -- */
+  [class*="ss_card_contain"] [class*="button_main_bkgs"],
+  [class*="ss_card_contain"] [ss-image],
+  [class*="ss_card_contain"] [class*="ss_card_btn"] {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  [class*="ss_card_contain"]:hover [class*="button_main_bkgs"] {
+    border: 1px solid var(--_default-2---swatch--neutral-300);
+    background-color: var(--_default-2---swatch--neutral-100);
+  }
+
+  [class*="ss_card_contain"]:hover [ss-image] {
+    transform: scale(1.15);
+  }
+
+  /* -- Large Visual Cards -- */
+  @media (min-width: 992px) {
+    [class*="u-grid"] [class*="large_visual_wrap"]:nth-child(even) {
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+  }
+
+  @media (max-width: 991px) {
+    [class*="u-grid"] [class*="large_visual_wrap"]:nth-child(2) {
+      order: -1;
+    }
+  }
+
+/*
+ * Pattern UK version split — Buttons and animations
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 03 section 3
+ */
+
+/* ==========================================================================
+  3. BUTTONS & ANIMATIONS
+  ========================================================================== */
+
+  /* -- Main Button Animations -- */
+  [class*="button_arrow_icon"] {
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  [class*="button_arrow_icon"][class*="cc-static"] {
+    transform: translate(0, 0);
+  }
+
+  [class*="button_arrow_icon"][class*="cc-hover"] {
+    transform: translate(-1.5rem, 0);
+  }
+
+  [class*="button_arrow_element"] {
+    transition:
+      width 0.3s cubic-bezier(0.25, 0.1, 0.25, 1),
+      border-radius 0.3s cubic-bezier(0.25, 0.1, 0.25, 1),
+      border 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  [btn-arrow]:hover [class*="button_arrow_icon"][class*="cc-static"] {
+    transform: translate(2.5rem, 0);
+  }
+
+  [btn-arrow]:hover [class*="button_arrow_icon"][class*="cc-hover"] {
+    transform: translate(0, 0);
+  }
+
+  [btn-arrow]:hover [class*="button_arrow_element"] {
+    width: 2.5rem;
+    border-radius: 0.375rem;
+  }
+
+  /* -- Button Popup -- */
+  [class*="button_popup_wrap"],
+  [class*="button_popup_element"] {
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  [data-modal-trigger]:hover {
+    transform: scale(1.1);
+  }
+
+  [data-modal-trigger]:hover [class*="button_popup_element"] {
+    transform: rotate(90deg);
+  }
+
+  [class*="button"] [class*="u-text"] {
+    margin: 0 !important;
+  }
+
+/*
+ * Pattern UK version split — Gradients
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 03 section 4
+ */
+
+/* ==========================================================================
+  4. GRADIENTS
+  ========================================================================== */
+
+  /* -- Gradients Outline -- */
+  [class*="u-g-stroke"] {
+    background:
+      linear-gradient(var(--_gradient-style---gradient--g-stroke-fill), var(--_gradient-style---gradient--g-stroke-fill)) padding-box,
+      linear-gradient(
+        135deg,
+        var(--_gradient-style---gradient--g-c1) var(--_gradient-style---gradient--g-c1-pos),
+        var(--_gradient-style---gradient--g-c2) var(--_gradient-style---gradient--g-c2-pos),
+        var(--_gradient-style---gradient--g-c3) var(--_gradient-style---gradient--g-c3-pos),
+        var(--_gradient-style---gradient--g-c4) var(--_gradient-style---gradient--g-c4-pos)
+      ) border-box;
+    -webkit-background-clip: padding-box, border-box;
+    background-clip: padding-box, border-box;
+  }
+
+  [class*="u-g-stroke"] > * {
+    margin: calc(0px - var(--_default-2---gradient--gs-border));
+  }
+
+  /* -- Theme Gradients -- */
+  :root {
+    --gradient-card-radial-blue: radial-gradient(
+      141.03% 159.48% at 103.19% -3.11%,
+      var(--_default-2---swatch--primary-200, #B8C5FF) 0%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 50%,
+      var(--_default-2---swatch--neutral-900, #070708) 100%
+    );
+  }
+
+  [class*="u-bg-gradient-hero-home"] {
+    background: radial-gradient(
+      ellipse 96.27% 82.88% at 50% 11.72%,
+      var(--_default-2---swatch--neutral-900, #070708) 0%,
+      var(--_default-2---swatch--primary-900, #0C1133) 20.19%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 53.59%,
+      var(--_default-2---swatch--secondary-500, #0096FA) 65.48%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 97.36%
+    );
+    filter: blur(40px);
+    pointer-events: none;
+  }
+
+  [class*="u-bg-gradient-product-dark"] {
+    background: radial-gradient(
+      ellipse 70.42% 82.88% at 50% 11.72%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 0%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 56.47%,
+      var(--_default-2---swatch--secondary-500, #0096FA) 72.48%,
+      var(--_default-2---swatch--info-300, #C173FF) 73.73%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 75.58%,
+      var(--_default-2---swatch--primary-800, #172266) 89.62%,
+      var(--_default-2---swatch--neutral-900, #070708) 97.36%
+    );
+    filter: blur(40px);
+  }
+
+  [class*="u-bg-gradient-product-light"] {
+    background: radial-gradient(
+      ellipse 70.42% 82.88% at 50% 11.72%,
+      var(--_default-2---swatch--neutral-900, #070708) 2.64%,
+      var(--_default-2---swatch--primary-900, #0C1133) 36.55%,
+      var(--_default-2---swatch--primary-800, #172266) 50.44%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 70.08%,
+      var(--_default-2---swatch--info-300, #C173FF) 73.39%,
+      var(--_default-2---swatch--secondary-500, #0096FA) 75.88%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 96.4%
+    );
+    filter: blur(40px);
+  }
+
+  [class*="u-bg-gradient-section"] {
+    background: radial-gradient(
+      ellipse 73.24% 91.52% at 50.03% 8.48%,
+      var(--_default-2---swatch--neutral-900, #070708) 0%,
+      var(--_default-2---swatch--neutral-800, #171717) 57.21%,
+      var(--_default-2---swatch--info-800, #2F0466) 71.15%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 77.79%,
+      var(--_default-2---swatch--secondary-500, #0096FA) 82.44%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 90%
+    );
+    filter: blur(40px);
+  }
+
+  /* -- Gradient Ring -- */
+  [class*="u-gradient-ring"] {
+    --border: 3px;
+    padding: var(--border);
+    border-radius: inherit !important;
+    box-sizing: border-box;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    mask:
+      linear-gradient(#000, #000) content-box,
+      linear-gradient(#000, #000);
+    mask-composite: exclude;
+    -webkit-mask:
+      linear-gradient(#000, #000) content-box,
+      linear-gradient(#000, #000);
+    -webkit-mask-composite: xor;
+  }
+
+  /* -- Gradient Banner Backgrounds -- */
+  [class*="g_banner_bkg_1"] {
+    background-image: radial-gradient(
+      70% 88.19% at 50% 10%,
+      var(--_default-2---swatch--neutral-900, #070708) 0%,
+      var(--_default-2---swatch--neutral-800, #171717) 22.4%,
+      var(--_default-2---swatch--info-500, #770BFF) 39.56%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 45.06%,
+      var(--_default-2---swatch--secondary-500, #0096FA) 57.69%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 92.79%
+    );
+    filter: blur(40px);
+  }
+
+  [class*="g_banner_bkg_2"] {
+    background-image: radial-gradient(
+      35% 82.88% at 50% 25%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 0%,
+      var(--_default-2---swatch--neutral-50-2, #EBF0F5) 49.47%,
+      var(--_default-2---swatch--secondary-500, #0096FA) 65.48%,
+      var(--_default-2---swatch--info-300, #C173FF) 66.73%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 68.58%,
+      var(--_default-2---swatch--primary-800, #172266) 82.62%,
+      var(--_default-2---swatch--neutral-900, #070708) 97.36%
+    );
+    filter: blur(40px);
+  }
+
+  [class*="g_banner_bkg_3"] {
+    background-image: radial-gradient(
+      40% 90% at 70% 20%,
+      var(--_default-2---swatch--info-50-copy, #F5E6FF) 0%,
+      var(--_default-2---swatch--info-500, #770BFF) 18.04%,
+      var(--_default-2---swatch--primary-800, #172266) 52.68%,
+      var(--_default-2---swatch--primary-900, #0C1133) 100%
+    );
+    filter: blur(40px);
+  }
+
+  /* -- Gradient > Large Card -- */
+  [class*="large_card_bkg"] {
+    background-image: radial-gradient(
+      110.4% 134.88% at 50% -16.38%,
+      var(--_default-2---swatch--secondary-100, #B3E3FF) 10.1%,
+      var(--_default-2---swatch--secondary-500, #0096FA) 24.26%,
+      var(--_default-2---swatch--primary-500, #3A55FF) 38.72%,
+      var(--_default-2---swatch--info-800, #2F0466) 74.65%,
+      var(--_default-2---swatch--primary-900, #0C1133) 92.77%
+    );
+  }
+
+  [class*="stat_card_gradient"] {
+    background-image: radial-gradient(
+      125% 125% at 100% 0%,
+      var(--_default-2---swatch--primary-200) 0%,
+      var(--_default-2---swatch--primary-500) 50%,
+      var(--_default-2---swatch--neutral-900) 120%
+    );
+  }
+
+  [class*="stat_card_purple"] {
+    background-image: conic-gradient(
+      from 79deg at 46.7% 50%,
+      var(--_default-2---swatch--info-900, #180233) 0deg,
+      var(--_default-2---swatch--info-700, #470799) 180deg,
+      var(--_default-2---swatch--info-500, #770BFF) 360deg
+    );
+  }
+
+  [class*="stat_card_gold"] {
+    background-image: conic-gradient(
+      from 163deg at 14.86% 61.32%,
+      var(--_default-2---swatch--warning-700, #B45309) 5deg,
+      var(--_default-2---swatch--warning-500, #F59E0B) 45deg,
+      var(--_default-2---swatch--white, #FFF) 257.36deg,
+      var(--_default-2---swatch--warning-500, #F59E0B) 323.65deg,
+      var(--_default-2---swatch--warning-700, #B45309) 360deg
+    );
+  }
+
+/*
+ * Pattern UK version split — Accordion and FAQ
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 03 section 5
+ */
+
+/* ==========================================================================
+  5. ACCORDION & FAQ
+  ========================================================================== */
+
+  [class*="accordion_toggle_btn_wrap"],
+  [class*="accordion_toggle_btn_contain"] {
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  [class*="accordion_toggle_btn_wrap"]:hover {
+    transform: scale(1.1);
+  }
+
+  [class*="accordion_toggle_btn_wrap"]:hover [class*="accordion_toggle_btn_contain"] {
+    transform: rotate(90deg);
+  }
+
+  [class*="faq_component"].is-active [class*="faq_toggle_icon"] {
+    transform: rotate(180deg);
+  }
+
+  .wf-design-mode [class*="accordion_content_wrap"],
+  .wf-design-mode [class*="faq_content_wrap"] {
+    display: block;
+  }
+
+  /* ==========================================================================
+
+/*
+ * Pattern UK version split — Swiper
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 03 section 6
+ */
+
+6. SWIPER
+  ========================================================================== */
+
+  [class*="swiper-bullet-wrapper"] [class*="swiper-bullet"]:nth-child(2) {
+    transform: rotate(90deg);
+  }
+
+  [class*="swiper-bullet-wrapper"] [class*="swiper-bullet"]:nth-child(3) {
+    transform: rotate(180deg);
+  }
+
+  [class*="swiper-bullet-wrapper"] [class*="swiper-bullet"]:nth-child(4) {
+    transform: rotate(270deg);
+  }
+
+/*
+ * Pattern UK version split — Brand logos Designer state
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 03 section 7
+ */
+
+/* ==========================================================================
+  7. BRAND LOGOS (WF Design Mode)
+  ========================================================================== */
+
+  .wf-design-mode [class*="brand_logos_group"] > :nth-child(2),
+  .wf-design-mode [class*="brand_logos_group"] > :nth-child(3) {
+    display: none !important;
+  }
+
+  /* ==========================================================================
+
+/*
+ * Pattern UK version split — Navigation details
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 03 section 8
+ */
+
+8. NAVIGATION
+  ========================================================================== */
+
+  [class*="nav_resource_link"] [class*="nav_resource_icon"] {
+    color: var(--_default-2---swatch--neutral-200);
+    transition: color 0.2s;
+  }
+
+  [class*="nav_resource_link"]:hover [class*="nav_resource_icon"] {
+    color: var(--_default-2---swatch--primary-500);
+  }
+
+/*
+ * Pattern UK version split — Modal state
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 03 global modal state and section 9
+ */
+
+body.modal-open {
+  padding-right: var(--scrollbar-width, 0px) !important;
+  position: fixed !important;
+  width: 100% !important;
+  top: var(--scroll-top, 0) !important;
+  left: 0 !important;
+  overflow: clip !important;
+}
+
+html.modal-open {
+  padding-right: var(--scrollbar-width, 0px) !important;
+  overflow: hidden !important;
+  overflow-y: scroll !important;
+}
+
+/* ==========================================================================
+  9. MODAL
+  ========================================================================== */
+
+  [class*="modal_dialog"]::backdrop {
+    opacity: 0;
+  }
+
+/*
+ * Pattern UK version split — Lightbox hover
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 03 section 10
+ */
+
+/* ==========================================================================
+  10. LIGHTBOX HOVER
+  ========================================================================== */
+
+  [class*="g_video_lightbox_thumbnail"] {
+    transition: opacity 0.3s ease;
+  }
+
+  [class*="button_play_primary-icon"] {
+    transition: transform 0.3s ease;
+  }
+
+  [class*="g_video_lightbox"]:hover [class*="g_video_lightbox_thumbnail"] {
+    opacity: 100%;
+  }
+
+  [class*="g_video_lightbox"]:hover [class*="button_play_primary-icon"] {
+    transform: scale(0.9);
+  }
+
+  /* ==========================================================================
+
+/*
+ * Pattern UK version split — Marquee animation
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 03 section 11
+ */
+
+11. MARQUEE ANIMATION
+  ========================================================================== */
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  [class*="g_marquee_group_30"] {
+    animation: marquee 30s linear infinite;
+  }
+
+  [class*="g_marquee_group_45"] {
+    animation: marquee 45s linear infinite;
+  }
+
+  [class*="g_marquee_wrap"] {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black var(--_default-2---site--margin),
+      black calc(100% - var(--_default-2---site--margin)),
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black var(--_default-2---site--margin),
+      black calc(100% - var(--_default-2---site--margin)),
+      transparent 100%
+    );
+  }
+
+  /* ==========================================================================
+
+/*
+ * Pattern UK version split — Grid media
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 03 section 12
+ */
+
+/* ==========================================================================
+  12. GRID
+  ========================================================================== */
+
+  [class*="u-grid-wrapper"] [class*="u-image-wrapper"]
+    :not([class*="g_avatar_wrap"] [class*="u-image-wrapper"])
+    :not([class*="cs_main_card_visual"] [class*="u-image-wrapper"])
+    :not([class*="g_card_bkg"] [class*="u-image-wrapper"]) {
+    min-height: 23.125rem;
+  }
+
+/*
+ * Pattern UK version split — Rich text
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 03 section 13
+ */
+
+/* ==========================================================================
+  13. RICH TEXT
+  ========================================================================== */
+
+  /* -- Rich Text List Marker Fix -- */
+  :is(.u-rich-text, .u-rich-text-2).w-richtext ul {
+    overflow: visible !important;
+    padding-left: 1.25em !important;
+  }
+
+  /* -- CMS Entry Reformat -- */
+  [class*="entry_main_rt"] :is(h1, h2, h3) {
+    font-size: var(--_typography---font-size--h4);
+  }
+
+  [class*="entry_main_rt"] :is(h4, h5, h6) {
+    font-size: var(--_typography---font-size--h5);
+  }
+
+/*
+ * Pattern UK version split — Marketo forms
+ * Classification: shared feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 04
+ */
+
+/* ========================================================================== 
+   Pattern UK — global Marketo form styling
+   Detached-library build.
+
+   Scope real rendered Marketo forms only. Marketo also creates empty,
+   off-screen measurement forms without an id; those are intentionally ignored.
+   ========================================================================== */
+
+.mktoForm[id^="mktoForm_"] {
+  /* Stable local aliases prevent detached or renamed Webflow variables from
+     invalidating entire padding, gap, border-radius, or colour declarations. */
+  --mkto-text: var(--_theme-2---text, #29292f);
+  --mkto-field-text: var(--_default-2---swatch--neutral-900, #070708);
+  --mkto-field-background: #ebf0f5;
+  --mkto-error: var(--_default-2---swatch--error-500, #ef4444);
+  --mkto-radius: var(--_default-2---radius--md, 0.75rem);
+  --mkto-inline-gap: var(--space--3, 0.75rem);
+  --mkto-row-gap: 0.625rem;
+  --mkto-button-gap: var(--space--3, 0.75rem);
+  --mkto-control-padding-x: var(--space--3, 0.75rem);
+  --mkto-button-padding-x: var(--space--4, 1rem);
+  --mkto-button-padding-y: var(--space--3, 0.75rem);
+
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: var(--mkto-text) !important;
+  font-family: var(--font--primary-family, "Wix Madefor Display"), Arial, sans-serif !important;
+  font-size: 1rem !important;
+}
+
+.mktoForm[id^="mktoForm_"],
+.mktoForm[id^="mktoForm_"] *,
+.mktoForm[id^="mktoForm_"] *::before,
+.mktoForm[id^="mktoForm_"] *::after {
+  box-sizing: border-box;
+}
+
+/* ========================================================================== 
+   Rows and columns
+   ========================================================================== */
+
+.mktoForm[id^="mktoForm_"] .mktoFormRow {
+  display: flex !important;
+  flex-flow: row nowrap !important;
+  align-items: flex-start !important;
+  width: 100% !important;
+  margin: 0 0 var(--mkto-row-gap) !important;
+  column-gap: var(--mkto-inline-gap) !important;
+}
+
+.mktoForm[id^="mktoForm_"] .mktoFormCol {
+  float: none !important;
+  flex: 1 1 0;
+  width: auto !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.mktoForm[id^="mktoForm_"] .mktoFieldWrap {
+  float: none !important;
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.mktoForm[id^="mktoForm_"] :is(.mktoOffset, .mktoGutter, .mktoClear) {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.mktoForm[id^="mktoForm_"] .mktoFormRow:has(input[type="hidden"]),
+.mktoForm[id^="mktoForm_"] > input[type="hidden"] {
+  display: none !important;
+  margin: 0 !important;
+}
+
+/* ========================================================================== 
+   Labels
+   ========================================================================== */
+
+.mktoForm[id^="mktoForm_"] .mktoLabel {
+  float: none !important;
+  display: flex !important;
+  align-items: baseline !important;
+  width: 100% !important;
+  margin: 0 0 0.25rem !important;
+  padding: 0 !important;
+  color: var(--mkto-text) !important;
+  font-family: inherit !important;
+  font-size: 0.875rem !important;
+  font-weight: var(--font--primary-bold, 700) !important;
+  line-height: 1.25rem !important;
+}
+
+.mktoForm[id^="mktoForm_"] .mktoAsterix {
+  order: -1 !important;
+  margin: 0 0.125rem 0 0 !important;
+  padding: 0 !important;
+  color: var(--mkto-error) !important;
+  font-weight: var(--font--primary-bold, 700) !important;
+}
+
+/* ========================================================================== 
+   Inputs, selects, and textareas
+   ========================================================================== */
+
+.mktoForm[id^="mktoForm_"] :is(
+  input.mktoField[type="text"],
+  input.mktoField[type="url"],
+  input.mktoField[type="email"],
+  input.mktoField[type="tel"],
+  input.mktoField[type="number"],
+  input.mktoField[type="date"],
+  input.mktoField[type="search"],
+  select.mktoField,
+  textarea.mktoField
+) {
+  float: none !important;
+  display: block !important;
+  width: 100% !important;
+  height: 2.75rem !important;
+  min-height: 2.75rem !important;
+  margin: 0 !important;
+  padding: 0 var(--mkto-control-padding-x) !important;
+  border: 0 !important;
+  border-radius: var(--mkto-radius) !important;
+  outline: none !important;
+  background-color: var(--mkto-field-background) !important;
+  box-shadow: none !important;
+  color: var(--mkto-field-text) !important;
+  -webkit-text-fill-color: var(--mkto-field-text) !important;
+  font-family: inherit !important;
+  font-size: 1rem !important;
+  font-weight: var(--font--primary-regular, 400) !important;
+  line-height: 1.5rem !important;
+  transition: box-shadow 180ms ease, background-color 180ms ease !important;
+}
+
+.mktoForm[id^="mktoForm_"] :is(
+  input.mktoField[type="text"],
+  input.mktoField[type="url"],
+  input.mktoField[type="email"],
+  input.mktoField[type="tel"],
+  input.mktoField[type="number"],
+  input.mktoField[type="date"],
+  input.mktoField[type="search"],
+  textarea.mktoField
+) {
+  background-image: none !important;
+}
+
+.mktoForm[id^="mktoForm_"] select.mktoField {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  padding-right: 2.75rem !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6 9l6 6 6-6' stroke='%237289a5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: right var(--mkto-control-padding-x) center !important;
+  background-size: 1.5rem 1.5rem !important;
+}
+
+.mktoForm[id^="mktoForm_"] textarea.mktoField {
+  height: auto !important;
+  min-height: 5rem !important;
+  padding-block: var(--mkto-control-padding-x) !important;
+  resize: vertical !important;
+}
+
+.mktoForm[id^="mktoForm_"] :is(input.mktoField, textarea.mktoField)::placeholder {
+  color: rgba(7, 7, 8, 0.4) !important;
+  color: color-mix(in srgb, var(--mkto-field-text) 40%, transparent) !important;
+  -webkit-text-fill-color: currentColor !important;
+  opacity: 1 !important;
+}
+
+.mktoForm[id^="mktoForm_"] select.mktoField:has(option[value=""]:checked) {
+  color: rgba(7, 7, 8, 0.4) !important;
+  color: color-mix(in srgb, var(--mkto-field-text) 40%, transparent) !important;
+  -webkit-text-fill-color: currentColor !important;
+}
+
+.mktoForm[id^="mktoForm_"] select.mktoField option {
+  background: #fff !important;
+  color: var(--mkto-field-text) !important;
+}
+
+.mktoForm[id^="mktoForm_"] :is(
+  input.mktoField[type="text"],
+  input.mktoField[type="url"],
+  input.mktoField[type="email"],
+  input.mktoField[type="tel"],
+  input.mktoField[type="number"],
+  input.mktoField[type="date"],
+  input.mktoField[type="search"],
+  select.mktoField,
+  textarea.mktoField
+):focus-visible {
+  box-shadow:
+    0 0 0 2px var(--_swatches---brand--purple, #770bff),
+    0 0 0 4px rgba(96, 165, 250, 0.35) !important;
+}
+
+.mktoForm[id^="mktoForm_"] .mktoField.mktoInvalid {
+  box-shadow: 0 0 0 2px var(--mkto-error) !important;
+}
+
+/* Checkbox and radio fields used by other site-wide Marketo forms. */
+.mktoForm[id^="mktoForm_"] :is(.mktoCheckboxList, .mktoRadioList) {
+  float: none !important;
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+.mktoForm[id^="mktoForm_"] :is(input[type="checkbox"], input[type="radio"]) {
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+  margin: 0 0.5rem 0 0 !important;
+  accent-color: var(--_swatches---brand--purple, #770bff);
+}
+
+.mktoForm[id^="mktoForm_"] :is(.mktoCheckboxList, .mktoRadioList) label {
+  display: inline !important;
+  color: var(--mkto-text) !important;
+  font-family: inherit !important;
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+}
+
+/* ========================================================================== 
+   Privacy / consent copy
+   ========================================================================== */
+
+.mktoForm[id^="mktoForm_"] .mktoFormRow:has(.mktoHtmlText) {
+  margin-bottom: 0 !important;
+}
+
+.mktoForm[id^="mktoForm_"] .mktoHtmlText {
+  float: none !important;
+  width: 100% !important;
+  color: var(--mkto-text) !important;
+  font-family: inherit !important;
+  font-size: 0.8125rem !important;
+  font-weight: var(--font--primary-regular, 400) !important;
+  line-height: 1.5rem !important;
+}
+
+.mktoForm[id^="mktoForm_"] .mktoHtmlText * {
+  color: inherit !important;
+}
+
+.mktoForm[id^="mktoForm_"] .mktoHtmlText a {
+  text-decoration: underline !important;
+  text-underline-offset: 0.15em !important;
+}
+
+/* ========================================================================== 
+   Submit button
+   ========================================================================== */
+
+.mktoForm[id^="mktoForm_"] .mktoButtonRow {
+  display: flex !important;
+  justify-content: flex-end !important;
+  width: 100% !important;
+  margin: var(--mkto-button-gap) 0 0 !important;
+  padding: 0 !important;
+}
+
+.mktoForm[id^="mktoForm_"] .mktoButtonWrap {
+  display: block !important;
+  width: auto !important;
+  margin: 0 !important;
+}
+
+.mktoForm[id^="mktoForm_"] .mktoButton {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: var(--mkto-inline-gap) !important;
+  width: auto !important;
+  min-height: 3.5rem !important;
+  margin: 0 !important;
+  padding: var(--mkto-button-padding-y) var(--mkto-button-padding-x) !important;
+  border: 0 !important;
+  border-radius: var(--mkto-radius) !important;
+  outline: none !important;
+  background-color: var(--_swatches---brand--purple, #770bff) !important;
+  background-image: linear-gradient(
+    90deg,
+    var(--_swatches---brand--purple, #770bff),
+    var(--_swatches---brand--dark-blue, #3a55ff)
+  ) !important;
+  box-shadow: none !important;
+  color: var(--_default-2---swatch--white, #fff) !important;
+  font-family: inherit !important;
+  font-size: 1.125rem !important;
+  font-weight: var(--font--primary-medium, 500) !important;
+  line-height: 1.5rem !important;
+  letter-spacing: var(--_typography---letter-spacing--0-5px, -0.03125rem) !important;
+  text-transform: none !important;
+  cursor: pointer !important;
+  transition: opacity 180ms ease, transform 180ms ease !important;
+}
+
+.mktoForm[id^="mktoForm_"] .mktoButton:hover {
+  opacity: 0.9 !important;
+}
+
+.mktoForm[id^="mktoForm_"] .mktoButton:active {
+  transform: translateY(1px);
+}
+
+.mktoForm[id^="mktoForm_"] .mktoButton:focus-visible {
+  outline: 2px solid var(--_swatches---brand--dark-blue, #3a55ff) !important;
+  outline-offset: 3px !important;
+}
+
+/* Marketo validation message. */
+.mktoForm[id^="mktoForm_"] .mktoError .mktoErrorMsg {
+  margin-top: 0.5rem !important;
+  padding: 0.75rem 1rem !important;
+  border: 1px solid var(--mkto-error) !important;
+  border-radius: var(--_default-2---radius--sm, 0.25rem) !important;
+  background: var(--_default-2---swatch--neutral-900, #070708) !important;
+  box-shadow: none !important;
+  color: #fff !important;
+  font-family: inherit !important;
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+  text-shadow: none !important;
+}
+
+/* ========================================================================== 
+   Footer newsletter form
+
+   The detached UK footer uses form 914; the US footer uses form 826. Scope to
+   the footer component instead of a Marketo id so form replacements stay styled.
+   ========================================================================== */
+
+:is(.footer_main, .footer_main-3, .footer_form_embed)
+  .mktoForm[id^="mktoForm_"] {
+  --mkto-text: var(--_default-2---swatch--white, #fff);
+  --mkto-field-text: var(--_theme---text, #f5f5f5);
+
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "field button"
+    "privacy privacy";
+  align-items: end;
+  column-gap: var(--mkto-inline-gap);
+  row-gap: var(--mkto-button-gap);
+}
+
+:is(.footer_main, .footer_main-3, .footer_form_embed)
+  .mktoForm[id^="mktoForm_"]
+  > .mktoFormRow:has(input.mktoField:not([type="hidden"])) {
+  grid-area: field;
+  min-width: 0;
+  margin: 0 !important;
+}
+
+:is(.footer_main, .footer_main-3, .footer_form_embed)
+  .mktoForm[id^="mktoForm_"]
+  > .mktoFormRow:has(.mktoHtmlText) {
+  grid-area: privacy;
+  margin: 0 !important;
+}
+
+:is(.footer_main, .footer_main-3, .footer_form_embed)
+  .mktoForm[id^="mktoForm_"]
+  > .mktoButtonRow {
+  grid-area: button;
+  align-self: end;
+  width: auto !important;
+  margin: 0 !important;
+}
+
+:is(.footer_main, .footer_main-3, .footer_form_embed)
+  .mktoForm[id^="mktoForm_"]
+  .mktoLabel,
+:is(.footer_main, .footer_main-3, .footer_form_embed)
+  .mktoForm[id^="mktoForm_"]
+  .mktoHtmlText,
+:is(.footer_main, .footer_main-3, .footer_form_embed)
+  .mktoForm[id^="mktoForm_"]
+  .mktoHtmlText * {
+  color: var(--_default-2---swatch--white, #fff) !important;
+}
+
+:is(.footer_main, .footer_main-3, .footer_form_embed)
+  .mktoForm[id^="mktoForm_"]
+  input.mktoField[type="email"] {
+  height: 3.125rem !important;
+  min-height: 3.125rem !important;
+  padding-inline: 1.25rem !important;
+  border: 2px solid transparent !important;
+  border-radius: 0.625rem !important;
+  background:
+    linear-gradient(
+      var(--_theme---background, #090a0f),
+      var(--_theme---background, #090a0f)
+    ) padding-box,
+    linear-gradient(
+      135deg,
+      #7c3aed 0%,
+      #60a5fa 44%,
+      var(--_default-2---swatch--white, #fff) 100%
+    ) border-box !important;
+  background-clip: padding-box, border-box !important;
+  color: var(--mkto-field-text) !important;
+  -webkit-text-fill-color: var(--mkto-field-text) !important;
+  caret-color: var(--mkto-field-text) !important;
+  box-shadow: 0 0 12px rgba(0, 151, 255, 0.16) !important;
+}
+
+:is(.footer_main, .footer_main-3, .footer_form_embed)
+  .mktoForm[id^="mktoForm_"]
+  .mktoButtonWrap {
+  width: auto !important;
+}
+
+:is(.footer_main, .footer_main-3, .footer_form_embed)
+  .mktoForm[id^="mktoForm_"]
+  .mktoButton {
+  width: auto !important;
+  min-height: 3.5rem !important;
+  padding: 0 1.25rem !important;
+  border: 1px solid #c4d3e3 !important;
+  border-radius: 0.625rem !important;
+  background: #fff !important;
+  color: #29292f !important;
+  opacity: 1 !important;
+}
+
+:is(.footer_main, .footer_main-3, .footer_form_embed)
+  .mktoForm[id^="mktoForm_"]
+  .mktoButton:hover {
+  background: #ebf0f5 !important;
+}
+
+/* ========================================================================== 
+   Responsive layout
+   ========================================================================== */
+
+@media (max-width: 47.99em) {
+  .mktoForm[id^="mktoForm_"] .mktoFormRow {
+    flex-flow: column nowrap !important;
+    row-gap: var(--mkto-row-gap) !important;
+  }
+
+  .mktoForm[id^="mktoForm_"] .mktoFormCol {
+    flex-basis: auto;
+    width: 100% !important;
+  }
+
+  :is(.footer_main, .footer_main-3, .footer_form_embed)
+    .mktoForm[id^="mktoForm_"] {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "field"
+      "privacy"
+      "button";
+  }
+
+  :is(.footer_main, .footer_main-3, .footer_form_embed)
+    .mktoForm[id^="mktoForm_"]
+    > .mktoButtonRow,
+  :is(.footer_main, .footer_main-3, .footer_form_embed)
+    .mktoForm[id^="mktoForm_"]
+    .mktoButtonWrap,
+  :is(.footer_main, .footer_main-3, .footer_form_embed)
+    .mktoForm[id^="mktoForm_"]
+    .mktoButton {
+    width: 100% !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mktoForm[id^="mktoForm_"] :is(.mktoField, .mktoButton) {
+    transition: none !important;
+  }
+}

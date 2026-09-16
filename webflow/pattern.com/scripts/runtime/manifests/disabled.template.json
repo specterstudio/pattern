@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "channel": "stable",
+  "enabled": false,
+  "releasedAt": "__RELEASED_AT__",
+  "reason": "__DISABLE_REASON__"
+}

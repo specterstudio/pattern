@@ -1,0 +1,79 @@
+{
+  "phase": 4,
+  "completedAt": "2026-07-28",
+  "siteId": "684987756493653cc7c5a406",
+  "activeInSavedDesignerState": true,
+  "published": false,
+  "site": {
+    "lastUpdated": "2026-07-29T01:23:04.018Z",
+    "lastPublished": "2026-07-28T16:42:59.449Z",
+    "fullSiteCompiledAt": "2026-07-28T16:42:59.449Z"
+  },
+  "package": {
+    "path": "webflow/uk.pattern.com/version-split",
+    "tag": "uk-version-split-v0.4.3",
+    "commit": "c28741818d04b5207973368369e8287caad212e0",
+    "generatedFiles": 24,
+    "cssFiles": 18,
+    "jsFiles": 4,
+    "bytes": 137438,
+    "structuralChecks": 50,
+    "structuralFailures": 0,
+    "browserParsedCssFiles": 18,
+    "browserCssRules": 468,
+    "browserBehaviorChecks": 9,
+    "browserBehaviorFailures": 0,
+    "cdnAssetChecks": 5,
+    "cdnAssetFailures": 0
+  },
+  "pilotMatrix": {
+    "viewports": [1440, 991, 767, 479],
+    "pilotResultSets": 8,
+    "referenceResultSets": 4,
+    "checks": 80,
+    "failures": 0,
+    "report": "output/playwright/pattern-uk-phase4/phase-4-live-simulation.json"
+  },
+  "pilots": [
+    {
+      "pageId": "6a0e3cc3ba585cc12d1c2f43",
+      "name": "Pattern Intelligence",
+      "version": "v2",
+      "markerElement": "bcbd443c-c5d4-240d-6d21-620380abd388",
+      "pilotMarker": "phase4",
+      "headAssets": ["shared", "v2", "features"],
+      "legacyBridgeInstances": 0
+    },
+    {
+      "pageId": "684987756493653cc7c5a546",
+      "name": "Our Story",
+      "version": "v1",
+      "markerElement": "54004d1b-fc17-6b19-c3c5-9d7a26810e27",
+      "pilotMarker": "phase4",
+      "headAssets": ["shared", "v1", "features"],
+      "legacyBridgeInstances": 0
+    }
+  ],
+  "isolationControl": {
+    "pageId": "69f9fe0ba11dd16bf945121e",
+    "name": "Content Brief (Form)",
+    "pilotMarkers": 0,
+    "existingCustomCodeComponentInstances": 1,
+    "customCodeComponentId": "89894b6d-cf3f-dfb6-51d8-63b0d19309e1"
+  },
+  "loader": {
+    "location": "site footer freeform code",
+    "tag": "uk-version-split-v0.4.3",
+    "requiresPilotMarker": true,
+    "requiresVersionMarker": true,
+    "inactiveOnNonPilotPages": true
+  },
+  "rollback": {
+    "productionRequired": false,
+    "removePilotLoader": true,
+    "restorePilotPageHeadCode": true,
+    "removePilotMarkersOnly": true,
+    "keepVersionMarkers": true,
+    "restoreLegacyComponentDefinition": "89894b6d-cf3f-dfb6-51d8-63b0d19309e1"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-07-30T17:44:26.418Z",
+  "origin": "https://pattern.com",
+  "publishedAt": "Thu Jul 30 2026 17:42:37 GMT+0000 (Coordinated Universal Time)",
+  "homeStatus": 200,
+  "sitemapStatus": 200,
+  "sitemapUrlCount": 1125,
+  "sitemapDiffFromInitialCrawl": {
+    "added": [
+      "/case-study/flannels",
+      "/case-study/sports-direct"
+    ],
+    "removed": [
+      "/resources/international-expansion-videos"
+    ]
+  },
+  "international": {
+    "path": "/resources/international-expansion-videos",
+    "status": 404,
+    "finalUrl": "https://www.pattern.com/resources/international-expansion-videos?pvg-check=1785433466068",
+    "inSitemap": false
+  },
+  "loader": {
+    "version": "0.2.4",
+    "runtimeCommit": "7bb2b6f2fc7ae258285fbafcd643e717b64009e1",
+    "runtimeIntegrity": "sha384-HBYB8fSqocEljJAPTrEeai0HbLKdhRDfgFfu/4cslT7DnF6MRKxYcbVu/U0Z8sBp",
+    "modeActive": true,
+    "legacyGateway": true
+  },
+  "expected": {
+    "version": "0.2.4",
+    "runtimeCommit": "7bb2b6f2fc7ae258285fbafcd643e717b64009e1",
+    "runtimeIntegrity": "sha384-HBYB8fSqocEljJAPTrEeai0HbLKdhRDfgFfu/4cslT7DnF6MRKxYcbVu/U0Z8sBp"
+  },
+  "failures": []
+}

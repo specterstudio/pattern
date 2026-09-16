@@ -1,0 +1,25 @@
+/*
+ * Pattern UK version split — Rich text
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 03 section 13
+ */
+
+/* ==========================================================================
+  13. RICH TEXT
+  ========================================================================== */
+
+  /* -- Rich Text List Marker Fix -- */
+  :is(.u-rich-text, .u-rich-text-2).w-richtext ul {
+    overflow: visible !important;
+    padding-left: 1.25em !important;
+  }
+
+  /* -- CMS Entry Reformat -- */
+  [class*="entry_main_rt"] :is(h1, h2, h3) {
+    font-size: var(--_typography---font-size--h4);
+  }
+
+  [class*="entry_main_rt"] :is(h4, h5, h6) {
+    font-size: var(--_typography---font-size--h5);
+  }

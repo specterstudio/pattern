@@ -1,0 +1,36 @@
+<style>
+/* theme light */
+:root,
+[data-theme="light"],
+[data-theme="dark"] [data-theme="invert"] {
+	--theme--background: var(--swatch--light);
+	--theme--text: var(--swatch--dark);
+	--theme--border: var(--swatch--dark);
+	--theme--n1: var(--swatch--dark);
+	--theme--n2: var(--swatch--light-mid);
+	--theme--n3: var(--swatch--light);
+	--theme--t1: var(--swatch--light-t-04);
+	--theme--t2: var(--swatch--light-t-12);
+	--theme--t3: var(--swatch--light-t-40);
+}
+/* theme dark */
+[data-theme="dark"],
+[data-theme="invert"],
+[data-theme="light"] [data-theme="invert"] {
+	--theme--background: var(--swatch--dark);
+	--theme--text: var(--swatch--light);
+	--theme--border: var(--swatch--light);
+	--theme--n1: var(--swatch--light);
+	--theme--n2: var(--swatch--dark-mid);
+	--theme--n3: var(--swatch--dark);
+	--theme--t1: var(--swatch--dark-t-04);
+	--theme--t2: var(--swatch--dark-t-12);
+	--theme--t3: var(--swatch--dark-t-40);
+}
+
+/* apply colors */
+:is(c, :where([data-theme]:not([data-theme="inherit"]))) {
+	background-color: var(--theme--background);
+	color: var(--theme--text);
+}
+</style>

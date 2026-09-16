@@ -1,0 +1,77 @@
+{
+  "phase": 3,
+  "completedAt": "2026-07-28",
+  "siteId": "684987756493653cc7c5a406",
+  "active": false,
+  "published": false,
+  "site": {
+    "lastUpdated": "2026-07-28T21:52:27.443Z",
+    "lastPublished": "2026-07-28T16:42:59.449Z",
+    "fullSiteCompiledAt": "2026-07-28T16:42:59.449Z"
+  },
+  "package": {
+    "path": "webflow/uk.pattern.com/version-split",
+    "generatedFiles": 22,
+    "cssFiles": 17,
+    "jsFiles": 3,
+    "bytes": 102826,
+    "structuralChecks": 40,
+    "structuralFailures": 0,
+    "browserParsedCssFiles": 17,
+    "browserCssRules": 366,
+    "browserFailures": 0
+  },
+  "markerBehavior": {
+    "v1Body": true,
+    "v1PageMain": true,
+    "v1PageWrap": true,
+    "v1InactiveOnV2": true,
+    "v2ContentWrapperActiveWithMarker": true,
+    "v2ContentWrapperInactiveWithoutMarker": true
+  },
+  "dependencyAudit": {
+    "globalHeaderInstances": 90,
+    "globalFooterInstances": 66,
+    "usesUnsuffixedUtilities": true,
+    "marketoIsSharedFeature": true
+  },
+  "components": [
+    {
+      "id": "7fb1f388-2033-4797-c2b9-7531a01b1123",
+      "name": "Custom Code / Shared",
+      "group": "Global",
+      "instanceCount": 0,
+      "props": 0,
+      "children": 0,
+      "loadsAssets": false
+    },
+    {
+      "id": "9999a57b-0a5b-56ff-7e4f-a18301048ba2",
+      "name": "Custom Code / V1",
+      "group": "Global",
+      "instanceCount": 0,
+      "props": 0,
+      "children": 0,
+      "loadsAssets": false
+    },
+    {
+      "id": "7ad95ae4-857d-1514-8570-d351681e4bce",
+      "name": "Custom Code / V2",
+      "group": "Global",
+      "instanceCount": 0,
+      "props": 0,
+      "children": 0,
+      "loadsAssets": false
+    }
+  ],
+  "untouched": [
+    "site freeform custom code",
+    "page freeform custom code",
+    "registered scripts",
+    "applied scripts",
+    "existing Custom Code component",
+    "page component instances",
+    "production asset loading",
+    "publishing"
+  ]
+}

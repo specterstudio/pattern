@@ -1,4 +1,12 @@
 (() => {
+  const GLOBAL_NAME = 'PatternAccordion';
+  const VERSION = '1.1.0';
+
+  if (window[GLOBAL_NAME]?.version) {
+    window[GLOBAL_NAME].init(document);
+    return;
+  }
+
   const selectors = {
     wrap: '[data-accordion], [class*="accordion_wrap"]',
     list: '[data-accordion-list], [class*="accordion_list"]',
@@ -35,8 +43,13 @@
     return value.trim().toLowerCase() !== 'false';
   };
 
-  function initAccordions() {
-    document.querySelectorAll(selectors.wrap).forEach((component) => {
+  function initAccordions(scope = document) {
+    const components = [];
+
+    if (scope.matches?.(selectors.wrap)) components.push(scope);
+    scope.querySelectorAll?.(selectors.wrap).forEach((component) => components.push(component));
+
+    components.forEach((component) => {
       if (component.dataset.accordionInitialized === 'true') return;
 
       const list = component.querySelector(selectors.list);
@@ -230,6 +243,11 @@
       });
     });
   }
+
+  window[GLOBAL_NAME] = {
+    init: initAccordions,
+    version: VERSION,
+  };
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initAccordions, { once: true });

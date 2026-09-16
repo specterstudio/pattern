@@ -3,22 +3,24 @@
 
   const ROOT_SELECTOR = "[data-case-study-slider]";
   const ITEM_SELECTOR = ".w-dyn-item";
-  const COMPONENT_SELECTOR = ".case-study_slider_wrap";
+  const COMPONENT_SELECTOR = '[class*="case-study_slider_wrap"]';
   const STYLE_ID = "pattern-case-study-slider-styles";
+  const DEFERRED_ROOT_MARGIN = "1200px 0px";
+  const LEGACY_VERSIONS = new Set(["v1", "v2", "v2l"]);
 
   const SELECTORS = {
-    visual: ".case-study_slider_visual",
-    logo: ".case-study_slider_logo",
-    quote: ".case-study_slider_quote",
-    avatar: ".case-study_slider_avatar",
-    author: ".case-study_slider_name",
-    content: ".case-study_slider_content",
-    cta: ".u-button-wrapper",
-    link: ".clickable_link[href]",
-    stat: ".case-study_slider_stat",
-    statValue: ".card_stats_top .u-text",
-    statLabel: ".card_general_bottom .u-text",
-    controls: "[data-case-study-controls], .case-study_slider_controls",
+    visual: '[class*="case-study_slider_visual"]',
+    logo: '[class*="case-study_slider_logo"]',
+    quote: '[class*="case-study_slider_quote"]',
+    avatar: '[class*="case-study_slider_avatar"]',
+    author: '[class*="case-study_slider_name"]',
+    content: '[class*="case-study_slider_content"]',
+    cta: '[class*="u-button-wrapper"]',
+    link: '[class*="clickable_link"][href]',
+    stat: '[class*="case-study_slider_stat"]',
+    statValue: '[class*="card_stats_top"] [class*="u-text"]',
+    statLabel: '[class*="card_general_bottom"] [class*="u-text"]',
+    controls: '[data-case-study-controls], [class*="case-study_slider_controls"]',
     previous: "[data-case-study-prev]",
     next: "[data-case-study-next]"
   };
@@ -26,6 +28,8 @@
   const state = window.PatternCaseStudyCMS = window.PatternCaseStudyCMS || {};
   if (!(state.instances instanceof WeakMap)) state.instances = new WeakMap();
   if (!(state.initialized instanceof WeakSet)) state.initialized = new WeakSet();
+  if (!(state.deferred instanceof WeakMap)) state.deferred = new WeakMap();
+  if (!(state.statTweens instanceof WeakMap)) state.statTweens = new WeakMap();
 
   function injectStyles() {
     if (document.getElementById(STYLE_ID)) return;
@@ -33,14 +37,14 @@
     const style = document.createElement("style");
     style.id = STYLE_ID;
     style.textContent = `
-      [data-case-study-slider-ready] .case-study_slider_visual {
+      [data-case-study-slider-ready] [class*="case-study_slider_visual"] {
         overflow: hidden;
       }
 
       [data-case-study-slider-ready] .case-study_slider_image_swiper,
       [data-case-study-slider-ready] .case-study_slider_image_list,
       [data-case-study-slider-ready] .case-study_slider_image_slide,
-      [data-case-study-slider-ready] .case-study_slider_image_slide > .u-image-wrapper {
+      [data-case-study-slider-ready] .case-study_slider_image_slide > [class*="u-image-wrapper"] {
         width: 100%;
         height: 100%;
       }
@@ -49,8 +53,18 @@
         overflow: hidden;
       }
 
-      [data-case-study-slider-ready] .case-study_slider_controls[hidden],
-      [data-case-study-slider-static] .case-study_slider_controls {
+      [data-case-study-slider-deferred] > .w-dyn-items > .w-dyn-item[hidden],
+      [data-case-study-slider-deferred] > .w-dyn-item[hidden],
+      [data-case-study-slider-static] > .w-dyn-items > .w-dyn-item[hidden],
+      [data-case-study-slider-static] > .w-dyn-item[hidden],
+      [data-case-study-slider-ready] > .w-dyn-items > .w-dyn-item[hidden],
+      [data-case-study-slider-ready] > .w-dyn-item[hidden] {
+        display: none !important;
+      }
+
+      [data-case-study-slider-deferred] [class*="case-study_slider_controls"],
+      [data-case-study-slider-ready] [class*="case-study_slider_controls"][hidden],
+      [data-case-study-slider-static] [class*="case-study_slider_controls"] {
         display: none !important;
       }
 
@@ -65,10 +79,17 @@
 
   function findSliderRoots(root) {
     const scope = root || document;
-    const explicit = Array.from(scope.querySelectorAll(ROOT_SELECTOR));
+    const explicit = [];
+
+    if (scope.matches && scope.matches(ROOT_SELECTOR)) explicit.push(scope);
+    explicit.push(...Array.from(scope.querySelectorAll(ROOT_SELECTOR)));
     if (explicit.length) return explicit;
 
-    return Array.from(scope.querySelectorAll(".w-dyn-list")).filter((list) => {
+    const dynamicLists = [];
+    if (scope.matches && scope.matches(".w-dyn-list")) dynamicLists.push(scope);
+    dynamicLists.push(...Array.from(scope.querySelectorAll(".w-dyn-list")));
+
+    return dynamicLists.filter((list) => {
       return Boolean(list.querySelector(`${ITEM_SELECTOR} ${COMPONENT_SELECTOR}`));
     });
   }
@@ -125,9 +146,9 @@
     if (!component) return null;
 
     const visual = component.querySelector(SELECTORS.visual);
-    const imageWrapper = visual && visual.querySelector(".u-image-wrapper");
+    const imageWrapper = visual && visual.querySelector('[class*="u-image-wrapper"]');
     const author = component.querySelector(SELECTORS.author);
-    const authorLines = author ? Array.from(author.querySelectorAll(".u-text")) : [];
+    const authorLines = author ? Array.from(author.querySelectorAll('[class*="u-text"]')) : [];
     const link = component.querySelector(SELECTORS.link);
 
     return {
@@ -154,7 +175,7 @@
 
   function getTarget(component) {
     const author = component.querySelector(SELECTORS.author);
-    const authorLines = author ? Array.from(author.querySelectorAll(".u-text")) : [];
+    const authorLines = author ? Array.from(author.querySelectorAll('[class*="u-text"]')) : [];
     const stats = Array.from(component.querySelectorAll(SELECTORS.stat));
 
     return {
@@ -239,28 +260,34 @@
   function tweenStat(element, fromRaw, toRaw, reduceMotion) {
     if (!element) return;
 
+    state.statTweens.get(element)?.kill();
+    state.statTweens.delete(element);
+
     const from = parseNumber(fromRaw);
     const to = parseNumber(toRaw);
     if (reduceMotion || !from || !to || !window.gsap) {
-      setText(element, toRaw);
+      element.textContent = toRaw || "";
       return;
     }
 
-    const textNode = element.querySelector("span") || element;
     const proxy = { value: from.value };
-    window.gsap.killTweensOf(proxy);
-    window.gsap.to(proxy, {
+    element.textContent = formatNumber(to, proxy.value);
+
+    const tween = window.gsap.to(proxy, {
       value: to.value,
       duration: 0.6,
       ease: "power3.out",
       overwrite: true,
       onUpdate() {
-        textNode.textContent = formatNumber(to, proxy.value);
+        element.textContent = formatNumber(to, proxy.value);
       },
       onComplete() {
-        textNode.textContent = to.raw;
+        element.textContent = to.raw;
+        state.statTweens.delete(element);
       }
     });
+
+    state.statTweens.set(element, tween);
   }
 
   function applyRecord(target, record) {
@@ -384,7 +411,7 @@
     if (controls) controls.hidden = true;
   }
 
-  function initializeSlider(root) {
+  function initializeSlider(root, cachedRecords) {
     if (state.initialized.has(root)) return;
 
     const items = getItems(root);
@@ -393,7 +420,9 @@
     const component = items[0].querySelector(COMPONENT_SELECTOR);
     if (!component) return;
 
-    const records = collectRecords(root);
+    const records = cachedRecords && cachedRecords.length
+      ? cachedRecords
+      : collectRecords(root);
     if (records.length < 2) {
       initializeStatic(root, component);
       state.initialized.add(root);
@@ -405,6 +434,9 @@
     const target = getTarget(component);
     if (!target.visual || !target.content) return;
 
+    const originalVisualChildren = Array.from(target.visual.childNodes).map((node) =>
+      node.cloneNode(true)
+    );
     const viewport = buildImageSwiper(target, records);
     const reduceMotion = window.matchMedia &&
       window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -429,7 +461,8 @@
       currentIndex: 0,
       reduceMotion,
       timeline: null,
-      swiper: null
+      swiper: null,
+      originalVisualChildren
     };
 
     const swiper = new window.Swiper(viewport, {
@@ -470,12 +503,163 @@
     state.initialized.add(root);
   }
 
-  function init(root) {
+  function cancelDeferredInitialization(root) {
+    const deferred = state.deferred.get(root);
+    if (!deferred) return;
+
+    deferred.active = false;
+    deferred.observer?.disconnect();
+    root.removeEventListener("pointerenter", deferred.start);
+    root.removeEventListener("focusin", deferred.start);
+    root.removeAttribute("data-case-study-slider-deferred");
+    root.removeAttribute("data-case-study-slider-loading");
+    state.deferred.delete(root);
+  }
+
+  function deferSlider(root, runtime) {
+    if (state.initialized.has(root) || state.deferred.has(root)) return;
+
+    const items = getItems(root);
+    if (!items.length) return;
+
+    const component = items[0].querySelector(COMPONENT_SELECTOR);
+    if (!component) return;
+
+    const records = collectRecords(root);
+    if (records.length < 2) {
+      initializeStatic(root, component);
+      state.initialized.add(root);
+      return;
+    }
+
+    const deferred = {
+      active: true,
+      started: false,
+      observer: null,
+      start: null
+    };
+
+    const start = async () => {
+      if (!deferred.active || deferred.started || state.initialized.has(root)) return;
+      deferred.started = true;
+
+      deferred.observer?.disconnect();
+      root.removeEventListener("pointerenter", start);
+      root.removeEventListener("focusin", start);
+      root.setAttribute("data-case-study-slider-loading", "");
+
+      try {
+        await Promise.all([
+          runtime.loadDependency("gsap"),
+          runtime.loadDependency("swiper")
+        ]);
+
+        if (!deferred.active) return;
+        initializeSlider(root, records);
+
+        if (!state.initialized.has(root)) {
+          initializeStatic(root, component);
+          hideSourceItems(items);
+          console.warn(
+            "[Case Study CMS] Dependencies loaded, but the slider markup could not be initialized."
+          );
+        }
+      } catch (error) {
+        initializeStatic(root, component);
+        hideSourceItems(items);
+        console.warn(
+          "[Case Study CMS] Deferred dependencies could not load; the first static CMS item remains visible.",
+          error
+        );
+      } finally {
+        if (deferred.active) {
+          root.removeAttribute("data-case-study-slider-deferred");
+          root.removeAttribute("data-case-study-slider-loading");
+        }
+        if (state.deferred.get(root) === deferred) state.deferred.delete(root);
+      }
+    };
+
+    deferred.start = start;
+    state.deferred.set(root, deferred);
+    root.setAttribute("data-case-study-slider-deferred", "");
+    hideSourceItems(items);
+    root.addEventListener("pointerenter", start, { once: true });
+    root.addEventListener("focusin", start, { once: true });
+
+    if ("IntersectionObserver" in window) {
+      deferred.observer = new IntersectionObserver(
+        (entries) => {
+          if (entries.some((entry) => entry.isIntersecting)) void start();
+        },
+        { rootMargin: DEFERRED_ROOT_MARGIN }
+      );
+      deferred.observer.observe(root);
+    } else {
+      void start();
+    }
+  }
+
+  function init(root, runtime) {
+    const detectedVersion = runtime?.detectVersion?.(document)?.version;
+    if (LEGACY_VERSIONS.has(detectedVersion)) return;
+
     injectStyles();
-    findSliderRoots(root).forEach(initializeSlider);
+    findSliderRoots(root).forEach((sliderRoot) => {
+      if (runtime?.managed && typeof runtime.loadDependency === "function") {
+        deferSlider(sliderRoot, runtime);
+      } else {
+        initializeSlider(sliderRoot);
+      }
+    });
+  }
+
+  function destroy(root) {
+    findSliderRoots(root).forEach((sliderRoot) => {
+      cancelDeferredInitialization(sliderRoot);
+      const instance = state.instances.get(sliderRoot);
+
+      if (instance) {
+        instance.timeline?.kill();
+        instance.swiper?.destroy(true, true);
+
+        instance.target.stats.forEach((stat) => {
+          state.statTweens.get(stat.value)?.kill();
+          state.statTweens.delete(stat.value);
+        });
+
+        if (instance.target.visual && instance.originalVisualChildren) {
+          instance.target.visual.replaceChildren(
+            ...instance.originalVisualChildren.map((node) => node.cloneNode(true))
+          );
+        }
+
+        instance.target.content?.removeAttribute("aria-live");
+        instance.target.content?.removeAttribute("aria-atomic");
+        if (instance.target.controls) instance.target.controls.hidden = true;
+        state.instances.delete(sliderRoot);
+      }
+
+      getItems(sliderRoot).forEach((item) => {
+        item.hidden = false;
+        item.inert = false;
+        item.removeAttribute("aria-hidden");
+      });
+
+      sliderRoot.removeAttribute("data-case-study-slider-ready");
+      sliderRoot.removeAttribute("data-case-study-slider-static");
+      sliderRoot.removeAttribute("data-case-study-slider-deferred");
+      sliderRoot.removeAttribute("data-case-study-slider-loading");
+      sliderRoot.removeAttribute("role");
+      sliderRoot.removeAttribute("aria-roledescription");
+      sliderRoot.removeAttribute("aria-busy");
+      state.initialized.delete(sliderRoot);
+    });
   }
 
   function boot() {
+    if (window.PatternRuntime?.managed) return;
+
     let attempts = 0;
     const waitForSwiper = () => {
       const roots = findSliderRoots(document);
@@ -495,6 +679,7 @@
   }
 
   state.init = init;
+  state.destroy = destroy;
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", boot, { once: true });

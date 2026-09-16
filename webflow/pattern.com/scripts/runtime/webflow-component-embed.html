@@ -1,0 +1,32 @@
+<script>
+  (() => {
+    const selector = 'script[data-pattern-runtime-loader]';
+
+    if (window.PatternRuntime?.version) {
+      window.PatternRuntime.scan(document);
+      return;
+    }
+
+    if (document.querySelector(selector)) return;
+
+    const script = document.createElement('script');
+    script.src =
+      'https://cdn.jsdelivr.net/gh/specterstudio/pattern@2ed6b54eb009d82cc02476201ae1546ccd5bb693/webflow/pattern.com/scripts/runtime/pattern-runtime.js';
+    script.async = true;
+    script.crossOrigin = 'anonymous';
+    script.integrity =
+      'sha384-CiwMnsAZuxy0py4P6p1i4fc1DRXU9M88PvQCdjbBUQazExKSxxpC/0zj36JIeWHN';
+    script.dataset.patternRuntimeLoader = '0.2.0';
+    script.addEventListener(
+      'error',
+      () => {
+        console.warn(
+          '[Pattern Runtime] The hosted runtime could not load. Static Webflow content remains available.',
+        );
+      },
+      { once: true },
+    );
+
+    document.head.appendChild(script);
+  })();
+</script>

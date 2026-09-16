@@ -1,0 +1,61 @@
+/*
+ * Pattern UK version split — Buttons and animations
+ * Classification: feature
+ * Phase 5 rollout asset. Active only through the canonical resource components.
+ * Provenance: active Custom Code 03 section 3
+ */
+
+/* ==========================================================================
+  3. BUTTONS & ANIMATIONS
+  ========================================================================== */
+
+  /* -- Main Button Animations -- */
+  [class*="button_arrow_icon"] {
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  [class*="button_arrow_icon"][class*="cc-static"] {
+    transform: translate(0, 0);
+  }
+
+  [class*="button_arrow_icon"][class*="cc-hover"] {
+    transform: translate(-1.5rem, 0);
+  }
+
+  [class*="button_arrow_element"] {
+    transition:
+      width 0.3s cubic-bezier(0.25, 0.1, 0.25, 1),
+      border-radius 0.3s cubic-bezier(0.25, 0.1, 0.25, 1),
+      border 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  [btn-arrow]:hover [class*="button_arrow_icon"][class*="cc-static"] {
+    transform: translate(2.5rem, 0);
+  }
+
+  [btn-arrow]:hover [class*="button_arrow_icon"][class*="cc-hover"] {
+    transform: translate(0, 0);
+  }
+
+  [btn-arrow]:hover [class*="button_arrow_element"] {
+    width: 2.5rem;
+    border-radius: 0.375rem;
+  }
+
+  /* -- Button Popup -- */
+  [class*="button_popup_wrap"],
+  [class*="button_popup_element"] {
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  [data-modal-trigger]:hover {
+    transform: scale(1.1);
+  }
+
+  [data-modal-trigger]:hover [class*="button_popup_element"] {
+    transform: rotate(90deg);
+  }
+
+  [class*="button"] [class*="u-text"] {
+    margin: 0 !important;
+  }

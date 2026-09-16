@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "channel": "canary",
+  "enabled": true,
+  "releasedAt": "__RELEASED_AT__",
+  "runtime": {
+    "version": "1.0.0",
+    "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@__COMMIT_SHA__/webflow/pattern.com/scripts/runtime/pattern-runtime.js",
+    "integrity": "__RUNTIME_SRI__"
+  }
+}

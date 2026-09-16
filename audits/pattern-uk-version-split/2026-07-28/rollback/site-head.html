@@ -1,0 +1,178 @@
+<!-- ======================================================
+  PATTERN UK — DETACHED-READY GLOBAL HEADER
+======================================================= -->
+
+<!-- ConsentPro -->
+<script
+  src="https://api.consentpro.com/v2/cdn/runtime/684987756493653cc7c5a406.js"
+  type="text/javascript"
+  finsweet="consentpro"
+  siteid="684987756493653cc7c5a406"
+></script>
+
+<!-- Google Tag Manager — UK -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      "gtm.start": new Date().getTime(),
+      event: "gtm.js"
+    });
+
+    var firstScript = d.getElementsByTagName(s)[0];
+    var gtmScript = d.createElement(s);
+    var dataLayerParam = l !== "dataLayer" ? "&l=" + l : "";
+
+    gtmScript.async = true;
+    gtmScript.src =
+      "https://www.googletagmanager.com/gtm.js?id=" +
+      i +
+      dataLayerParam;
+
+    firstScript.parentNode.insertBefore(gtmScript, firstScript);
+  })(window, document, "script", "dataLayer", "GTM-PL9XF8B");
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- Shared page-function registry -->
+<script>
+  (function (global) {
+    global.pageFunctions = global.pageFunctions || {
+      executed: {},
+      functions: {},
+      added: false,
+
+      addFunction: function (id, fn) {
+        if (!id || typeof fn !== "function") return;
+
+        if (!this.functions[id]) {
+          this.functions[id] = fn;
+        }
+      },
+
+      executeFunctions: function () {
+        if (this.added) return;
+        this.added = true;
+
+        for (var id in this.functions) {
+          if (
+            Object.prototype.hasOwnProperty.call(this.functions, id) &&
+            !this.executed[id]
+          ) {
+            try {
+              this.functions[id]();
+              this.executed[id] = true;
+            } catch (error) {
+              console.error(
+                "Error executing page function " + id + ":",
+                error
+              );
+            }
+          }
+        }
+      }
+    };
+  })(window);
+</script>
+
+<!-- Connection hints -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://cdn.prod.website-files.com" crossorigin>
+<link rel="preconnect" href="https://assets.pattern.com" crossorigin>
+<link rel="dns-prefetch" href="//go.pattern.com">
+
+<!-- Marketo Forms2 runtime — loaded once site-wide -->
+<script src="https://go.pattern.com/js/forms2/js/forms2.min.js"></script>
+
+<!-- Google site verification -->
+<meta
+  name="google-site-verification"
+  content="9X4w4mHcVhAVIrhgOhXIcAFNg3-R2qzgxo5P13E4mhQ"
+>
+
+<!-- Default social sharing image -->
+<meta
+  property="og:image"
+  content="https://cdn.prod.website-files.com/67d327c7ca817d803c46c86b/67d362cc04f07556e4371188_Pattern_Hero.jpg"
+>
+
+<!-- Detached-ready navigation styles -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css"
+>
+
+<!-- Pagination styles -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/pagination-fix.css"
+>
+
+<!-- Splide styles -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+>
+
+<!-- Copyright year -->
+<script
+  src="https://assets.pattern.com/7cJd5G9CEvk9sBqEvyOPG"
+  defer
+></script>
+
+<!-- Finsweet Social Share -->
+<script
+  src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-socialshare@1/socialshare.js"
+  defer
+></script>
+
+<!-- Finsweet Attributes -->
+<script
+  type="module"
+  src="https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js"
+  fs-scrolldisable
+  fs-list
+  async
+></script>
+
+<!-- Restore Webflow interactions after CMS Slider initializes -->
+<script>
+  window.fsAttributes = window.fsAttributes || [];
+
+  window.fsAttributes.push([
+    "cmsslider",
+    function () {
+      if (!window.Webflow) return;
+
+      try {
+        window.Webflow.destroy();
+        window.Webflow.ready();
+
+        var interactions = window.Webflow.require("ix2");
+
+        if (interactions && typeof interactions.init === "function") {
+          interactions.init();
+        }
+
+        document.dispatchEvent(new Event("readystatechange"));
+      } catch (error) {
+        console.error(
+          "Unable to restore Webflow interactions after CMS Slider:",
+          error
+        );
+      }
+    }
+  ]);
+</script>
+
+<!-- Video popup -->
+<script
+  src="https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/media/video-popup.js"
+  defer
+></script>
+
+<!--
+  Marketo CSS intentionally remains inside the UK Custom Code component.
+  Do not load another Marketo stylesheet here.
+-->
+

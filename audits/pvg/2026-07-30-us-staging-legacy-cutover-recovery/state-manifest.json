@@ -1,0 +1,141 @@
+{
+  "capturedAt": "2026-07-30T16:39:40Z",
+  "scope": "Pattern US saved Designer state before PVG 0.2.4 legacy cutover",
+  "site": {
+    "id": "67d327c7ca817d803c46c86b",
+    "displayName": "Pattern",
+    "shortName": "pattern-us",
+    "webflowSubdomain": "https://pattern-us.webflow.io",
+    "lastUpdated": "2026-07-30T16:38:01.322Z",
+    "lastPublishedToWebflowSubdomain": "2026-07-30T14:07:07.877Z",
+    "customDomains": [
+      {
+        "url": "www.pattern.com",
+        "lastPublished": "2026-07-30T14:42:00.313Z"
+      },
+      {
+        "url": "pattern.com",
+        "lastPublished": "2026-07-30T14:42:00.313Z"
+      }
+    ]
+  },
+  "portalStudio": {
+    "pageId": "6a0632901e177a54d8b73a17",
+    "route": "/products/the-portal-studio",
+    "componentName": "Slider / Images",
+    "componentId": "add325b2-98f6-2022-6cd2-f5c46e4b47a2",
+    "componentInstanceCount": 2,
+    "componentCssEmbedId": "add325b2-98f6-2022-6cd2-f5c46e4b47a9",
+    "componentJsEmbedId": "add325b2-98f6-2022-6cd2-f5c46e4b47aa"
+  },
+  "versionRoots": [
+    {
+      "page": "Login Portal",
+      "pageId": "67d327c7ca817d803c46c97a",
+      "classes": ["page_main", "cc-v2"]
+    },
+    {
+      "page": "News Template",
+      "pageId": "67d327c7ca817d803c46ca99",
+      "classes": ["page_main", "cc-v2", "is-bkg-white"]
+    },
+    {
+      "page": "Topics Template",
+      "pageId": "67d327c7ca817d803c46cab9",
+      "classes": ["page_main", "cc-v2", "is-bkg-white"]
+    },
+    {
+      "page": "Reports Template",
+      "pageId": "67d327c7ca817d803c46cacf",
+      "classes": ["page_main", "cc-v2", "is-bkg-white"]
+    },
+    {
+      "page": "Partner Success Stories",
+      "pageId": "67d327c7ca817d803c46cad7",
+      "classes": ["page_main", "cc-v2"]
+    },
+    {
+      "page": "Whitepapers Template",
+      "pageId": "6894c8a639fa3a2fde5d413f",
+      "classes": ["page_main", "cc-v2", "is-bkg-white"]
+    },
+    {
+      "page": "Marketplace Performance Review Request",
+      "pageId": "69c580f31898bcb4f86adeb7",
+      "classes": ["page_main", "cc-v2"]
+    }
+  ],
+  "excludedPage": {
+    "page": "International Expansion Videos",
+    "pageId": "6a54f3bced5874fe1272943f",
+    "route": "/resources/international-expansion-videos",
+    "classes": ["page_main"],
+    "metadataAtCapture": {
+      "archived": false,
+      "draft": false,
+      "publishedPath": "/resources/international-expansion-videos",
+      "lastUpdated": "2026-07-28T06:39:31.129Z"
+    },
+    "note": "The first staging publish proved this page remained live and indexed. Its saved state was corrected after the crawl."
+  },
+  "snapshotSha256": {
+    "site-head-before.html": "3468c273dbe6664af735769dd98fe10755778b49fd22fd1170454b058e992f85",
+    "site-footer-before.html": "ff40a49b3aa4a99685c729976df2e77f5a85e20c6c2d05a06df7c77ed4b15cbf",
+    "portal-head-before.html": "2522430d0f3ba79d75f46d37392da807c7f81449147b63193f7883ef7b3c3b5d",
+    "portal-footer-before.html": "464d4627bc9964372f2238bbdba8f53dcfec03dd2ac2231c90f75c3cb201a0af",
+    "slider-images-css-before.html": "9ce8cab1394f3b6488f902002bbf0e3e4c5ca6a7181db13f353538d5d073b084",
+    "slider-images-js-before.html": "3833772a254ce47b0232945be00b954d29733c85cc29f8eb74708c96a61d6442"
+  },
+  "savedCutover": {
+    "verifiedAt": "2026-07-30T16:44:29Z",
+    "published": true,
+    "stagingPublishedAt": "2026-07-30T16:54:46Z",
+    "publishTarget": "pattern-us.webflow.io only",
+    "pvgVersion": "0.2.4",
+    "legacyPolicy": "gateway",
+    "runtimeCommit": "7bb2b6f2fc7ae258285fbafcd643e717b64009e1",
+    "exactReadback": {
+      "siteHead": true,
+      "siteFooter": true,
+      "portalFooter": true,
+      "sliderImagesJs": true
+    },
+    "candidateSha256": {
+      "site-head-after.html": "cd7d931b2196c17d43dc653bf1541a8e7979ec58f8d05e2558f6e033b42db07e",
+      "site-footer-after.html": "2b392bb9f8b57534b40273809daf92617859728155c1e5989e362e9a36889e10",
+      "portal-footer-after.html": "3425dfd2437d9626160a028378534e5c72f004b51ea01d74c04cdc23e0a92a64",
+      "slider-images-js-after.html": "c4c124cd1a330ea4fcc6949074f7fe1e6802215dad5dbce46fe7dc53b8d3c5a6"
+    }
+  },
+  "internationalCorrection": {
+    "verifiedAt": "2026-07-30T17:11:47Z",
+    "draft": true,
+    "includeInSitemap": false,
+    "publishedToStaging": true,
+    "stagingPublishedAt": "2026-07-30T17:16:13Z",
+    "finalRouteStatus": 404,
+    "finalSitemapStatus": "absent",
+    "verificationFailures": []
+  },
+  "caseStudyTemplateCorrection": {
+    "templatePageId": "68224e2eae021c5c842dd3c5",
+    "previousRootClasses": ["page_main", "cc-v1"],
+    "currentRootClasses": ["page_main", "cc-v2"],
+    "publishedToStaging": true,
+    "stagingPublishedAt": "2026-07-30T17:30:53Z",
+    "publishedTemplateRoutes": 23,
+    "representativeRoutes": [
+      "/case-study/gaia",
+      "/case-study/flannels"
+    ],
+    "pvgDetection": "v2",
+    "verificationFailures": []
+  },
+  "restoreOrder": [
+    "Restore site-head-before.html and site-footer-before.html.",
+    "Restore portal-head-before.html and portal-footer-before.html.",
+    "Restore slider-images-css-before.html and slider-images-js-before.html together.",
+    "Restore version roots from this manifest only if later edits change them.",
+    "Publish only the Webflow staging subdomain, then rerun the representative regression matrix."
+  ]
+}
