@@ -339,15 +339,6 @@ await run('Library V3 popup recognizes prefixed and unprefixed Video Player root
 
 await run('V3 video popup preserves explicit consent and resumes after approval', async () => {
   const page = await browser.newPage();
-  await page.route(
-    'https://runtime.test/webflow/pattern.com/scripts/media/video-popup.js',
-    (route) =>
-      route.fulfill({
-        contentType: 'application/javascript',
-        headers: { 'access-control-allow-origin': '*' },
-        body: videoPopupSource,
-      }),
-  );
   await page.setContent(`
     <main class="page_main">
       <div class="pattern-library-v3--video_player_wrap">
@@ -382,14 +373,8 @@ await run('V3 video popup preserves explicit consent and resumes after approval'
         listeners.get(name).push(listener);
       },
     };
-    window.PatternRuntimeConfig = {
-      profile: 'library-v3',
-      mode: 'active',
-      legacyPolicy: 'gateway',
-      baseUrl: 'https://runtime.test/webflow/pattern.com/scripts/runtime/',
-    };
   });
-  await page.addScriptTag({ content: runtimeSource });
+  await page.addScriptTag({ content: videoPopupSource });
   await page.waitForFunction(() => window.PatternVideoPopup?.version === '1.1.3');
   await page.locator('[data-video-player-open]').click();
   let state = await page.evaluate(() => {
