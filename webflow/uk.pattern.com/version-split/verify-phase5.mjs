@@ -127,6 +127,10 @@ try {
         <div id="wrapper" data-wf--content-wrapper--variant="center-alignment">
           <p id="child">Test</p>
         </div>
+        <div class="article-rich-text w-richtext">
+          <h2 id="article-heading">Article heading</h2>
+          <p id="article-paragraph">Article paragraph</p>
+        </div>
       </main>
     </body>`);
   await behaviorPage.addStyleTag({
@@ -146,13 +150,21 @@ try {
       const bodyStyle = getComputedStyle(document.body);
       const wrapperStyle = getComputedStyle(document.querySelector("#wrapper"));
       const childStyle = getComputedStyle(document.querySelector("#child"));
+      const articleHeadingStyle = getComputedStyle(
+        document.querySelector("#article-heading")
+      );
+      const articleParagraphStyle = getComputedStyle(
+        document.querySelector("#article-paragraph")
+      );
       return {
         columns: bodyStyle.getPropertyValue("--site--column-count").trim(),
         sharedGridAlias: bodyStyle.getPropertyValue("--grid-12").trim(),
         v1TypeAlias: bodyStyle.getPropertyValue("--d1--font-size").trim(),
         wrapperTextAlign: wrapperStyle.textAlign,
         wrapperJustifyItems: wrapperStyle.justifyItems,
-        childTextAlign: childStyle.textAlign
+        childTextAlign: childStyle.textAlign,
+        articleHeadingMarginBottom: articleHeadingStyle.marginBottom,
+        articleParagraphMarginBottom: articleParagraphStyle.marginBottom
       };
     }, version);
   }
@@ -270,6 +282,14 @@ try {
         markerV2.v1TypeAlias === ""
     },
     {
+      check: "V1 article spacing activates only on V1",
+      passed:
+        markerV1.articleParagraphMarginBottom === "30px" &&
+        markerV1.articleHeadingMarginBottom === "20px" &&
+        markerV2.articleParagraphMarginBottom !== "30px" &&
+        markerV2.articleHeadingMarginBottom !== "20px"
+    },
+    {
       check: "V2 alignment activates only on V2",
       passed:
         markerV2.wrapperTextAlign === "center" &&
@@ -282,7 +302,7 @@ try {
       check: "V1 marker loads Shared and V1 runtimes without a pilot marker",
       passed:
         loaderV1?.phase === 5 &&
-        loaderV1?.release === "0.5.2" &&
+        loaderV1?.release === "0.5.3" &&
         loaderV1?.status === "ready" &&
         loaderV1?.version === "v1" &&
         loaderV1.loaded.includes("shared-runtime") &&
@@ -293,7 +313,7 @@ try {
       check: "V2 marker loads Shared and V2 runtimes without a pilot marker",
       passed:
         loaderV2?.phase === 5 &&
-        loaderV2?.release === "0.5.2" &&
+        loaderV2?.release === "0.5.3" &&
         loaderV2?.status === "ready" &&
         loaderV2?.version === "v2" &&
         loaderV2.loaded.includes("shared-runtime") &&
@@ -327,11 +347,11 @@ try {
         loaderDuplicate?.loaded.includes("v1-runtime")
     },
     {
-      check: "Designer components reference the immutable 0.5.2 release",
+      check: "Designer components reference the immutable 0.5.3 release",
       passed:
-        sharedComponent.includes("@uk-version-split-v0.5.2/") &&
-        v1Component.includes("@uk-version-split-v0.5.2/") &&
-        v2Component.includes("@uk-version-split-v0.5.2/")
+        sharedComponent.includes("@uk-version-split-v0.5.3/") &&
+        v1Component.includes("@uk-version-split-v0.5.3/") &&
+        v2Component.includes("@uk-version-split-v0.5.3/")
     },
     {
       check: "Permanent loader contains no Phase 4 pilot gate",

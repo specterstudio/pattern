@@ -471,3 +471,16 @@ padding-bottom: 0.5rem;
   --theme--t2: color-mix(in srgb, var(--_default-2---swatch--white) 12%, var(--_default-2---swatch--transparent));
   --theme--t3: color-mix(in srgb, var(--_default-2---swatch--white) 40%, var(--_default-2---swatch--transparent));
 }
+
+/* V1 article Rich Text spacing. */
+:where(body:is([data-pattern-version="v1"], :has([data-pattern-version="v1"])))
+  .article-rich-text.w-richtext
+  > p {
+  margin-bottom: 30px;
+}
+
+:where(body:is([data-pattern-version="v1"], :has([data-pattern-version="v1"])))
+  .article-rich-text.w-richtext
+  > :is(h1, h2, h3, h4, h5, h6) {
+  margin-bottom: 20px;
+}

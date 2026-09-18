@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "phase": 5,
-  "release": "0.5.2",
-  "tag": "uk-version-split-v0.5.2",
+  "release": "0.5.3",
+  "tag": "uk-version-split-v0.5.3",
   "active": true,
   "pilotOnly": false,
   "rolloutReady": true,

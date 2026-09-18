@@ -31,7 +31,7 @@
   function block(reason) {
     global.__patternVersionSplit = {
       phase: 5,
-      release: "0.5.2",
+      release: "0.5.3",
       status: "blocked",
       started: false,
       version: null,
@@ -44,7 +44,7 @@
     document.dispatchEvent(new CustomEvent("pattern:version-split-blocked", {
       detail: {
         phase: 5,
-        release: "0.5.2",
+        release: "0.5.3",
         reason: reason,
         markerValues: markerValues.slice()
       }
@@ -71,7 +71,7 @@
   var packageRoot = new URL("../", currentScript.src);
   var state = global.__patternVersionSplit = {
     phase: 5,
-    release: "0.5.2",
+    release: "0.5.3",
     status: "loading",
     started: true,
     version: version,
@@ -219,7 +219,7 @@
       document.dispatchEvent(new CustomEvent("pattern:version-split-ready", {
         detail: {
           phase: 5,
-          release: "0.5.2",
+          release: "0.5.3",
           status: state.status,
           version: version,
           loaded: state.loaded.slice(),

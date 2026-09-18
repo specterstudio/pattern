@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-29T15:19:57.384Z",
+  "generatedAt": "2026-08-06T14:44:26.599Z",
   "phase": 5,
-  "release": "0.5.2",
-  "tag": "uk-version-split-v0.5.2",
+  "release": "0.5.3",
+  "tag": "uk-version-split-v0.5.3",
   "active": true,
   "pilotOnly": false,
   "rolloutReady": true,
@@ -232,8 +232,8 @@
     },
     {
       "path": "css/v1.css",
-      "bytes": 22819,
-      "sha256": "b04367e0479940a2266e7b307478b6fcd330ac979945e75c15cc997c95e2ea48"
+      "bytes": 23173,
+      "sha256": "af70a6c8ef1b42126e793edf7cc581eca74ae5ea0d3fe0690f3f7c43b14055ca"
     },
     {
       "path": "css/v2.css",
@@ -318,7 +318,7 @@
     {
       "path": "js/loader.js",
       "bytes": 6760,
-      "sha256": "c13fee5a468583d3831e824fc237bb23f3b90dd22351a5d3bdbe0d76566e053a"
+      "sha256": "2aee24f7f3b0c5acc9852fce717d888c35061a04b7e37ae0f5a1e31011cb0bf4"
     },
     {
       "path": "js/shared.js",
@@ -338,17 +338,17 @@
     {
       "path": "components/shared.html",
       "bytes": 516,
-      "sha256": "5df74cc0ab18f9ac5afcf3484f2ce4aeba89ec30770f83070d54d89007a79af0"
+      "sha256": "8ab9d411a4f8809580a8ff9a0f99a5598ec7b00a30c4454df4c299e81c606697"
     },
     {
       "path": "components/v1.html",
       "bytes": 274,
-      "sha256": "6a497ab8a5d9c5be61522ba34d7690f725289ac4648abefa120a34abb94613c8"
+      "sha256": "9b084f3f07ba12e54b11e185e6c983a83abec8575c9602102f6f1444dbfd51a5"
     },
     {
       "path": "components/v2.html",
       "bytes": 274,
-      "sha256": "a5e3e88590195c10515eb10f746ad2812183b5e96de07773ef783be3a6253eee"
+      "sha256": "361b40b2a0a8847fe7536e17dcf50bc992460c082b5dcacb16a6f71390889986"
     },
     {
       "path": "external-assets.json",
@@ -358,7 +358,7 @@
     {
       "path": "manifest.json",
       "bytes": 1828,
-      "sha256": "7256eecace0daa60fab68005802650598d82b336cff4004806ceaa3e97ae324d"
+      "sha256": "55071985bbddf97db0f978a0fe83d3959c0e4fde85cbdafa6ae226e6079d0622"
     }
   ]
 }

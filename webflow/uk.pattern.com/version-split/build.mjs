@@ -12,8 +12,8 @@ const auditRoot = resolve(
 
 const release = Object.freeze({
   phase: 5,
-  version: "0.5.2",
-  tag: "uk-version-split-v0.5.2"
+  version: "0.5.3",
+  tag: "uk-version-split-v0.5.3"
 });
 
 const cdnRoot = `https://cdn.jsdelivr.net/gh/specterstudio/pattern@${release.tag}/webflow/uk.pattern.com/version-split`;
@@ -129,6 +129,19 @@ const sharedFluidLegacyAliases = `/* Shared fluid aliases used by unsuffixed glo
   --_buttons---button--font-size: clamp(0.8125rem, 0.7892857142857143rem + 0.09523809523809523vw, 0.875rem);
 }`;
 
+const v1ArticleRichTextSpacing = `/* V1 article Rich Text spacing. */
+:where(body:is([data-pattern-version="v1"], :has([data-pattern-version="v1"])))
+  .article-rich-text.w-richtext
+  > p {
+  margin-bottom: 30px;
+}
+
+:where(body:is([data-pattern-version="v1"], :has([data-pattern-version="v1"])))
+  .article-rich-text.w-richtext
+  > :is(h1, h2, h3, h4, h5, h6) {
+  margin-bottom: 20px;
+}`;
+
 const sharedCss = [
   banner(
     "Shared foundation",
@@ -156,7 +169,8 @@ const v1Css = [
       lineRange("v1Bridge", 240, 570),
       lineRange("v1Bridge", 595, 715)
     ].join("\n\n")
-  )
+  ),
+  v1ArticleRichTextSpacing
 ].join("\n\n");
 
 const v2Css = [
