@@ -225,6 +225,8 @@ try {
   await runtimePage.evaluate(() => {
     window.PatternRuntimeConfig = {
       baseUrl: 'https://runtime.test/webflow/pattern.com/scripts/runtime/',
+      profile: 'library-v3',
+      mode: 'active',
     };
   });
   await runtimePage.addScriptTag({ content: runtimeSource });
@@ -242,7 +244,7 @@ try {
       .modules.find((candidate) => candidate.id === 'v3-heading-text-reveal'),
     initialized: document.querySelectorAll('[data-pattern-heading-reveal-initialized]').length,
   }));
-  assert.equal(runtime.version, '0.3.0');
+  assert.equal(runtime.version, '1.0.0');
   assert.equal(runtime.module.matched, true);
   assert.equal(runtime.module.status, 'ready');
   assert.equal(runtime.initialized, 2);
