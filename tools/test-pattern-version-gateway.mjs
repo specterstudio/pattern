@@ -1168,7 +1168,7 @@ try {
   await consentGatedPage.waitForFunction(
     () => document.querySelector('dialog[data-video-player-dialog]')?.open === true,
   );
-  assert.equal(await consentGatedPage.evaluate(() => window.PatternVideoPopup.version), '1.1.3');
+  assert.equal(await consentGatedPage.evaluate(() => window.PatternVideoPopup.version), '1.1.4');
   await consentGatedPage.close();
 
   const failedModulePage = await createScenario({

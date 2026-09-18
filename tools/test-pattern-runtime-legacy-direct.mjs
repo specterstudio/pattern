@@ -285,7 +285,7 @@ await run('Consumer backport repairs popup and defers preview media', async () =
   await page.waitForFunction(
     () =>
       window.PatternRuntime?.version === '0.2.1' &&
-      window.PatternVideoPopup?.version === '1.1.3' &&
+      window.PatternVideoPopup?.version === '1.1.4' &&
       window.PatternVideoPreview?.version === '1.0.0',
   );
   let state = await page.evaluate(() => {
