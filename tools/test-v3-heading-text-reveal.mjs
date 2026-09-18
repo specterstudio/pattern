@@ -261,7 +261,7 @@ try {
     };
   });
   await nonH1RuntimePage.addScriptTag({ content: runtimeSource });
-  await nonH1RuntimePage.waitForFunction(() => window.PatternRuntime?.version === '0.3.0');
+  await nonH1RuntimePage.waitForFunction(() => window.PatternRuntime?.version === '1.0.0');
   const nonH1Runtime = await nonH1RuntimePage.evaluate(() => ({
     module: window.PatternRuntime
       .inspect()
