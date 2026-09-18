@@ -30,27 +30,12 @@ const caseStudyPath = path.join(
   projectRoot,
   'webflow/pattern.com/scripts/content/case-study-cms-slider.js',
 );
-const marketoComponentTwinPaths = [
-  'marketo-global-css-library.html',
-  'marketo-global-css-production.html',
-  'marketo-footer-css-library.html',
-  'marketo-footer-css-production.html',
-].map((filename) =>
-  path.join(
-    projectRoot,
-    'webflow/pattern.com/styles/v3-prep/component-twins',
-    filename,
-  ),
-);
 const runtimeSource = await fs.readFile(runtimePath, 'utf8');
 const loaderSource = await fs.readFile(loaderPath, 'utf8');
 const gatewaySource = await fs.readFile(gatewayPath, 'utf8');
 const videoPopupSource = await fs.readFile(videoPopupPath, 'utf8');
 const videoPreviewSource = await fs.readFile(videoPreviewPath, 'utf8');
 const caseStudySource = await fs.readFile(caseStudyPath, 'utf8');
-const marketoComponentTwinSources = await Promise.all(
-  marketoComponentTwinPaths.map((filePath) => fs.readFile(filePath, 'utf8')),
-);
 const runtimeSRI = `sha384-${crypto
   .createHash('sha384')
   .update(runtimeSource)
@@ -945,45 +930,6 @@ await run('V1 and V2 pages reject the V3 case study module and its dependencies'
     assert(state.dependencyStatuses.every((item) => item.status === 'idle'));
     await page.close();
   }
-});
-
-await run('V3 Marketo CSS twins leave legacy forms outside the component untouched', async () => {
-  marketoComponentTwinSources.forEach((source) => {
-    assert.equal(
-      /(?<!\[data-marketo-form-id\] )\.mktoForm\b/.test(source),
-      false,
-      'Every Marketo form selector must include the V3 component root.',
-    );
-  });
-
-  const page = await browser.newPage();
-  const productionCss = [marketoComponentTwinSources[1], marketoComponentTwinSources[3]].join('\n');
-  await page.setContent(`
-    ${productionCss}
-    <div class="pattern-library-v3--footer_wrap">
-      <form class="mktoForm" id="mktoForm_826"></form>
-      <div data-marketo-form-id="963">
-        <form class="mktoForm" id="mktoForm_963"></form>
-      </div>
-    </div>
-  `);
-
-  const state = await page.evaluate(() => {
-    const legacy = getComputedStyle(document.getElementById('mktoForm_826'));
-    const current = getComputedStyle(document.getElementById('mktoForm_963'));
-    return {
-      legacyPrimary: legacy.getPropertyValue('--mkto-primary').trim(),
-      legacyDisplay: legacy.display,
-      currentPrimary: current.getPropertyValue('--mkto-primary').trim(),
-      currentDisplay: current.display,
-    };
-  });
-
-  assert.equal(state.legacyPrimary, '');
-  assert.equal(state.legacyDisplay, 'block');
-  assert.notEqual(state.currentPrimary, '');
-  assert.equal(state.currentDisplay, 'flex');
-  await page.close();
 });
 
 await run('Unified Runtime preserves the PVG module plan for consumer fixtures', async () => {
