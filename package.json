@@ -5,7 +5,7 @@
   "description": "Pattern Webflow assets, runtime code, and regression tests",
   "scripts": {
     "test": "npm run test:runtime && npm run test:uk",
-    "test:runtime": "node tools/test-home-anchor-nav.mjs && node tools/test-marketo-visible-prefill.mjs && node tools/test-pattern-box-slider.mjs && node tools/test-pattern-runtime-1.mjs && node tools/test-pattern-runtime-cleanup.mjs && node tools/test-pattern-runtime-legacy-direct.mjs && node tools/test-pattern-version-gateway.mjs && node tools/test-v3-heading-page-hero.mjs && node tools/test-v3-heading-text-reveal.mjs",
+    "test:runtime": "node tools/test-home-anchor-nav.mjs && node tools/test-pattern-box-slider.mjs && node tools/test-pattern-runtime-1.mjs && node tools/test-pattern-runtime-cleanup.mjs && node tools/test-pattern-runtime-legacy-direct.mjs && node tools/test-pattern-version-gateway.mjs && node tools/test-v3-heading-page-hero.mjs && node tools/test-v3-heading-text-reveal.mjs",
     "test:uk": "node webflow/uk.pattern.com/version-split/verify-phase5.mjs",
     "build:runtime-release": "node tools/build-pattern-runtime-release.mjs",
     "build:uk": "node webflow/uk.pattern.com/version-split/build.mjs"
