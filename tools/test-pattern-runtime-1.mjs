@@ -375,7 +375,7 @@ await run('V3 video popup preserves explicit consent and resumes after approval'
     };
   });
   await page.addScriptTag({ content: videoPopupSource });
-  await page.waitForFunction(() => window.PatternVideoPopup?.version === '1.1.3');
+  await page.waitForFunction(() => window.PatternVideoPopup?.version === '1.1.4');
   await page.locator('[data-video-player-open]').click();
   let state = await page.evaluate(() => {
     const dialog = document.querySelector('dialog');
