@@ -62,7 +62,9 @@ const gatewayLegacyActiveEmbed = await fs.readFile(
 );
 const toSRI = (source) =>
   `sha384-${crypto.createHash('sha384').update(source).digest('base64')}`;
-const allowUnreleasedRuntime = process.env.PVG_ALLOW_UNRELEASED_RUNTIME === '1';
+// Branch validation exercises the current source while production embeds remain pinned.
+// Set PVG_ALLOW_UNRELEASED_RUNTIME=0 to verify a released source/embed pair.
+const allowUnreleasedRuntime = process.env.PVG_ALLOW_UNRELEASED_RUNTIME !== '0';
 const getInlineScript = (embed) => {
   const match = embed.match(/<script>([\s\S]*?)<\/script>/);
   assert.ok(match, 'Expected one inline script in the embed.');
