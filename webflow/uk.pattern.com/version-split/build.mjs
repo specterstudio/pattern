@@ -5,9 +5,9 @@ import { fileURLToPath } from "node:url";
 
 const packageRoot = dirname(fileURLToPath(import.meta.url));
 const repoRoot = resolve(packageRoot, "../../..");
-const auditRoot = resolve(
+const sourceRoot = resolve(
   repoRoot,
-  "audits/pattern-uk-version-split/2026-07-28/rollback/custom-code-active"
+  "webflow/uk.pattern.com/version-split/source"
 );
 
 const release = Object.freeze({
@@ -19,10 +19,10 @@ const release = Object.freeze({
 const cdnRoot = `https://cdn.jsdelivr.net/gh/specterstudio/pattern@${release.tag}/webflow/uk.pattern.com/version-split`;
 
 const sourcePaths = {
-  lumos: resolve(auditRoot, "01-text-style.html"),
-  v1Bridge: resolve(auditRoot, "02-base.html"),
-  siteOverrides: resolve(auditRoot, "03-color.html"),
-  marketo: resolve(auditRoot, "04-responsive.html")
+  lumos: resolve(sourceRoot, "01-text-style.html"),
+  v1Bridge: resolve(sourceRoot, "02-base.html"),
+  siteOverrides: resolve(sourceRoot, "03-color.html"),
+  marketo: resolve(sourceRoot, "04-responsive.html")
 };
 
 const sources = Object.fromEntries(

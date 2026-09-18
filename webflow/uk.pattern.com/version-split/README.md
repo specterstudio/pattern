@@ -64,8 +64,8 @@ node webflow/uk.pattern.com/version-split/build.mjs
 node webflow/uk.pattern.com/version-split/verify-phase5.mjs
 ```
 
-The build reads the exact Phase 1 rollback captures, regenerates the source
-files, and writes hashes and structural checks to `validation.json`.
+The build reads the retained source inputs under `source/`, regenerates the
+browser assets, and writes hashes and structural checks to `validation.json`.
 
 Current validation:
 
