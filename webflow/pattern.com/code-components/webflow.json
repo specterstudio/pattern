@@ -1,0 +1,11 @@
+{
+  "library": {
+    "name": "Pattern Code Components",
+    "components": [
+      "./src/**/*.webflow.@(js|jsx|mjs|ts|tsx)"
+    ],
+    "bundleConfig": "./webpack.webflow.cjs",
+    "description": "Pattern's shared React code components for Webflow.",
+    "id": "pattern-code-components"
+  }
+}

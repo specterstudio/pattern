@@ -1,0 +1,109 @@
+<script>
+(function () {
+  var script = document.currentScript;
+  var component = script && (script.closest("[data-slider='component']") || (script.parentElement && script.parentElement.parentElement));
+  if (!component) return;
+
+
+  // Configure the existing bound initializer through Swiper's public module hook.
+  // The initializer still owns speed, gestures, controls and responsive bindings.
+  function installLoopModule() {
+    if (!window.Swiper || window.Swiper.__patternLoopModule) return;
+    window.Swiper.__patternLoopModule = true;
+    window.Swiper.use(function ({ swiper, on }) {
+      on("beforeInit", function () {
+        var root = swiper.el.closest(".slider_wrap");
+        var marker = root && root.querySelector("[data-slider-loop]");
+        if (!marker || !swiper.wrapperEl) return;
+        // Alt's authored content controller owns its transitions and loop setting.
+        if (root.querySelector('[class*="box_slider_wrap"]')) return;
+        var count = swiper.wrapperEl.children.length;
+        var visible = parseFloat(getComputedStyle(swiper.wrapperEl).getPropertyValue("--slide-count")) || 1;
+        var loop = String(marker.getAttribute("data-slider-loop")).toLowerCase() === "true" && count > visible;
+        root.setAttribute("data-pattern-slider-looping", String(loop));
+        swiper.params.loop = loop;
+        swiper.params.loopedSlides = count;
+        swiper.params.loopAdditionalSlides = 0;
+        swiper.params.watchOverflow = true;
+        var pendingIndex = null;
+        on("beforeResize", function () {
+          var visibleNow = parseFloat(getComputedStyle(swiper.wrapperEl).getPropertyValue("--slide-count")) || 1;
+          var enabled = String(marker.getAttribute("data-slider-loop")).toLowerCase() === "true" && count > visibleNow;
+          if (enabled === swiper.params.loop) return;
+          pendingIndex = swiper.realIndex;
+          if (swiper.params.loop) swiper.loopDestroy();
+          swiper.params.loop = enabled;
+          root.setAttribute("data-pattern-slider-looping", String(enabled));
+          if (enabled) swiper.loopCreate();
+        });
+        on("resize", function () {
+          if (pendingIndex === null) return;
+          swiper.update();
+          if (swiper.params.loop) swiper.slideToLoop(pendingIndex, 0, false);
+          else swiper.slideTo(pendingIndex, 0, false);
+          pendingIndex = null;
+        });
+      });
+    });
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", installLoopModule, { once: true });
+  } else {
+    installLoopModule();
+  }
+
+  var aliases = [
+    'slider_wrap',
+    'slider_element',
+    'slider_list',
+    'slider_bullet_list',
+    'slider_button_layout',
+    'u-display-contents',
+    'swiper',
+    'swiper-wrapper'
+  ];
+
+  var elements = [component].concat(Array.prototype.slice.call(component.querySelectorAll('[class]')));
+
+  elements.forEach(function (element) {
+    aliases.forEach(function (alias) {
+      if (element.classList.contains(alias)) return;
+
+      var suffix = '--' + alias;
+      var matches = Array.prototype.some.call(element.classList, function (className) {
+        return className.slice(-suffix.length) === suffix;
+      });
+
+      if (matches) element.classList.add(alias);
+    });
+  });
+
+  var sliderList = component.querySelector('.slider_list');
+  if (!sliderList) return;
+
+  function isDisplayContents(element) {
+    if (element.classList.contains('u-display-contents')) return true;
+
+    return Array.prototype.some.call(element.classList, function (className) {
+      return className.slice(-'--u-display-contents'.length) === '--u-display-contents';
+    });
+  }
+
+  var changed = true;
+
+  while (changed) {
+    changed = false;
+
+    Array.prototype.slice.call(sliderList.children).forEach(function (child) {
+      if (!isDisplayContents(child)) return;
+
+      while (child.firstChild) {
+        sliderList.insertBefore(child.firstChild, child);
+      }
+
+      child.remove();
+      changed = true;
+    });
+  }
+})();
+</script>

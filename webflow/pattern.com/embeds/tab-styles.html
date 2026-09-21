@@ -1,0 +1,136 @@
+<style>
+:where([class*="tab_content_list"])[data-preview="false"] > :not(.w-dyn-list, [class*="u-display-contents"]),
+:where([class*="tab_content_list"])[data-preview="false"] > .w-dyn-list > * > * > *,
+:where([class*="tab_content_list"])[data-preview="false"] > [class*="u-display-contents"] > .w-dyn-list > * > * > *,
+:where([class*="tab_content_list"])[data-preview="false"] > [class*="u-display-contents"] > [class*="u-display-contents"] > .w-dyn-list > * > * > *,
+:where([class*="tab_content_list"])[data-preview="false"] > [class*="u-display-contents"] > :not(.w-dyn-list, [class*="u-display-contents"]),
+:where([class*="tab_content_list"])[data-preview="false"] > [class*="u-display-contents"] > [class*="u-display-contents"] > :not(.w-dyn-list, [class*="u-display-contents"]) {
+  display: none;
+}
+
+:where([class*="tab_content_list"]) > :first-child:not(.w-dyn-list, [class*="u-display-contents"]),
+:where([class*="tab_content_list"]) > .w-dyn-list > * > :first-child > *,
+:where([class*="tab_content_list"]) > [class*="u-display-contents"] > .w-dyn-list > * > :first-child > *,
+:where([class*="tab_content_list"]) > [class*="u-display-contents"] > [class*="u-display-contents"] > .w-dyn-list > * > :first-child > *,
+:where([class*="tab_content_list"]) > [class*="u-display-contents"] > :not(.w-dyn-list, [class*="u-display-contents"]):first-child,
+:where([class*="tab_content_list"]) > [class*="u-display-contents"] > [class*="u-display-contents"] > :not(.w-dyn-list, [class*="u-display-contents"]):first-child {
+  display: block;
+}
+
+.wf-design-mode :where([class*="tab_button_list"]) > :first-child:not(.w-dyn-list, [class*="u-display-contents"]),
+.wf-design-mode :where([class*="tab_button_list"]) > .w-dyn-list > * > :first-child > *,
+.wf-design-mode :where([class*="tab_button_list"]) > [class*="u-display-contents"] > :first-child:not(.w-dyn-list, [class*="u-display-contents"]),
+.wf-design-mode :where([class*="tab_button_list"]) > [class*="u-display-contents"] > [class*="u-display-contents"] > :first-child:not(.w-dyn-list, [class*="u-display-contents"]),
+.wf-design-mode :where([class*="tab_button_list"]) > [class*="u-display-contents"] > .w-dyn-list > * > :first-child > *,
+.wf-design-mode :where([class*="tab_button_list"]) > [class*="u-display-contents"] > [class*="u-display-contents"] > .w-dyn-list > * > :first-child > * {
+  --pattern-library-v3_state---true: 0;
+  --pattern-library-v3_state---false: 1;
+  --_state---true: 0;
+  --_state---false: 1;
+}
+
+:where([class*="tab_button_list"]):has([data-wf--tab-link--variant="link"]) {
+  gap: 0rem;
+}
+
+/* Horizontal Variant */
+@container (width > 50em) {
+  [data-wf--tab--variant="horizontal"] :where([class*="tab_button_list"]) {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+/* Pi Tab Link Hover */
+[class*="pi_tabs_icon_comp"] {
+  transition: width 300ms ease;
+  will-change: width;
+}
+
+[class*="pi_tabs_tab_wrap"]:hover [class*="pi_tabs_tab_icon_slot"] [class*="pi_tabs_icon_comp"] {
+  width: 2.625rem;
+  height: 2.625rem;
+}
+
+/* Pi Tab Link States */
+:is(
+  [class~="pi_tab_link_wrap"],
+  [class*="--pi_tab_link_wrap "],
+  [class$="--pi_tab_link_wrap"]
+) {
+  --pi-tab-text-rest: color-mix(
+    in srgb,
+    var(--pattern-library-v3---swatch--neutral-900, var(--swatch--neutral-900)) 70%,
+    transparent
+  );
+
+  background-color: color-mix(
+    in srgb,
+    transparent calc(
+      100% * var(--pattern-library-v3_state---true, var(--_state---true))
+    ),
+    var(--pattern-library-v3---swatch--neutral-0, var(--swatch--neutral-0)) calc(
+      100% * var(--pattern-library-v3_state---false, var(--_state---false))
+    )
+  );
+
+  border-color: color-mix(
+    in srgb,
+    transparent calc(
+      100% * max(
+        var(--pattern-library-v3_trigger---on, var(--_trigger---on)),
+        var(--pattern-library-v3_state---false, var(--_state---false))
+      )
+    ),
+    var(--pattern-library-v3_theme---border-strong, var(--_theme---border-strong)) calc(
+      100% * min(
+        var(--pattern-library-v3_trigger---off, var(--_trigger---off)),
+        var(--pattern-library-v3_state---true, var(--_state---true))
+      )
+    )
+  );
+
+  transition:
+    background-color 200ms ease,
+    border-color 200ms ease;
+}
+
+:is(
+  [class~="pi_tab_link_text"],
+  [class*="--pi_tab_link_text "],
+  [class$="--pi_tab_link_text"]
+) {
+  color: color-mix(
+    in srgb,
+    var(--pi-tab-text-rest) calc(
+      100% * var(--pattern-library-v3_state---true, var(--_state---true))
+    ),
+    var(--pattern-library-v3_theme---text, var(--_theme---text)) calc(
+      100% * var(--pattern-library-v3_state---false, var(--_state---false))
+    )
+  );
+
+  transition: color 200ms ease;
+}
+
+:is(
+  [class~="pi_tab_link_wrap"],
+  [class*="--pi_tab_link_wrap "],
+  [class$="--pi_tab_link_wrap"]
+).is-active
+  :is(
+    [class~="pi_tab_link_icon"],
+    [class*="--pi_tab_link_icon "],
+    [class$="--pi_tab_link_icon"]
+  ) {
+  background-color: var(
+    --pattern-library-v3---swatch--primary-500,
+    var(--swatch--primary-500)
+  );
+  color: var(
+    --pattern-library-v3---swatch--neutral-50,
+    var(--swatch--neutral-50)
+  );
+}
+
+</style>

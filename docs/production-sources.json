@@ -1,0 +1,436 @@
+{
+  "verifiedOn": "2026-09-21",
+  "scope": "Representative published Pattern US and UK dependencies; not an exhaustive crawl",
+  "files": [
+    {
+      "file": "webflow/pattern.com/archive/legacy-root/teknkl-formsplus-core-1.0.8.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@c2386d587e9213612a86fd11f3b064a916d4d9fa/webflow/pattern.com/archive/legacy-root/teknkl-formsplus-core-1.0.8.js",
+      "sha256": "8de0b579139e0e1c54ea7c7bffaa27f787ce9508877827dff3d98f610c221fc5",
+      "evidence": [
+        "https://uk.pattern.com",
+        "https://uk.pattern.com/"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/archive/legacy-root/teknkl-simpledto-2.0.4.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@c2386d587e9213612a86fd11f3b064a916d4d9fa/webflow/pattern.com/archive/legacy-root/teknkl-simpledto-2.0.4.js",
+      "sha256": "a682fa436af34c993282173833bbebcd35347a8352ea95f6d75a96bbbd15971a",
+      "evidence": [
+        "https://uk.pattern.com",
+        "https://uk.pattern.com/"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/scripts/content/box-slider-slot-controls.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/content/box-slider-slot-controls.js",
+      "sha256": "9f191651392349744d04c040db42c1994066f0ed112c68b41a8ba5f38d299b4c",
+      "evidence": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/runtime/pattern-runtime-consumer-0.2.1.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/scripts/content/case-study-cms-slider.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/content/case-study-cms-slider.js",
+      "sha256": "8972d62e0b6ea9545c45ca6072b0419da792a12b159ec566caa7020b2cc42b7a",
+      "evidence": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/runtime/pattern-runtime-consumer-0.2.1.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/scripts/content/cta-inject.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/cta-inject.js",
+      "sha256": "1217debbd5eea2c8c3940f1c7c899fcc348d331d1f79bf380c34a67a9ddca77f",
+      "evidence": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@uk-version-split-v0.5.2/webflow/uk.pattern.com/version-split/js/loader.js"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/scripts/content/logos.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/logos.js",
+      "sha256": "f7f70bd1575d4fdc321e00f3bdfb235beff493ea926d73b141ee82d7d5080da9",
+      "evidence": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@uk-version-split-v0.5.2/webflow/uk.pattern.com/version-split/js/loader.js",
+        "https://uk.pattern.com"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/scripts/content/rich-text-heading-conversion.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/rich-text-heading-conversion.js",
+      "sha256": "3b50622e6ba6c1c54ffdfc253fa363cc71d7eb156fb625309677e6a0254573bb",
+      "evidence": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@uk-version-split-v0.5.2/webflow/uk.pattern.com/version-split/js/loader.js",
+        "https://uk.pattern.com"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/scripts/content/toc.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/content/toc.js",
+      "sha256": "85c074676c85ffcd528ab0d5674eaea0eb615e0e00e7ed39a6e6af53bd31faf3",
+      "evidence": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/scripts/interaction/accordion.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/interaction/accordion.js",
+      "sha256": "99b2748c2275daa7169492e27ddef63e57ed8334997c66a600ae7d4b66796815",
+      "evidence": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/runtime/pattern-runtime-consumer-0.2.1.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/scripts/interaction/card-load-animations-v10.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@aa2e661b1aad8fa6d3fcc1d7c0a0aa3347cff1b6/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js",
+      "sha256": "b0715f3935569a6248ec9dd1c1f59c36e157b725da8ec6e385cbca41e02d4091",
+      "evidence": [
+        "https://www.pattern.com/"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/scripts/interaction/lazy-load.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js",
+      "sha256": "7e5112d8d5768704ea7370e79465b8f341a5563fbc8e7036df19669dd952f5de",
+      "evidence": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@uk-version-split-v0.5.2/webflow/uk.pattern.com/version-split/js/loader.js",
+        "https://uk.pattern.com"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/scripts/interaction/marquee.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/interaction/marquee.js",
+      "sha256": "e2379b3d9ddbfe4fe37c295d6cb7aa8f2ff9f3c63d84aa5f4413fbaa86447ad4",
+      "evidence": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/runtime/pattern-runtime-consumer-0.2.1.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/scripts/interaction/pagination-fix.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/pagination-fix.js",
+      "sha256": "324f1d946ec25b10673080fa3ac4d5c598ecfdf6a00f3fe60a6978484df6e482",
+      "evidence": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@uk-version-split-v0.5.2/webflow/uk.pattern.com/version-split/js/loader.js",
+        "https://uk.pattern.com"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/scripts/interaction/v3-heading-text-reveal.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/interaction/v3-heading-text-reveal.js",
+      "sha256": "4f2c1befd1b37bdd18a28c46f96685093fc40fe21fe3b6a00ba24e7ba7943b28",
+      "evidence": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/scripts/media/iframe-popup.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.2/webflow/pattern.com/scripts/media/iframe-popup.js",
+      "sha256": "807945c0da7252614c926902b382e465d09daeecec6e845db3790816ae5a9ca1",
+      "evidence": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@uk-version-split-v0.5.2/webflow/uk.pattern.com/version-split/js/loader.js",
+        "https://uk.pattern.com"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/scripts/media/video-popup.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/media/video-popup.js",
+      "sha256": "7a338dba620bee0e37d83ee5992b993aa06d121a4712aa3ba4bdb2cdb0da1b49",
+      "evidence": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/runtime/pattern-runtime-consumer-0.2.1.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/scripts/media/video-preview.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/media/video-preview.js",
+      "sha256": "1286245b90d0387fc75379c545a7852a4ac125e219cc36958676c08f45d7453c",
+      "evidence": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/runtime/pattern-runtime-consumer-0.2.1.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/scripts/nav/home-anchor-nav.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/nav/home-anchor-nav.js",
+      "sha256": "e176a9c8ed175c33205892c305020751a424a0b79d87add0458e89568c220921",
+      "evidence": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/runtime/pattern-runtime-consumer-0.2.1.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/scripts/nav/nav.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js",
+      "sha256": "c233888cc46099327fa888d8073a42c2f2ab3e7f31061c9ca365ebc0d63732ec",
+      "evidence": [
+        "https://uk.pattern.com",
+        "https://uk.pattern.com/"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/scripts/runtime/pattern-runtime-consumer-0.2.1.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/runtime/pattern-runtime-consumer-0.2.1.js",
+      "sha256": "cca9069a1d96016705b126bdc18e7fd3018cac9ad2f64ad6270b54c2f295956f",
+      "evidence": [
+        "https://www.pattern.com",
+        "https://www.pattern.com/"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js",
+      "sha256": "dd0b753a5de9018a9d77a65c37249970be5aacf26afb9298070f4043fee83a1c",
+      "evidence": [
+        "https://www.pattern.com",
+        "https://www.pattern.com/"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/scripts/schema/faq-schema-generator.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/schema/faq-schema-generator.js",
+      "sha256": "c2240fc4d149f0009b64e17cd4ca8e86e22d2d0b8231334e05d4d9e23d05e0df",
+      "evidence": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@uk-version-split-v0.5.2/webflow/uk.pattern.com/version-split/js/loader.js",
+        "https://uk.pattern.com"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/styles/home-anchor-nav.css",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/styles/home-anchor-nav.css",
+      "sha256": "9cb5bd6dfe56f0dcaa458f4d7017f49579b794b3a36efee4a48379dad4944f68",
+      "evidence": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/runtime/pattern-runtime-consumer-0.2.1.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/styles/marquee.css",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/styles/marquee.css",
+      "sha256": "e07750cf50b4505009378f4ef9f3c0754df6fe47bd577f1e82318a20a728bb6d",
+      "evidence": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/runtime/pattern-runtime-consumer-0.2.1.js",
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/runtime/pattern-version-gateway.js"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/styles/nav.css",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css",
+      "sha256": "de2f9f7aea45666f79ab5c5b7e26bc70c7bd1190c959ec0a862b0fc505f2e0fa",
+      "evidence": [
+        "https://uk.pattern.com",
+        "https://uk.pattern.com/"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/styles/pagination-fix.css",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/pagination-fix.css",
+      "sha256": "bcefbda602d1c353bd7e871b3d3c8de4a88605f152c51a1e530b0b3c41db3218",
+      "evidence": [
+        "https://uk.pattern.com",
+        "https://uk.pattern.com/"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/styles/v3-utility-bridge.css",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@84b9726d25c17b1fd1f594fbe53039946ef504ba/webflow/pattern.com/styles/v3-utility-bridge.css",
+      "sha256": "238862baea682f04d1e855a27798ffc57759cdf2178d3f496a24b8646d9aa93c",
+      "evidence": [
+        "https://www.pattern.com",
+        "https://www.pattern.com/"
+      ]
+    },
+    {
+      "file": "webflow/uk.pattern.com/version-split/css/features.css",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@uk-version-split-v0.4.3/webflow/uk.pattern.com/version-split/css/features.css",
+      "sha256": "37a9f2348969d972e9c680c0fb8b00c612ccefd0206acbc4c96c48442ab37cd3",
+      "evidence": [
+        "https://uk.pattern.com",
+        "https://uk.pattern.com/"
+      ]
+    },
+    {
+      "file": "webflow/uk.pattern.com/version-split/css/shared.css",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@uk-version-split-v0.4.3/webflow/uk.pattern.com/version-split/css/shared.css",
+      "sha256": "5d1712e50e95808f1042a6098856df726c558852d02a2c4a897e3e0726c61dd7",
+      "evidence": [
+        "https://uk.pattern.com",
+        "https://uk.pattern.com/"
+      ]
+    },
+    {
+      "file": "webflow/uk.pattern.com/version-split/css/v1.css",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@uk-version-split-v0.5.3/webflow/uk.pattern.com/version-split/css/v1.css",
+      "sha256": "af70a6c8ef1b42126e793edf7cc581eca74ae5ea0d3fe0690f3f7c43b14055ca",
+      "evidence": [
+        "https://uk.pattern.com",
+        "https://uk.pattern.com/"
+      ]
+    },
+    {
+      "file": "webflow/uk.pattern.com/version-split/css/v2.css",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@uk-version-split-v0.4.3/webflow/uk.pattern.com/version-split/css/v2.css",
+      "sha256": "f49dec26373c1e3af0a2e3055909012147afc4831d92ce49c92f0f4c203473db",
+      "evidence": [
+        "https://uk.pattern.com/pattern-intelligence"
+      ]
+    },
+    {
+      "file": "webflow/uk.pattern.com/version-split/js/loader.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@uk-version-split-v0.5.2/webflow/uk.pattern.com/version-split/js/loader.js",
+      "sha256": "c13fee5a468583d3831e824fc237bb23f3b90dd22351a5d3bdbe0d76566e053a",
+      "evidence": [
+        "https://uk.pattern.com",
+        "https://uk.pattern.com/"
+      ]
+    },
+    {
+      "file": "webflow/uk.pattern.com/version-split/js/shared.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@uk-version-split-v0.5.2/webflow/uk.pattern.com/version-split/js/shared.js",
+      "sha256": "7176413c781ff588043d2693f20f1b6033effb9f6f19ab4a9957dc823281d093",
+      "evidence": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@uk-version-split-v0.5.2/webflow/uk.pattern.com/version-split/js/loader.js"
+      ]
+    },
+    {
+      "file": "webflow/uk.pattern.com/version-split/js/v1.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@uk-version-split-v0.5.2/webflow/uk.pattern.com/version-split/js/v1.js",
+      "sha256": "924aa8f66727393f492556500848b11969dd896269b69556476214c176e3fbc8",
+      "evidence": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@uk-version-split-v0.5.2/webflow/uk.pattern.com/version-split/js/loader.js"
+      ]
+    },
+    {
+      "file": "webflow/uk.pattern.com/version-split/js/v2.js",
+      "kind": "hosted",
+      "source": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@uk-version-split-v0.5.2/webflow/uk.pattern.com/version-split/js/v2.js",
+      "sha256": "401af058e7e7a49d9dd236c069efc4f693beb041363af8a0c2b688ec95cd22b7",
+      "evidence": [
+        "https://cdn.jsdelivr.net/gh/specterstudio/pattern@uk-version-split-v0.5.2/webflow/uk.pattern.com/version-split/js/loader.js"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/scripts/content/pi-welcome-slider-controller.js",
+      "kind": "inline",
+      "sha256": "b0b08d10479648243266fd1adc5bdde52b0eae670c93c03a92d7ce8e13e6f82b",
+      "evidence": [
+        "https://www.pattern.com/marketplace"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/scripts/nav/page-anchor.js",
+      "kind": "inline",
+      "sha256": "c8abd37c76647e20e793556aa1f2bc93615520a9ff3cb04e6d369937b055b07a",
+      "evidence": [
+        "https://www.pattern.com/catalog-advertising",
+        "https://www.pattern.com/marketplace"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/embeds/v3-navigation.html",
+      "kind": "inline",
+      "sha256": "a225ff7b9442d24a55b66a9fd0fd79354e8123f757f0346c7aeef5121b7f3676",
+      "evidence": [
+        "https://www.pattern.com/",
+        "https://www.pattern.com/resources/blog"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/embeds/global-layout-styles.html",
+      "kind": "inline",
+      "sha256": "49bf43534c41c64f7996f53b1b4858ca57d2c6988b2acdb5c86ecbd0c311a57e",
+      "evidence": [
+        "https://www.pattern.com/software",
+        "https://www.pattern.com/pxm/optimization"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/embeds/legacy-compatibility-styles.html",
+      "kind": "inline",
+      "sha256": "3f2f653087a756d76187669f9df5843ada4b6d06678ec40ad71c6c3f83f4af56",
+      "evidence": [
+        "https://www.pattern.com/software",
+        "https://www.pattern.com/pxm/optimization"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/embeds/home-hero-script.html",
+      "kind": "inline",
+      "sha256": "8ccb16996173f0a04f1d2aca504ad2ed8a212dde4178c8a4f527cb990250cf05",
+      "evidence": [
+        "https://www.pattern.com/",
+        "https://www.pattern.com"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/embeds/slider-script.html",
+      "kind": "inline",
+      "sha256": "d1e4aea19d12a2b31c8195143974db47b0f6dd2dc558bb35ddbaf72cc39de2b0",
+      "evidence": [
+        "https://www.pattern.com/category/beauty",
+        "https://www.pattern.com/marketplace"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/embeds/tab-styles.html",
+      "kind": "inline",
+      "sha256": "457ad7eb70400750a9242be02c1a84351d88f69873f3d8e1f392f0aeac90d99b",
+      "evidence": [
+        "https://www.pattern.com/pi"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/embeds/marketo-footer-styles.html",
+      "kind": "inline",
+      "sha256": "cc65ff787daec6ae63fd0651a7a07f801102a15a98886dd93f07e654f681919c",
+      "evidence": [
+        "https://www.pattern.com/",
+        "https://www.pattern.com/resources/blog"
+      ]
+    },
+    {
+      "file": "webflow/pattern.com/embeds/marketo-global-styles.html",
+      "kind": "inline",
+      "sha256": "64ce2c90f2b414c546eec6bf65082330f7cb53c9eaa7595d1115b3823ee3d23b",
+      "evidence": [
+        "https://www.pattern.com/",
+        "https://www.pattern.com/resources/blog"
+      ]
+    }
+  ]
+}

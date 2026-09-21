@@ -1,0 +1,667 @@
+<script>
+(() => {
+  const init = () => {
+    document.querySelectorAll("[class*='home-hero_wrap']").forEach((component) => {
+      if (component.dataset.heroStaticInitialized === "true") return;
+
+      const stage = component.querySelector("[class*='home-hero_element']");
+      const list = component.querySelector("[class*='home-hero_list']");
+      const navList = component.querySelector("[class*='home-hero_nav-list']");
+      const pauseButton = component.querySelector("[class*='home-hero_pause']");
+      const ring = component.querySelector(
+        "[class*='home-hero_pause-ring-progress']"
+      );
+      const previousButton = component.querySelector(
+        "[class*='home-hero_nav-prev']"
+      );
+      const nextButton = component.querySelector(
+        "[class*='home-hero_nav-next']"
+      );
+
+      if (!stage || !list || !navList || !pauseButton || !ring) return;
+
+      const flatten = (container) => {
+        container
+          .querySelectorAll("[class*='u-display-contents']")
+          .forEach((wrapper) => {
+            wrapper.replaceWith(...wrapper.childNodes);
+          });
+      };
+
+      flatten(list);
+      flatten(navList);
+
+      const slides = Array.from(
+        list.querySelectorAll(
+          ":scope > :is([class~='home-hero_slide'], [class*='--home-hero_slide '], [class$='--home-hero_slide'])"
+        )
+      );
+      const navItems = Array.from(
+        navList.querySelectorAll(":scope > [class*='home-hero_nav-item']")
+      ).slice(0, slides.length);
+
+      if (slides.length < 2 || navItems.length !== slides.length) return;
+
+      if (stage.swiper) stage.swiper.destroy(true, true);
+
+      stage.classList.remove("swiper");
+      list.classList.remove("swiper-wrapper");
+      list.removeAttribute("style");
+
+      const piButtonText = slides[3]?.querySelector(
+        "[class*='button_main_text']"
+      );
+      if (piButtonText?.textContent.trim() === "Get Started") {
+        piButtonText.textContent = "See Pi in Action";
+      }
+
+      slides.forEach((slide) => {
+        slide.classList.remove(
+          "swiper-slide",
+          "swiper-slide-active",
+          "swiper-slide-next",
+          "swiper-slide-prev",
+          "swiper-slide-visible"
+        );
+        slide.removeAttribute("style");
+      });
+
+      const configuredInterval = Number.parseInt(
+        component.dataset.interval,
+        10
+      );
+      const interval =
+        Number.isFinite(configuredInterval) && configuredInterval >= 1000
+          ? configuredInterval
+          : 7000;
+      const mobileViewport = window.matchMedia("(max-width: 47.9375rem)");
+      const reducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      );
+      const saveData = navigator.connection?.saveData === true;
+
+      let index = Math.max(
+        0,
+        slides.findIndex((slide) => slide.classList.contains("is-active"))
+      );
+      let paused =
+        reducedMotion.matches || component.dataset.autoplay === "false";
+      let timer = 0;
+      let ringAnimation = null;
+      let startedAt = 0;
+      let remaining = interval;
+      let touchStartX = null;
+      let leaveTimer = 0;
+      let preloadTask = 0;
+      let videoIdleTask = 0;
+      let videoLoadReadyIndex = -1;
+      let autoplayStarted = false;
+
+      const clearTimer = () => {
+        if (!timer) return;
+        window.clearTimeout(timer);
+        timer = 0;
+      };
+
+      const resetRing = () => {
+        if (ringAnimation) ringAnimation.cancel();
+        ringAnimation = null;
+        ring.style.strokeDashoffset = "1";
+      };
+
+      const cancelVideoIdleLoad = () => {
+        if (!videoIdleTask) return;
+
+        if (typeof window.cancelIdleCallback === "function") {
+          window.cancelIdleCallback(videoIdleTask);
+        } else {
+          window.clearTimeout(videoIdleTask);
+        }
+
+        videoIdleTask = 0;
+      };
+
+      const syncPauseButton = () => {
+        component.dataset.paused = String(paused);
+        pauseButton.setAttribute("aria-pressed", String(paused));
+        pauseButton.setAttribute(
+          "aria-label",
+          paused ? "Resume slide rotation" : "Pause slide rotation"
+        );
+        pauseButton.hidden = reducedMotion.matches;
+      };
+
+      /*
+       * Each slide now has one responsive <picture> in the poster layer.
+       * The browser selects its mobile <source> or desktop <img> resource.
+       */
+      const getViewportImage = (slide) =>
+        slide.querySelector("[class*='home-hero_media-poster'] img");
+
+      const resetSlideImagePriority = (slide) => {
+        const image = getViewportImage(slide);
+        if (!image) return;
+
+        image.setAttribute("loading", "lazy");
+        image.setAttribute("fetchpriority", "low");
+      };
+
+      const prepareSlideMedia = (
+        slideIndex,
+        { highPriority = false, preload = false } = {}
+      ) => {
+        const slide = slides[
+          (slideIndex + slides.length) % slides.length
+        ];
+        if (!slide) return null;
+
+        resetSlideImagePriority(slide);
+        slide.classList.toggle("is-media-preload", preload);
+
+        const image = getViewportImage(slide);
+        if (!image) return null;
+
+        image.setAttribute("loading", highPriority ? "eager" : "lazy");
+        image.setAttribute(
+          "fetchpriority",
+          highPriority ? "high" : "low"
+        );
+
+        if (highPriority && image.complete && image.decode) {
+          image.decode().catch(() => {});
+        }
+
+        return image;
+      };
+
+      const cancelNextMediaPreload = () => {
+        if (!preloadTask) return;
+
+        if (typeof window.cancelIdleCallback === "function") {
+          window.cancelIdleCallback(preloadTask);
+        } else {
+          window.clearTimeout(preloadTask);
+        }
+
+        preloadTask = 0;
+      };
+
+      const preloadNextMedia = () => {
+        if (document.readyState !== "complete") return;
+
+        cancelNextMediaPreload();
+
+        const run = () => {
+          preloadTask = 0;
+          const nextIndex = (index + 1) % slides.length;
+
+          slides.forEach((slide, slideIndex) => {
+            if (slideIndex !== nextIndex) {
+              slide.classList.remove("is-media-preload");
+            }
+          });
+
+          prepareSlideMedia(nextIndex, { preload: true });
+        };
+
+        preloadTask =
+          typeof window.requestIdleCallback === "function"
+            ? window.requestIdleCallback(run, { timeout: 1200 })
+            : window.setTimeout(run, 0);
+      };
+
+      const getSlideVideo = (slide) =>
+        slide.querySelector("[class*='home-hero_media-video'] video");
+
+      const getDeferredVideoSource = (video) =>
+        video.dataset.src ||
+        video.dataset.heroSrc ||
+        video.getAttribute("data-video-src") ||
+        "";
+
+      const syncVideoReady = (slide, video = getSlideVideo(slide)) => {
+        const ready = Boolean(
+          video &&
+          !video.error &&
+          video.readyState >= 2
+        );
+
+        slide.dataset.videoReady = String(ready);
+      };
+
+      slides.forEach((slide) => {
+        resetSlideImagePriority(slide);
+
+        const video = getSlideVideo(slide);
+        syncVideoReady(slide, video);
+
+        if (!video) return;
+
+        /*
+         * data-src must be authored in Webflow instead of src.
+         * This fallback preserves old markup, but the initial-request
+         * optimization only works when the published HTML has no src.
+         */
+        if (!getDeferredVideoSource(video) && video.currentSrc) {
+          video.dataset.src = video.currentSrc;
+        } else if (!getDeferredVideoSource(video) && video.getAttribute("src")) {
+          video.dataset.src = video.getAttribute("src");
+        }
+
+        video.autoplay = false;
+        video.removeAttribute("autoplay");
+        video.preload = "none";
+        video.setAttribute("preload", "none");
+
+        if (video.getAttribute("src") && video.dataset.src) {
+          video.removeAttribute("src");
+          video.load();
+        }
+
+        ["loadeddata", "canplay", "playing", "waiting"].forEach((eventName) => {
+          video.addEventListener(eventName, () => {
+            syncVideoReady(slide, video);
+          });
+        });
+
+        ["abort", "emptied", "error"].forEach((eventName) => {
+          video.addEventListener(eventName, () => {
+            slide.dataset.videoReady = "false";
+          });
+        });
+      });
+
+      const syncVideos = () => {
+        const mobile = mobileViewport.matches;
+
+        slides.forEach((slide, slideIndex) => {
+          const video = getSlideVideo(slide);
+          if (!video) return;
+
+          const shouldUseVideo =
+            autoplayStarted &&
+            slideIndex === index &&
+            !mobile &&
+            !reducedMotion.matches &&
+            !saveData &&
+            !paused;
+          const mayRequestLoad =
+            shouldUseVideo && slideIndex === videoLoadReadyIndex;
+
+          if (
+            mayRequestLoad &&
+            video.dataset.heroLoadRequested !== "true"
+          ) {
+            const source = getDeferredVideoSource(video);
+
+            if (source) {
+              video.dataset.heroLoadRequested = "true";
+              video.src = source;
+              video.preload = "auto";
+              video.setAttribute("preload", "auto");
+              video.load();
+            }
+          }
+
+          if (shouldUseVideo && video.getAttribute("src")) {
+            const promise = video.play();
+            if (promise?.catch) promise.catch(() => {});
+          } else {
+            video.pause();
+          }
+
+          syncVideoReady(slide, video);
+        });
+      };
+
+      const syncVideosAfterPoster = (requestedIndex = index) => {
+        const activeSlide = slides[requestedIndex];
+        const image = getViewportImage(activeSlide);
+
+        cancelVideoIdleLoad();
+        videoLoadReadyIndex = -1;
+
+        const requestIdleVideoLoad = () => {
+          if (requestedIndex !== index) return;
+
+          const loadVideo = () => {
+            videoIdleTask = 0;
+
+            if (
+              requestedIndex !== index ||
+              mobileViewport.matches ||
+              reducedMotion.matches ||
+              saveData ||
+              paused
+            ) {
+              return;
+            }
+
+            videoLoadReadyIndex = requestedIndex;
+            syncVideos();
+          };
+
+          videoIdleTask =
+            typeof window.requestIdleCallback === "function"
+              ? window.requestIdleCallback(loadVideo, { timeout: 2500 })
+              : window.setTimeout(loadVideo, 800);
+        };
+
+        const run = () => {
+          if (requestedIndex !== index) return;
+
+          window.requestAnimationFrame(() => {
+            window.requestAnimationFrame(() => {
+              if (requestedIndex === index) requestIdleVideoLoad();
+            });
+          });
+        };
+
+        if (!image) {
+          run();
+          return;
+        }
+
+        if (image.complete) {
+          if (image.decode) {
+            image.decode().then(run, run);
+          } else {
+            run();
+          }
+          return;
+        }
+
+        image.addEventListener("load", run, { once: true });
+        image.addEventListener("error", run, { once: true });
+      };
+
+      const revealNavItem = (item, animate = true) => {
+        if (!mobileViewport.matches) return;
+
+        const target = Math.max(
+          0,
+          Math.min(
+            item.offsetLeft,
+            navList.scrollWidth - navList.clientWidth
+          )
+        );
+
+        navList.scrollTo({
+          left: target,
+          behavior:
+            animate && !reducedMotion.matches ? "smooth" : "auto",
+        });
+      };
+
+      const setActive = (
+        nextIndex,
+        focusNav = false,
+        revealNavigation = true
+      ) => {
+        const previousIndex = index;
+        index = (nextIndex + slides.length) % slides.length;
+
+        cancelNextMediaPreload();
+        cancelVideoIdleLoad();
+        videoLoadReadyIndex = -1;
+        if (leaveTimer) {
+          window.clearTimeout(leaveTimer);
+          leaveTimer = 0;
+        }
+
+        slides.forEach((slide) => {
+          slide.classList.remove("is-leaving", "is-media-preload");
+        });
+
+        if (previousIndex !== index) {
+          slides[previousIndex]?.classList.add("is-leaving");
+        }
+
+        prepareSlideMedia(index, { highPriority: true });
+
+        slides.forEach((slide, slideIndex) => {
+          const active = slideIndex === index;
+          slide.classList.toggle("is-active", active);
+          slide.setAttribute("aria-hidden", String(!active));
+        });
+
+        navItems.forEach((item, itemIndex) => {
+          const active = itemIndex === index;
+          item.classList.toggle("is-active", active);
+          item.classList.toggle("home-hero_nav-item-active", active);
+          item.setAttribute("aria-selected", String(active));
+          item.setAttribute("aria-current", active ? "true" : "false");
+          item.setAttribute("tabindex", active ? "0" : "-1");
+          if (active && revealNavigation) revealNavItem(item);
+        });
+
+        if (previousIndex !== index) {
+          leaveTimer = window.setTimeout(() => {
+            slides[previousIndex]?.classList.remove("is-leaving");
+            leaveTimer = 0;
+          }, 850);
+        }
+
+        if (focusNav) navItems[index].focus();
+
+        if (autoplayStarted) {
+          syncVideosAfterPoster(index);
+          preloadNextMedia();
+        }
+      };
+
+      const schedule = (duration = interval) => {
+        clearTimer();
+        resetRing();
+        remaining = duration;
+
+        if (!autoplayStarted) {
+          syncPauseButton();
+          return;
+        }
+
+        if (paused || reducedMotion.matches) {
+          syncPauseButton();
+          return;
+        }
+
+        startedAt = performance.now();
+        ringAnimation = ring.animate(
+          [{ strokeDashoffset: 1 }, { strokeDashoffset: 0 }],
+          { duration, easing: "linear", fill: "forwards" }
+        );
+        timer = window.setTimeout(() => {
+          remaining = interval;
+          setActive(index + 1);
+          schedule(interval);
+        }, duration);
+        syncPauseButton();
+      };
+
+      const startAutoplay = () => {
+        if (autoplayStarted) return;
+
+        autoplayStarted = true;
+        syncVideosAfterPoster();
+        preloadNextMedia();
+        schedule(interval);
+      };
+
+      navItems.forEach((item, itemIndex) => {
+        item.dataset.index = String(itemIndex);
+        item.setAttribute("role", "tab");
+        item.setAttribute("aria-controls", `home-hero-slide-${itemIndex + 1}`);
+
+        item.addEventListener("click", () => {
+          setActive(itemIndex);
+          schedule(interval);
+        });
+
+        item.addEventListener("keydown", (event) => {
+          if (event.key === "ArrowRight") {
+            event.preventDefault();
+            setActive(index + 1, true);
+            schedule(interval);
+          }
+
+          if (event.key === "ArrowLeft") {
+            event.preventDefault();
+            setActive(index - 1, true);
+            schedule(interval);
+          }
+        });
+      });
+
+      slides.forEach((slide, slideIndex) => {
+        slide.id = `home-hero-slide-${slideIndex + 1}`;
+        slide.setAttribute("role", "tabpanel");
+      });
+
+      navList.setAttribute("role", "tablist");
+      navList.removeAttribute("aria-hidden");
+      ring.setAttribute("aria-hidden", "true");
+
+      pauseButton.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        if (paused) {
+          paused = false;
+          component.dataset.autoplay = "true";
+
+          if (autoplayStarted) {
+            syncVideosAfterPoster(index);
+            if (ringAnimation) ringAnimation.play();
+            startedAt = performance.now();
+            timer = window.setTimeout(() => {
+              remaining = interval;
+              setActive(index + 1);
+              schedule(interval);
+            }, remaining || interval);
+          } else {
+            remaining = interval;
+          }
+        } else {
+          paused = true;
+          component.dataset.autoplay = "false";
+          remaining =
+            timer || ringAnimation
+              ? Math.max(
+                  0,
+                  remaining - (performance.now() - startedAt)
+                )
+              : interval;
+          clearTimer();
+          if (ringAnimation) ringAnimation.pause();
+          cancelVideoIdleLoad();
+          videoLoadReadyIndex = -1;
+          syncVideos();
+        }
+
+        syncPauseButton();
+      });
+
+      previousButton?.addEventListener("click", (event) => {
+        event.preventDefault();
+        setActive(index - 1);
+        schedule(interval);
+      });
+
+      nextButton?.addEventListener("click", (event) => {
+        event.preventDefault();
+        setActive(index + 1);
+        schedule(interval);
+      });
+
+      stage.addEventListener(
+        "touchstart",
+        (event) => {
+          touchStartX = event.touches[0]?.clientX ?? null;
+        },
+        { passive: true }
+      );
+
+      stage.addEventListener(
+        "touchend",
+        (event) => {
+          if (touchStartX === null) return;
+
+          const endX = event.changedTouches[0]?.clientX ?? touchStartX;
+          const distance = endX - touchStartX;
+          touchStartX = null;
+
+          if (Math.abs(distance) < 48) return;
+
+          setActive(index + (distance < 0 ? 1 : -1));
+          schedule(interval);
+        },
+        { passive: true }
+      );
+
+      const handleMotionChange = () => {
+        paused =
+          reducedMotion.matches || component.dataset.autoplay === "false";
+        remaining = interval;
+        clearTimer();
+        resetRing();
+        syncPauseButton();
+
+        if (paused) {
+          cancelVideoIdleLoad();
+          videoLoadReadyIndex = -1;
+          syncVideos();
+        } else if (autoplayStarted) {
+          syncVideosAfterPoster(index);
+          schedule(interval);
+        }
+      };
+
+      if (typeof reducedMotion.addEventListener === "function") {
+        reducedMotion.addEventListener("change", handleMotionChange);
+      } else {
+        reducedMotion.addListener(handleMotionChange);
+      }
+
+      const handleViewportChange = () => {
+        cancelVideoIdleLoad();
+        videoLoadReadyIndex = -1;
+
+        slides.forEach((slide) => {
+          slide.classList.remove("is-media-preload");
+          resetSlideImagePriority(slide);
+        });
+
+        prepareSlideMedia(index, { highPriority: true });
+        if (mobileViewport.matches) {
+          syncVideos();
+        } else {
+          syncVideosAfterPoster(index);
+        }
+        preloadNextMedia();
+      };
+
+      if (typeof mobileViewport.addEventListener === "function") {
+        mobileViewport.addEventListener("change", handleViewportChange);
+      } else {
+        mobileViewport.addListener(handleViewportChange);
+      }
+
+      component.dataset.heroStaticInitialized = "true";
+      component.removeAttribute("data-hero-initialized");
+      setActive(index, false, false);
+      syncPauseButton();
+
+      if (document.readyState === "complete") {
+        startAutoplay();
+      } else {
+        window.addEventListener("load", startAutoplay, { once: true });
+      }
+    });
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init, { once: true });
+  } else {
+    init();
+  }
+})();
+</script>

@@ -132,12 +132,15 @@
     };
   }
 
+  function getPopupGroup(component) {
+    var attr = (component && component.getAttribute('fc-iframe-popup')) || '';
+    var match = attr.match(/^component(.*)$/);
+    return match ? match[1] : '';
+  }
+
   function findOpenButtons(component, group) {
     var g = group || '';
-    var sel = '[fc-iframe-popup="open' + g + '"]';
-    var list = document.querySelectorAll(sel);
-    if (list.length) return list;
-    return document.querySelectorAll('[fc-iframe-popup^="open"]');
+    return document.querySelectorAll('[fc-iframe-popup="open' + g + '"]');
   }
 
   function findCloseButtons(component) {
@@ -166,11 +169,7 @@
     var info = getIframeInfo(component);
     if (!info) return;
 
-    var group = (component.getAttribute('fc-iframe-popup') || '').split(
-      'component'
-    )[1];
-
-    if (group === undefined) group = '';
+    var group = getPopupGroup(component);
 
     var openButtons = findOpenButtons(component, group);
     var closeButtons = findCloseButtons(component);

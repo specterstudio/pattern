@@ -2,3 +2,10 @@
 .claude/settings.local.json
 exports/
 reference/
+node_modules
+dist/
+output/
+outputs/
+.playwright-cli/
+.codex/
+*.tsbuildinfo

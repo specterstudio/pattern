@@ -1,0 +1,116 @@
+<style>
+/* Footer Marketo form — layout and visual compatibility.
+ * The impossible :not() ID adds ID-level specificity without tying this
+ * shared component to any individual Marketo form ID.
+ */
+[class*="footer_wrap"]
+  .mktoForm[id^="mktoForm_"]:not(#_pattern_footer_specificity) {
+  --mkto-text: #fcf6f3;
+  --mkto-field-border: var(--pattern-library-v3---swatch--neutral-200, #f3e1d9);
+  --mkto-field-background: transparent;
+  --mkto-autofill-background: var(--pattern-library-v3---swatch--neutral-800, #1e1d1e);
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  justify-content: flex-start !important;
+  width: 100% !important;
+  gap: var(--pattern-library-v3_spacing---space--2, 1rem) !important;
+}
+
+[class*="footer_wrap"]
+  .mktoForm[id^="mktoForm_"]:not(#_pattern_footer_specificity)
+  > .mktoFormRow:not(:has(> input[type="hidden"])),
+[class*="footer_wrap"]
+  .mktoForm[id^="mktoForm_"]:not(#_pattern_footer_specificity)
+  > .mktoButtonRow {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+[class*="footer_wrap"]
+  .mktoForm[id^="mktoForm_"]:not(#_pattern_footer_specificity)
+  .mktoFormCol,
+[class*="footer_wrap"]
+  .mktoForm[id^="mktoForm_"]:not(#_pattern_footer_specificity)
+  .mktoFieldWrap,
+[class*="footer_wrap"]
+  .mktoForm[id^="mktoForm_"]:not(#_pattern_footer_specificity)
+  .mktoButtonWrap,
+[class*="footer_wrap"]
+  .mktoForm[id^="mktoForm_"]:not(#_pattern_footer_specificity)
+  .mktoButton {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+[class*="footer_wrap"]
+  .mktoForm[id^="mktoForm_"]:not(#_pattern_footer_specificity)
+  input.mktoField[type="email"] {
+  display: block !important;
+  width: 100% !important;
+  height: 3.5rem !important;
+  min-height: 3.5rem !important;
+  padding: 0 1.25rem !important;
+  border-width: 2px !important;
+  border-style: solid !important;
+  border-color: var(--mkto-field-border, #f3e1d9) !important;
+  border-radius: var(--mkto-radius, 0.75rem) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: var(--mkto-text, #fcf6f3) !important;
+  -webkit-text-fill-color: var(--mkto-text, #fcf6f3) !important;
+}
+
+[class*="footer_wrap"]
+  .mktoForm[id^="mktoForm_"]:not(#_pattern_footer_specificity)
+  .mktoLabel {
+  margin-bottom: 0.5rem !important;
+  font-size: 0.875rem !important;
+  font-weight: var(--pattern-library-v3_typography---font-weight--medium, 500) !important;
+  line-height: 1.25rem !important;
+}
+
+[class*="footer_wrap"]
+  .mktoForm[id^="mktoForm_"]:not(#_pattern_footer_specificity)
+  .mktoAsterix {
+  order: -1 !important;
+  margin: 0 0.125rem 0 0 !important;
+}
+
+/* Match the footer override's specificity so autofill keeps the dark surface. */
+[class*="footer_wrap"]
+  .mktoForm[id^="mktoForm_"]:not(#_pattern_footer_specificity)
+  input.mktoField[type="email"]:is(:-webkit-autofill, :autofill) {
+  -webkit-text-fill-color: var(--mkto-text, #fcf6f3) !important;
+  caret-color: var(--mkto-text, #fcf6f3) !important;
+  -webkit-box-shadow:
+    0 0 0 1000px var(--mkto-autofill-background, #1e1d1e) inset !important;
+  box-shadow:
+    0 0 0 1000px var(--mkto-autofill-background, #1e1d1e) inset !important;
+}
+
+[class*="footer_wrap"]
+  .mktoForm[id^="mktoForm_"]:not(#_pattern_footer_specificity)
+  input.mktoField[type="email"]:is(:-webkit-autofill, :autofill):focus-visible {
+  -webkit-box-shadow:
+    0 0 0 1000px var(--mkto-autofill-background, #1e1d1e) inset,
+    0 0 0 3px color-mix(in srgb, var(--mkto-primary, #006dff) 30%, transparent) !important;
+  box-shadow:
+    0 0 0 1000px var(--mkto-autofill-background, #1e1d1e) inset,
+    0 0 0 3px color-mix(in srgb, var(--mkto-primary, #006dff) 30%, transparent) !important;
+}
+
+[class*="footer_wrap"]
+  .mktoForm[id^="mktoForm_"]:not(#_pattern_footer_specificity)
+  .mktoButton {
+  display: inline-flex !important;
+  min-height: 3.5rem !important;
+  padding: 1rem !important;
+  border: 0 !important;
+  border-radius: var(--mkto-radius, 0.75rem) !important;
+  background: var(--mkto-primary, #006dff) !important;
+  box-shadow: none !important;
+  color: #fff !important;
+  font-weight: var(--pattern-library-v3_typography---font-weight--medium, 500) !important;
+}
+</style>
