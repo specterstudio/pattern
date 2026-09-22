@@ -18,6 +18,8 @@ webflow/uk.pattern.com/version-split/
 docs/               Production source references and maintenance instructions
 ```
 
+See the [file reference](docs/FILES.md) for a description of every file.
+
 ## Production source baseline
 
 The September 21, 2026 update adds source verified against 123 published US and
