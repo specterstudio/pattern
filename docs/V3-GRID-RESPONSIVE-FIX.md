@@ -6,7 +6,7 @@ The scoped utility bridge forced local `u-grid` elements to `display: grid`, ove
 
 The existing bridge is pinned to commit `84b9726d25c17b1fd1f594fbe53039946ef504ba`. Keep it available for rollback. Update only the CSS URL and integrity value in Library V3 `Global / Foundation → Global / Styles`, embed `81d4d0c5-9d0b-d276-f24f-1b61738356a3`. Preserve all other embed content. Then verify the saved embed and complete Library adoption and staged page checks before production publication.
 
-Webflow saving is currently blocked by expired Pattern authorization. No Library or production publication is included in this change.
+Saved and verified in Library V3 on 2026-10-04 after Pattern authorization was renewed. The fresh embed readback exactly matches the new URL/SRI, and the original visibility binding and pagination CSS are preserved. Library release, consumer adoption, staging verification, and production publication remain pending.
 
 ## Validation
 
