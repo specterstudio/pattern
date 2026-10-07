@@ -674,7 +674,7 @@
       styles: [
         {
           src: '../../styles/marquee.css',
-          integrity: 'sha384-AmEK1fi+66pyjxnbxtHuCV0BHx0uBH5U2fBj8aFVKE8ut+PH6qVBGom9170D2Wbn',
+          integrity: 'sha384-oOGMAiBKQAP+M23zKvy6HD68NyaOfIkAjTyooMU+z/XakL413V3DsxKWunLRipXq',
         },
       ],
     });

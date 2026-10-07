@@ -13,21 +13,30 @@
   --pattern-marquee-duration: 30s;
   --pattern-marquee-gap: 16px;
   --pattern-marquee-play-state: paused;
+  --pattern-marquee-margin: var(--site--margin, 0px);
+}
+
+/* Installed Library classes must use V3's margin, never the consumer site's. */
+[data-marquee]:is(
+  [class*='--marquee_component '],
+  [class$='--marquee_component']
+) {
+  --pattern-marquee-margin: var(--pattern-library-v3---site--margin, 0px);
 }
 
 [data-marquee-viewport] {
   -webkit-mask-image: linear-gradient(
     to right,
     transparent 0,
-    black var(--site--margin),
-    black calc(100% - var(--site--margin)),
+    black var(--pattern-marquee-margin),
+    black calc(100% - var(--pattern-marquee-margin)),
     transparent 100%
   );
   mask-image: linear-gradient(
     to right,
     transparent 0,
-    black var(--site--margin),
-    black calc(100% - var(--site--margin)),
+    black var(--pattern-marquee-margin),
+    black calc(100% - var(--pattern-marquee-margin)),
     transparent 100%
   );
 }
