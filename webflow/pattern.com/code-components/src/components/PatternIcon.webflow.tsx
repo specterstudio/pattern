@@ -14,6 +14,13 @@ export default declareComponent(PatternIcon, {
       options: [...PATTERN_ICON_NAMES],
       defaultValue: "arrow-right",
     }),
+    iconName: props.Text({
+      name: "Icon name",
+      group: "Icon",
+      defaultValue: "",
+      tooltip:
+        "Optional. Bind a CMS plain-text field. A valid icon name overrides Icon; leave empty to use the dropdown.",
+    }),
     size: props.Number({
       name: "Size",
       group: "Appearance",

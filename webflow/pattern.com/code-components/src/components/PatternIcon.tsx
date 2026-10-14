@@ -9,6 +9,12 @@ import {
 export interface PatternIconProps {
   /** Icon name from Pattern's Figma-approved Iconic inventory. */
   name?: PatternIconName | string;
+  /**
+   * Optional CMS-bindable icon name. When it matches a known icon (trimmed,
+   * case-insensitive), it overrides `name`. Empty or unknown values leave the
+   * Icon dropdown choice unchanged.
+   */
+  iconName?: string;
   /** Square icon size in CSS pixels. */
   size?: number;
   /** Any valid CSS color. Use currentColor to inherit from the surrounding text. */
@@ -21,6 +27,10 @@ const DEFAULT_ICON: PatternIconName = "arrow-right";
 const DEFAULT_SIZE = 24;
 const MIN_SIZE = 1;
 const MAX_SIZE = 512;
+
+const ICON_NAME_BY_LOWERCASE = new Map(
+  PATTERN_ICON_NAMES.map((iconName) => [iconName.toLowerCase(), iconName]),
+);
 
 function normalizeSize(size: number | undefined): number {
   if (typeof size !== "number" || !Number.isFinite(size)) return DEFAULT_SIZE;
@@ -35,6 +45,22 @@ function normalizeName(name: PatternIconProps["name"]): PatternIconName {
   return DEFAULT_ICON;
 }
 
+function lookupBindableName(iconName: unknown): PatternIconName | undefined {
+  if (typeof iconName !== "string") return undefined;
+
+  const trimmed = iconName.trim();
+  if (!trimmed) return undefined;
+
+  return ICON_NAME_BY_LOWERCASE.get(trimmed.toLowerCase());
+}
+
+function resolveName(
+  iconName: PatternIconProps["iconName"],
+  name: PatternIconProps["name"],
+): PatternIconName {
+  return lookupBindableName(iconName) ?? normalizeName(name);
+}
+
 /**
  * Pattern's approved Iconic icon set, exported directly from Figma.
  *
@@ -44,11 +70,12 @@ function normalizeName(name: PatternIconProps["name"]): PatternIconName {
  */
 export function PatternIcon({
   name = DEFAULT_ICON,
+  iconName,
   size = DEFAULT_SIZE,
   color = "currentColor",
   label = "",
 }: PatternIconProps) {
-  const normalizedName = normalizeName(name);
+  const normalizedName = resolveName(iconName, name);
   const definition = PATTERN_ICON_SVGS[normalizedName];
   const normalizedSize = normalizeSize(size);
   const accessibleLabel = label.trim();
