@@ -1,0 +1,225 @@
+{
+  "version": "1.0.0-rc.1",
+  "site": {
+    "key": "uk",
+    "id": "684987756493653cc7c5a406",
+    "api": "PatternUKRuntime",
+    "directory": "uk.pattern.com"
+  },
+  "baselineCapturedOn": "2026-10-13",
+  "legacyTemplateOwnerCount": 16,
+  "legacyPageIds": [
+    "6ac672550f2ba49bef734835",
+    "6ab24c49b9d51fe81ca45f54",
+    "6aac00f3915bfc06ccfeac60",
+    "6a82dfd33138f2a0613643dd",
+    "6a82df08e33c51d36b6367a3",
+    "6a7545f0e8a0ce0449ddc6ef",
+    "6a75429d12eb7e09a5c97b1f",
+    "6a72022d9e484461f7c39396",
+    "6a6c9019c363e529e6c3887f",
+    "6a6c90181fce2f77ae7cc8f5",
+    "6a69dbde8091cf36a10e758e",
+    "6a69da621d5e5fa01598ef90",
+    "6a61ed702f07814fc2bd75df",
+    "6a567be44cdcb6212dcd2e2f",
+    "6a170d23eee56f95d9da1cdd",
+    "6a0e3cc3ba585cc12d1c2f43",
+    "69f9fe0ba11dd16bf945121e",
+    "69a1ff35f513a082a40559a4",
+    "698232aaaf6c546d560e84e6",
+    "6949265dfbcb77cb8e06f629",
+    "6913532cf72837fcf5afca2d",
+    "690ca5cd04c11dfad3473cd1",
+    "68e4556449f9fb5e9d872200",
+    "68e4213c287fcc75fd3eb1c8",
+    "68e420797f8852b673301ee8",
+    "68e41cf84216b6677676ec5c",
+    "68e41bcf29e1593d9fc6de89",
+    "68e41744fcb7e87213961dea",
+    "68e416d8eaeb34a3716d627d",
+    "68e41531274f3df37d379a87",
+    "68e41174eac0fb64bc624802",
+    "689b3b9bbaf850f5dbd231c6",
+    "689b2af65f7d71c316a90134",
+    "684987756493653cc7c5a674",
+    "684987756493653cc7c5a673",
+    "684987756493653cc7c5a671",
+    "684987756493653cc7c5a670",
+    "684987756493653cc7c5a629",
+    "684987756493653cc7c5a604",
+    "684987756493653cc7c5a603",
+    "684987756493653cc7c5a602",
+    "684987756493653cc7c5a601",
+    "684987756493653cc7c5a600",
+    "684987756493653cc7c5a5db",
+    "684987756493653cc7c5a5b6",
+    "684987756493653cc7c5a599",
+    "684987756493653cc7c5a585",
+    "684987756493653cc7c5a584",
+    "684987756493653cc7c5a570",
+    "684987756493653cc7c5a56f",
+    "684987756493653cc7c5a56e",
+    "684987756493653cc7c5a56d",
+    "684987756493653cc7c5a56c",
+    "684987756493653cc7c5a56b",
+    "684987756493653cc7c5a56a",
+    "684987756493653cc7c5a569",
+    "684987756493653cc7c5a568",
+    "684987756493653cc7c5a567",
+    "684987756493653cc7c5a566",
+    "684987756493653cc7c5a565",
+    "684987756493653cc7c5a564",
+    "684987756493653cc7c5a563",
+    "684987756493653cc7c5a562",
+    "684987756493653cc7c5a561",
+    "684987756493653cc7c5a55f",
+    "684987756493653cc7c5a55e",
+    "684987756493653cc7c5a54a",
+    "684987756493653cc7c5a549",
+    "684987756493653cc7c5a548",
+    "684987756493653cc7c5a547",
+    "684987756493653cc7c5a546",
+    "684987756493653cc7c5a545",
+    "684987756493653cc7c5a532",
+    "684987756493653cc7c5a528",
+    "684987756493653cc7c5a527",
+    "684987756493653cc7c5a526",
+    "684987756493653cc7c5a525",
+    "684987756493653cc7c5a524",
+    "684987756493653cc7c5a521",
+    "684987756493653cc7c5a520",
+    "684987756493653cc7c5a51f",
+    "684987756493653cc7c5a51e",
+    "684987756493653cc7c5a51d",
+    "684987756493653cc7c5a51b",
+    "684987756493653cc7c5a51a",
+    "684987756493653cc7c5a519",
+    "684987756493653cc7c5a518",
+    "684987756493653cc7c5a517",
+    "684987756493653cc7c5a516",
+    "684987756493653cc7c5a515",
+    "684987756493653cc7c5a501",
+    "684987756493653cc7c5a4e0",
+    "684987756493653cc7c5a4df",
+    "684987756493653cc7c5a4de",
+    "684987756493653cc7c5a4b9",
+    "684987756493653cc7c5a498",
+    "684987756493653cc7c5a47e",
+    "684987756493653cc7c5a47d",
+    "684987756493653cc7c5a47b",
+    "684987756493653cc7c5a44f",
+    "684987756493653cc7c5a42f",
+    "684987756493653cc7c5a402"
+  ],
+  "legacy": {
+    "assets": [
+      {
+        "id": "legacy-splide",
+        "selector": "body",
+        "src": "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js",
+        "integrity": "sha384-RbYB5yr9jD1p+2OHlV3KzOBLAY48CbFsJ87bXEFYINGgOlQJNE4cEjTUf+Q2fygb",
+        "crossOrigin": "anonymous",
+        "styles": [
+          {
+            "src": "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css",
+            "integrity": "sha384-RQYEYzAnHyG0swTqlleCCsKHN9pUKyYMflAk6KEjvY6KhE5MLlvjwZkai5538g2T",
+            "crossOrigin": "anonymous"
+          }
+        ]
+      },
+      {
+        "id": "legacy-nav",
+        "selector": ".nav_wrap",
+        "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js",
+        "integrity": "sha384-4BP2ukOjTguQDpKAi1Yhp5Nr7AM++2jDQ0I52zek0nccaXHQpmdLCaf0kggLMt6Q",
+        "crossOrigin": "anonymous",
+        "skipComponentNav": false,
+        "styles": [
+          {
+            "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css",
+            "integrity": "sha384-OfL5hFS1XirpWTOrQISqwssZ4GVR98VdqWzKuUlJ499W+oHOiCEXaJNnRKlKcsDc",
+            "crossOrigin": "anonymous"
+          }
+        ]
+      },
+      {
+        "id": "legacy-pagination-js",
+        "selector": "[class*='pagination']",
+        "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/pagination-fix.js",
+        "integrity": "sha384-dFA5P4sn8Vt9tk3tcu64kUt835i/gaepctteQiyGch65KZkCWmskYUbdhaI8GqvR",
+        "crossOrigin": "anonymous",
+        "styles": [
+          {
+            "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/pagination-fix.css",
+            "integrity": "sha384-8ZkFFTrpXlx/XgNBD4rnfKDrPTETAZpzlq+8BpG7Q0JyDVo4Ps69Npm/KucWVUEP",
+            "crossOrigin": "anonymous"
+          }
+        ]
+      },
+      {
+        "id": "legacy-video-popup",
+        "selector": "[class*='video_popup'], [data-video-popup]",
+        "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/media/video-popup.js",
+        "integrity": "sha384-kl0NKQQPgQT0DmLNoMEYvEEdKHcDlkFhX61w69pL2H2wtcpgETDm1jCQk0UAnV8k",
+        "crossOrigin": "anonymous"
+      },
+      {
+        "id": "legacy-logos",
+        "selector": "[brand-logo]",
+        "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/logos.js",
+        "integrity": "sha384-0JmMSf/gUjQM2sC2pWHaFtblgE+U/vIffb+wHn9C4DDv9pbYN+xmVI7LpyOv8T/t",
+        "crossOrigin": "anonymous"
+      },
+      {
+        "id": "legacy-faq-schema",
+        "selector": "[class*='faq']",
+        "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/schema/faq-schema-generator.js",
+        "integrity": "sha384-YMdihe8mweEs9cEjflvZCY/hV3oINKF3Svx8m/QGGFgNWDZpVxvTuhVTA05YqARJ",
+        "crossOrigin": "anonymous"
+      },
+      {
+        "id": "legacy-accordion",
+        "selector": "[data-accordion-list], [class*=\"accordion_list\"]",
+        "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/accordion.js",
+        "integrity": "sha384-CsaidadqCXOXyjNraJGjzucz42KiuJaUTBo5PrrYYPSaJz49FyHjs0wCa0BPzTOq",
+        "crossOrigin": "anonymous",
+        "dependencies": [
+          "gsap"
+        ]
+      },
+      {
+        "id": "legacy-lazy-load",
+        "selector": "img",
+        "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js",
+        "integrity": "sha384-+5PeX1COxJ7ytFK7UtIXGrlL6gT8mi04IDjaMuQJVzFMqfVAJ5lsiopwnx/qWb2j",
+        "crossOrigin": "anonymous"
+      },
+      {
+        "id": "legacy-cta-inject",
+        "selector": "[fs-inject-element=\"target\"]",
+        "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/cta-inject.js",
+        "integrity": "sha384-/QPm0PWlmCaegcDC9UnHJAXQukCjV1QmLFTwaJIfvTBm/pR3V4Qj5CJo6X0M/X8B",
+        "crossOrigin": "anonymous"
+      },
+      {
+        "id": "legacy-iframe-popup",
+        "selector": "[data-iframe-popup], [class*='iframe_popup']",
+        "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.2/webflow/pattern.com/scripts/media/iframe-popup.js",
+        "integrity": "sha384-TwOEYQFJFqt49nlj+njAWaot0Z/ixGgPBfWOd6iCp0rWqYxeQavDDSagCy0f3Hn7",
+        "crossOrigin": "anonymous"
+      },
+      {
+        "id": "legacy-card-load-animations",
+        "selector": "[card-grid] [card-load]",
+        "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js",
+        "integrity": "sha384-DUiXoD6z7Vpwwm2zaQYExtNJ5826XuRq35FZrM8nC5HBKyfVHqlthV7tIiw0S+Cl",
+        "crossOrigin": "anonymous",
+        "dependencies": [
+          "scroll-trigger",
+          "split-text"
+        ]
+      }
+    ]
+  }
+}

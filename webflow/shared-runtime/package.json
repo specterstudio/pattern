@@ -1,0 +1,14 @@
+{
+  "name": "pattern-regional-runtime-tools",
+  "version": "1.0.0-rc.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node build.mjs --check",
+    "test": "node capture-test-assets.mjs && node build.mjs --check && node test.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.61.1"
+  }
+}

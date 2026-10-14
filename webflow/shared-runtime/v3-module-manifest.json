@@ -1,0 +1,98 @@
+{
+  "sourceCommit": "16876e05928c308f7305bdeb9c5c29414c80a76a",
+  "modules": [
+    {
+      "id": "marquee",
+      "selector": "[data-marquee]",
+      "global": "PatternMarquee",
+      "script": {
+        "src": "../interaction/marquee.js",
+        "integrity": "sha384-CUDP6vv0eZ3XQQvD0Wn6Osr4Tm6vKXZNq7DnCtlsWYpDkvfJFWHbcTO06d8AtPPT"
+      },
+      "styles": [
+        {
+          "src": "../../styles/marquee.css",
+          "integrity": "sha384-oOGMAiBKQAP+M23zKvy6HD68NyaOfIkAjTyooMU+z/XakL413V3DsxKWunLRipXq"
+        }
+      ]
+    },
+    {
+      "id": "home-anchor-nav",
+      "selector": "[data-home-anchor-nav],[class~=\"home_anchor_nav\"],[class*=\"--home_anchor_nav \"],[class$=\"--home_anchor_nav\"]",
+      "global": "PatternHomeAnchorNav",
+      "script": {
+        "src": "../nav/home-anchor-nav.js",
+        "integrity": "sha384-+bulB/ErAq91xjHfWMdjJwNh1rDrDuc6IKjQs2va5JvNFZ38ANZsfqPrJI1F/mqo"
+      },
+      "styles": [
+        {
+          "src": "../../styles/home-anchor-nav.css",
+          "integrity": "sha384-RUaz1Jn+63M7ZXAaXGmUepoAHeH/9j0oVibGueTB9V2TQ780anM9ubza4osuCod0"
+        }
+      ]
+    },
+    {
+      "id": "v3-heading-text-reveal",
+      "selector": "[data-heading-reveal=\"true\"][data-wf--typography-heading--font-style=\"h1\"],[data-heading-reveal=\"true\"][data-wf--pattern-library-v3--typography-heading--font-style=\"h1\"],#page-hero [data-heading-reveal][data-wf--typography-heading--font-style],#page-hero [data-heading-reveal][data-wf--pattern-library-v3--typography-heading--font-style],#page-hero [data-animate-heading][data-wf--typography-heading--font-style],#page-hero [data-animate-heading][data-wf--pattern-library-v3--typography-heading--font-style]",
+      "global": "PatternV3HeadingReveal",
+      "script": {
+        "src": "../interaction/v3-heading-text-reveal.js",
+        "integrity": "sha384-5JU5U+5AYlH5Xw/xo393S6W+Rhy+R22voDkoriNhX7MAVVu5CEtdPkBufm5jSrDR"
+      },
+      "dependencies": [
+        "scroll-trigger",
+        "split-text"
+      ]
+    },
+    {
+      "id": "case-study",
+      "selector": "[data-case-study-slider], [class*=\"case-study_slider_wrap\"]",
+      "global": "PatternCaseStudyCMS",
+      "script": {
+        "src": "../content/case-study-cms-slider.js",
+        "integrity": "sha384-Nf6NYJqQnnQBY2YEp1iIzrYLTLAMr9gUxGnhscFz5EDQbm/8jz0tE0yoTaaoTBph"
+      },
+      "initScope": "document"
+    },
+    {
+      "id": "slider-alt-slots",
+      "selector": "[class*=\"slider_wrap\"] [class*=\"box_slider_wrap\"]",
+      "global": "PatternBoxSliderSlots",
+      "script": {
+        "src": "../content/box-slider-slot-controls.js",
+        "integrity": "sha384-2eEsJQFEJOPf1J+jGzHxOhPgoywZIigDtDeW6okcAMvgwWpVOfABi75ujUMM+16m"
+      },
+      "initScope": "document"
+    },
+    {
+      "id": "accordion",
+      "selector": "[data-accordion], [class*=\"accordion_wrap\"]",
+      "global": "PatternAccordion",
+      "script": {
+        "src": "../interaction/accordion.js",
+        "integrity": "sha384-EFg0P5l1NeVQxGzun6SnQdALBCSs680cLLhYUFbMXZJqRr7T+8tGuiemc7KwQOBG"
+      },
+      "dependencies": [
+        "gsap"
+      ]
+    },
+    {
+      "id": "video-popup",
+      "selector": "[class~=\"video_player_wrap\"],[class*=\"--video_player_wrap \"],[class$=\"--video_player_wrap\"]",
+      "global": "PatternVideoPopup",
+      "script": {
+        "src": "../media/video-popup.js",
+        "integrity": "sha384-V4sdBPl9LCUpScdMBwHAdo/2SU0XWve1/EKhf4MmMSnUVbwDtCAiGgKcHi+1VuS0"
+      }
+    },
+    {
+      "id": "video-preview",
+      "selector": "[class~=\"video_player_wrap\"] video[data-src],[class*=\"--video_player_wrap \"] video[data-src],[class$=\"--video_player_wrap\"] video[data-src]",
+      "global": "PatternVideoPreview",
+      "script": {
+        "src": "../media/video-preview.js",
+        "integrity": "sha384-chLfIt1Cm0PzKy6+62JMrZXl+UUFPV8YY5HkqEsGDWI2unAuosUbx7uP+SktbCwR"
+      }
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+[
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css",
+    "file": "7669abe8ccb8.css",
+    "integrity": "sha384-OfL5hFS1XirpWTOrQISqwssZ4GVR98VdqWzKuUlJ499W+oHOiCEXaJNnRKlKcsDc"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js",
+    "file": "a0d5134aaa4b.js",
+    "integrity": "sha384-4BP2ukOjTguQDpKAi1Yhp5Nr7AM++2jDQ0I52zek0nccaXHQpmdLCaf0kggLMt6Q"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css",
+    "file": "9a71875ec742.css",
+    "integrity": "sha384-RQYEYzAnHyG0swTqlleCCsKHN9pUKyYMflAk6KEjvY6KhE5MLlvjwZkai5538g2T"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js",
+    "file": "93ba6f1ab3b2.js",
+    "integrity": "sha384-RbYB5yr9jD1p+2OHlV3KzOBLAY48CbFsJ87bXEFYINGgOlQJNE4cEjTUf+Q2fygb"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/pagination-fix.css",
+    "file": "369a586087d1.css",
+    "integrity": "sha384-8ZkFFTrpXlx/XgNBD4rnfKDrPTETAZpzlq+8BpG7Q0JyDVo4Ps69Npm/KucWVUEP"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/pagination-fix.js",
+    "file": "e74d47777600.js",
+    "integrity": "sha384-dFA5P4sn8Vt9tk3tcu64kUt835i/gaepctteQiyGch65KZkCWmskYUbdhaI8GqvR"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/media/video-popup.js",
+    "file": "a3680c32f5be.js",
+    "integrity": "sha384-kl0NKQQPgQT0DmLNoMEYvEEdKHcDlkFhX61w69pL2H2wtcpgETDm1jCQk0UAnV8k"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/logos.js",
+    "file": "ebc5f6579955.js",
+    "integrity": "sha384-0JmMSf/gUjQM2sC2pWHaFtblgE+U/vIffb+wHn9C4DDv9pbYN+xmVI7LpyOv8T/t"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/rich-text-heading-conversion.js",
+    "file": "0d227d5f5247.js",
+    "integrity": "sha384-M8OhCzhtDJVSJBzRewYBf+b77Y6+8gR8q/lArfirTJ8/LT7Y0zQgnKpqXkdY/TbV"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/schema/faq-schema-generator.js",
+    "file": "acbf357fc8b7.js",
+    "integrity": "sha384-YMdihe8mweEs9cEjflvZCY/hV3oINKF3Svx8m/QGGFgNWDZpVxvTuhVTA05YqARJ"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/accordion.js",
+    "file": "0bac3b5b0173.js",
+    "integrity": "sha384-CsaidadqCXOXyjNraJGjzucz42KiuJaUTBo5PrrYYPSaJz49FyHjs0wCa0BPzTOq"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js",
+    "file": "8129923d0fe6.js",
+    "integrity": "sha384-+5PeX1COxJ7ytFK7UtIXGrlL6gT8mi04IDjaMuQJVzFMqfVAJ5lsiopwnx/qWb2j"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/cta-inject.js",
+    "file": "adfe434adf40.js",
+    "integrity": "sha384-/QPm0PWlmCaegcDC9UnHJAXQukCjV1QmLFTwaJIfvTBm/pR3V4Qj5CJo6X0M/X8B"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.2/webflow/pattern.com/scripts/media/iframe-popup.js",
+    "file": "fa356b014d6a.js",
+    "integrity": "sha384-TwOEYQFJFqt49nlj+njAWaot0Z/ixGgPBfWOd6iCp0rWqYxeQavDDSagCy0f3Hn7"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js",
+    "file": "65b3c671570f.js",
+    "integrity": "sha384-DUiXoD6z7Vpwwm2zaQYExtNJ5826XuRq35FZrM8nC5HBKyfVHqlthV7tIiw0S+Cl"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/lumosframework/scripts@v1.0.9/theme-collector.js",
+    "file": "d040b97b9c5e.js",
+    "integrity": "sha384-iJq3wncCywNRR278+pTcWoBfW5cizc+cEdWwb4t/OuuQfYPmZ/8vzwT2McB15h2Q"
+  },
+  {
+    "url": "https://PDoO9f59J0.flowdrivecdn.com/Xt8XVeFJ8Hv5CsaoolALH",
+    "file": "3dd9fa985720.js",
+    "integrity": "sha384-mg++CD7HWppn7dzUvpvnXqQ5g4wu3g961G5LzXhO1WVNF+YnLGR1YgK8f/xuWUms"
+  },
+  {
+    "url": "https://assets.pattern.com/7cJd5G9CEvk9sBqEvyOPG",
+    "file": "538e43b0aa44.js",
+    "integrity": "sha384-0SGz0YbCLotZ6US9BwvmqiZWZq4aFohW17Tu9yPKE6ZJNn432kRBR04t1iY5v2WJ"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@16876e05928c308f7305bdeb9c5c29414c80a76a/webflow/pattern.com/scripts/interaction/marquee.js",
+    "file": "f04cf2acf0b5.js",
+    "integrity": "sha384-CUDP6vv0eZ3XQQvD0Wn6Osr4Tm6vKXZNq7DnCtlsWYpDkvfJFWHbcTO06d8AtPPT"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@16876e05928c308f7305bdeb9c5c29414c80a76a/webflow/pattern.com/styles/marquee.css",
+    "file": "bf3e715e4f4a.css",
+    "integrity": "sha384-oOGMAiBKQAP+M23zKvy6HD68NyaOfIkAjTyooMU+z/XakL413V3DsxKWunLRipXq"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@16876e05928c308f7305bdeb9c5c29414c80a76a/webflow/pattern.com/scripts/nav/home-anchor-nav.js",
+    "file": "5a83fe2390f5.js",
+    "integrity": "sha384-+bulB/ErAq91xjHfWMdjJwNh1rDrDuc6IKjQs2va5JvNFZ38ANZsfqPrJI1F/mqo"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@16876e05928c308f7305bdeb9c5c29414c80a76a/webflow/pattern.com/styles/home-anchor-nav.css",
+    "file": "1d61b4cec0b3.css",
+    "integrity": "sha384-RUaz1Jn+63M7ZXAaXGmUepoAHeH/9j0oVibGueTB9V2TQ780anM9ubza4osuCod0"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@16876e05928c308f7305bdeb9c5c29414c80a76a/webflow/pattern.com/scripts/interaction/v3-heading-text-reveal.js",
+    "file": "f412819ff22a.js",
+    "integrity": "sha384-5JU5U+5AYlH5Xw/xo393S6W+Rhy+R22voDkoriNhX7MAVVu5CEtdPkBufm5jSrDR"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@16876e05928c308f7305bdeb9c5c29414c80a76a/webflow/pattern.com/scripts/content/case-study-cms-slider.js",
+    "file": "12c3afa31436.js",
+    "integrity": "sha384-Nf6NYJqQnnQBY2YEp1iIzrYLTLAMr9gUxGnhscFz5EDQbm/8jz0tE0yoTaaoTBph"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@16876e05928c308f7305bdeb9c5c29414c80a76a/webflow/pattern.com/scripts/content/box-slider-slot-controls.js",
+    "file": "4758dc549ed4.js",
+    "integrity": "sha384-2eEsJQFEJOPf1J+jGzHxOhPgoywZIigDtDeW6okcAMvgwWpVOfABi75ujUMM+16m"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@16876e05928c308f7305bdeb9c5c29414c80a76a/webflow/pattern.com/scripts/interaction/accordion.js",
+    "file": "605b7d358be2.js",
+    "integrity": "sha384-EFg0P5l1NeVQxGzun6SnQdALBCSs680cLLhYUFbMXZJqRr7T+8tGuiemc7KwQOBG"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@16876e05928c308f7305bdeb9c5c29414c80a76a/webflow/pattern.com/scripts/media/video-popup.js",
+    "file": "feb1c0a97379.js",
+    "integrity": "sha384-V4sdBPl9LCUpScdMBwHAdo/2SU0XWve1/EKhf4MmMSnUVbwDtCAiGgKcHi+1VuS0"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@16876e05928c308f7305bdeb9c5c29414c80a76a/webflow/pattern.com/scripts/media/video-preview.js",
+    "file": "67948110686b.js",
+    "integrity": "sha384-chLfIt1Cm0PzKy6+62JMrZXl+UUFPV8YY5HkqEsGDWI2unAuosUbx7uP+SktbCwR"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/runtime/pattern-runtime-consumer-0.2.1.js",
+    "file": "30bef8342c12.js",
+    "integrity": "sha384-OQaWMowwGoq2lLp/iwg1ZQlW3l8ZYE4zBGqqUWguKrIOMXzg8lqvMhbucmq5/3v+"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@9b174800a295ad09a50e1b4d58d5004b853c81b6/webflow/pattern.com/scripts/content/toc.js",
+    "file": "85fdd5be37a1.js",
+    "integrity": "sha384-wjnC/wsWOOSGDSAtJOC1n5wLCu6rWYUl6Mn7mafMUvUQX9zJrAXWdJGk4jyS47BU"
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/gsap/3.15.0/gsap.min.js",
+    "file": "636c50440248.js",
+    "integrity": "sha384-XmJ9SoHtVOHoQUcKvFAzVXwdkKo1Ie3bhmSoIAkcdsHGaIrVJIkmozyq0FJeb/Ly"
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/gsap/3.15.0/ScrollTrigger.min.js",
+    "file": "b3fa4a4328ab.js",
+    "integrity": "sha384-wl5TeDVvOWt30Pbf8aSo2ZrzsOjddu3avOBvHe+p+OhJt9gP6w9YXmDkN5DK2/dF"
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/gsap/3.15.0/SplitText.min.js",
+    "file": "2e36e6df5445.js",
+    "integrity": "sha384-SWJ0lLVRoipvHh59xj0pL7uC7Ih51F+5smaFtrG+2nr+TlDZU5SYJHmxfolbeNTr"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2.7.1/attributes.js",
+    "file": "835eca6131e9.js",
+    "integrity": "sha384-xUNsiuzyRX1VYBNfbdrbjkq3Ti55JX/QAqCx7D88OakMPmepdkAsMj8bv1aa5fsj"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/npm/@finsweet/attributes-socialshare@1.3.2/socialshare.js",
+    "file": "dac2b9de3c4c.js",
+    "integrity": "sha384-D2S3kvjqou2OO4E2xTXD1Pg9dxpLd68gdZr0CVgndB9Grh/lCwGqUsUe7vPZT/wC"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/card-load-animations-v10.full.js",
+    "file": "6de58c9edc95.js",
+    "integrity": "sha384-IHU6mb/k04DXpeXRF8SXsZpcwu92drhL4eHWMpqjmn1IZxzEhuXV9X4fGvtwGov/"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@uk-version-split-v0.5.2/webflow/uk.pattern.com/version-split/js/loader.js",
+    "file": "ea549f7a41d1.js",
+    "integrity": "sha384-+IcnTL1OQTEJ/VRfFpAzrIbjYEpI9sEsGs44xGaIUY3BggKrH+sxxSxX1ohLyy0f"
+  }
+]
