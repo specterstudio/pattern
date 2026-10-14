@@ -1,0 +1,11 @@
+--- a/LinkedIn-InsightTag-2.0.js
++++ b/LinkedIn-InsightTag-2.0.js
+@@ -112,7 +112,7 @@
+     }
+   } else {
+     setInWindow('_already_called_lintrk', true, true);
+-    injectScript('https://snap.licdn.com/li.lms-analytics/insight.min.js', didInjectInsightTag, didFailInsightTag);
++    injectScript('https://snap.licdn.com/li.lms-analytics/insight.min.js', didInjectInsightTag, didFailInsightTag, 'pattern-linkedin-insight-sdk');
+   }
+ }
+ 

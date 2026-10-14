@@ -1,6 +1,6 @@
 # Pattern regional transition runtimes
 
-One standalone runtime per regional site, maintained in the existing Pattern repository. These packages support whole-page V1/V2-to-V3 rebuilds. They are staging candidates, not installed or certified production runtimes.
+One standalone runtime per regional site, maintained in the existing Pattern repository. These packages support whole-page V1/V2-to-V3 rebuilds. They are staging candidates, not certified production runtimes. See [current staging repair status](STAGING-STATUS-2026-10-14.md) for installed-site evidence and outstanding gates.
 
 ## Repository boundaries
 
