@@ -83,7 +83,10 @@
       register({id:descriptor.id,selector:descriptor.selector,init:run});
       if (document.querySelector(descriptor.selector)) startup.push(run());
     }
-    // Page callbacks include component-owned sliders. Their dependencies settle first.
+    for (const dependency of LEGACY.callbackDependencies || []) {
+      if (document.querySelector(dependency.selector)) startup.push(runtime.loadDependency(dependency.id));
+    }
+    // Page callbacks include component-owned sliders and heroes. Their dependencies settle first.
     const execute = once(async () => {
       const results = await Promise.allSettled(startup);
       if (!boundaryUnchanged()) return;

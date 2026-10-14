@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0-rc.2",
   "site": {
     "key": "india",
     "id": "6931b20b1debf2f074c9a9ed",
@@ -133,6 +133,9 @@
     "6931b20b1debf2f074c9a9c0"
   ],
   "legacy": {
+    "callbackDependencies": [
+      { "selector": ".section_hero_h1", "id": "split-text" }
+    ],
     "assets": [
       {
         "id": "legacy-splide",

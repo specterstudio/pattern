@@ -145,6 +145,28 @@ try {
   await run('India retains the component navigation owner and skips the extra legacy nav controller',async()=>{
     const manifest=manifests.find(m=>m.site.key==='india');const {page,requests}=await fixture(manifest,{html:'<main data-pattern-version="v1"><div class="nav_wrap js_nav"></div></main>'});assert.ok(!requests.some(u=>u.endsWith('/nav/nav.js')));await page.close();
   });
+  await run('India legacy hero waits for the actual SplitText dependency before callbacks execute',async()=>{
+    const manifest=manifests.find(m=>m.site.key==='india');
+    const {page,requests,errors}=await fixture(manifest,{html:'<main data-pattern-version="v1"><h1 class="section_hero_h1">Hero</h1></main>',setup:"window.pageFunctions.addFunction('hero',()=>{window.heroSplit=new SplitText('.section_hero_h1',{type:'chars'});window.events.push('hero')});"});
+    assert.deepEqual(await page.evaluate(()=>window.events),['hero']);assert.ok(await page.evaluate(()=>window.heroSplit.chars.length>0));
+    assert.ok(requests.some(u=>u.endsWith('/SplitText.min.js')));await page.evaluate(api=>window[api].scan(document),manifest.site.api);assert.deepEqual(await page.evaluate(()=>window.events),['hero']);assert.deepEqual(errors,[]);await page.close();
+  });
+  await run('UK actual fc-video-popup attribute loads its controller once and respects declined consent',async()=>{
+    const manifest=manifests.find(m=>m.site.key==='uk');
+    const setup="window.FinsweetConsentPro={push(callback){if(typeof callback==='function')callback({consents:{get:()=>({personalization:false})},on(){}})}};";
+    const html='<main data-pattern-version="v2"><button fc-video-popup="open">Open</button><div fc-video-popup="component" class="popup-overlay" style="display:none"><button fc-video-popup="close">Close</button><iframe data-consent-src="https://vimeo.com/1194248611"></iframe></div></main>';
+    const {page,requests,errors}=await fixture(manifest,{html,setup});
+    assert.equal(await page.evaluate(api=>window[api].inspect().engine.modules.find(m=>m.id==='legacy-video-popup').status,manifest.site.api),'ready');
+    await page.locator('[fc-video-popup="open"]').click();assert.equal(await page.locator('iframe').getAttribute('src'),null);
+    await page.evaluate(async api=>{await window[api].scan(document);await window[api].scan(document)},manifest.site.api);
+    assert.equal(requests.filter(u=>u.endsWith('/media/video-popup.js')).length,1);assert.deepEqual(errors,[]);await page.close();
+  });
+  await run('UK actual fc-iframe-popup attribute loads its controller without preloading an iframe',async()=>{
+    const manifest=manifests.find(m=>m.site.key==='uk');
+    const {page,requests,errors}=await fixture(manifest,{html:'<main data-pattern-version="v1"><button fc-iframe-popup="open">Open</button><div fc-iframe-popup="component" style="display:none"><button fc-iframe-popup="close">Close</button><iframe data-consent-src="https://example.com/embed"></iframe></div></main>'});
+    assert.equal(await page.evaluate(api=>window[api].inspect().engine.modules.find(m=>m.id==='legacy-iframe-popup').status,manifest.site.api),'ready');assert.equal(await page.locator('iframe').getAttribute('src'),null);
+    await page.evaluate(api=>window[api].scan(document),manifest.site.api);assert.equal(requests.filter(u=>u.endsWith('/media/iframe-popup.js')).length,1);assert.deepEqual(errors,[]);await page.close();
+  });
 }finally{await browser.close();}
 await fs.writeFile(new URL(out+'fixture-results.json',root),JSON.stringify(results,null,2)+'\n');
 for(const r of results)console.log(`${r.passed?'PASS':'FAIL'} ${r.name}${r.error?'\n'+r.error:''}`);

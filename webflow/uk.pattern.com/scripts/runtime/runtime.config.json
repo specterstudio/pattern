@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0-rc.2",
   "site": {
     "key": "uk",
     "id": "684987756493653cc7c5a406",
@@ -159,7 +159,7 @@
       },
       {
         "id": "legacy-video-popup",
-        "selector": "[class*='video_popup'], [data-video-popup]",
+        "selector": "[fc-video-popup^='component'], [class*='video_popup'], [data-video-popup]",
         "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/media/video-popup.js",
         "integrity": "sha384-kl0NKQQPgQT0DmLNoMEYvEEdKHcDlkFhX61w69pL2H2wtcpgETDm1jCQk0UAnV8k",
         "crossOrigin": "anonymous"
@@ -204,7 +204,7 @@
       },
       {
         "id": "legacy-iframe-popup",
-        "selector": "[data-iframe-popup], [class*='iframe_popup']",
+        "selector": "[fc-iframe-popup^='component'], [data-iframe-popup], [class*='iframe_popup']",
         "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.2/webflow/pattern.com/scripts/media/iframe-popup.js",
         "integrity": "sha384-TwOEYQFJFqt49nlj+njAWaot0Z/ixGgPBfWOd6iCp0rWqYxeQavDDSagCy0f3Hn7",
         "crossOrigin": "anonymous"

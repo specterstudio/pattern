@@ -1,0 +1,28 @@
+<script>
+window.pageFunctions.addFunction('homeHeroSplitText', function () {
+  var heading = document.querySelector('.section_hero_h1');
+  if (!heading || heading.dataset.patternHeroSplitText === 'true') return;
+  if (!window.gsap || !window.SplitText) throw new Error('Missing legacy hero SplitText dependency');
+  heading.dataset.patternHeroSplitText = 'true';
+  var heroText = new SplitText(heading, { type: 'chars' });
+  var chars = heroText.chars;
+  gsap.set(chars, { opacity: 0, color: '#7a1bf0' });
+  gsap.to(chars, {
+    opacity: 1,
+    color: 'white',
+    duration: 0.8,
+    stagger: {
+      each: 0.1,
+      onStart: function () {
+        gsap.to(this.targets()[0], {
+          color: '#8428f5',
+          duration: 0.3,
+          onComplete: function () {
+            gsap.to(this.targets()[0], { color: 'white', duration: 0.5 });
+          }
+        });
+      }
+    }
+  });
+});
+</script>
