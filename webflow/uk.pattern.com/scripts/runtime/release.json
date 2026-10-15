@@ -1,0 +1,17 @@
+{
+  "region": "uk",
+  "siteId": "684987756493653cc7c5a406",
+  "diagnosticsApi": "PatternUKRuntime",
+  "version": "1.0.0-rc.2",
+  "status": "staging-candidate-not-installed",
+  "runtimePath": "webflow/uk.pattern.com/scripts/runtime/pattern-uk-transition-runtime.js",
+  "sha256": "39c145e0ff6978d4ce1aef7527b1760ea47dd7df4f3b01628442fd6fc10399f5",
+  "integrity": "sha384-kegN4SnR2AEa9+bzCW52eyTwufgoF1opvbZfezVRSjLeGSB04D9mhLmUxOEAO5Kh",
+  "v3ModuleCommit": "16876e05928c308f7305bdeb9c5c29414c80a76a",
+  "engine": {
+    "sourceCommit": "9b174800a295ad09a50e1b4d58d5004b853c81b6",
+    "integrity": "sha384-OQaWMowwGoq2lLp/iwg1ZQlW3l8ZYE4zBGqqUWguKrIOMXzg8lqvMhbucmq5/3v+"
+  },
+  "legacyPageCount": 102,
+  "legacyBaselineCapturedOn": "2026-10-13"
+}

@@ -1,0 +1,84 @@
+{
+  "siteId": "684987756493653cc7c5a406",
+  "capturedOn": "2026-10-13",
+  "originalHeadSha256": "a5ca2e9f2b2818d2982cd72b10888d1adb82cce44f2a064277aa4041ca8a1773",
+  "originalFooterSha256": "87bd3ed18296d324c1e7b05a69c013815259b966e402a7657c9df77bf9b234d2",
+  "retireGlobalBlocks": [
+    {
+      "src": "https://assets.pattern.com/7cJd5G9CEvk9sBqEvyOPG",
+      "sha256": "0e92dd1eccfef6a5d31a20dfb074be577612e0a83f67a9a65e043cc9cdcf469a"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/npm/@finsweet/attributes-socialshare@1/socialshare.js",
+      "sha256": "f79896e91effe608b73e7eae461f3016d0d1a4922de82d4146ea65ad6481e2e1"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+      "sha256": "798b31ba2f42867bed255fc878244f29af2b2fd5a83ce2a53f37f2cdc94bd703"
+    },
+    {
+      "src": null,
+      "sha256": "019379a997024353deefb94a47704f3b9ad893143be72a83465f95c101938db5"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/media/video-popup.js",
+      "sha256": "7692e4052d7c905b65f7bea1dec3f526e438216b6d7b50a8e9b3019274b122a6"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/nav.css",
+      "sha256": "c1374a499e31dcc78748d5b885a76366c03fec4bd1f5ea5aca4f2bdbf75aff91"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/styles/pagination-fix.css",
+      "sha256": "0db7e10d27d660dd4e4b1d5442f2079a09a6cd4b0fe933e87be139c54c9f39be"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css",
+      "sha256": "3bd55d179da8b6beca8dd97c1d34092cc0497d6a478badecc53477a17d986270"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js",
+      "sha256": "2b2da20ccfd8d553b190274bde8bc40475e3d1ab48a05a78439aebfe31239979"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js",
+      "sha256": "cc7845ce61fd622bb90eb263d1bac742c99d2f4cc8d8ae69ccd5d3c41c8b46b1"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/logos.js",
+      "sha256": "9e4e50ec082a3d290b0ae41c15190bee2ed8e90bccacfde1325e6c77cd763690"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/content/rich-text-heading-conversion.js",
+      "sha256": "326ea428d65ce67159f13d0f58a0be3399156a4550d0cc1340df96afe33ff0d5"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/schema/faq-schema-generator.js",
+      "sha256": "13a5bb477919d6fb2d781b2546f0c845091d9d252c6a0e8e09821ec007376476"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/lazy-load.js",
+      "sha256": "1278225bc4dea38fb369793bf3c8a01f6fa0dac11b0e9884d70b16f5a119fec6"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.2/webflow/pattern.com/scripts/media/iframe-popup.js",
+      "sha256": "bb3c17b3b3d779f19e7638b8b5440e6f79300147655b55c2ab7428b59dc5f388"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/pagination-fix.js",
+      "sha256": "c421b2fc79168f867f34e40f7fe89020a0aaa8826c87c60ada1e1da76e52250e"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/interaction/card-load-animations-v10.js",
+      "sha256": "a699fa7fed365abcae16c6a1f11944b0f5a80f048da2cafd5100d392771029e6"
+    },
+    {
+      "src": null,
+      "sha256": "6708471b20db3488818dd7674d8d261d2f25e75c74d6b0587fa3d5d31fc81b8c"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@uk-version-split-v0.5.2/webflow/uk.pattern.com/version-split/js/loader.js",
+      "sha256": "5fa30dffeb7693a789241c47ff849ea8deb3fe850568163e537bbbd643f2c864"
+    }
+  ]
+}

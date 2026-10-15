@@ -1,0 +1,52 @@
+{
+  "siteId": "6931b20b1debf2f074c9a9ed",
+  "capturedOn": "2026-10-13",
+  "originalHeadSha256": "fa9acbeaa076d3caa766d73b85dadb6811165b8a7c41fb6ef3cfd27fce9a9416",
+  "originalFooterSha256": "2f15dba0dec7a598913e50522116cef18bb0abb744b78e520063e8fc50a7fad5",
+  "retireGlobalBlocks": [
+    {
+      "src": null,
+      "sha256": "b8ec2b676d5bb339ce546a590ccc7956143a245a524c0ba69361533f53f312e3"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/npm/@finsweet/attributes-socialshare@1/socialshare.js",
+      "sha256": "671f5438f6a3b8f233464e35e4255ade58915adc33ae12e6543e105b50031c3e"
+    },
+    {
+      "src": "https://PDoO9f59J0.flowdrivecdn.com/Xt8XVeFJ8Hv5CsaoolALH",
+      "sha256": "cf57c1f4a01867206d9160713091ec70f0e826dc53684e8c17926f2fc6445fed"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+      "sha256": "24478b6da4152c07e200f33ef1d42f47b0d0f3167342155614822b0dc3b3e1fd"
+    },
+    {
+      "src": null,
+      "sha256": "b843aabc50150c522014cc6fd2880e3556a1e61190584f14db2ea5ae185ca4d8"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/specterstudio/pattern@v1.0.8/webflow/pattern.com/scripts/nav/nav.js",
+      "sha256": "8089ad9318ed36176a10b8f7133f6a304290dcb28f3d2d39a09770470ec511df"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css",
+      "sha256": "2df8d7360df6d42e2747b4f295ce63a7cafa9bfaa5acfc2eb65bba62438c19e0"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/lumosframework/scripts@v1.0.9/theme-collector.js",
+      "sha256": "a9099ed8c3aab21ad8deffb309567041b81ef26e99ad5bbce7318c863b30d829"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js",
+      "sha256": "7ed581a3897fcaf639fee25c5c282bf80e70c65d526f80da0f8bda6a6b7ab820"
+    },
+    {
+      "src": null,
+      "sha256": "cacdb687572ca8df06acc47a51d8387b7fb910c0afdbc3a916508e1c9d2d060d"
+    },
+    {
+      "src": null,
+      "sha256": "a1776f06f7b4a2988f86e10c483e5bdbc47c7e5283a79dd80c1a737fbb7a743c"
+    }
+  ]
+}
