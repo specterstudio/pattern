@@ -30,6 +30,7 @@
   if (!(state.initialized instanceof WeakSet)) state.initialized = new WeakSet();
   if (!(state.deferred instanceof WeakMap)) state.deferred = new WeakMap();
   if (!(state.statTweens instanceof WeakMap)) state.statTweens = new WeakMap();
+  if (!(state.standalone instanceof WeakMap)) state.standalone = new WeakMap();
 
   function injectStyles() {
     if (document.getElementById(STYLE_ID)) return;
@@ -92,6 +93,48 @@
     return dynamicLists.filter((list) => {
       return Boolean(list.querySelector(`${ITEM_SELECTOR} ${COMPONENT_SELECTOR}`));
     });
+  }
+
+  function findComponents(root) {
+    const scope = root || document;
+    const components = [];
+    if (scope.matches && scope.matches(COMPONENT_SELECTOR)) components.push(scope);
+    components.push(...Array.from(scope.querySelectorAll(COMPONENT_SELECTOR)));
+    return components;
+  }
+
+  function restoreStandalone(component) {
+    const original = state.standalone.get(component);
+    if (!original) return;
+
+    if (!original.hadStatic) component.removeAttribute("data-case-study-slider-static");
+    if (original.controls) original.controls.hidden = original.hidden;
+    state.standalone.delete(component);
+  }
+
+  function initializeStandalone(component) {
+    // CMS instances keep their existing record-count and slider lifecycle.
+    if (component.closest(ITEM_SELECTOR)) {
+      restoreStandalone(component);
+      return;
+    }
+
+    const controls = component.querySelector(SELECTORS.controls);
+    let original = state.standalone.get(component);
+    if (!original) {
+      original = {
+        hadStatic: component.hasAttribute("data-case-study-slider-static"),
+        controls,
+        hidden: controls ? controls.hidden : false
+      };
+      state.standalone.set(component, original);
+    } else if (controls !== original.controls) {
+      original.controls = controls;
+      original.hidden = controls ? controls.hidden : false;
+    }
+
+    component.setAttribute("data-case-study-slider-static", "");
+    if (controls) controls.hidden = true;
   }
 
   function getImageData(root) {
@@ -605,6 +648,7 @@
     if (LEGACY_VERSIONS.has(detectedVersion)) return;
 
     injectStyles();
+    findComponents(root).forEach(initializeStandalone);
     findSliderRoots(root).forEach((sliderRoot) => {
       if (runtime?.managed && typeof runtime.loadDependency === "function") {
         deferSlider(sliderRoot, runtime);
@@ -655,6 +699,7 @@
       sliderRoot.removeAttribute("aria-busy");
       state.initialized.delete(sliderRoot);
     });
+    findComponents(root).forEach(restoreStandalone);
   }
 
   function boot() {
