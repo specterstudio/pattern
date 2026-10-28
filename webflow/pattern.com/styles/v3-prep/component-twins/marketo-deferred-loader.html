@@ -30,6 +30,9 @@
     const FORM_LOAD_TIMEOUT_MS = 15000;
     const ATTRIBUTION_COOKIE = "pattern_marketo_attribution";
     const COOKIE_MAX_AGE = 60 * 60 * 24 * 90;
+    const CONSENT_COOKIE = "fs-consent";
+    const CONSENT_CATEGORY = "marketing";
+    const CONSENT_TIMEOUT_MS = 10000;
     const currentScript = document.currentScript;
     const root = currentScript?.closest("[data-marketo-form-id]");
     const formElement = root?.querySelector("[data-pattern-marketo-form]");
@@ -241,9 +244,98 @@
         `max-age=${COOKIE_MAX_AGE}; path=/; SameSite=Lax; Secure`;
     };
 
+    // Consent is "known" once there is an fs-consent cookie, a Consent Pro
+    // answer, or the no-Consent-Pro timeout. Until then nothing is stored and
+    // nothing is deleted, so an opt-out visitor's stored attribution survives
+    // until Consent Pro reports its default.
+    const consentKnown = () =>
+      typeof shared.marketingConsent === "boolean" ||
+      Boolean(readCookieValue(CONSENT_COOKIE));
+
+    const clearAttributionCookie = () => {
+      if (!consentKnown() || hasMarketingConsent()) return;
+      if (!readCookieValue(ATTRIBUTION_COOKIE)) return;
+      document.cookie =
+        `${ATTRIBUTION_COOKIE}=; max-age=0; path=/; SameSite=Lax; Secure`;
+    };
+
+    // Finsweet Consent Pro marketing consent, read like the v5.2 attribution
+    // script: fs-consent cookie JSON -> choices.marketing. A newer choice from
+    // a consent-updated event or the opt-out default wins (see onConsentChange).
+    // Missing or unreadable consent, or no Consent Pro, = no consent.
+    const hasMarketingConsent = () => {
+      if (typeof shared.marketingConsent === "boolean") {
+        return shared.marketingConsent;
+      }
+
+      try {
+        const consent = JSON.parse(readCookieValue(CONSENT_COOKIE) || "null");
+        return Boolean(consent?.choices?.[CONSENT_CATEGORY]);
+      } catch (error) {
+        return false;
+      }
+    };
+
+    const onConsentChange = (handler) => {
+      if (!shared.consentHandlers) {
+        shared.consentHandlers = [];
+
+        const notify = (choices) => {
+          if (choices && typeof choices === "object") {
+            shared.marketingConsent = Boolean(choices[CONSENT_CATEGORY]);
+          }
+
+          window.setTimeout(() => {
+            shared.consentHandlers.forEach((callback) => {
+              try {
+                callback();
+              } catch (error) {
+                console.warn("[Pattern Marketo] Consent update failed.", error);
+              }
+            });
+          }, 0);
+        };
+
+        window.FinsweetConsentPro = window.FinsweetConsentPro || [];
+        window.FinsweetConsentPro.push([
+          "consent",
+          (api) => {
+            // Same rule as the live US v5 script: with an fs-consent cookie, or
+            // on an opt-out banner before any choice, take Consent Pro's current
+            // choices (opt-out default = allowed). Opt-in with no choice = none.
+            try {
+              if (
+                readCookieValue(CONSENT_COOKIE) ||
+                api?.instanceConfig?.mode === "opt-out"
+              ) {
+                notify(api?.consents?.get?.());
+              } else {
+                notify({ [CONSENT_CATEGORY]: false });
+              }
+            } catch (error) {
+              notify({ [CONSENT_CATEGORY]: false });
+            }
+            api?.on?.("consent-updated", (event) => notify(event?.choices));
+          }
+        ]);
+        document.documentElement.addEventListener(
+          "consentpro:consent-updated",
+          (event) => notify(event?.detail?.choices)
+        );
+
+        // Consent Pro missing or failed to load: no consent (fail-safe).
+        window.setTimeout(() => {
+          if (!consentKnown()) notify({ [CONSENT_CATEGORY]: false });
+        }, CONSENT_TIMEOUT_MS);
+      }
+
+      shared.consentHandlers.push(handler);
+    };
+
     const getAttributionValues = () => {
+      const consented = hasMarketingConsent();
       const params = new URLSearchParams(window.location.search);
-      const values = { ...readJsonCookie(ATTRIBUTION_COOKIE) };
+      const values = consented ? { ...readJsonCookie(ATTRIBUTION_COOKIE) } : {};
       const queryMappings = {
         utm_source: "UTM_Source__c",
         utm_medium: "UTM_Medium__c",
@@ -263,11 +355,13 @@
         if (value) values[queryMappings[queryName]] = value;
       });
 
-      const fbp = readCookieValue("_fbp");
-      const fbc = readCookieValue("_fbc");
+      if (consented) {
+        const fbp = readCookieValue("_fbp");
+        const fbc = readCookieValue("_fbc");
 
-      if (fbp) values.FBP__c = fbp;
-      if (fbc) values.FBC__c = fbc;
+        if (fbp) values.FBP__c = fbp;
+        if (fbc) values.FBC__c = fbc;
+      }
 
       if (!values.Landing_Page__c) {
         values.Landing_Page__c = window.location.href;
@@ -281,7 +375,12 @@
         values.Client_User_Agent__c = navigator.userAgent;
       }
 
-      writeJsonCookie(ATTRIBUTION_COOKIE, values);
+      if (consented) {
+        writeJsonCookie(ATTRIBUTION_COOKIE, values);
+      } else {
+        clearAttributionCookie();
+      }
+
       return values;
     };
 
@@ -307,6 +406,17 @@
 
     const applyAttribution = (form) => {
       const supported = filterFieldsForForm(form, getAttributionValues());
+      const currentValues =
+        typeof form.vals === "function" ? form.vals() || {} : {};
+
+      // Only fill empty fields; never overwrite an existing value.
+      Object.keys(supported).forEach((fieldName) => {
+        const current = currentValues[fieldName];
+
+        if (current != null && String(current).trim() !== "") {
+          delete supported[fieldName];
+        }
+      });
 
       if (
         Object.keys(supported).length &&
@@ -375,6 +485,7 @@
         const dependencyResult = await dependenciesReady;
 
         if (dependencyResult.error) throw dependencyResult.error;
+        if (!hasMarketingConsent()) return;
 
         const DTO = new SimpleDTO({
           debug: false,
@@ -385,6 +496,8 @@
           dataSrc: "https://go.pattern.com/dtp-2.html",
           cb(instance, mktoFields) {
             try {
+              if (!hasMarketingConsent()) return;
+
               const safePrefill = filterPrefillFields(form, mktoFields);
 
               if (
@@ -392,13 +505,6 @@
                 typeof form.setValuesCoerced === "function"
               ) {
                 form.setValuesCoerced(safePrefill);
-              }
-
-              // Attribution wins if DTO ever returns overlapping fields.
-              try {
-                applyAttribution(form);
-              } catch (error) {
-                warnEnhancementFailure("post-prefill attribution", error);
               }
             } finally {
               DTO.cleanup();
@@ -415,10 +521,15 @@
 
       const promise = (async () => {
         const MktoForms2 = await ensureForms2();
-        const dependenciesReady = ensurePrefillDependencies().then(
-          () => ({ error: null }),
-          (error) => ({ error })
-        );
+        const loadPrefillDependencies = () =>
+          ensurePrefillDependencies().then(
+            () => ({ error: null }),
+            (error) => ({ error })
+          );
+        // Prefill (SimpleDTO iframe) only runs with marketing consent.
+        const dependenciesReady = hasMarketingConsent()
+          ? loadPrefillDependencies()
+          : null;
 
         const form = await new Promise((resolve, reject) => {
           let settled = false;
@@ -456,13 +567,33 @@
         formElement.setAttribute("aria-busy", "false");
         initializeAutocomplete(form);
         initializeAttribution(form);
-        void initializePrefill(form, dependenciesReady);
+
+        let prefillStarted = false;
+        const startPrefill = () => {
+          if (prefillStarted || !hasMarketingConsent()) return;
+          prefillStarted = true;
+          void initializePrefill(
+            form,
+            dependenciesReady || loadPrefillDependencies()
+          );
+        };
+
+        startPrefill();
+        onConsentChange(() => {
+          applyAttribution(form);
+          startPrefill();
+        });
         return form;
       })();
 
       shared.forms.set(formId, promise);
       return promise;
     };
+
+    clearAttributionCookie();
+    onConsentChange(() => {
+      clearAttributionCookie();
+    });
 
     let started = false;
     let observer;
