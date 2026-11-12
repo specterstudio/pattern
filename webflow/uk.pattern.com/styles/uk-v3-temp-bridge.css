@@ -5,3 +5,12 @@
 @media screen and (min-width: 992px) and (max-width: 1199px){:where([data-uk-v3-compat="utilities"]){.u-tablet-span{grid-column:span 3 / span 3}}}
 html:is([data-wf-page="684987756493653cc7c5a546"],[data-wf-page="684987756493653cc7c5a545"],[data-wf-page="684987756493653cc7c5a548"],[data-wf-page="6a0e3cc3ba585cc12d1c2f43"]) .page_main_v3{.u-row-span-2,.leadership_card p{margin-bottom:var(--bj)}@container(width >= 35em){[data-small-columns="1"]{display:grid}}[class*="slider_offset"]{--slide-count:var(--lg)}@container(width < 53em){[class*="slider_offset"]{--slide-count:var(--md)}}@container(width < 35em){[class*="slider_offset"]{--slide-count:var(--sm)}}@container(width < 27em){[class*="slider_offset"]{--slide-count:var(--xs)}}:is(p,h1,h2)::before{margin-bottom:calc(-.5lh + var(--bW))}:is(p,h1,h2)::after{margin-bottom:calc(-.5lh + var(--bX))}}html:is([data-wf-page="684987756493653cc7c5a548"],[data-wf-page="6a0e3cc3ba585cc12d1c2f43"]) .page_main_v3 .pattern-library-v3--u-heading p{font:inherit;letter-spacing:inherit;text-transform:inherit}html[data-wf-page="6a0e3cc3ba585cc12d1c2f43"] .page_main_v3{[class*="u-grid-wrapper"].u-gap-2.u-gap-row-4{row-gap:var(--bh)}.pi_compare_block>p{margin-bottom:var(--bj)}.pi_compare_comp.u-g-stroke>*{margin:0}h3{&::before{margin-bottom:calc(-.5lh + var(--bW))}&::after{margin-bottom:calc(-.5lh + var(--bX))}}}
 :where([data-uk-v3-compat="utilities"]) h3.pattern-library-v3--u-text{margin-top:0}
+
+/* Preserve the V3 font style on Innovation Hub's single-paragraph headings. */
+:where(html[data-wf-page="684987756493653cc7c5a5b6"] [data-uk-v3-compat="utilities"])
+  .pattern-library-v3--u-heading.w-richtext[data-heading-flow="false" i] > p:only-child {
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  text-wrap: inherit;
+}
